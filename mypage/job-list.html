@@ -1,0 +1,1038 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--[if IE]><meta http-equiv="cleartype" content="on"><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=0" id="viewport">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>派遣求人検索（結果表示ページ）</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/mypage.css">
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="inner-wrapper">
+          <div class="header-left">
+            <div class="header-logo"><a class="trans logo" href="../"><img src="../img/common/common_logo.png" width="189" height="57" loading="lazy" alt="旭化成アミダス"></a></div>
+            <p class="text-service">総合人材<br class="md">サービスサイト</p>
+          </div>
+          <div class="header-right md">
+            <div class="content-top">
+              <ul class="list-function">
+                <li class="item-list background-blue"><a class="item-link" href="../mypage/">マイページログイン</a></li>
+                <li class="item-list background-blue"><a class="item-link" href="../mypage/register.html">派遣登録はこちら</a></li>
+              </ul>
+              <form class="form-search">
+                <div class="content-form">
+                  <input class="input-text" type="text" name="search" value="">
+                  <div class="item-search background-blue"><a href="javascript:;"></a></div>
+                </div>
+              </form>
+            </div>
+            <div class="content-bottom">
+              <nav class="header-navigation">
+                <ul class="list-navigation">
+                  <li class="item-navigation"><a href="../">ホーム</a></li>
+                  <li class="item-navigation"><a class="active-menu" href="../job/">お仕事をお探しの方</a></li>
+                  <li class="item-navigation"><a href="#">企業のご担当者の方</a></li>
+                  <li class="item-navigation"><a href="../recruit/">採用情報</a></li>
+                  <li class="item-navigation"><a href="../company/">企業情報</a></li>
+                  <li class="item-navigation"><a href="#">アクセス</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <nav class="menu-navigation js-navigation">
+          <div class="navigation-block">
+            <ul class="header-menu">
+              <li class="item-menu">
+                <div class="title-menu js-accordion"><a class="trans js-accordion-heading" href="../">ホーム</a></div>
+                <ul class="sub-menu js-accordion-content md">
+                  <li class="item-sub-menu"><a class="trans" href="#">お知らせ</a></li>
+                  <li class="item-sub-menu"><a class="trans" href="#">お問い合わせ</a></li>
+                </ul>
+                <div class="block-menu md">
+                  <div class="title-menu"><a class="trans" href="#">企業情報</a></div>
+                  <ul class="sub-menu">
+                    <li class="item-sub-menu"><a class="trans" href="#">コーポレートスローガン</a></li>
+                    <li class="item-sub-menu"><a class="trans" href="#">代表あいさつ</a></li>
+                    <li class="item-sub-menu"><a class="trans" href="../company/">会社概要／<br>旭化成グループについて</a></li>
+                    <li class="item-sub-menu"><a class="trans" href="#">沿革</a></li>
+                    <li class="item-sub-menu"><a class="trans" href="#">拠点一覧</a></li>
+                    <li class="item-sub-menu"><a class="trans" href="#">労働者派遣事業に係る<br>各種情報のお知らせ</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="item-menu js-accordion">
+                <div class="title-menu icon-plus-big js-accordion-heading is-pointer"><span class="trans">お仕事をお探しの方</span></div>
+                <div class="content-sub-menu js-accordion-content">
+                  <ul class="sub-menu">
+                    <li class="item-sub-menu"><a class="trans" href="../job/haken/">旭化成アミダスで出来る<br class="md">仕事の探し方</a></li>
+                    <li class="item-sub-menu sm"><a class="trans" href="#">人材派遣サービス</a></li>
+                    <li class="item-sub-menu sm"><a class="trans" href="#">転職支援サービス</a></li>
+                    <li class="item-sub-menu sm"><a class="trans" href="#">製造職のお仕事</a></li>
+                    <li class="item-sub-menu sm"><a class="trans" href="#">受付業務のお仕事</a></li>
+                    <li class="item-sub-menu js-accordion md"><span class="trans icon-plus js-accordion-heading">人材派遣</span>
+                      <div class="content-last-menu js-accordion-content">
+                        <ul class="list-last-menu">
+                          <li class="item-sub-menu"><a class="trans" href="#">派遣求人検索</a></li>
+                          <li class="item-sub-menu"><a class="trans" href="#">WEB仮登録</a></li>
+                          <li class="item-sub-menu"><a class="trans" href="#">マイページ</a></li>
+                          <li class="item-sub-menu"><a class="trans" href="#">ライフスタイル別特集</a></li>
+                          <li class="item-sub-menu"><a class="trans" href="#">拠点別特集</a></li>
+                          <li class="item-sub-menu"><a class="trans" href="#">業界・職種別特集</a></li>
+                          <li class="item-sub-menu"><a class="trans" href="#">スタッフインタビュー</a></li>
+                          <li class="item-sub-menu"><a class="trans" href="#">よくあるご質問</a></li>
+                          <li class="item-sub-menu"><a class="trans" href="#">初めて派遣で働く方へ</a></li>
+                          <li class="item-sub-menu"><a class="trans" href="#">ご登録済み派遣スタッフの方</a></li>
+                          <li class="item-sub-menu"><a class="trans" href="#">労働者派遣法改正関連</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="item-sub-menu md"><span class="trans icon-plus js-accordion-heading">転職支援</span>
+                      <div class="content-last-menu js-accordion-content">
+                        <ul class="list-last-menu">
+                          <li class="item-sub-menu"><a class="trans" href="#">求人検索</a></li>
+                          <li class="item-sub-menu"><a class="trans" href="#">旭化成アミダスの転職支援<br>サ ービスについて</a></li>
+                          <li class="item-sub-menu"><a class="trans" href="#">旭化成グループの会社<br>だからできる転職支援</a></li>
+                          <li class="item-sub-menu"><a class="trans" href="#">旭化成アミダスの<br>得意な領域・職種</a></li>
+                          <li class="item-sub-menu"><a class="trans" href="#">お仕事が決まるまでの流れ</a></li>
+                          <li class="item-sub-menu"><a class="trans" href="#">転職コンサルタント紹介</a></li>
+                          <li class="item-sub-menu"><a class="trans" href="#">コンサルタント×転職者 対談</a></li>
+                          <li class="item-sub-menu"><a class="trans" href="#">よくあるご質問</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="item-sub-menu md"><span class="trans icon-plus js-accordion-heading">製造現場のお仕事</span>
+                      <div class="content-last-menu js-accordion-content">
+                        <ul class="list-last-menu">
+                          <li class="item-sub-menu"><a class="trans" href="#">製造現場のお仕事について</a></li>
+                          <li class="item-sub-menu"><a class="trans" href="#">配属地域紹介<br>（守山、日向、千葉）</a></li>
+                          <li class="item-sub-menu"><a class="trans" href="#">社員インタビュー</a></li>
+                          <li class="item-sub-menu"><a class="trans" href="#">研修制度</a></li>
+                          <li class="item-sub-menu"><a class="trans" href="#">よくあるご質問</a></li>
+                          <li class="item-sub-menu"><a class="trans" href="#">募集中案件</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="item-sub-menu md"><span class="trans icon-plus js-accordion-heading">受付業務のお仕事</span>
+                      <div class="content-last-menu js-accordion-content">
+                        <ul class="list-last-menu">
+                          <li class="item-sub-menu"><a class="trans" href="#">アミダスの受付業務について</a></li>
+                          <li class="item-sub-menu"><a class="trans" href="#">社員インタビュー</a></li>
+                          <li class="item-sub-menu"><a class="trans" href="#">研修制度</a></li>
+                          <li class="item-sub-menu"><a class="trans" href="#">よくあるご質問</a></li>
+                          <li class="item-sub-menu"><a class="trans" href="#">募集業務</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="item-menu js-accordion">
+                <div class="title-menu icon-plus-big js-accordion-heading is-pointer"><span class="trans">企業担当者の方</span></div>
+                <div class="content-sub-menu js-accordion-content">
+                  <ul class="sub-menu md">
+                    <li class="item-sub-menu"><a class="trans" href="#">お知らせ</a></li>
+                    <li class="item-sub-menu"><a class="trans" href="#">旭化成アミダスができること</a></li>
+                    <li class="item-sub-menu"><span class="trans icon-plus js-accordion-heading">旭化成アミダスの人材派遣<br>サービス</span>
+                      <div class="content-last-menu js-accordion-content">
+                        <ul class="list-last-menu">
+                          <li class="item-sub-menu"><a class="trans" href="#">得意とする領域・職種</a></li>
+                          <li class="item-sub-menu"><a class="trans" href="#">導入事例インタビュー</a></li>
+                          <li class="item-sub-menu"><a class="trans" href="#">派遣チーム×顧客座談会</a></li>
+                          <li class="item-sub-menu"><a class="trans" href="#">ブログ・コラム</a></li>
+                          <li class="item-sub-menu"><a class="trans" href="#">資料請求・お問い合わせ</a></li>
+                          <li class="item-sub-menu"><a class="trans" href="#">ホワイトペーパー</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="item-sub-menu"><span class="trans icon-plus js-accordion-heading">旭化成アミダスの<br>ITエンジニア派遣サービス</span>
+                      <div class="content-last-menu js-accordion-content">
+                        <ul class="list-last-menu">
+                          <li class="item-sub-menu"><a class="trans" href="#">得意とする領域・職種</a></li>
+                          <li class="item-sub-menu"><a class="trans" href="#">お問い合わせ</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="item-sub-menu"><span class="trans icon-plus js-accordion-heading">旭化成アミダスの<br>人材紹介サービス</span>
+                      <div class="content-last-menu js-accordion-content">
+                        <ul class="list-last-menu">
+                          <li class="item-sub-menu"><a class="trans" href="#">得意とする領域・職種</a></li>
+                          <li class="item-sub-menu"><a class="trans" href="#">導入事例インタビュー</a></li>
+                          <li class="item-sub-menu"><a class="trans" href="#">記事コンテンツ</a></li>
+                          <li class="item-sub-menu"><a class="trans" href="#">資料請求・お問い合わせ</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="item-sub-menu"><span class="trans icon-plus js-accordion-heading">旭化成アミダスの<br>教育研修サービス</span>
+                      <div class="content-last-menu js-accordion-content">
+                        <ul class="list-last-menu">
+                          <li class="item-sub-menu"><a class="trans" href="#">教育研修一覧・<br>課題別研修検索</a></li>
+                          <li class="item-sub-menu"><a class="trans" href="#">資料請求・お問い合わせ</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="item-sub-menu"><span class="trans icon-plus js-accordion-heading">旭化成アミダスの各種<br>アウトソーシングサービス</span>
+                      <div class="content-last-menu js-accordion-content">
+                        <ul class="list-last-menu">
+                          <li class="item-sub-menu"><a class="trans" href="#">導入事例インタビュー</a></li>
+                          <li class="item-sub-menu"><a class="trans" href="#">資料請求・お問い合わせ</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="item-sub-menu"><span class="trans icon-plus js-accordion-heading">旭化成アミダスのISO事業</span>
+                      <div class="content-last-menu js-accordion-content">
+                        <ul class="list-last-menu">
+                          <li class="item-sub-menu"><a class="trans" href="#">ISO審査／ISO研修</a></li>
+                          <li class="item-sub-menu"><a class="trans" href="#">資料請求・お問い合わせ</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+                  <ul class="sub-menu sm">
+                    <li class="item-sub-menu"><a class="trans" href="#">旭化成アミダスが出来ること</a></li>
+                    <li class="item-sub-menu"><a class="trans" href="#">人材派遣サービス</a></li>
+                    <li class="item-sub-menu"><a class="trans" href="#">ITエンジニア派遣サービス</a></li>
+                    <li class="item-sub-menu"><a class="trans" href="#">人材紹介サービス</a></li>
+                    <li class="item-sub-menu"><a class="trans" href="#">教育研修サービス</a></li>
+                    <li class="item-sub-menu"><a class="trans" href="#">各種アウトソーシングサービス</a></li>
+                    <li class="item-sub-menu"><a class="trans" href="#">ISO事業</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="item-menu js-accordion">
+                <div class="title-menu icon-plus-big js-accordion-heading is-pointer"><span class="trans">採用情報</span></div>
+                <div class="content-sub-menu js-accordion-content">
+                  <ul class="sub-menu md">
+                    <li class="item-sub-menu"><a class="trans" href="#">旭化成アミダスとは</a></li>
+                    <li class="item-sub-menu"><a class="trans" href="#">事業の未来座談会</a></li>
+                    <li class="item-sub-menu"><a class="trans" href="#">教育研修制度</a></li>
+                    <li class="item-sub-menu"><a class="trans" href="#">福利厚生制度</a></li>
+                    <li class="item-sub-menu"><a class="trans" href="#">採用に関するお問い合わせ</a></li>
+                    <li class="item-sub-menu"><span class="trans icon-plus js-accordion-heading">新卒採用（ITエンジニア）</span>
+                      <div class="content-last-menu js-accordion-content">
+                        <ul class="list-last-menu">
+                          <li class="item-sub-menu"><a class="trans" href="#">仕事を知る</a></li>
+                          <li class="item-sub-menu"><a class="trans" href="#">社員紹介</a></li>
+                          <li class="item-sub-menu"><a class="trans" href="#">よくあるご質問</a></li>
+                          <li class="item-sub-menu"><a class="trans" href="#">専門研修制度</a></li>
+                          <li class="item-sub-menu"><a class="trans" href="#">採用情報</a></li>
+                          <li class="item-sub-menu"><a class="trans" href="#">エントリー</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="item-sub-menu"><a class="trans icon-plus" href="#">新卒採用（総合職）</a></li>
+                    <li class="item-sub-menu"><a class="trans" href="#">中途採用（外部）</a></li>
+                  </ul>
+                  <ul class="sub-menu sm">
+                    <li class="item-sub-menu"><a class="trans" href="#">旭化成アミダスとは</a></li>
+                    <li class="item-sub-menu"><a class="trans" href="#">教育研修制度</a></li>
+                    <li class="item-sub-menu"><a class="trans" href="#">福利厚生制度</a></li>
+                    <li class="item-sub-menu"><a class="trans" href="#">新卒採用（ITエンジニア）</a></li>
+                    <li class="item-sub-menu"><a class="trans" href="#">新卒採用（総合職）</a></li>
+                    <li class="item-sub-menu"><a class="trans" href="#">採用に関するお問い合わせ</a></li>
+                    <li class="item-sub-menu"><a class="trans" href="#">中途採用</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="item-menu sm js-accordion">
+                <div class="title-menu icon-plus-big js-accordion-heading"><span class="trans">企業情報</span></div>
+                <div class="content-sub-menu js-accordion-content">
+                  <ul class="sub-menu">
+                    <li class="item-sub-menu"><a class="trans" href="#">コーポレートスローガン</a></li>
+                    <li class="item-sub-menu"><a class="trans" href="#">代表あいさつ</a></li>
+                    <li class="item-sub-menu sm"><a class="trans" href="#">事業紹介</a></li>
+                    <li class="item-sub-menu md"><a class="trans" href="#">会社概要／<br>旭化成グループについて</a></li>
+                    <li class="item-sub-menu sm"><a class="trans" href="#">会社概要・旭化成グループについて</a></li>
+                    <li class="item-sub-menu"><a class="trans" href="#">沿革</a></li>
+                    <li class="item-sub-menu"><a class="trans" href="#">拠点一覧</a></li>
+                    <li class="item-sub-menu"><a class="trans" href="#">労働者派遣事業に係る<br>各種情報のお知らせ</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="item-menu sm">
+                <div class="title-menu"><a class="trans" href="#">アクセス</a></div>
+              </li>
+            </ul>
+            <ul class="list-notice sm">
+              <li class="item-notice"><a class="trans" href="#">おしらせ</a></li>
+              <li class="item-notice"><a class="trans" href="#">お問い合わせ</a></li>
+            </ul>
+            <form class="form-search sm">
+              <input class="input-search" type="search" name="search" placeholder="検索する">
+              <button class="icon-search" type="submit"></button>
+            </form>
+          </div>
+        </nav>
+        <div class="button-menu trans js-button-menu"><span></span><span></span><span></span></div>
+      </header>
+      <main>
+        <div class="content-list-menu list-menu-job md">
+          <ul class="list-menu-top">
+            <li class="active-hover item-list-top"><a href="../job/haken/index.html">派遣求人検索</a></li>
+            <li class="item-list-top"><a href="../job/haken/lifestyle.html">ライフスタイル別特集</a></li>
+            <li class="item-list-top"><a href="#">拠点別特集</a></li>
+            <li class="item-list-top"><a href="#">業界・職種別特集</a></li>
+            <li class="item-list-top"><a href="../job/haken/interview/index.html">スタッフインタビュー</a></li>
+            <li class="item-list-top"><a href="#">派遣現場座談会</a></li>
+            <li class="item-list-top"><a href="#">初めて派遣で働く方へ</a></li>
+            <li class="item-list-top"><a href="#">ご登録済スタッフの方</a></li>
+            <li class="item-list-top"><a href="../job/haken/faq.html">よくあるご質問</a></li>
+            <li class="item-list-top"><a href="#">労働者派遣法改正関連</a></li>
+          </ul>
+        </div>
+        <nav class="breadcrumb">
+          <ol class="breadcrumb-list">
+            <li><a href="../">トップ</a></li>
+            <li><a class="trans" href="../mypage/">人材派遣トップ</a></li>
+            <li><span>すべての条件から検索</span></li>
+          </ol>
+        </nav>
+        <section class="section-mypage-job">
+          <div class="wrapper">
+            <h1 class="title-mypage-job">お仕事検索結果一覧</h1>
+          </div>
+        </section>
+        <section class="section-mypage-condition">
+          <div class="inner-wrapper">
+            <h2 class="title-condition md">選択中の条件</h2>
+            <div class="block-common-category">
+              <ul class="common-list-category">
+                <li class="item-category js-delete-category">ビジョン・ミッション<span class="icon-close"></span></li>
+                <li class="item-category js-delete-category">働き方<span class="icon-close"></span></li>
+                <li class="item-category js-delete-category">やりがい<span class="icon-close"></span></li>
+                <li class="item-category js-delete-category">女性の活躍<span class="icon-close"></span></li>
+                <li class="item-category js-delete-category">チームビルディング<span class="icon-close"></span></li>
+                <li class="item-category js-delete-category">キャリアチェンジ<span class="icon-close"></span></li>
+                <li class="item-category js-delete-category">未経験<span class="icon-close"></span></li>
+                <li class="item-category js-delete-category">転職<span class="icon-close"></span></li>
+                <li class="item-category js-delete-category">キーパーソン<span class="icon-close"></span></li>
+                <li class="item-category js-delete-category">エンジニア<span class="icon-close"></span></li>
+                <li class="item-category js-delete-category">社内制度<span class="icon-close"></span></li>
+                <li class="item-category js-delete-category">ワーキングママ<span class="icon-close"></span></li>
+                <li class="item-category js-delete-category">わたしの働き方<span class="icon-close"></span></li>
+                <li class="item-category js-delete-category">社員・職員<span class="icon-close"></span></li>
+                <li class="item-category js-delete-category">キャリア<span class="icon-close"></span></li>
+                <li class="item-category js-delete-category">チームワーク<span class="icon-close"></span></li>
+                <li class="item-category js-delete-category">研究開発<span class="icon-close"></span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="wrapper">
+            <div class="block-display">
+              <div class="block-left">
+                <p class="text-total">100<span class="is-small">件</span></p>
+                <p class="text-reality">1～10件を表示</p>
+              </div>
+              <div class="block-right md">
+                <div class="block-pagination pagination-orange">
+                  <ul class="common-list-pagination font-alata">
+                    <li class="arrow prev"><a href="#">PREV</a></li>
+                    <li><a class="page-numbers" href="#">1</a></li>
+                    <li><a class="page-numbers" href="#">2</a></li>
+                    <li><a class="page-numbers" href="#">3</a></li>
+                    <li><a class="page-numbers" href="#">4</a></li>
+                    <li><a class="page-numbers" href="#">5</a></li>
+                    <li class="arrow next"><a href="#">NEXT</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="block-content-display">
+              <ul class="list-block-display">
+                <li class="item-list">
+                  <div class="item-top">
+                    <p class="text-article is-new">お仕事No. 0000020538</p>
+                    <h3 class="title-article">設備工事の書類作成や業者対応などの事務（大手グループビル管理会社）　土日休み残業なし</h3>
+                    <ul class="common-list-category">
+                      <li class="item-category">テーマ名タグ</li>
+                      <li class="item-category">未経験歓迎</li>
+                      <li class="item-category">大手・優良企業</li>
+                      <li class="item-category">ブランク応援</li>
+                      <li class="item-category">住宅･建築･不動産業界</li>
+                    </ul>
+                  </div>
+                  <div class="block-content-detail">
+                    <div class="item-content-detail">
+                      <div class="content-left">
+                        <dl class="text-light-blue">
+                          <dt>職種　　　：</dt>
+                          <dd>オフィスワーク・事務　〉一般事務</dd>
+                        </dl>
+                        <dl>
+                          <dt>お仕事内容：</dt>
+                          <dd>管理しているビルなどの設備工事に関わる事務のお仕事です。</dd>
+                        </dl>
+                        <dl>
+                          <dt>給与　　　：</dt>
+                          <dd>時給1,800円<br>交通費全額支給<br>【月収例】302,400円＝1800円×8H×21日</dd>
+                        </dl>
+                        <dl>
+                          <dt>給与　　　：</dt>
+                          <dd>08時30分～17時30分(休憩60分)<br>※残業なし。あってもは5時間／月程度。</dd>
+                        </dl>
+                      </div>
+                      <div class="content-right">
+                        <dl>
+                          <dt>勤務地　　：</dt>
+                          <dd>墨田区<br>JR山手線 ・京浜東北線「浜松町」駅 北口より徒歩7分<br>ゆりかもめ「竹芝」駅直結</dd>
+                        </dl>
+                        <dl>
+                          <dt>期間　　　：</dt>
+                          <dd>即日～長期<br><span class="text-light-blue">2022年●月●日～就業可能</span></dd>
+                        </dl>
+                        <dl>
+                          <dt>勤務日　　：</dt>
+                          <dd>月～金／週5日勤務</dd>
+                        </dl>
+                      </div>
+                    </div>
+                    <div class="block-button">
+                      <div class="block-button-left"><a class="trans button-detail button-white is-icon js-favorite" href="javascript:;"><span class="md">キープ</span></a></div>
+                      <ul class="block-button-right">
+                        <li><a class="trans button-detail button-white" href="#">詳しく見る</a></li>
+                        <li><a class="trans button-detail button-light-blue" href="#">応募する</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="item-list">
+                  <div class="item-top">
+                    <p class="text-article">お仕事No. 0000020538</p>
+                    <h3 class="title-article">設備工事の書類作成や業者対応などの事務（大手グループビル管理会社）　土日休み残業なし</h3>
+                    <ul class="common-list-category">
+                      <li class="item-category">テーマ名タグ</li>
+                      <li class="item-category">未経験歓迎</li>
+                      <li class="item-category">大手・優良企業</li>
+                      <li class="item-category">ブランク応援</li>
+                      <li class="item-category">住宅･建築･不動産業界</li>
+                    </ul>
+                  </div>
+                  <div class="block-content-detail">
+                    <div class="item-content-detail">
+                      <div class="content-left">
+                        <dl class="text-light-blue">
+                          <dt>職種　　　：</dt>
+                          <dd>オフィスワーク・事務　〉一般事務</dd>
+                        </dl>
+                        <dl>
+                          <dt>お仕事内容：</dt>
+                          <dd>管理しているビルなどの設備工事に関わる事務のお仕事です。</dd>
+                        </dl>
+                        <dl>
+                          <dt>給与　　　：</dt>
+                          <dd>時給1,800円<br>交通費全額支給<br>【月収例】302,400円＝1800円×8H×21日</dd>
+                        </dl>
+                        <dl>
+                          <dt>給与　　　：</dt>
+                          <dd>08時30分～17時30分(休憩60分)<br>※残業なし。あってもは5時間／月程度。</dd>
+                        </dl>
+                      </div>
+                      <div class="content-right">
+                        <dl>
+                          <dt>勤務地　　：</dt>
+                          <dd>墨田区<br>JR山手線 ・京浜東北線「浜松町」駅 北口より徒歩7分<br>ゆりかもめ「竹芝」駅直結</dd>
+                        </dl>
+                        <dl>
+                          <dt>期間　　　：</dt>
+                          <dd>即日～長期<br><span class="text-light-blue">2022年●月●日～就業可能</span></dd>
+                        </dl>
+                        <dl>
+                          <dt>勤務日　　：</dt>
+                          <dd>月～金／週5日勤務</dd>
+                        </dl>
+                      </div>
+                    </div>
+                    <div class="block-button">
+                      <div class="block-button-left"><a class="trans button-detail button-white is-icon js-favorite" href="javascript:;"><span class="md">キープ</span></a></div>
+                      <ul class="block-button-right">
+                        <li><a class="trans button-detail button-white" href="#">詳しく見る</a></li>
+                        <li><a class="trans button-detail button-light-blue" href="#">応募する</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="item-list">
+                  <div class="item-top">
+                    <p class="text-article">お仕事No. 0000020538</p>
+                    <h3 class="title-article">設備工事の書類作成や業者対応などの事務（大手グループビル管理会社）　土日休み残業なし</h3>
+                    <ul class="common-list-category">
+                      <li class="item-category">テーマ名タグ</li>
+                      <li class="item-category">未経験歓迎</li>
+                      <li class="item-category">大手・優良企業</li>
+                      <li class="item-category">ブランク応援</li>
+                      <li class="item-category">住宅･建築･不動産業界</li>
+                    </ul>
+                  </div>
+                  <div class="block-content-detail">
+                    <div class="item-content-detail">
+                      <div class="content-left">
+                        <dl class="text-light-blue">
+                          <dt>職種　　　：</dt>
+                          <dd>オフィスワーク・事務　〉一般事務</dd>
+                        </dl>
+                        <dl>
+                          <dt>お仕事内容：</dt>
+                          <dd>管理しているビルなどの設備工事に関わる事務のお仕事です。</dd>
+                        </dl>
+                        <dl>
+                          <dt>給与　　　：</dt>
+                          <dd>時給1,800円<br>交通費全額支給<br>【月収例】302,400円＝1800円×8H×21日</dd>
+                        </dl>
+                        <dl>
+                          <dt>給与　　　：</dt>
+                          <dd>08時30分～17時30分(休憩60分)<br>※残業なし。あってもは5時間／月程度。</dd>
+                        </dl>
+                      </div>
+                      <div class="content-right">
+                        <dl>
+                          <dt>勤務地　　：</dt>
+                          <dd>墨田区<br>JR山手線 ・京浜東北線「浜松町」駅 北口より徒歩7分<br>ゆりかもめ「竹芝」駅直結</dd>
+                        </dl>
+                        <dl>
+                          <dt>期間　　　：</dt>
+                          <dd>即日～長期<br><span class="text-light-blue">2022年●月●日～就業可能</span></dd>
+                        </dl>
+                        <dl>
+                          <dt>勤務日　　：</dt>
+                          <dd>月～金／週5日勤務</dd>
+                        </dl>
+                      </div>
+                    </div>
+                    <div class="block-button">
+                      <div class="block-button-left"><a class="trans button-detail button-white is-icon js-favorite" href="javascript:;"><span class="md">キープ</span></a></div>
+                      <ul class="block-button-right">
+                        <li><a class="trans button-detail button-white" href="#">詳しく見る</a></li>
+                        <li><a class="trans button-detail button-light-blue" href="#">応募する</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="item-list">
+                  <div class="item-top">
+                    <p class="text-article">お仕事No. 0000020538</p>
+                    <h3 class="title-article">設備工事の書類作成や業者対応などの事務（大手グループビル管理会社）　土日休み残業なし</h3>
+                    <ul class="common-list-category">
+                      <li class="item-category">テーマ名タグ</li>
+                      <li class="item-category">未経験歓迎</li>
+                      <li class="item-category">大手・優良企業</li>
+                      <li class="item-category">ブランク応援</li>
+                      <li class="item-category">住宅･建築･不動産業界</li>
+                    </ul>
+                  </div>
+                  <div class="block-content-detail">
+                    <div class="item-content-detail">
+                      <div class="content-left">
+                        <dl class="text-light-blue">
+                          <dt>職種　　　：</dt>
+                          <dd>オフィスワーク・事務　〉一般事務</dd>
+                        </dl>
+                        <dl>
+                          <dt>お仕事内容：</dt>
+                          <dd>管理しているビルなどの設備工事に関わる事務のお仕事です。</dd>
+                        </dl>
+                        <dl>
+                          <dt>給与　　　：</dt>
+                          <dd>時給1,800円<br>交通費全額支給<br>【月収例】302,400円＝1800円×8H×21日</dd>
+                        </dl>
+                        <dl>
+                          <dt>給与　　　：</dt>
+                          <dd>08時30分～17時30分(休憩60分)<br>※残業なし。あってもは5時間／月程度。</dd>
+                        </dl>
+                      </div>
+                      <div class="content-right">
+                        <dl>
+                          <dt>勤務地　　：</dt>
+                          <dd>墨田区<br>JR山手線 ・京浜東北線「浜松町」駅 北口より徒歩7分<br>ゆりかもめ「竹芝」駅直結</dd>
+                        </dl>
+                        <dl>
+                          <dt>期間　　　：</dt>
+                          <dd>即日～長期<br><span class="text-light-blue">2022年●月●日～就業可能</span></dd>
+                        </dl>
+                        <dl>
+                          <dt>勤務日　　：</dt>
+                          <dd>月～金／週5日勤務</dd>
+                        </dl>
+                      </div>
+                    </div>
+                    <div class="block-button">
+                      <div class="block-button-left"><a class="trans button-detail button-white is-icon js-favorite" href="javascript:;"><span class="md">キープ</span></a></div>
+                      <ul class="block-button-right">
+                        <li><a class="trans button-detail button-white" href="#">詳しく見る</a></li>
+                        <li><a class="trans button-detail button-light-blue" href="#">応募する</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="item-list">
+                  <div class="item-top">
+                    <p class="text-article">お仕事No. 0000020538</p>
+                    <h3 class="title-article">設備工事の書類作成や業者対応などの事務（大手グループビル管理会社）　土日休み残業なし</h3>
+                    <ul class="common-list-category">
+                      <li class="item-category">テーマ名タグ</li>
+                      <li class="item-category">未経験歓迎</li>
+                      <li class="item-category">大手・優良企業</li>
+                      <li class="item-category">ブランク応援</li>
+                      <li class="item-category">住宅･建築･不動産業界</li>
+                    </ul>
+                  </div>
+                  <div class="block-content-detail">
+                    <div class="item-content-detail">
+                      <div class="content-left">
+                        <dl class="text-light-blue">
+                          <dt>職種　　　：</dt>
+                          <dd>オフィスワーク・事務　〉一般事務</dd>
+                        </dl>
+                        <dl>
+                          <dt>お仕事内容：</dt>
+                          <dd>管理しているビルなどの設備工事に関わる事務のお仕事です。</dd>
+                        </dl>
+                        <dl>
+                          <dt>給与　　　：</dt>
+                          <dd>時給1,800円<br>交通費全額支給<br>【月収例】302,400円＝1800円×8H×21日</dd>
+                        </dl>
+                        <dl>
+                          <dt>給与　　　：</dt>
+                          <dd>08時30分～17時30分(休憩60分)<br>※残業なし。あってもは5時間／月程度。</dd>
+                        </dl>
+                      </div>
+                      <div class="content-right">
+                        <dl>
+                          <dt>勤務地　　：</dt>
+                          <dd>墨田区<br>JR山手線 ・京浜東北線「浜松町」駅 北口より徒歩7分<br>ゆりかもめ「竹芝」駅直結</dd>
+                        </dl>
+                        <dl>
+                          <dt>期間　　　：</dt>
+                          <dd>即日～長期<br><span class="text-light-blue">2022年●月●日～就業可能</span></dd>
+                        </dl>
+                        <dl>
+                          <dt>勤務日　　：</dt>
+                          <dd>月～金／週5日勤務</dd>
+                        </dl>
+                      </div>
+                    </div>
+                    <div class="block-button">
+                      <div class="block-button-left"><a class="trans button-detail button-white is-icon js-favorite" href="javascript:;"><span class="md">キープ</span></a></div>
+                      <ul class="block-button-right">
+                        <li><a class="trans button-detail button-white" href="#">詳しく見る</a></li>
+                        <li><a class="trans button-detail button-light-blue" href="#">応募する</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="item-list">
+                  <div class="item-top">
+                    <p class="text-article">お仕事No. 0000020538</p>
+                    <h3 class="title-article">設備工事の書類作成や業者対応などの事務（大手グループビル管理会社）　土日休み残業なし</h3>
+                    <ul class="common-list-category">
+                      <li class="item-category">テーマ名タグ</li>
+                      <li class="item-category">未経験歓迎</li>
+                      <li class="item-category">大手・優良企業</li>
+                      <li class="item-category">ブランク応援</li>
+                      <li class="item-category">住宅･建築･不動産業界</li>
+                    </ul>
+                  </div>
+                  <div class="block-content-detail">
+                    <div class="item-content-detail">
+                      <div class="content-left">
+                        <dl class="text-light-blue">
+                          <dt>職種　　　：</dt>
+                          <dd>オフィスワーク・事務　〉一般事務</dd>
+                        </dl>
+                        <dl>
+                          <dt>お仕事内容：</dt>
+                          <dd>管理しているビルなどの設備工事に関わる事務のお仕事です。</dd>
+                        </dl>
+                        <dl>
+                          <dt>給与　　　：</dt>
+                          <dd>時給1,800円<br>交通費全額支給<br>【月収例】302,400円＝1800円×8H×21日</dd>
+                        </dl>
+                        <dl>
+                          <dt>給与　　　：</dt>
+                          <dd>08時30分～17時30分(休憩60分)<br>※残業なし。あってもは5時間／月程度。</dd>
+                        </dl>
+                      </div>
+                      <div class="content-right">
+                        <dl>
+                          <dt>勤務地　　：</dt>
+                          <dd>墨田区<br>JR山手線 ・京浜東北線「浜松町」駅 北口より徒歩7分<br>ゆりかもめ「竹芝」駅直結</dd>
+                        </dl>
+                        <dl>
+                          <dt>期間　　　：</dt>
+                          <dd>即日～長期<br><span class="text-light-blue">2022年●月●日～就業可能</span></dd>
+                        </dl>
+                        <dl>
+                          <dt>勤務日　　：</dt>
+                          <dd>月～金／週5日勤務</dd>
+                        </dl>
+                      </div>
+                    </div>
+                    <div class="block-button">
+                      <div class="block-button-left"><a class="trans button-detail button-white is-icon js-favorite" href="javascript:;"><span class="md">キープ</span></a></div>
+                      <ul class="block-button-right">
+                        <li><a class="trans button-detail button-white" href="#">詳しく見る</a></li>
+                        <li><a class="trans button-detail button-light-blue" href="#">応募する</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="item-list">
+                  <div class="item-top">
+                    <p class="text-article">お仕事No. 0000020538</p>
+                    <h3 class="title-article">設備工事の書類作成や業者対応などの事務（大手グループビル管理会社）　土日休み残業なし</h3>
+                    <ul class="common-list-category">
+                      <li class="item-category">テーマ名タグ</li>
+                      <li class="item-category">未経験歓迎</li>
+                      <li class="item-category">大手・優良企業</li>
+                      <li class="item-category">ブランク応援</li>
+                      <li class="item-category">住宅･建築･不動産業界</li>
+                    </ul>
+                  </div>
+                  <div class="block-content-detail">
+                    <div class="item-content-detail">
+                      <div class="content-left">
+                        <dl class="text-light-blue">
+                          <dt>職種　　　：</dt>
+                          <dd>オフィスワーク・事務　〉一般事務</dd>
+                        </dl>
+                        <dl>
+                          <dt>お仕事内容：</dt>
+                          <dd>管理しているビルなどの設備工事に関わる事務のお仕事です。</dd>
+                        </dl>
+                        <dl>
+                          <dt>給与　　　：</dt>
+                          <dd>時給1,800円<br>交通費全額支給<br>【月収例】302,400円＝1800円×8H×21日</dd>
+                        </dl>
+                        <dl>
+                          <dt>給与　　　：</dt>
+                          <dd>08時30分～17時30分(休憩60分)<br>※残業なし。あってもは5時間／月程度。</dd>
+                        </dl>
+                      </div>
+                      <div class="content-right">
+                        <dl>
+                          <dt>勤務地　　：</dt>
+                          <dd>墨田区<br>JR山手線 ・京浜東北線「浜松町」駅 北口より徒歩7分<br>ゆりかもめ「竹芝」駅直結</dd>
+                        </dl>
+                        <dl>
+                          <dt>期間　　　：</dt>
+                          <dd>即日～長期<br><span class="text-light-blue">2022年●月●日～就業可能</span></dd>
+                        </dl>
+                        <dl>
+                          <dt>勤務日　　：</dt>
+                          <dd>月～金／週5日勤務</dd>
+                        </dl>
+                      </div>
+                    </div>
+                    <div class="block-button">
+                      <div class="block-button-left"><a class="trans button-detail button-white is-icon js-favorite" href="javascript:;"><span class="md">キープ</span></a></div>
+                      <ul class="block-button-right">
+                        <li><a class="trans button-detail button-white" href="#">詳しく見る</a></li>
+                        <li><a class="trans button-detail button-light-blue" href="#">応募する</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="item-list">
+                  <div class="item-top">
+                    <p class="text-article">お仕事No. 0000020538</p>
+                    <h3 class="title-article">設備工事の書類作成や業者対応などの事務（大手グループビル管理会社）　土日休み残業なし</h3>
+                    <ul class="common-list-category">
+                      <li class="item-category">テーマ名タグ</li>
+                      <li class="item-category">未経験歓迎</li>
+                      <li class="item-category">大手・優良企業</li>
+                      <li class="item-category">ブランク応援</li>
+                      <li class="item-category">住宅･建築･不動産業界</li>
+                    </ul>
+                  </div>
+                  <div class="block-content-detail">
+                    <div class="item-content-detail">
+                      <div class="content-left">
+                        <dl class="text-light-blue">
+                          <dt>職種　　　：</dt>
+                          <dd>オフィスワーク・事務　〉一般事務</dd>
+                        </dl>
+                        <dl>
+                          <dt>お仕事内容：</dt>
+                          <dd>管理しているビルなどの設備工事に関わる事務のお仕事です。</dd>
+                        </dl>
+                        <dl>
+                          <dt>給与　　　：</dt>
+                          <dd>時給1,800円<br>交通費全額支給<br>【月収例】302,400円＝1800円×8H×21日</dd>
+                        </dl>
+                        <dl>
+                          <dt>給与　　　：</dt>
+                          <dd>08時30分～17時30分(休憩60分)<br>※残業なし。あってもは5時間／月程度。</dd>
+                        </dl>
+                      </div>
+                      <div class="content-right">
+                        <dl>
+                          <dt>勤務地　　：</dt>
+                          <dd>墨田区<br>JR山手線 ・京浜東北線「浜松町」駅 北口より徒歩7分<br>ゆりかもめ「竹芝」駅直結</dd>
+                        </dl>
+                        <dl>
+                          <dt>期間　　　：</dt>
+                          <dd>即日～長期<br><span class="text-light-blue">2022年●月●日～就業可能</span></dd>
+                        </dl>
+                        <dl>
+                          <dt>勤務日　　：</dt>
+                          <dd>月～金／週5日勤務</dd>
+                        </dl>
+                      </div>
+                    </div>
+                    <div class="block-button">
+                      <div class="block-button-left"><a class="trans button-detail button-white is-icon js-favorite" href="javascript:;"><span class="md">キープ</span></a></div>
+                      <ul class="block-button-right">
+                        <li><a class="trans button-detail button-white" href="#">詳しく見る</a></li>
+                        <li><a class="trans button-detail button-light-blue" href="#">応募する</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="item-list">
+                  <div class="item-top">
+                    <p class="text-article">お仕事No. 0000020538</p>
+                    <h3 class="title-article">設備工事の書類作成や業者対応などの事務（大手グループビル管理会社）　土日休み残業なし</h3>
+                    <ul class="common-list-category">
+                      <li class="item-category">テーマ名タグ</li>
+                      <li class="item-category">未経験歓迎</li>
+                      <li class="item-category">大手・優良企業</li>
+                      <li class="item-category">ブランク応援</li>
+                      <li class="item-category">住宅･建築･不動産業界</li>
+                    </ul>
+                  </div>
+                  <div class="block-content-detail">
+                    <div class="item-content-detail">
+                      <div class="content-left">
+                        <dl class="text-light-blue">
+                          <dt>職種　　　：</dt>
+                          <dd>オフィスワーク・事務　〉一般事務</dd>
+                        </dl>
+                        <dl>
+                          <dt>お仕事内容：</dt>
+                          <dd>管理しているビルなどの設備工事に関わる事務のお仕事です。</dd>
+                        </dl>
+                        <dl>
+                          <dt>給与　　　：</dt>
+                          <dd>時給1,800円<br>交通費全額支給<br>【月収例】302,400円＝1800円×8H×21日</dd>
+                        </dl>
+                        <dl>
+                          <dt>給与　　　：</dt>
+                          <dd>08時30分～17時30分(休憩60分)<br>※残業なし。あってもは5時間／月程度。</dd>
+                        </dl>
+                      </div>
+                      <div class="content-right">
+                        <dl>
+                          <dt>勤務地　　：</dt>
+                          <dd>墨田区<br>JR山手線 ・京浜東北線「浜松町」駅 北口より徒歩7分<br>ゆりかもめ「竹芝」駅直結</dd>
+                        </dl>
+                        <dl>
+                          <dt>期間　　　：</dt>
+                          <dd>即日～長期<br><span class="text-light-blue">2022年●月●日～就業可能</span></dd>
+                        </dl>
+                        <dl>
+                          <dt>勤務日　　：</dt>
+                          <dd>月～金／週5日勤務</dd>
+                        </dl>
+                      </div>
+                    </div>
+                    <div class="block-button">
+                      <div class="block-button-left"><a class="trans button-detail button-white is-icon js-favorite" href="javascript:;"><span class="md">キープ</span></a></div>
+                      <ul class="block-button-right">
+                        <li><a class="trans button-detail button-white" href="#">詳しく見る</a></li>
+                        <li><a class="trans button-detail button-light-blue" href="#">応募する</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="item-list">
+                  <div class="item-top">
+                    <p class="text-article">お仕事No. 0000020538</p>
+                    <h3 class="title-article">設備工事の書類作成や業者対応などの事務（大手グループビル管理会社）　土日休み残業なし</h3>
+                    <ul class="common-list-category">
+                      <li class="item-category">テーマ名タグ</li>
+                      <li class="item-category">未経験歓迎</li>
+                      <li class="item-category">大手・優良企業</li>
+                      <li class="item-category">ブランク応援</li>
+                      <li class="item-category">住宅･建築･不動産業界</li>
+                    </ul>
+                  </div>
+                  <div class="block-content-detail">
+                    <div class="item-content-detail">
+                      <div class="content-left">
+                        <dl class="text-light-blue">
+                          <dt>職種　　　：</dt>
+                          <dd>オフィスワーク・事務　〉一般事務</dd>
+                        </dl>
+                        <dl>
+                          <dt>お仕事内容：</dt>
+                          <dd>管理しているビルなどの設備工事に関わる事務のお仕事です。</dd>
+                        </dl>
+                        <dl>
+                          <dt>給与　　　：</dt>
+                          <dd>時給1,800円<br>交通費全額支給<br>【月収例】302,400円＝1800円×8H×21日</dd>
+                        </dl>
+                        <dl>
+                          <dt>給与　　　：</dt>
+                          <dd>08時30分～17時30分(休憩60分)<br>※残業なし。あってもは5時間／月程度。</dd>
+                        </dl>
+                      </div>
+                      <div class="content-right">
+                        <dl>
+                          <dt>勤務地　　：</dt>
+                          <dd>墨田区<br>JR山手線 ・京浜東北線「浜松町」駅 北口より徒歩7分<br>ゆりかもめ「竹芝」駅直結</dd>
+                        </dl>
+                        <dl>
+                          <dt>期間　　　：</dt>
+                          <dd>即日～長期<br><span class="text-light-blue">2022年●月●日～就業可能</span></dd>
+                        </dl>
+                        <dl>
+                          <dt>勤務日　　：</dt>
+                          <dd>月～金／週5日勤務</dd>
+                        </dl>
+                      </div>
+                    </div>
+                    <div class="block-button">
+                      <div class="block-button-left"><a class="trans button-detail button-white is-icon js-favorite" href="javascript:;"><span class="md">キープ</span></a></div>
+                      <ul class="block-button-right">
+                        <li><a class="trans button-detail button-white" href="#">詳しく見る</a></li>
+                        <li><a class="trans button-detail button-light-blue" href="#">応募する</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="pagination-bottom md">
+              <div class="block-pagination pagination-orange">
+                <ul class="common-list-pagination font-alata">
+                  <li class="arrow prev"><a href="#">PREV</a></li>
+                  <li><a class="page-numbers" href="#">1</a></li>
+                  <li><a class="page-numbers" href="#">2</a></li>
+                  <li><a class="page-numbers" href="#">3</a></li>
+                  <li><a class="page-numbers" href="#">4</a></li>
+                  <li><a class="page-numbers" href="#">5</a></li>
+                  <li class="arrow next"><a href="#">NEXT</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="pagination-bottom sm">
+              <div class="block-pagination-line">
+                <ul class="common-list-pagination font-alata">
+                  <li class="arrow prev"><a href="#">PREV</a></li>
+                  <li class="arrow next"><a href="#">NEXT</a></li>
+                </ul>
+              </div>
+            </div>
+            <ul class="list-button-change">
+              <li class="item-change"><a class="trans button-light-blue" href="#">条件を変更する</a></li>
+              <li class="item-change"><a class="trans button button-white" href="#">キープしたお仕事に応募する</a></li>
+            </ul>
+            <div class="block-common-contact contact-free">
+              <div class="block-content-top">
+                <h2 class="title-contact"><span>まずはエントリー！<br class="sm">登録は無料です！</span></h2>
+                <div class="block-content">
+                  <p class="common-text">旭化成アミダスが皆様にお仕事をご紹介するために、職務経歴、スキル、プロフィール、ご希望の職種や勤務条件等、詳しくお伺いします。<span class="is-bold">ご登録は無料です。</span><br>詳しい情報をご登録いただくことで、本登録の際のご来社時に手続きが30分ほど短縮されます。</p>
+                  <div class="content-right"><a class="button-contact" href="#">WEB仮登録はこちらから</a>
+                    <p class="text-note-detail">担当者との面談等を行った後、本登録となります。</p>
+                  </div>
+                </div>
+              </div>
+              <div class="block-content-bottom">
+                <div class="content-bottom">
+                  <h3 class="title-bottom">お役立ちコンテンツ</h3>
+                  <p class="text-small">初めて派遣で働く方も、実際に派遣で働いている人にもぴったりなコンテンツを揃えました。</p>
+                </div>
+                <div class="block-list-story">
+                  <ul class="list-story-issue">
+                    <li><a class="button-common-line is-style-direct" href="#"><span class="button-wrapper">派遣求人検索</span><span class="button-icon"></span></a></li>
+                    <li><a class="button-common-line is-style-direct" href="#"><span class="button-wrapper">よくあるご質問</span><span class="button-icon"></span></a></li>
+                    <li><a class="button-common-line is-style-direct" href="#"><span class="button-wrapper">ライフスタイル別特集</span><span class="button-icon"></span></a></li>
+                    <li><a class="button-common-line is-style-direct" href="#"><span class="button-wrapper">初めて派遣で働く方へ</span><span class="button-icon"></span></a></li>
+                    <li><a class="button-common-line is-style-direct" href="#"><span class="button-wrapper">拠点別特集</span><span class="button-icon"></span></a></li>
+                    <li><a class="button-common-line is-style-direct" href="#"><span class="button-wrapper">ご登録済み派遣スタッフの方</span><span class="button-icon"></span></a></li>
+                    <li><a class="button-common-line is-style-direct" href="#"><span class="button-wrapper">業界・職種別特集</span><span class="button-icon"></span></a></li>
+                    <li><a class="button-common-line is-style-direct" href="#"><span class="button-wrapper">労働者派遣法改正関連</span><span class="button-icon"></span></a></li>
+                    <li><a class="button-common-line is-style-direct" href="#"><span class="button-wrapper">スタッフインタビュー</span><span class="button-icon"></span></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <div class="footer-top">
+          <div class="wrapper">
+            <h2 class="title-contact"><span class="title-english font-alata">CONTACT</span><span class="title-japan">お問い合わせ</span></h2><a class="common-button common-button-inquiry" href="#"><span>フォームからお問い合わせする</span></a>
+          </div>
+        </div>
+        <div class="footer-middle md">
+          <div class="inner-wrapper">
+            <div class="footer-detail"><a class="trans footer-logo" href="#"><img src="../img/common/footer_logo.png" width="202" height="167" loading="lazy" alt="旭化成アミダス株式会社"></a>
+              <address class="address">〒101-8480<br>東京都千代田区神田錦町三丁目<br>22番地 テラススクエア</address>
+            </div>
+            <nav class="footer-navigation">
+              <ul class="list-navigation">
+                <li class="item-navigation"><span class="text-navigation">ダミーですお知らせ</span>
+                  <ul class="sub-navigation">
+                    <li class="item-sub"><a class="trans" href="#">ダミーですお知らせ</a></li>
+                    <li class="item-sub"><a class="trans" href="#">企業情報</a></li>
+                    <li class="item-sub"><a class="trans" href="#">企業担当者の方</a></li>
+                    <li class="item-sub"><a class="trans" href="#">派遣・紹介予定派遣をご希望の方</a></li>
+                    <li class="item-sub"><a class="trans" href="#">ご登録済み派遣スタッフの方</a></li>
+                    <li class="item-sub"><a class="trans" href="#">転職をお考えの方</a></li>
+                    <li class="item-sub"><a class="trans" href="#">新卒採用情報</a></li>
+                    <li class="item-sub"><a class="trans" href="#">お問合せ（一覧）</a></li>
+                  </ul>
+                </li>
+                <li class="item-navigation"><span class="text-navigation">ダミーですお知らせ</span>
+                  <ul class="sub-navigation">
+                    <li class="item-sub"><a class="trans" href="#">ダミーですお知らせ</a></li>
+                    <li class="item-sub"><a class="trans" href="#">企業情報</a></li>
+                    <li class="item-sub"><a class="trans" href="#">企業担当者の方</a></li>
+                    <li class="item-sub"><a class="trans" href="#">派遣・紹介予定派遣をご希望の方</a></li>
+                    <li class="item-sub"><a class="trans" href="#">ご登録済み派遣スタッフの方</a></li>
+                    <li class="item-sub"><a class="trans" href="#">転職をお考えの方</a></li>
+                    <li class="item-sub"><a class="trans" href="#">新卒採用情報</a></li>
+                    <li class="item-sub"><a class="trans" href="#">お問合せ（一覧）</a></li>
+                  </ul>
+                </li>
+                <li class="item-navigation"><span class="text-navigation">ダミーですお知らせ</span>
+                  <ul class="sub-navigation">
+                    <li class="item-sub"><a class="trans" href="#">ダミーですお知らせ</a></li>
+                    <li class="item-sub"><a class="trans" href="#">企業情報</a></li>
+                    <li class="item-sub"><a class="trans" href="#">企業担当者の方</a></li>
+                    <li class="item-sub"><a class="trans" href="#">派遣・紹介予定派遣をご希望の方</a></li>
+                    <li class="item-sub"><a class="trans" href="#">ご登録済み派遣スタッフの方</a></li>
+                    <li class="item-sub"><a class="trans" href="#">転職をお考えの方</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <ul class="list-guide md">
+            <li class="item-guide"><a class="trans" href="#">優良派遣事業者行動指針</a></li>
+            <li class="item-guide"><a class="trans" href="#">ご利用条件</a></li>
+            <li class="item-guide"><a class="trans" href="#">個人情報保護方針</a></li>
+            <li class="item-guide"><a class="trans" href="#">お問い合わせ</a></li>
+            <li class="item-guide item-logo"><a class="trans" href="#"><img src="../img/common/footer_logo_02.svg" width="118" height="16" loading="lazy" alt="AsahiKASEI"></a></li>
+          </ul><small class="copyright font-alata">Copyright <span>&copy;</span> Asahi Kasei Amidas Corporation. All rights reserved.</small>
+        </div>
+      </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="../js/scripts.js"></script>
+  </body>
+</html>

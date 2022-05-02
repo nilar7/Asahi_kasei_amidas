@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--[if IE]><meta http-equiv="cleartype" content="on"><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=0" id="viewport">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>仮登録フォーム</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/mypage.css">
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="inner-wrapper">
+          <div class="header-left">
+            <div class="header-logo"><a class="trans logo" href="../"><img src="../img/common/common_logo.png" width="189" height="57" loading="lazy" alt="旭化成アミダス"></a></div>
+            <p class="text-service">総合人材<br class="md">サービスサイト</p>
+          </div>
+          <div class="header-right md">
+            <div class="content-top">
+              <ul class="list-function">
+                <li class="item-list background-blue"><a class="item-link" href="../mypage/">マイページログイン</a></li>
+                <li class="item-list background-blue"><a class="item-link" href="../mypage/register.html">派遣登録はこちら</a></li>
+              </ul>
+              <form class="form-search">
+                <div class="content-form">
+                  <input class="input-text" type="text" name="search" value="">
+                  <div class="item-search background-blue"><a href="javascript:;"></a></div>
+                </div>
+              </form>
+            </div>
+            <div class="content-bottom">
+              <nav class="header-navigation">
+                <ul class="list-navigation">
+                  <li class="item-navigation"><a href="../">ホーム</a></li>
+                  <li class="item-navigation"><a class="active-menu" href="../job/">お仕事をお探しの方</a></li>
+                  <li class="item-navigation"><a href="#">企業のご担当者の方</a></li>
+                  <li class="item-navigation"><a href="../recruit/">採用情報</a></li>
+                  <li class="item-navigation"><a href="../company/">企業情報</a></li>
+                  <li class="item-navigation"><a href="#">アクセス</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <nav class="menu-navigation js-navigation">
+          <div class="navigation-block">
+            <ul class="header-menu">
+              <li class="item-menu">
+                <div class="title-menu js-accordion"><a class="trans js-accordion-heading" href="../">ホーム</a></div>
+                <ul class="sub-menu js-accordion-content md">
+                  <li class="item-sub-menu"><a class="trans" href="#">お知らせ</a></li>
+                  <li class="item-sub-menu"><a class="trans" href="#">お問い合わせ</a></li>
+                </ul>
+                <div class="block-menu md">
+                  <div class="title-menu"><a class="trans" href="#">企業情報</a></div>
+                  <ul class="sub-menu">
+                    <li class="item-sub-menu"><a class="trans" href="#">コーポレートスローガン</a></li>
+                    <li class="item-sub-menu"><a class="trans" href="#">代表あいさつ</a></li>
+                    <li class="item-sub-menu"><a class="trans" href="../company/">会社概要／<br>旭化成グループについて</a></li>
+                    <li class="item-sub-menu"><a class="trans" href="#">沿革</a></li>
+                    <li class="item-sub-menu"><a class="trans" href="#">拠点一覧</a></li>
+                    <li class="item-sub-menu"><a class="trans" href="#">労働者派遣事業に係る<br>各種情報のお知らせ</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="item-menu js-accordion">
+                <div class="title-menu icon-plus-big js-accordion-heading is-pointer"><span class="trans">お仕事をお探しの方</span></div>
+                <div class="content-sub-menu js-accordion-content">
+                  <ul class="sub-menu">
+                    <li class="item-sub-menu"><a class="trans" href="../job/haken/">旭化成アミダスで出来る<br class="md">仕事の探し方</a></li>
+                    <li class="item-sub-menu sm"><a class="trans" href="#">人材派遣サービス</a></li>
+                    <li class="item-sub-menu sm"><a class="trans" href="#">転職支援サービス</a></li>
+                    <li class="item-sub-menu sm"><a class="trans" href="#">製造職のお仕事</a></li>
+                    <li class="item-sub-menu sm"><a class="trans" href="#">受付業務のお仕事</a></li>
+                    <li class="item-sub-menu js-accordion md"><span class="trans icon-plus js-accordion-heading">人材派遣</span>
+                      <div class="content-last-menu js-accordion-content">
+                        <ul class="list-last-menu">
+                          <li class="item-sub-menu"><a class="trans" href="#">派遣求人検索</a></li>
+                          <li class="item-sub-menu"><a class="trans" href="#">WEB仮登録</a></li>
+                          <li class="item-sub-menu"><a class="trans" href="#">マイページ</a></li>
+                          <li class="item-sub-menu"><a class="trans" href="#">ライフスタイル別特集</a></li>
+                          <li class="item-sub-menu"><a class="trans" href="#">拠点別特集</a></li>
+                          <li class="item-sub-menu"><a class="trans" href="#">業界・職種別特集</a></li>
+                          <li class="item-sub-menu"><a class="trans" href="#">スタッフインタビュー</a></li>
+                          <li class="item-sub-menu"><a class="trans" href="#">よくあるご質問</a></li>
+                          <li class="item-sub-menu"><a class="trans" href="#">初めて派遣で働く方へ</a></li>
+                          <li class="item-sub-menu"><a class="trans" href="#">ご登録済み派遣スタッフの方</a></li>
+                          <li class="item-sub-menu"><a class="trans" href="#">労働者派遣法改正関連</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="item-sub-menu md"><span class="trans icon-plus js-accordion-heading">転職支援</span>
+                      <div class="content-last-menu js-accordion-content">
+                        <ul class="list-last-menu">
+                          <li class="item-sub-menu"><a class="trans" href="#">求人検索</a></li>
+                          <li class="item-sub-menu"><a class="trans" href="#">旭化成アミダスの転職支援<br>サ ービスについて</a></li>
+                          <li class="item-sub-menu"><a class="trans" href="#">旭化成グループの会社<br>だからできる転職支援</a></li>
+                          <li class="item-sub-menu"><a class="trans" href="#">旭化成アミダスの<br>得意な領域・職種</a></li>
+                          <li class="item-sub-menu"><a class="trans" href="#">お仕事が決まるまでの流れ</a></li>
+                          <li class="item-sub-menu"><a class="trans" href="#">転職コンサルタント紹介</a></li>
+                          <li class="item-sub-menu"><a class="trans" href="#">コンサルタント×転職者 対談</a></li>
+                          <li class="item-sub-menu"><a class="trans" href="#">よくあるご質問</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="item-sub-menu md"><span class="trans icon-plus js-accordion-heading">製造現場のお仕事</span>
+                      <div class="content-last-menu js-accordion-content">
+                        <ul class="list-last-menu">
+                          <li class="item-sub-menu"><a class="trans" href="#">製造現場のお仕事について</a></li>
+                          <li class="item-sub-menu"><a class="trans" href="#">配属地域紹介<br>（守山、日向、千葉）</a></li>
+                          <li class="item-sub-menu"><a class="trans" href="#">社員インタビュー</a></li>
+                          <li class="item-sub-menu"><a class="trans" href="#">研修制度</a></li>
+                          <li class="item-sub-menu"><a class="trans" href="#">よくあるご質問</a></li>
+                          <li class="item-sub-menu"><a class="trans" href="#">募集中案件</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="item-sub-menu md"><span class="trans icon-plus js-accordion-heading">受付業務のお仕事</span>
+                      <div class="content-last-menu js-accordion-content">
+                        <ul class="list-last-menu">
+                          <li class="item-sub-menu"><a class="trans" href="#">アミダスの受付業務について</a></li>
+                          <li class="item-sub-menu"><a class="trans" href="#">社員インタビュー</a></li>
+                          <li class="item-sub-menu"><a class="trans" href="#">研修制度</a></li>
+                          <li class="item-sub-menu"><a class="trans" href="#">よくあるご質問</a></li>
+                          <li class="item-sub-menu"><a class="trans" href="#">募集業務</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="item-menu js-accordion">
+                <div class="title-menu icon-plus-big js-accordion-heading is-pointer"><span class="trans">企業担当者の方</span></div>
+                <div class="content-sub-menu js-accordion-content">
+                  <ul class="sub-menu md">
+                    <li class="item-sub-menu"><a class="trans" href="#">お知らせ</a></li>
+                    <li class="item-sub-menu"><a class="trans" href="#">旭化成アミダスができること</a></li>
+                    <li class="item-sub-menu"><span class="trans icon-plus js-accordion-heading">旭化成アミダスの人材派遣<br>サービス</span>
+                      <div class="content-last-menu js-accordion-content">
+                        <ul class="list-last-menu">
+                          <li class="item-sub-menu"><a class="trans" href="#">得意とする領域・職種</a></li>
+                          <li class="item-sub-menu"><a class="trans" href="#">導入事例インタビュー</a></li>
+                          <li class="item-sub-menu"><a class="trans" href="#">派遣チーム×顧客座談会</a></li>
+                          <li class="item-sub-menu"><a class="trans" href="#">ブログ・コラム</a></li>
+                          <li class="item-sub-menu"><a class="trans" href="#">資料請求・お問い合わせ</a></li>
+                          <li class="item-sub-menu"><a class="trans" href="#">ホワイトペーパー</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="item-sub-menu"><span class="trans icon-plus js-accordion-heading">旭化成アミダスの<br>ITエンジニア派遣サービス</span>
+                      <div class="content-last-menu js-accordion-content">
+                        <ul class="list-last-menu">
+                          <li class="item-sub-menu"><a class="trans" href="#">得意とする領域・職種</a></li>
+                          <li class="item-sub-menu"><a class="trans" href="#">お問い合わせ</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="item-sub-menu"><span class="trans icon-plus js-accordion-heading">旭化成アミダスの<br>人材紹介サービス</span>
+                      <div class="content-last-menu js-accordion-content">
+                        <ul class="list-last-menu">
+                          <li class="item-sub-menu"><a class="trans" href="#">得意とする領域・職種</a></li>
+                          <li class="item-sub-menu"><a class="trans" href="#">導入事例インタビュー</a></li>
+                          <li class="item-sub-menu"><a class="trans" href="#">記事コンテンツ</a></li>
+                          <li class="item-sub-menu"><a class="trans" href="#">資料請求・お問い合わせ</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="item-sub-menu"><span class="trans icon-plus js-accordion-heading">旭化成アミダスの<br>教育研修サービス</span>
+                      <div class="content-last-menu js-accordion-content">
+                        <ul class="list-last-menu">
+                          <li class="item-sub-menu"><a class="trans" href="#">教育研修一覧・<br>課題別研修検索</a></li>
+                          <li class="item-sub-menu"><a class="trans" href="#">資料請求・お問い合わせ</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="item-sub-menu"><span class="trans icon-plus js-accordion-heading">旭化成アミダスの各種<br>アウトソーシングサービス</span>
+                      <div class="content-last-menu js-accordion-content">
+                        <ul class="list-last-menu">
+                          <li class="item-sub-menu"><a class="trans" href="#">導入事例インタビュー</a></li>
+                          <li class="item-sub-menu"><a class="trans" href="#">資料請求・お問い合わせ</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="item-sub-menu"><span class="trans icon-plus js-accordion-heading">旭化成アミダスのISO事業</span>
+                      <div class="content-last-menu js-accordion-content">
+                        <ul class="list-last-menu">
+                          <li class="item-sub-menu"><a class="trans" href="#">ISO審査／ISO研修</a></li>
+                          <li class="item-sub-menu"><a class="trans" href="#">資料請求・お問い合わせ</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+                  <ul class="sub-menu sm">
+                    <li class="item-sub-menu"><a class="trans" href="#">旭化成アミダスが出来ること</a></li>
+                    <li class="item-sub-menu"><a class="trans" href="#">人材派遣サービス</a></li>
+                    <li class="item-sub-menu"><a class="trans" href="#">ITエンジニア派遣サービス</a></li>
+                    <li class="item-sub-menu"><a class="trans" href="#">人材紹介サービス</a></li>
+                    <li class="item-sub-menu"><a class="trans" href="#">教育研修サービス</a></li>
+                    <li class="item-sub-menu"><a class="trans" href="#">各種アウトソーシングサービス</a></li>
+                    <li class="item-sub-menu"><a class="trans" href="#">ISO事業</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="item-menu js-accordion">
+                <div class="title-menu icon-plus-big js-accordion-heading is-pointer"><span class="trans">採用情報</span></div>
+                <div class="content-sub-menu js-accordion-content">
+                  <ul class="sub-menu md">
+                    <li class="item-sub-menu"><a class="trans" href="#">旭化成アミダスとは</a></li>
+                    <li class="item-sub-menu"><a class="trans" href="#">事業の未来座談会</a></li>
+                    <li class="item-sub-menu"><a class="trans" href="#">教育研修制度</a></li>
+                    <li class="item-sub-menu"><a class="trans" href="#">福利厚生制度</a></li>
+                    <li class="item-sub-menu"><a class="trans" href="#">採用に関するお問い合わせ</a></li>
+                    <li class="item-sub-menu"><span class="trans icon-plus js-accordion-heading">新卒採用（ITエンジニア）</span>
+                      <div class="content-last-menu js-accordion-content">
+                        <ul class="list-last-menu">
+                          <li class="item-sub-menu"><a class="trans" href="#">仕事を知る</a></li>
+                          <li class="item-sub-menu"><a class="trans" href="#">社員紹介</a></li>
+                          <li class="item-sub-menu"><a class="trans" href="#">よくあるご質問</a></li>
+                          <li class="item-sub-menu"><a class="trans" href="#">専門研修制度</a></li>
+                          <li class="item-sub-menu"><a class="trans" href="#">採用情報</a></li>
+                          <li class="item-sub-menu"><a class="trans" href="#">エントリー</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="item-sub-menu"><a class="trans icon-plus" href="#">新卒採用（総合職）</a></li>
+                    <li class="item-sub-menu"><a class="trans" href="#">中途採用（外部）</a></li>
+                  </ul>
+                  <ul class="sub-menu sm">
+                    <li class="item-sub-menu"><a class="trans" href="#">旭化成アミダスとは</a></li>
+                    <li class="item-sub-menu"><a class="trans" href="#">教育研修制度</a></li>
+                    <li class="item-sub-menu"><a class="trans" href="#">福利厚生制度</a></li>
+                    <li class="item-sub-menu"><a class="trans" href="#">新卒採用（ITエンジニア）</a></li>
+                    <li class="item-sub-menu"><a class="trans" href="#">新卒採用（総合職）</a></li>
+                    <li class="item-sub-menu"><a class="trans" href="#">採用に関するお問い合わせ</a></li>
+                    <li class="item-sub-menu"><a class="trans" href="#">中途採用</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="item-menu sm js-accordion">
+                <div class="title-menu icon-plus-big js-accordion-heading"><span class="trans">企業情報</span></div>
+                <div class="content-sub-menu js-accordion-content">
+                  <ul class="sub-menu">
+                    <li class="item-sub-menu"><a class="trans" href="#">コーポレートスローガン</a></li>
+                    <li class="item-sub-menu"><a class="trans" href="#">代表あいさつ</a></li>
+                    <li class="item-sub-menu sm"><a class="trans" href="#">事業紹介</a></li>
+                    <li class="item-sub-menu md"><a class="trans" href="#">会社概要／<br>旭化成グループについて</a></li>
+                    <li class="item-sub-menu sm"><a class="trans" href="#">会社概要・旭化成グループについて</a></li>
+                    <li class="item-sub-menu"><a class="trans" href="#">沿革</a></li>
+                    <li class="item-sub-menu"><a class="trans" href="#">拠点一覧</a></li>
+                    <li class="item-sub-menu"><a class="trans" href="#">労働者派遣事業に係る<br>各種情報のお知らせ</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="item-menu sm">
+                <div class="title-menu"><a class="trans" href="#">アクセス</a></div>
+              </li>
+            </ul>
+            <ul class="list-notice sm">
+              <li class="item-notice"><a class="trans" href="#">おしらせ</a></li>
+              <li class="item-notice"><a class="trans" href="#">お問い合わせ</a></li>
+            </ul>
+            <form class="form-search sm">
+              <input class="input-search" type="search" name="search" placeholder="検索する">
+              <button class="icon-search" type="submit"></button>
+            </form>
+          </div>
+        </nav>
+        <div class="button-menu trans js-button-menu"><span></span><span></span><span></span></div>
+      </header>
+      <main>
+        <nav class="breadcrumb">
+          <ol class="breadcrumb-list">
+            <li><a href="../">ホーム</a></li>
+            <li><a class="trans" href="#">人材派遣トップ</a></li>
+            <li><span>仮登録フォーム　</span></li>
+          </ol>
+        </nav>
+        <section class="section-mypage-register">
+          <div class="wrapper">
+            <h1 class="common-title"><span>WEB仮登録</span></h1>
+            <div class="block-registration">
+              <h2 class="title-registration"><span>WEB仮登録についての事前ご案内</span></h2>
+              <ul class="list-registration">
+                <li class="item-registration">
+                  <h3 class="item-title">登録情報について</h3>
+                  <p class="item-text">WEB仮登録後、1ヶ月以内にご来社のお約束が出来なかった場合は、当社個人情報保護規程に基づき、ご登録いただいた情報を廃棄致します。</p>
+                </li>
+                <li class="item-registration">
+                  <h3 class="item-title">登録時のお願い</h3>
+                  <p class="item-text">「戻る」ボタンを押すとエラーとなり、入力内容がリセットされますので、「戻る」ボタンは押さないでください。</p>
+                </li>
+              </ul>
+            </div>
+            <div class="block-infections">
+              <h2 class="title-infections">新型コロナウイルス感染症拡大防止対策について</h2>
+              <p class="text-infections">旭化成アミダスでは、従業員のマスク着用を義務付けております。<br>登録面談時にはお互いマスク着用の上、面談を実施させていただきますのでご了承ください。</p>
+              <div class="block-detail">
+                <p class="text-left">お願い</p>
+                <div class="block-right">
+                  <p class="text-right">来社面談時には事前にご自宅で体温測定を実施いただき、37.5度以上の場合は当日の面談を控えさせていただきます。また直近2週間以内の渡航歴がございましたら事前に御相談ください。</p>
+                  <p class="text-note">＊旭化成アミダスではWeb面談の実施を推奨しております。</p>
+                </div>
+              </div>
+            </div>
+            <form class="common-form-register">
+              <div class="row-form is-flex">
+                <div class="content-row">
+                  <div class="row-title"><span class="text-required">必須</span><span class="is-required">姓（漢字）</span></div>
+                  <div class="row-fill">
+                    <div class="wrap-input short-input">
+                      <input class="input-text" type="text" name="firstName" value="" required>
+                    </div>
+                  </div>
+                </div>
+                <div class="content-row">
+                  <div class="row-title"><span class="text-required">必須</span><span class="is-required">名（漢字）</span></div>
+                  <div class="row-fill">
+                    <div class="wrap-input short-input">
+                      <input class="input-text" type="text" name="lastName" value="" required>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row-form is-flex">
+                <div class="content-row">
+                  <div class="row-title"><span class="text-required">必須</span><span class="is-required">姓（フリガナ）</span></div>
+                  <div class="row-fill">
+                    <div class="wrap-input short-input">
+                      <input class="input-text" type="text" name="firstName" value="" required>
+                    </div>
+                  </div>
+                </div>
+                <div class="content-row">
+                  <div class="row-title"><span class="text-required">必須</span><span class="is-required">名（フリガナ）</span></div>
+                  <div class="row-fill">
+                    <div class="wrap-input short-input">
+                      <input class="input-text" type="text" name="lastName" value="" required>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row-form">
+                <div class="content-row">
+                  <div class="row-title"><span class="text-required">必須</span><span class="is-required">生年月日</span></div>
+                  <div class="form-birthday">
+                    <div class="row-fill select-half-width">
+                      <select class="select-box" required="">
+                        <option value="" selected="" disabled="" hidden="">西暦</option>
+                        <option value="西暦">1999</option>
+                        <option value="西暦">1998</option>
+                        <option value="西暦">1997</option>
+                        <option value="西暦">1996</option>
+                        <option value="西暦">1995</option>
+                        <option value="西暦">1994</option>
+                        <option value="西暦">1993</option>
+                        <option value="西暦">1992</option>
+                        <option value="西暦">1991</option>
+                        <option value="西暦">1990</option>
+                        <option value="西暦">1989</option>
+                        <option value="西暦">1988</option>
+                        <option value="西暦">1987</option>
+                        <option value="西暦">1986</option>
+                        <option value="西暦">1985</option>
+                        <option value="西暦">1984</option>
+                        <option value="西暦">1983</option>
+                        <option value="西暦">1982</option>
+                        <option value="西暦">1981</option>
+                        <option value="西暦">1980</option>
+                        <option value="西暦">1979</option>
+                        <option value="西暦">1978</option>
+                        <option value="西暦">1977</option>
+                      </select>
+                    </div>
+                    <div class="row-fill select-short-width">
+                      <select class="select-box" required="">
+                        <option value="" selected="" disabled="" hidden="">月</option>
+                        <option value="01">01</option>
+                        <option value="02">02</option>
+                        <option value="03">03</option>
+                        <option value="04">04</option>
+                        <option value="05">05</option>
+                        <option value="06">06</option>
+                        <option value="07">07</option>
+                        <option value="08">08</option>
+                        <option value="09">09</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                      </select>
+                    </div>
+                    <div class="row-fill select-short-width">
+                      <select class="select-box" required="">
+                        <option value="" selected="" disabled="" hidden="">日</option>
+                        <option value="01">01</option>
+                        <option value="02">02</option>
+                        <option value="03">03</option>
+                        <option value="04">04</option>
+                        <option value="05">05</option>
+                        <option value="06">06</option>
+                        <option value="07">07</option>
+                        <option value="08">08</option>
+                        <option value="09">09</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row-form">
+                <div class="content-row">
+                  <div class="row-title"><span class="text-required">必須</span><span class="is-required">性別</span></div>
+                  <div class="row-fill select-half-width">
+                    <select class="select-box" required="">
+                      <option value="" selected="" disabled="" hidden="">選択してください</option>
+                      <option value="選択してください">選択してください</option>
+                      <option value="選択してください">選択してください</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="row-form">
+                <div class="content-row">
+                  <div class="row-title"><span class="text-required">必須</span><span class="is-required">電話番号（半角数字）</span></div>
+                  <div class="form-phone">
+                    <div class="row-fill select-half-width">
+                      <select class="select-box" required="">
+                        <option value="" selected="" disabled="" hidden="">選択してください</option>
+                        <option value="選択してください">選択してください</option>
+                        <option value="選択してください">選択してください</option>
+                      </select>
+                    </div>
+                    <div class="row-fill long-input">
+                      <div class="wrap-input">
+                        <input class="input-text js-input-number" type="tel" name="phone" value="" placeholder="例）09012345678">
+                      </div>
+                    </div>
+                  </div>
+                </div><span class="text-note">※日中ご連絡の取りやすい番号を入力してください。 <br class="sm">※ハイフンは不要</span>
+              </div>
+              <div class="row-form">
+                <div class="content-row">
+                  <div class="row-title"><span class="text-required">必須</span><span class="is-required">メールアドレス（半角数字）</span></div>
+                </div>
+                <div class="form-email">
+                  <div class="row-fill select-half-width">
+                    <select class="select-box" required="">
+                      <option value="" selected="" disabled="" hidden="">携帯メールアドレス</option>
+                      <option value="携帯メールアドレス">携帯メールアドレス</option>
+                      <option value="携帯メールアドレス">携帯メールアドレス</option>
+                    </select>
+                  </div>
+                  <div class="row-fill long-input">
+                    <div class="wrap-input">
+                      <input class="input-text" type="email" name="email" value="" placeholder="例）haken@om.asahi-kasei.co.jp" required>
+                    </div>
+                  </div>
+                </div><span class="text-note is-spacing">【メールアドレス入力のご注意・ご案内】<br>迷惑メールの対策としてPCからのメール着信拒否・ドメイン指定受信などを指定されている場合は「@om.asahi-kasei.co.jp」からのメールが受信できるよう、事前に設定をお願い致します。<br>また、全角文字・半角カナ・特殊記号文字(例：&amp; .. # $ ? % 等)が使用されたアドレスへは返信できませんので注意ください。</span>
+              </div>
+              <div class="row-form">
+                <div class="content-row full-input">
+                  <div class="row-title"><span class="text-required">必須</span><span class="is-required">メールアドレス（確認用）</span></div>
+                  <div class="row-fill">
+                    <div class="wrap-input">
+                      <input class="input-text" type="email" name="email" value="" placeholder="例）haken@om.asahi-kasei.co.jp" required>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row-form">
+                <div class="content-row">
+                  <div class="row-title"><span class="text-required">必須</span><span class="is-required">登録希望拠点</span></div>
+                  <div class="row-fill select-full-width">
+                    <select class="select-box" required="">
+                      <option value="" selected="" disabled="" hidden="">選択してください</option>
+                      <option value="選択してください">選択してください</option>
+                      <option value="選択してください">選択してください</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="row-form">
+                <div class="content-row">
+                  <div class="row-title"><span class="text-required">必須</span><span class="is-required">希望職種</span></div>
+                  <div class="row-fill select-full-width">
+                    <select class="select-box" required="">
+                      <option value="" selected="" disabled="" hidden="">支店を選択してください</option>
+                      <option value="支店を選択してください">支店を選択してください</option>
+                      <option value="支店を選択してください">支店を選択してください</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="row-form">
+                <div class="content-row">
+                  <div class="row-title"><span class="text-required">必須</span><span class="is-required">当社をお知りになったきっかけ</span></div>
+                  <div class="row-fill select-full-width">
+                    <select class="select-box" required="">
+                      <option value="" selected="" disabled="" hidden="">きっかけを選択してください</option>
+                      <option value="きっかけを選択してください">きっかけを選択してください</option>
+                      <option value="きっかけを選択してください">きっかけを選択してください</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="row-form block-information">
+                <div class="row-title"><span class="title-information">個人情報の取り扱いについて</span>
+                  <p class="text-note text-information">当社は、JIS Q 15001:2017のA.3.4.2.5（A.3.4.2.4のうち本人から直接書面によって取得する場合の措置）に従い、個人情報を収集・保管いたします。この入力フォームで取得する個人情報の取扱いは下記3項の利用目的のためであり、この目的の範囲を超えて利用することはございません。</p>
+                </div>
+                <div class="form-agreement">
+                  <div class="privacy-wrapper js-scrollbar">
+                    <ol class="list-privacy">
+                      <li class="item-privacy">１．組織の名称<br><span>旭化成アミダス株式会社</span></li>
+                      <li class="item-privacy">２．個人情報に関する管理者、所属及び連絡先<br><span>管理者：個人情報保護管理者<br>役職名：旭化成アミダス株式会社　取締役 企画管理部長<br>連絡先：メールアドレス：amidas-kojinjyohosoudan@om.asahi-kasei.co.jp</span></li>
+                      <li class="item-privacy">３．個人情報の利用目的<br><span>当社サービスへのお申し込みやお問い合せに伴い入手した個人情報は、お申し込みやお問い合せ等に回答するために利用いたします。</span></li>
+                      <li class="item-privacy">４．個人情報の第三者提供<br><span>当社は、ご本人の同意なく、ご提供いただいた個人情報を第三者に開示・提供することはいたしません。</span></li>
+                      <li class="item-privacy">５．個人情報取扱いの委託<br><span>当社は、事業運営上、より良いサービスを提供するために業務の一部を外部に委託しています。業務委託先に対しては、個人情報を預けることがあります。この場合、個人情報を適切に取り扱っていると認められる委託先を選定し、契約等において個人情報の適正管理・機密保持などによりお客様の個人情報の漏洩防止に必要な事項を取決め、適切な管理を実施させます。<br>※委託の事例：教育事業で提供するサービス（研修）で、外部講師に委託する場合など。</span></li>
+                      <li class="item-privacy">６．個人情報に対する保護対策<br><span>個人情報は、漏洩・紛失・改ざん・不当開示・不正使用または不正アクセス等のないよう、厳重に管理いたします。但し、法律の定めにより、国･地方自治体･裁判所･警察その他、法律や条例などで認められた権限を持つ機関より開示請求があった場合は、許可なく開示する場合があります。</span></li>
+                      <li class="item-privacy">７．個人情報の開示等の請求<br><span>当社に対し、ご自身の個人情報の開示等（利用目的の通知、開示、内容の訂正・追加・削除、利用の停止または消去、第三者への提供の停止）に関して、当社「個人情報に関するお問い合わせ窓口」に申し出ることができます。その際、当社はご本人を確認させていただいたうえで、合理的な期間内に対応いたします。開示等の申し出の詳細につきましては、下記の「個人情報に関するお問い合わせ窓口」までお問い合わせください。<br>開示に際しては、開示請求に係る手数料1,000円（消費税等込）を徴収致します。なお、開示内容につきましては、ご本人より入手した情報に限らせていただきます。<br>＜個人情報に関するお問い合わせ窓口＞<br>〒101-8480　東京都千代田区神田錦町3丁目22番地 テラススクエア5階<br>旭化成アミダス株式会社　苦情・相談窓口責任者（企画管理部内）<br>メールアドレス：amidas-kojinjyohosoudan@om.asahi-kasei.co.jp</span></li>
+                      <li class="item-privacy">８．個人情報を提供されることの任意性について<br><span>ご本人が当社に個人情報を提供されるかどうかは、ご本人の任意によるものです。ただし、必要な項目をいただけない場合、各サービス等が適切な状態で提供できない場合があります。</span></li>
+                      <li class="item-privacy">９．本Webサイトへアクセスしたことを契機として機械的に取得される情報<br><span>当社は、閲覧されたWebサイトのセキュリティ確保・ユーザーサービス向上のため、Cookieにより閲覧された方の情報を取得することがあります。</span></li>
+                    </ol>
+                  </div>
+                </div>
+                <div class="wrapper-check">
+                  <label>
+                    <input type="checkbox" name="同意する" checked><span class="checkbox-field-text">同意する</span>
+                  </label>
+                </div>
+                <div class="wrapper-link">
+                  <button class="middle-button font-alata" type="submit" value="View All" name="confirmation">送信内容を確認</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <div class="footer-top">
+          <div class="wrapper">
+            <h2 class="title-contact"><span class="title-english font-alata">CONTACT</span><span class="title-japan">お問い合わせ</span></h2><a class="common-button common-button-inquiry" href="#"><span>フォームからお問い合わせする</span></a>
+          </div>
+        </div>
+        <div class="footer-middle md">
+          <div class="inner-wrapper">
+            <div class="footer-detail"><a class="trans footer-logo" href="#"><img src="../img/common/footer_logo.png" width="202" height="167" loading="lazy" alt="旭化成アミダス株式会社"></a>
+              <address class="address">〒101-8480<br>東京都千代田区神田錦町三丁目<br>22番地 テラススクエア</address>
+            </div>
+            <nav class="footer-navigation">
+              <ul class="list-navigation">
+                <li class="item-navigation"><span class="text-navigation">ダミーですお知らせ</span>
+                  <ul class="sub-navigation">
+                    <li class="item-sub"><a class="trans" href="#">ダミーですお知らせ</a></li>
+                    <li class="item-sub"><a class="trans" href="#">企業情報</a></li>
+                    <li class="item-sub"><a class="trans" href="#">企業担当者の方</a></li>
+                    <li class="item-sub"><a class="trans" href="#">派遣・紹介予定派遣をご希望の方</a></li>
+                    <li class="item-sub"><a class="trans" href="#">ご登録済み派遣スタッフの方</a></li>
+                    <li class="item-sub"><a class="trans" href="#">転職をお考えの方</a></li>
+                    <li class="item-sub"><a class="trans" href="#">新卒採用情報</a></li>
+                    <li class="item-sub"><a class="trans" href="#">お問合せ（一覧）</a></li>
+                  </ul>
+                </li>
+                <li class="item-navigation"><span class="text-navigation">ダミーですお知らせ</span>
+                  <ul class="sub-navigation">
+                    <li class="item-sub"><a class="trans" href="#">ダミーですお知らせ</a></li>
+                    <li class="item-sub"><a class="trans" href="#">企業情報</a></li>
+                    <li class="item-sub"><a class="trans" href="#">企業担当者の方</a></li>
+                    <li class="item-sub"><a class="trans" href="#">派遣・紹介予定派遣をご希望の方</a></li>
+                    <li class="item-sub"><a class="trans" href="#">ご登録済み派遣スタッフの方</a></li>
+                    <li class="item-sub"><a class="trans" href="#">転職をお考えの方</a></li>
+                    <li class="item-sub"><a class="trans" href="#">新卒採用情報</a></li>
+                    <li class="item-sub"><a class="trans" href="#">お問合せ（一覧）</a></li>
+                  </ul>
+                </li>
+                <li class="item-navigation"><span class="text-navigation">ダミーですお知らせ</span>
+                  <ul class="sub-navigation">
+                    <li class="item-sub"><a class="trans" href="#">ダミーですお知らせ</a></li>
+                    <li class="item-sub"><a class="trans" href="#">企業情報</a></li>
+                    <li class="item-sub"><a class="trans" href="#">企業担当者の方</a></li>
+                    <li class="item-sub"><a class="trans" href="#">派遣・紹介予定派遣をご希望の方</a></li>
+                    <li class="item-sub"><a class="trans" href="#">ご登録済み派遣スタッフの方</a></li>
+                    <li class="item-sub"><a class="trans" href="#">転職をお考えの方</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <ul class="list-guide md">
+            <li class="item-guide"><a class="trans" href="#">優良派遣事業者行動指針</a></li>
+            <li class="item-guide"><a class="trans" href="#">ご利用条件</a></li>
+            <li class="item-guide"><a class="trans" href="#">個人情報保護方針</a></li>
+            <li class="item-guide"><a class="trans" href="#">お問い合わせ</a></li>
+            <li class="item-guide item-logo"><a class="trans" href="#"><img src="../img/common/footer_logo_02.svg" width="118" height="16" loading="lazy" alt="AsahiKASEI"></a></li>
+          </ul><small class="copyright font-alata">Copyright <span>&copy;</span> Asahi Kasei Amidas Corporation. All rights reserved.</small>
+        </div>
+      </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="../js/scripts.js"></script>
+  </body>
+</html>
