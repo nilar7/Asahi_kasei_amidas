@@ -1,57 +1,62 @@
 .list-image-special {
   list-style-type: none;
   padding-left: 0;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
+
 .list-image-special .special-link {
   display: block;
   text-decoration: none;
   font-weight: 700;
 }
+
 .list-image-special .special-link:hover .special-block:before {
   border-color: #005baa;
 }
+
 .list-image-special .special-title {
   margin-bottom: 0;
 }
+
 .list-image-special .common-text {
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
-  -webkit-box-orient: vertical;
   color: #000;
 }
+
 .list-image-special .special-block {
   position: relative;
   overflow: hidden;
 }
+
 .list-image-special .special-block:before {
   content: "";
   position: absolute;
   border: 1px solid rgba(0, 91, 170, 0.3);
-  transition: border-color 0.3s;
+  transition: border-color .3s;
   border-radius: 50%;
   background: url(../img/company/company_icon_arrow_01.svg) no-repeat center/7px 9px;
 }
+
 .list-image-special .special-image {
-  -webkit-mask-size: 100%;
   mask-size: 100%;
-  -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
 }
+
 .list-image-special .special-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
+
 .list-image-special.is-special-custom .special-image {
   position: relative;
 }
+
 .list-image-special.is-special-custom .special-image:before {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   bottom: 0;
@@ -59,9 +64,10 @@
   top: 0;
   background: rgba(0, 159, 231, 0.2);
   z-index: 2;
-  transition: 0.26s ease;
+  transition: .26s ease;
   opacity: 0;
 }
+
 .list-image-special.is-special-custom .special-link:hover .special-image:before {
   opacity: 1;
 }
@@ -80,7 +86,7 @@
     bottom: 11px;
     left: 26px;
     padding-right: 56px;
-    font-size: 0.16rem;
+    font-size: .16rem;
     line-height: calc(28 / 16);
   }
   .list-image-special .common-text {
@@ -97,7 +103,6 @@
     height: 25px;
   }
   .list-image-special .special-image {
-    -webkit-mask-image: url(../img/company/mask_img.png);
     mask-image: url(../img/company/mask_img.png);
     width: 320px;
     height: 188px;
@@ -106,88 +111,88 @@
     position: relative;
   }
   .list-image-special.is-special-custom .special-image:after {
-    content: "";
+    content: '';
     position: absolute;
     left: 0;
     bottom: 0;
     right: 0;
     z-index: 1;
     height: 95px;
-    background: linear-gradient(0deg, #545454 0%, transparent 100%);
-    opacity: 0.6;
+    background: linear-gradient(0deg, #545454 0%, rgba(0, 0, 0, 0) 100%);
+    opacity: .6;
   }
 }
+
 @media print, (min-width: 768.98px) and (max-width: 1080px) {
   .list-image-special {
     max-width: 684px;
     margin: 0 auto;
   }
 }
+
 @media only screen and (max-width: 768.98px) {
   .list-image-special {
-    -ms-flex-pack: justify;
-        justify-content: space-between;
+    justify-content: space-between;
   }
   .list-image-special .special-detail {
     width: calc(50% - .16rem);
-    margin-bottom: 0.64rem;
+    margin-bottom: .64rem;
   }
   .list-image-special .special-title {
     color: #005baa;
-    font-size: 0.26rem;
+    font-size: .26rem;
   }
   .list-image-special .common-text {
     -webkit-line-clamp: 3;
     line-height: calc(44 / 24);
   }
   .list-image-special .special-block:before {
-    background-size: 0.16rem 0.11rem;
-    -ms-transform: rotate(90deg);
-        transform: rotate(90deg);
-    width: 0.48rem;
-    height: 0.48rem;
-    right: 0.04rem;
+    background-size: .16rem .11rem;
+    transform: rotate(90deg);
+    width: .48rem;
+    height: .48rem;
+    right: .04rem;
     top: 2.36rem;
     background-image: url(../img/company/sp/company_icon_arrow_01.svg);
-    border-width: 0.02rem;
+    border-width: .02rem;
   }
   .list-image-special .special-image {
-    -webkit-mask-image: url(../img/company/sp/mask_img.png);
     mask-image: url(../img/company/sp/mask_img.png);
   }
   .list-image-special .special-block,
   .list-image-special .special-image {
-    margin-bottom: 0.24rem;
+    margin-bottom: .24rem;
   }
 }
+
 .list-menu-bottom {
   list-style-type: none;
   padding-left: 0;
   width: 100%;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: center;
-      justify-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
 }
+
 .list-menu-bottom .item-company {
   position: relative;
   text-align: center;
 }
+
 .list-menu-bottom .item-company:not(:last-child):after {
   position: absolute;
   content: "";
   top: 50%;
-  -ms-transform: translateY(-50%);
-      transform: translateY(-50%);
+  transform: translateY(-50%);
   right: 0;
   width: 1px;
   background-color: #000;
 }
+
 .list-menu-bottom .item-company a {
   color: #009fe7;
 }
+
 .list-menu-bottom .item-company.active-menu a {
   color: #000;
   text-decoration: none;
@@ -202,67 +207,77 @@
     padding: 0 16px;
   }
 }
+
 @media only screen and (max-width: 768.98px) {
   .list-menu-bottom {
     margin-bottom: 0;
   }
   .list-menu-bottom .item-company {
-    margin-bottom: 0.32rem;
+    margin-bottom: .32rem;
   }
   .list-menu-bottom .item-company:not(:last-child):after {
-    height: 0.2rem;
+    height: .2rem;
   }
   .list-menu-bottom .item-company a {
-    font-size: 0.22rem;
-    padding: 0 0.32rem;
+    font-size: .22rem;
+    padding: 0 .32rem;
   }
 }
+
 .section-company-map .title-company-tokyo {
   text-align: center;
   border-bottom: solid 1px #005baa;
 }
+
 .section-company-map .title-company-tokyo,
 .section-company-map .sub-title {
   color: #005baa;
 }
+
 .section-company-map .block-content a {
   color: #000;
 }
+
 .section-company-map .block-location .block-map {
   width: 100%;
 }
+
 .section-company-map .block-location .map-api {
   height: 100%;
 }
+
 .section-company-map .block-content {
   font-weight: 700;
 }
+
 .section-company-map .block-detail {
   width: 100%;
 }
+
 .section-company-map .block-detail .phone {
   display: inline-block;
 }
+
 .section-company-map .block-detail .button-location {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-align: center;
-      align-items: center;
-  -ms-flex-pack: center;
-      justify-content: center;
+  align-items: center;
+  justify-content: center;
   margin-left: auto;
   background-color: #f7bc00;
   color: #fff;
 }
+
 .section-company-map .list-business,
 .section-company-map .list-guide {
   list-style-type: none;
   padding-left: 0;
   width: 100%;
 }
+
 .section-company-map .item-guide {
   position: relative;
 }
+
 .section-company-map .item-guide:before {
   position: absolute;
   content: "";
@@ -270,9 +285,11 @@
   border-radius: 50%;
   background-color: #000;
 }
+
 .section-company-map .item-business {
   border-bottom: solid 1px #009fe7;
 }
+
 .section-company-map .name-company,
 .section-company-map .text-service,
 .section-company-map .content-contact p {
@@ -290,12 +307,11 @@
     pointer-events: none;
   }
   .section-company-map .title-company-tokyo {
-    font-size: 0.24rem;
+    font-size: .24rem;
     margin-bottom: 40px;
     padding-bottom: 24px;
   }
   .section-company-map .block-content {
-    display: -ms-flexbox;
     display: flex;
     margin-bottom: 24px;
     padding: 0 88px;
@@ -307,11 +323,10 @@
     margin-bottom: 80px;
   }
   .section-company-map .sub-title {
-    -ms-flex-negative: 0;
-        flex-shrink: 0;
+    flex-shrink: 0;
     width: 152px;
     margin-right: 24px;
-    font-size: 0.18rem;
+    font-size: .18rem;
   }
   .section-company-map .block-detail .address,
   .section-company-map .block-detail .phone,
@@ -332,7 +347,6 @@
     padding-bottom: 1px;
   }
   .section-company-map .item-business {
-    display: -ms-flexbox;
     display: flex;
     padding: 32px 0;
   }
@@ -347,15 +361,13 @@
     margin-right: 80px;
   }
   .section-company-map .text-service {
-    font-size: 0.16rem;
+    font-size: .16rem;
   }
   .section-company-map .content-contact {
-    display: -ms-flexbox;
     display: flex;
   }
   .section-company-map .content-contact {
-    -ms-flex-negative: 0;
-        flex-shrink: 0;
+    flex-shrink: 0;
   }
   .section-company-map .content-contact a:first-child {
     margin-right: 16px;
@@ -372,11 +384,11 @@
     width: 3px;
     height: 3px;
   }
-
   .is-mac.is-safari .section-company-map .button-location {
     padding-top: 1px;
   }
 }
+
 @media print, (min-width: 768.98px) and (max-width: 1000px) {
   .section-company-map .item-business {
     display: block;
@@ -385,81 +397,82 @@
     margin-bottom: 16px;
   }
 }
+
 @media only screen and (max-width: 768.98px) {
   .section-company-map {
-    padding-bottom: 0.16rem;
+    padding-bottom: .16rem;
   }
   .section-company-map .wrapper {
-    padding-left: 0.32rem;
-    padding-right: 0.32rem;
+    padding-left: .32rem;
+    padding-right: .32rem;
   }
   .section-company-map .title-company-tokyo {
-    font-size: 0.34rem;
-    margin-bottom: 0.56rem;
-    padding-bottom: 0.16rem;
+    font-size: .34rem;
+    margin-bottom: .56rem;
+    padding-bottom: .16rem;
   }
   .section-company-map .sub-title {
-    font-size: 0.28rem;
-    margin-bottom: 0.16rem;
+    font-size: .28rem;
+    margin-bottom: .16rem;
   }
   .section-company-map .address {
     line-height: calc(50 / 24);
   }
   .section-company-map .block-location {
     height: 3.04rem;
-    margin: 0 -0.32rem;
+    margin: 0 -.32rem;
   }
   .section-company-map .block-map,
   .section-company-map .address {
-    margin-bottom: 0.16rem;
+    margin-bottom: .16rem;
   }
   .section-company-map .block-map {
     height: 3.04rem;
   }
   .section-company-map .button-location {
-    font-size: 0.2rem;
+    font-size: .2rem;
     width: 1.6rem;
-    height: 0.48rem;
-    border-radius: 0.48rem;
+    height: .48rem;
+    border-radius: .48rem;
   }
   .section-company-map .block-content {
-    margin-bottom: 0.8rem;
+    margin-bottom: .8rem;
   }
   .section-company-map .block-content.block-bottom {
     margin-bottom: 1.44rem;
   }
   .section-company-map .text-service {
-    font-size: 0.26rem;
+    font-size: .26rem;
   }
   .section-company-map .item-business {
-    border-width: 0.02rem;
+    border-width: .02rem;
   }
   .section-company-map .block-detail {
-    padding: 0 0.32rem;
+    padding: 0 .32rem;
   }
   .section-company-map .block-detail .phone {
-    margin-bottom: 0.32rem;
+    margin-bottom: .32rem;
   }
   .section-company-map .list-bussiness {
-    padding: 0 0.32rem;
+    padding: 0 .32rem;
   }
   .section-company-map .item-business {
-    margin-left: 0.96rem;
-    padding: 0.24rem 0;
+    margin-left: .96rem;
+    padding: .24rem 0;
   }
   .section-company-map .item-business:first-child {
     padding-top: 0;
-    padding-bottom: 0.32rem;
+    padding-bottom: .32rem;
   }
   .section-company-map .item-service {
-    text-indent: -0.64rem;
-    padding: 0.64rem 0 0.32rem;
+    text-indent: -.64rem;
+    padding: .64rem 0 .32rem;
   }
   .section-company-map .name-company {
-    margin-bottom: 0.16rem;
+    margin-bottom: .16rem;
   }
   .section-company-map .content-contact a:first-child {
-    margin-right: 0.16rem;
+    margin-right: .16rem;
   }
   .section-company-map .content-contact p {
     display: inline;
@@ -468,93 +481,104 @@
     line-height: calc(50 / 24);
   }
   .section-company-map .item-guide {
-    text-indent: 0.3rem;
-    padding-left: 0.16rem;
+    text-indent: .3rem;
+    padding-left: .16rem;
   }
   .section-company-map .item-guide:before {
-    top: 0.23rem;
-    left: 0.36rem;
-    width: 0.05rem;
-    height: 0.05rem;
+    top: .23rem;
+    left: .36rem;
+    width: .05rem;
+    height: .05rem;
   }
   .section-company-map .list-business {
     opacity: 0;
-    transition: opacity 0.26s;
+    transition: opacity .26s;
   }
   .wf-active .section-company-map .list-business {
     opacity: 1;
   }
 }
+
 @media print, (min-width: 769px) {
   .keyvisual-company-top {
     background-image: url(../img/company/company_bg.jpg);
   }
-
   .section-company {
     padding-top: 80px;
     padding-bottom: 56px;
   }
 }
+
 @media print, (min-width: 768.98px) and (max-width: 1070px) {
   .section-company {
     padding-left: 16px;
     padding-right: 16px;
   }
 }
+
 @media only screen and (max-width: 768.98px) {
   .keyvisual-company-top {
     background-image: url(../img/company/sp/company_bg.jpg);
   }
-
   .section-company {
-    padding: 0.8rem 0 0.64rem;
+    padding: .8rem 0 .64rem;
   }
   .section-company .wrapper {
-    padding-left: 0.32rem;
-    padding-right: 0.32rem;
+    padding-left: .32rem;
+    padding-right: .32rem;
   }
 }
+
 .section-company-map .list-address {
   padding-left: 0;
   list-style-type: none;
 }
+
 .section-company-map .list-address .item-link {
   font-weight: 700;
   text-decoration: none;
 }
+
 .section-company-map .list-address .item-link:hover .contact-detail {
   color: #009fe7;
 }
+
 .section-company-map .list-address .item-link:hover .common-button-small {
   background-color: #005baa;
   color: #fff;
 }
+
 .section-company-map .list-address .item-address {
   border-bottom: solid 1px rgba(0, 159, 231, 0.3);
 }
+
 .section-company-map .list-address .item-address:first-child {
   border-top: solid 1px rgba(0, 159, 231, 0.3);
 }
+
 .section-company-map .list-address .item-address:hover {
   border-bottom-width: 2px;
   border-bottom-color: #009fe7;
 }
+
 .section-company-map .list-address .title-list {
   color: #009fe7;
 }
+
 .section-company-map .list-address .contact-detail {
   color: #000;
-  transition: color 0.26s;
+  transition: color .26s;
 }
+
 .section-company-map .list-address .contact-number {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
+
 .section-company-map .list-address .block-contact {
   width: 100%;
 }
+
 .section-company-map .common-button-small,
 .section-company-map .title-list,
 .section-company-map .contact-detail p {
@@ -565,7 +589,6 @@
   .keyvisual-company-map {
     background-image: url(../img/company/company_map_bg.jpg);
   }
-
   .section-company-map {
     padding: 16px 16px 112px;
   }
@@ -578,21 +601,18 @@
   }
   .section-company-map .list-address .item-link,
   .section-company-map .list-address .block-contact {
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-align: center;
-        align-items: center;
+    align-items: center;
   }
   .section-company-map .list-address .item-link {
     padding: 32px 0;
   }
   .section-company-map .list-address .title-list,
   .section-company-map .list-address .contact-detail {
-    -ms-flex-negative: 0;
-        flex-shrink: 0;
+    flex-shrink: 0;
   }
   .section-company-map .list-address .title-list {
-    font-size: 0.18rem;
+    font-size: .18rem;
     width: 152px;
     margin-right: 24px;
   }
@@ -601,8 +621,7 @@
     margin-right: 16px;
   }
   .section-company-map .list-address .block-contact {
-    -ms-flex-pack: justify;
-        justify-content: space-between;
+    justify-content: space-between;
   }
   .section-company-map .list-address .address,
   .section-company-map .list-address .contact-number {
@@ -612,48 +631,49 @@
     margin: 0 8px;
   }
 }
+
 @media print, (min-width: 768.98px) and (max-width: 860px) {
   .section-company-map .list-address .contact-detail {
     width: 335px;
   }
 }
+
 @media only screen and (max-width: 768.98px) {
   .keyvisual-company-map {
     background-image: url(../img/company/sp/company_map_bg.jpg);
   }
-
   .section-company-map {
-    padding: 0.8rem 0 1.28rem;
+    padding: .8rem 0 1.28rem;
   }
   .section-company-map .list-menu-bottom {
-    margin-bottom: 0.48rem;
+    margin-bottom: .48rem;
   }
   .section-company-map .list-address .item-link {
     display: block;
-    padding: 0.32rem 0 0.48rem;
+    padding: .32rem 0 .48rem;
   }
   .section-company-map .list-address .item-address {
-    border-width: 0.02rem;
+    border-width: .02rem;
   }
   .section-company-map .list-address .item-address:first-child {
-    border-top-width: 0.02rem;
+    border-top-width: .02rem;
   }
   .section-company-map .list-address .title-list {
-    font-size: 0.28rem;
+    font-size: .28rem;
   }
   .section-company-map .list-address .title-list,
   .section-company-map .list-address .contact-number {
-    margin-bottom: 0.16rem;
+    margin-bottom: .16rem;
   }
   .section-company-map .list-address .address,
   .section-company-map .list-address .contact-number {
     line-height: calc(44 / 24);
   }
   .section-company-map .list-address .contact-detail {
-    margin-bottom: 0.32rem;
+    margin-bottom: .32rem;
   }
   .section-company-map .list-address .fax {
-    margin: 0 0.16rem;
+    margin: 0 .16rem;
   }
   .section-company-map .list-address .common-button-small {
     border-color: rgba(0, 159, 231, 0.3);
@@ -661,5 +681,4 @@
     margin: 0 auto;
   }
 }
-
 /*# sourceMappingURL=company.css.map */
