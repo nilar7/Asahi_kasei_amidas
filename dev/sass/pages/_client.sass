@@ -1790,8 +1790,10 @@
   .common-list-pagination .dots,
   .common-list-pagination span
     color: $base-color-blue
+  .common-list-pagination .current,
   .common-list-pagination a:hover
     background-color: $base-color-blue
+    color: #fff
   .arrow a:hover
     background-color: #fff
 
@@ -2327,6 +2329,8 @@
     .wrapper
       padding-left: .32rem
       padding-right: .32rem
+      .post-content p + img + img
+        margin-top: 1rem
     .content-article
       margin-bottom: 1.28rem
     .title-article-detail
@@ -2366,6 +2370,8 @@
     .common-block-banner
       margin-top: 2.08rem
       margin-bottom: .48rem
+      &.detail-block02
+        margin-top: 0.16rem
     .block-social
       margin-top: 2.24rem
     .text-share
