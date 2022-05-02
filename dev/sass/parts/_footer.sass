@@ -1,0 +1,486 @@
+@charset "utf-8"
+
+footer
+  .footer-top
+    background: center / cover no-repeat
+    width: 100%
+    position: relative
+    .wrapper
+      text-align: center
+    &.is-none
+      display: none
+  .title-contact
+    .title-english
+      font-weight: $base-font-weight
+      color: transparent
+      -webkit-text-fill-color: transparent
+      -webkit-text-stroke-width: 1px
+      -webkit-text-stroke-color: rgba(255,255,255,.2)
+    .title-japan
+      color: #fff
+      font-weight: 700
+      position: absolute
+      transform: translateY(-50%)
+
+  .inner-wrapper,
+  .list-guide,
+  .link-job span
+    display: flex
+  .footer-logo
+    display: inline-block
+  .address
+    border-top: solid 3px $base-color-yellow
+    font-weight: 700
+    line-height: calc(26 / 13)
+    text-align: center
+  .list-navigation,
+  .sub-navigation,
+  .list-guide,
+  .list-job
+    list-style-type: none
+    padding-left: 0
+  .list-navigation,
+  .list-job
+    display: flex
+    flex-wrap: wrap
+  .text-navigation
+    display: inline-block
+    font-weight: 700
+    color: $base-color-blue
+  .item-sub
+    >a
+      color: $base-font-color
+
+  .list-guide
+    justify-content: flex-end
+  .item-guide
+    a
+      color: $base-font-color
+      display: inline-block
+  .copyright
+    display: block
+    text-align: center
+  .content-job
+    display: none
+    background-color: rgba(255,255,255,.5)
+    position: fixed
+    z-index: 5
+    bottom: 0
+    left: 50%
+    transform: translateX(-50%)
+    width: 100%
+  .list-job,
+  .link-job span
+    justify-content: center
+  .link-job
+    text-decoration: none
+    display: inline-block
+  .list-job
+    margin-bottom: 0
+  .item-job
+    transition: background .26s
+    &.is-job
+      background-color: $base-color-orange
+      &:hover
+        background-color: #ff791a
+      .link-job
+        span
+          &:before
+            background-image: url(../img/common/footer_icon_03.svg)
+    &.is-register
+      background-color: $base-color-light-blue
+      position: relative
+      &:hover
+        background-color: #40bdf5
+      .link-job
+        text-decoration: none
+        span
+          &:before
+            background-image: url(../img/common/footer_icon_04.svg)
+  .link-job
+    span
+      position: relative
+      align-items: center
+      color: #fff
+      font-weight: 700
+      &:before
+        position: absolute
+        content: ""
+        background: center / 100% auto no-repeat
+
+  .footer-different
+    .text-contact
+      text-align: center
+    .list-inquiry
+      margin-bottom: 0
+      padding-left: 0
+      list-style-type: none
+  .text-contact,
+  .button-big a,
+  .text-inquiry-small
+    color: #fff
+  .button-small a,
+  .text-inquiry-small:before,
+  .text-inquiry-small:after
+    background-color: #fff
+  .button-big
+    a
+      background-color: $base-color-blue
+      &:hover
+        background-color: #036fcc
+  .button-small
+    a
+      color: $base-font-color
+      &:hover
+        background-color: $base-color-blue
+        color: #fff
+  .text-inquiry-small
+    position: relative
+    &:before,
+    &:after
+      position: absolute
+      content: ""
+      height: 1px
+      top: 50%
+      transform: translateY(-50%)
+    &:before
+      left: 0
+    &:after
+      right: 0
+    span
+      display: inline-block
+  .item-inquiry
+    a
+      transition: background .26s, color .26s
+      text-decoration: none
+      font-weight: 700
+      display: flex
+      align-items: center
+      justify-content: center
+
++desktop
+  .footer-main
+    padding-bottom: 104px
+  footer
+    .footer-top
+      height: 360px
+      margin-bottom: 108px
+      padding: 24px 0
+      background-image: url(../img/common/footer_img_01.jpg)
+    .title-contact
+      margin-bottom: 16px
+      .title-english
+        font-size: 114px
+        letter-spacing: .08em
+      .title-japan
+        left: 46.9%
+        font-size: 18px
+        top: 108px
+
+    .footer-middle
+      margin-bottom: 32px
+    .inner-wrapper
+      max-width: 1025px
+      margin: 0 auto
+    .footer-logo
+      margin-bottom: 32px
+    .address
+      font-size: 13px
+      padding-top: 24px
+    .footer-detail
+      margin-top: 8px
+      margin-right: 56px
+    .text-navigation
+      font-size: 14px
+      margin-bottom: 24px
+    .item-navigation
+      margin-right: 56px
+      &:nth-child(n+3)
+        margin-right: 0
+    .item-sub
+      &:not(:last-child)
+        margin-bottom: 16px
+        >a
+          font-size: 13px
+
+    .list-guide
+      width: 803px
+      margin: 0 auto 24px
+    .item-guide
+      margin: 4px 12px 0
+      a
+        font-size: 12px
+    .item-logo
+      margin: 0 0 0 54px
+    .copyright
+      background-color: $base-color-blue
+      color: #fff
+      padding: 24px
+      span
+        color: transparent
+        text-shadow: 0 0 #fff
+
+    .content-job
+      height: 104px
+      padding: 24px 0 10px
+    .item-job
+      border-radius: 34px
+      margin: 0 16px
+      &.is-job
+        height: 56px
+        .link-job
+          span
+            &:before
+              width: 36px
+              height: 33px
+              top: 11px
+              left: 59px
+      &.is-register
+        .link-job
+          span
+            &:before,
+            &:after
+              left: 62px
+            &:before
+              transition: opacity .26s
+              width: 34px
+              height: 36px
+              top: 12px
+            &:after
+              position: absolute
+              content: ""
+              top: 24px
+              width: 23px
+              height: 17px
+              background: url(../img/common/footer_icon_05.svg) center / 100% auto
+              opacity: 0
+
+    .link-job
+      span
+        width: 320px
+        height: 56px
+        padding-left: 32px
+        font-size: .14rem
+
+    .footer-different
+      height: 440px
+      padding-left: 24px
+      padding-right: 24px
+      .title-contact
+        margin-bottom: 0
+      .text-contact
+        font-size: .16rem
+        line-height: calc(28 / 16)
+        margin-bottom: 40px
+      .item-inquiry
+        width: 48.438%
+      .text-inquiry-small
+        margin-bottom: 8px
+      .list-inquiry
+        display: flex
+        align-items: flex-end
+        justify-content: space-between
+    .button-big
+      a
+        min-height: 96px
+        box-shadow: 0 3px 6px rgba(0,0,0,.16)
+    .button-small
+      a
+        height: 67px
+    .text-inquiry-small
+      &:before,
+      &:after
+        width: 48px
+      span
+        padding: 0 48px
+    .item-inquiry
+      a
+        font-size: .16rem
+    .footer-recruit
+      background-image: url(../img/common/footer_recruit_bg.jpg)
+      .title-japan
+        top: 95px
+        left: 50%
+        transform: translateX(-50%)
+        width: 85%
+    .footer-top-service
+      display: none
+
+@media print, (min-width: 768.98px) and (max-width: 1040px)
+  footer
+    .inner-wrapper
+      padding: 0 32px
+    .footer-detail
+      flex-shrink: 0
+    .item-navigation
+      margin-bottom: 16px
+    .footer-different
+      height: unset
+      .list-inquiry
+        flex-wrap: wrap
+        justify-content: center
+      .text-inquiry-small
+        &:before,
+        &:after
+          width: 25px
+      .item-inquiry
+        width: 444px
+        margin: 0 16px 32px
+
+@media print, (min-width: 768.98px) and (max-width: 885px)
+  footer
+    .item-navigation,
+    .footer-detail
+      margin-right: 24px
+
++mobile
+  .footer-main
+    padding-bottom: 1.44rem
+  footer
+    .footer-top
+      background-image: url(../img/common/sp/footer_img_01.jpg)
+      height: 6.08rem
+      .wrapper
+        padding: .64rem .02rem
+    .title-contact
+      margin-bottom: 1.12rem
+      .title-english
+        letter-spacing: .05em
+        font-size: 1.5rem
+      .title-japan
+        font-size: .28rem
+        top: 2.85rem
+        left: 39.2%
+    .copyright
+      font-size: .18rem
+      background-color: #fff
+      color: $base-color-blue
+      padding: .32rem
+      span
+        color: transparent
+        text-shadow: 0 0 $base-color-blue
+    .content-job
+      padding: .32rem 0
+    .item-job
+      border-radius: .52rem
+      text-align: center
+      &:nth-child(2n+2)
+        margin: 0 .16rem
+      &.is-job
+        .link-job
+          width: 2.28rem
+          span
+            &:before
+              width: .48rem
+              height: .44rem
+              top: .28rem
+              left: .2rem
+      &.is-register
+        .link-job
+          span
+            &:before
+              width: .42rem
+              height: .45rem
+              top: .3rem
+              left: .19rem
+      &.is-login
+        background-color: $base-color-light-blue
+        .link-job
+          width: 2.18rem
+          span
+            &:before
+              background-image: url(../img/common/sp/footer_icon_01.svg)
+              width: .44rem
+              height: .44rem
+              top: .28rem
+              left: .19rem
+    .link-job
+      span
+        padding-left: .48rem
+        width: 2.26rem
+        height: 1.04rem
+        box-shadow: 0 .03rem .06rem rgba(255,255,255,.5)
+        line-height: calc(30 / 24)
+        border-radius: .52rem
+    .footer-different
+      height: unset
+      padding-bottom: .8rem
+      .text-contact,
+      .text-inquiry-small
+        line-height: calc(44 / 24)
+      .text-inquiry-small
+        max-width: 6.5rem
+        display: inline-block
+        margin-bottom: .16rem
+        padding: 0 1.12rem
+        &:before,
+        &:after
+          width: .97rem
+      .title-contact,
+      .text-contact
+        margin-bottom: .64rem
+      .item-inquiry
+        margin-bottom: .32rem
+        a
+          width: 6.4rem
+          height: 1.12rem
+          margin: 0 auto
+    .footer-recruit
+      background-image: url(../img/common/sp/footer_recruit_bg.jpg)
+      .title-japan
+        line-height: calc(50 / 28)
+        top: 2.15rem
+        left: 17%
+
+.to-top-haken
+  position: fixed
+  z-index: 100
+  color: #fff
+  font-size: .14rem
+  font-weight: 700
+  background-color: $base-color-blue
+  border-radius: 50%
+  text-decoration: none
+  display: flex
+  justify-content: center
+  transition: color .26s
+  &:hover
+    color: #036fcc
+  &:before
+    position: absolute
+    content: ""
+    left: 50%
+    transform: translateX(-50%)
+    background: url(../img/job/job_haken_01.svg) center / 100% auto no-repeat
+
++desktop
+  .to-top-haken
+    right: 50%
+    margin-right: -624px
+    bottom: 12px
+    width: 96px
+    height: 96px
+    padding: 24px 9px 48px
+    &:before
+      width: 32px
+      height: 29px
+      bottom: 16px
+
+@media print, (min-width: 769px) and (max-width: 1280px)
+  .to-top-haken
+    right: 16px
+    margin-right: auto
+
++mobile
+  .to-top-haken
+    letter-spacing: 0
+    font-size: .22rem
+    right: .32rem
+    bottom: .06rem
+    width: 1.52rem
+    height: 1.52rem
+    padding: .32rem .16rem .8rem
+    &:before
+      width: .53rem
+      height: .49rem
+      bottom: .3rem

@@ -1,0 +1,131 @@
+extends ../../../_layouts/default
+
+block vars
+  -title        = '人材派遣サービス記事コンテンツ一覧'
+  -description  = ''
+  -keywords     = ''
+  -pageID       = 'client'
+  -pageSubID    = 'client-haken'
+  -typePage     = 'type-b'
+  -path         = '../../..'
+  -imgPC        = path+'/img/'+pageID+'/'
+  -imgSP        = path+'/img/'+pageID+'/sp/'
+
+block container
+  +keyvisual('client-haken','資料名資料名資料名資料名資料名資料名資料名資料名資料名<br>ホワイトペーパーダウンロード')
+    .sm
+      +breadcrumb('ブログ・コラム（仮）', [{title: '企業向けTOP',url: '/client/'},{title: '旭化成アミダスの人材派遣サービス',url: '/client/haken/'}])
+    .md
+      +breadcrumb('ブログ・コラム（仮）', [{title: '企業向けTOP',url: '/client/'},{title: '旭化成アミダスの人材派遣サービス',url: '/client/haken/'}])
+  +listMenuClient([
+    {
+      title: '人材派遣サービスTOP',
+      url: '/client/haken/index.html'
+    },
+    {
+      title: '得意とする領域・職種',
+      url: '/client/haken/field.html'
+    },
+    {
+      title: '導入事例インタビュー',
+      url: '/client/haken/interview/index.html'
+    },
+    {
+      title: '派遣チーム×顧客座談会',
+      url: '/client/haken/interview/detail.html'
+    },
+    {
+      title: '記事コンテンツ',
+      url: '/client/haken/article/index.html',
+      active: true
+    }
+  ])
+  section.section-client-article
+    .wrapper
+      h2.common-title.title-square
+        span ブログ・コラム（仮）
+      .common-content-aside
+        aside.side-bar
+          p.text-aside 種別
+          form
+            .wrap-checkbox
+              .vertical-item.square-dark-blue
+                label
+                  input(type='checkbox' name='category' value='カテゴリ1' checked)
+                  span.checkbox-field-text カテゴリ1
+              .vertical-item.square-dark-blue
+                label
+                  input(type='checkbox' name='category' value='カテゴリ2' checked)
+                  span.checkbox-field-text カテゴリ2
+              .vertical-item.square-dark-blue
+                label
+                  input(type='checkbox' name='category' value='カテゴリ3')
+                  span.checkbox-field-text カテゴリ3
+        .content-article
+          ul.list-article
+            -
+              var
+                list = [
+                  {
+                    number: "01",
+                  },
+                  {
+                    number: "02",
+                  },
+                  {
+                    number: "03",
+                  },
+                  {
+                    number: "01",
+                  },
+                  {
+                    number: "02",
+                  },
+                  {
+                    number: "03",
+                  },
+                  {
+                    number: "01",
+                  },
+                  {
+                    number: "02",
+                  },
+                  {
+                    number: "03",
+                  },
+                  {
+                    number: "01",
+                  },
+                  {
+                    number: "02",
+                  },
+                  {
+                    number: "03",
+                  },
+                  {
+                    number: "01",
+                  },
+                  {
+                    number: "02",
+                  },
+                  {
+                    number: "03",
+                  }
+                ]
+            each item in list
+              li.item-article
+                .block-article
+                  a.content-image(href=path+"/client/haken/article/detail.html")
+                    figure.image-article
+                      img.md(src=imgPC+"client_article_img_"+item.number+".jpg" width="320" height="160" loading="lazy" alt="〇〇〇〇の〇〇〇〇が語る、〇〇〇〇の可能性")
+                      img.sm(src=imgSP+"client_article_img_"+item.number+".jpg" width="704" height="398" loading="lazy" alt="〇〇〇〇の〇〇〇〇が語る、〇〇〇〇の可能性")
+                    .common-block-arrow
+                  .content-detail
+                    .block-time
+                      time.time-article.font-alata(datetime="2020-02-14") 2020.02.14
+                      span.highlight カテゴリ
+                    h3.title-article 〇〇〇〇の〇〇〇〇が語る、〇〇〇〇の可能性
+                    p.text-article 説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります。　
+                    .wrapper-link
+                      a(href=path+"/client/haken/article/detail.html") 続きを読む
+          include ../../../_parts/common_pagination_03

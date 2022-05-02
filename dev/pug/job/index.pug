@@ -1,0 +1,138 @@
+extends ../_layouts/default
+
+block vars
+  -title        = '旭化成アミダスで出来る仕事の探し方'
+  -description  = ''
+  -keywords     = ''
+  -pageID       = 'job'
+  -pageSubID    = 'job-top'
+  -typePage     = 'type-a'
+  -path         = '..'
+  -imgPC        = path+'/img/'+pageID+'/'
+  -imgSP        = path+'/img/'+pageID+'/sp/'
+
+block container
+  +keyvisual('job-top','旭化成アミダスで出来る仕事の探し方')
+    +breadcrumbJapan('旭化成アミダスで出来る仕事の探し方', [{title: 'お仕事をお探しの方'}])
+  section.section-job
+    .wrapper
+      .about-row
+        h2.about-title さまざまな事業展開している旭化成グループで働く。<br>あなたにぴったりの働き方を旭化成アミダスで見つける。
+        p.about-description テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト<br>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+      ul.list-finds
+        li
+          a.find-item.is-find-01(href="#find-01")
+            p.find-tag
+              | 探し方
+              span.number.font-alata 01
+            p.find-text 派遣で仕事を探す
+        li
+          a.find-item.is-find-02(href="#find-02")
+            p.find-tag
+              | 探し方
+              span.number.font-alata 02
+            p.find-text 正社員として転職する
+        li
+          a.find-item.is-find-03(href="#find-03")
+            p.find-tag
+              | 探し方
+              span.number.font-alata 03
+            p.find-text 旭化成グループの<br class="md">製造現場で働く
+        li
+          a.find-item.is-find-04(href="#find-04")
+            p.find-tag
+              | 探し方
+              span.number.font-alata 04
+            p.find-text 旭化成アミダスで働く
+      ul.list-jobs
+        li.job-block.job-block-01#find-01
+          +jobItem('01', '派遣で仕事を探す', '旭化成アミダスの人材派遣サービスの魅力を端的に伝えるキャッチ<br>旭化成アミダスの人材派遣サービスの魅力を端的に伝えるキャッチ', 'テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト')
+          .common-job-box
+            ul.list-buttons
+              li
+                h2.default-title
+                  span.text どんな求人があるか見てみたい方はこちら
+                a.default-button(href="#")
+                  span 求人案件検索
+              li
+                h2.default-title
+                  span.text まずはエントリー！登録は無料です！
+                a.default-button(href="#")
+                  span WEB仮登録
+                p.job-note 担当者との面談等を行った後、本登録となります。
+          .other-row
+            h2.other-title.font-alata Other Contents
+            ul.list-buttons
+              each value in ['派遣求人検索', 'よくあるご質問', 'ライフスタイル別特集', '初めて派遣で働く方へ', '拠点別特集', 'ご登録済み派遣スタッフの方', '業界・職種別特集', '労働者派遣法改正関連', 'スタッフインタビュー']
+                li
+                  a.button-common-line.is-style-direct(href="#")
+                    span.button-wrapper!=value
+                    span.button-icon
+        li.job-block.job-block-02#find-02
+          +jobItem('02', '正社員として<br class="sm">転職する', '旭化成アミダスの転職支援サービスの魅力を端的に伝えるキャッチ<br>旭化成アミダスの転職支援サービスの魅力を端的に伝えるキャッチ', 'テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト')
+          .common-job-box
+            .condition-inner
+              h2.default-title
+                span.text 求人情報を公開中！<br class="sm">ご希望の条件で検索してみましょう<span class="is-text-setting">。</span>
+              a.default-button(href="#")
+                span 求人情報
+              p.job-note 案件エントリー後、登録の流れとなります。
+          .other-row
+            h2.other-title.font-alata Other Contents
+            ul.list-buttons
+              each value in ['求人検索', 'お仕事が決まるまでの流れ', '旭化成アミダスの転職支援サービス', '転職コンサルタント紹介', '旭化成グループの会社だからできる<br class="sm">転職支援', 'コンサルタント×転職者 対談', '旭化成アミダスの得意な領域・職種', 'よくあるご質問']
+                li
+                  a.button-common-line.is-style-direct(href="#")
+                    span.button-wrapper!=value
+                    span.button-icon
+        li.job-block.job-block-03#find-03
+          +jobItem('03', '旭化成グループの<br>製造現場で働く', '旭化成アミダスの製造現場サービスの魅力を端的に伝えるキャッチ<br>旭化成アミダスの製造現場サービスの魅力を端的に伝えるキャッチ', 'テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト')
+          .common-job-box
+            ul.list-buttons
+              li
+                h2.default-title
+                  span.text 現在募集している求人はこちらから
+                a.default-button(href="#")
+                  span 求人情報
+              li
+                h2.default-title.is-custom-title
+                  span.text 製造現場の仕事について<br>まず問い合わせたい方はこちら
+                a.default-button(href="#")
+                  span フォームからの問い合わせ
+            .contact-row
+              h2.default-title.is-tel お電話でのお問い合わせも受け付けています。
+              ul.list-contact
+                li
+                  h3.contact-text 守山事業所
+                  a.contact-tel.font-alata(href="tel:0120-85-4622") TEL : 0120-85-4622
+                  p.contact-time （旭化成アミダス守山事業所採用担当宛）<br>※受付時間: <time datetime="08:30">8:30</time>～<time>17:00</time>（土日祝除く）
+                li
+                  h3.contact-text 日向事業所
+                  a.contact-tel.font-alata(href="tel:0982-55-2014") TEL : 0982-55-2014
+                  p.contact-time （旭化成アミダス日向事業所採用担当宛）<br>※受付時間: <time datetime="08:30">8:30</time>～<time>17:00</time>（土日祝除く）
+          .other-row
+            h2.other-title.font-alata Other Contents
+            ul.list-buttons
+              each value in ['募集中案件', '社員インタビュー', '製造現場のお仕事について', '研修制度', '配属地域紹介', 'よくあるご質問']
+                li
+                  a.button-common-line.is-style-direct(href="#")
+                    span.button-wrapper!=value
+                    span.button-icon
+        li.job-block.job-block-04#find-04
+          span.job-number
+            | 探し方
+            span.number.font-alata 04
+          .job-item
+            figure.job-image
+              img.md(src=imgPC+"job_img_04.jpg", width="672", height="285", alt="旭化成アミダスで働く", loading="lazy")
+              img.sm(src=imgSP+"job_img_04.jpg", width="672", height="4414", alt="旭化成アミダスで働く", loading="lazy")
+              h2.job-title 旭化成アミダスで働く
+            p.job-description テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+          .other-row
+            h2.other-title.font-alata.sm Other Contents
+            ul.list-buttons
+              each value in ['受付業務のお仕事', '新卒採用（ITエンジニア）', 'コールセンター業務', '新卒採用（総合職）', '事務スタッフ（契約社員）', '中途採用']
+                li
+                  a.button-common-line.is-style-direct(href="#")
+                    span.button-wrapper!=value
+                    span.button-icon

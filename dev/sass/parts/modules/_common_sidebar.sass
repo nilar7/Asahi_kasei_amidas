@@ -1,0 +1,120 @@
+.common-content-aside
+  .list-category
+    list-style-type: none
+    padding-left: 0
+  .text-aside,
+  .checkbox-field-text
+    font-weight: 700
+  input[type="checkbox"]:checked + .checkbox-field-text:before
+    background: url(../img/common/icon_checked.svg) center no-repeat
+  input[type="checkbox"], input[type="radio"]
+    text-indent: -999px
+    display: none
+  .checkbox-field-text
+    position: relative
+    display: inline-block
+    cursor: pointer
+    &:before
+      left: 0
+      border: solid 1px
+    &:before,
+    &:after
+      position: absolute
+      content: ""
+      transform: translateY(-50%)
+  .vertical-item
+    &.square-dark-blue
+      .checkbox-field-text
+        &:before
+          border-color: $base-color-blue
+      input[type="checkbox"]:checked + .checkbox-field-text:before
+        background-color: $base-color-blue
+    &.square-blue
+      .checkbox-field-text
+        &:before
+          border-color: $base-color-light-blue
+      input[type="checkbox"]:checked + .checkbox-field-text:before
+        background-color: $base-color-light-blue
+    &.square-orange
+      .checkbox-field-text
+        &:before
+          border-color: $base-color-orange
+      input[type="checkbox"]:checked + .checkbox-field-text:before
+        background-color: $base-color-orange
+    &.square-yellow
+      .checkbox-field-text
+        &:before
+          border-color: $base-color-yellow
+      input[type="checkbox"]:checked + .checkbox-field-text:before
+        background-color: $base-color-yellow
+  .common-news-list
+    width: 100%
+
++desktop
+  .common-content-aside
+    display: flex
+    .side-bar
+      flex-shrink: 0
+      width: 150px
+      margin-right: 24px
+    .text-aside
+      font-size: .16rem
+      margin-bottom: 40px
+    .vertical-item
+      &:not(:last-child)
+        margin-bottom: 32px
+    .checkbox-field-text
+      padding-left: 32px
+      &:before,
+      &:after
+        top: 50%
+      &:before
+        width: 24px
+        height: 24px
+        border-radius: 3px
+      &.is-checked
+        &:before
+          background-size: 14px 10px
+    .common-news-list
+      margin-top: 6px
+
++mobile
+  .common-content-aside
+    .side-bar,
+    .list-category
+      display: flex
+    .side-bar
+      margin-bottom: .32rem
+      padding-left: .64rem
+    .text-aside
+      flex-shrink: 0
+      font-size: .26rem
+      width: .85rem
+      margin-right: .64rem
+      position: relative
+      &:after
+        position: absolute
+        content: ""
+        top: .09rem
+        right: -.02rem
+        width: .02rem
+        height: .93rem
+        background-color: rgba(0,0,0,.1)
+    .wrap-checkbox
+      display: flex
+      flex-wrap: wrap
+    .vertical-item
+      margin-right: .48rem
+      &:not(:last-child)
+        margin-bottom: .32rem
+    .checkbox-field-text
+      padding-left: .48rem
+      &:before,
+      &:after
+        top: 56%
+      &:before
+        width: .32rem
+        height: .32rem
+        border-radius: .06rem
+    input[type="checkbox"]:checked + .checkbox-field-text:before
+      background-size: .18rem .14rem

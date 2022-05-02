@@ -1,0 +1,150 @@
+extends ../_layouts/default
+
+block vars
+  -title        = '派遣求人検索（結果表示ページ）'
+  -description  = ''
+  -keywords     = ''
+  -pageID       = 'mypage'
+  -pageSubID    = 'mypage-search'
+  -typePage     = 'type-a'
+  -path         = '..'
+  -imgPC        = path+'/img/'+pageID+'/'
+  -imgSP        = path+'/img/'+pageID+'/sp/'
+
+block container
+  include ../_parts/common_list_menu_04
+  +breadcrumbJapan('すべての条件から検索', [{title: '人材派遣トップ',url: '/mypage/'}])
+  section.section-mypage-job
+    .wrapper
+      h1.title-mypage-job お仕事検索結果一覧
+
+  section.section-mypage-condition
+    .inner-wrapper
+      h2.title-condition.md 選択中の条件
+      .block-common-category
+        ul.common-list-category
+          -
+            var
+              list = [
+                {
+                  text: 'ビジョン・ミッション'
+                },
+                {
+                  text: '働き方'
+                },
+                {
+                  text: 'やりがい'
+                },
+                {
+                  text: '女性の活躍'
+                },
+                {
+                  text: 'チームビルディング'
+                },
+                {
+                  text: 'キャリアチェンジ'
+                },
+                {
+                  text: '未経験'
+                },
+                {
+                  text: '転職'
+                },
+                {
+                  text: 'キーパーソン'
+                },
+                {
+                  text: 'エンジニア'
+                },
+                {
+                  text: '社内制度'
+                },
+                {
+                  text: 'ワーキングママ'
+                },
+                {
+                  text: 'わたしの働き方'
+                },
+                {
+                  text: '社員・職員'
+                },
+                {
+                  text: 'キャリア'
+                },
+                {
+                  text: 'チームワーク'
+                },
+                {
+                  text: '研究開発'
+                }
+              ]
+          each item in list
+            li.item-category.js-delete-category!= item.text
+              span.icon-close
+    .wrapper
+      .block-display
+        .block-left
+          p.text-total 100<span class="is-small">件</span>
+          p.text-reality 1～10件を表示
+        .block-right.md
+          include ../_parts/common_pagination_03
+      .block-content-display
+        ul.list-block-display
+          -
+            var
+              list = [{isNew: true},2,3,4,5,6,7,8,9,10]
+          each item in list
+            li.item-list
+              .item-top
+                p.text-article(class=item.isNew?'is-new':'') お仕事No. 0000020538
+                h3.title-article 設備工事の書類作成や業者対応などの事務（大手グループビル管理会社）　土日休み残業なし
+                ul.common-list-category
+                  li.item-category テーマ名タグ
+                  li.item-category 未経験歓迎
+                  li.item-category 大手・優良企業
+                  li.item-category ブランク応援
+                  li.item-category 住宅･建築･不動産業界
+              .block-content-detail
+                .item-content-detail
+                  .content-left
+                    dl.text-light-blue
+                      dt 職種　　　：
+                      dd オフィスワーク・事務　〉一般事務
+                    dl
+                      dt お仕事内容：
+                      dd 管理しているビルなどの設備工事に関わる事務のお仕事です。
+                    dl
+                      dt 給与　　　：
+                      dd 時給1,800円<br>交通費全額支給<br>【月収例】302,400円＝1800円×8H×21日
+                    dl
+                      dt 給与　　　：
+                      dd 08時30分～17時30分(休憩60分)<br>※残業なし。あってもは5時間／月程度。
+                  .content-right
+                    dl
+                      dt 勤務地　　：
+                      dd 墨田区<br>JR山手線 ・京浜東北線「浜松町」駅 北口より徒歩7分<br>ゆりかもめ「竹芝」駅直結
+                    dl
+                      dt 期間　　　：
+                      dd 即日～長期<br><span class="text-light-blue">2022年●月●日～就業可能</span>
+                    dl
+                      dt 勤務日　　：
+                      dd 月～金／週5日勤務
+                .block-button
+                  .block-button-left
+                    a.trans.button-detail.button-white.is-icon.js-favorite(href="javascript:;")
+                      span.md キープ
+                  ul.block-button-right
+                    li
+                      a.trans.button-detail.button-white(href="#") 詳しく見る
+                    li
+                      a.trans.button-detail.button-light-blue(href="#") 応募する
+      .pagination-bottom.md
+        include ../_parts/common_pagination_03
+      .pagination-bottom.sm
+        include ../_parts/common_pagination_02
+      ul.list-button-change
+        li.item-change
+          a.trans.button-light-blue(href="#") 条件を変更する
+        li.item-change
+          a.trans.button.button-white(href="#") キープしたお仕事に応募する
+      include ../_parts/common_contact_05

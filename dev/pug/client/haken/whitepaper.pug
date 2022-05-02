@@ -1,0 +1,153 @@
+extends ../../_layouts/default
+
+block vars
+  -title        = 'ホワイトペーパーダウンロード'
+  -description  = ''
+  -keywords     = ''
+  -pageID       = 'client'
+  -pageSubID    = 'client-haken'
+  -typePage     = 'type-b'
+  -path         = '../..'
+  -imgPC        = path+'/img/'+pageID+'/'
+  -imgSP        = path+'/img/'+pageID+'/sp/'
+
+block container
+  +keyvisual('client-haken','資料名資料名資料名資料名資料名資料名資料名資料名資料名<br>ホワイトペーパーダウンロード')
+    +breadcrumb('ホワイトペーパーダウンロード', [{title: '企業向けTOP',url: '/client/'},{title: '旭化成アミダスの教育研修サービス',url: '/client/haken/'}])
+  +listMenuClient([
+    {
+      title: '人材派遣サービスTOP',
+      url: '/client/haken/index.html'
+    },
+    {
+      title: '得意とする領域・職種',
+      url: '/client/haken/field.html'
+    },
+    {
+      title: '導入事例インタビュー',
+      url: '/client/haken/interview/index.html'
+    },
+    {
+      title: '派遣チーム×顧客座談会',
+      url: '/client/haken/interview/detail.html'
+    },
+    {
+      title: '記事コンテンツ',
+      url: '/client/haken/article/index.html'
+    }
+  ])
+  section.section-client-whitepaper
+    .wrapper
+      .block-content
+        .block-left
+          h2.title-whitepaper 資料名資料名資料名資料名資料名資料名資料名資料名資料名
+          figure.image-whitepaper
+            img.md(src=imgPC+"client_whitepaper_img_01.jpg" width="408" height="257" loading="lazy" alt="資料名資料名資料名資料名資料名資料名資料名資料名資料名")
+            img.sm(src=imgSP+"client_whitepaper_img_01.jpg" width="704" height="257" loading="lazy" alt="資料名資料名資料名資料名資料名資料名資料名資料名資料名")
+          p.text-whitepaper 説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明
+          p.text-whitepaper ダウンロードをご希望のお客様は、フォームに必要事項をご記入いただき、「ダウンロード」ボタンをクリックしてください。
+          p.text-whitepaper 送信完了ページにて資料ダウンロードいただけます。
+        .block-right
+          form.form-whitepaper
+            .row-form.is-flex.short-input
+              .content-row
+                .row-title
+                  span.text-required 必須
+                  span.is-required 姓（漢字）
+                .row-fill
+                  .wrap-input
+                    input.input-text(type='text' name='firstName' value='' required)
+              .content-row
+                .row-title
+                  span.text-required 必須
+                  span.is-required 名（漢字）
+                .row-fill
+                  .wrap-input
+                    input.input-text(type='text' name='lastName' value='' required)
+            .row-form.is-flex.short-input
+              .content-row
+                .row-title
+                  span.text-required 必須
+                  span.is-required 姓（フリガナ）
+                .row-fill
+                  .wrap-input
+                    input.input-text(type='text' name='firstName' value='' required)
+              .content-row
+                .row-title
+                  span.text-required 必須
+                  span.is-required 名（フリガナ）
+                .row-fill
+                  .wrap-input
+                    input.input-text(type='text' name='lastName' value='' required)
+            .row-form
+              .content-row
+                .row-title
+                  span.text-required 必須
+                  span.is-required 貴社名（漢字）
+                .row-fill
+                  .wrap-input
+                    input.input-text(type='text' name='company' value='' placeholder='旭化成アミダス株式会社' required)
+            .row-form
+              .content-row
+                .row-title
+                  span.text-required 必須
+                  span.is-required 部署名
+                .row-fill
+                  .wrap-input
+                    input.input-text(type='text' name='department' value='' required)
+            .row-form
+              .content-row
+                .row-title
+                  span.text-required 必須
+                  span.is-required 役職名
+                .row-fill
+                  .wrap-input
+                    input.input-text(type='text' name='job' value='' required)
+            .row-form
+              .content-row
+                .row-title
+                  span.text-required 必須
+                  span.is-required ご希望の連絡方法
+                .row-fill
+                  .wrap-input.is-radio
+                    .vertical-item
+                      label
+                        input(type='radio' name='contact-method' value='メール')
+                        span.radio-field-text メール
+                    .vertical-item
+                      label
+                        input(type='radio' name='contact-method' value='電話')
+                        span.radio-field-text 電話
+            .row-form
+              .content-row
+                .row-title
+                  span.text-required 必須
+                  span.is-required メールアドレス
+                .row-fill
+                  .wrap-input
+                    input.input-text(type='email' name='email' value='' placeholder="例) example@amidas.co.jp" required)
+            .row-form
+              .content-row
+                .row-title
+                  p.text-zip 郵便番号（半角数字）
+                .row-fill.row-code
+                  .wrap-input
+                    input.input-text.js-zip-code(type='text' name='zip01' value='' placeholder='000-0000' required)
+                  a.trans.button-auto.js-auto-fill(href="javascript:;") 住所自動入力
+            .row-form.row-address
+              .content-row
+                .row-title
+                  span.text-required 必須
+                  span.is-required 所在地（ご住所）
+                .row-fill
+                  .wrap-input
+                    input.input-text(type='text' name='address' value='' placeholder="東京都千代田区神田錦町三丁目22番地 テラススクエア" required)
+            .wrapper-check
+              label
+                input(type='checkbox' name='同意する')
+                span.checkbox-field-text 旭化成アミダスからの製品、サービス、イベントに関するマーケティング情報の受け取りを希望します。
+              label
+                input(type='checkbox' name='同意する')
+                span.checkbox-field-text 旭化成アミダスの<a class="link-privacy" href="#">個人情報保護方針（プライバシーポリシー）</a>に同意し、記入内容が正しいことについて確認しました。
+            .wrapper-link
+              button.common-big-button(type='submit' value='ダウンロード' name='confirmation') ダウンロード

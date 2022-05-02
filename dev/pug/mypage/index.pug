@@ -1,0 +1,258 @@
+extends ../_layouts/default
+
+block vars
+  -title        = 'ログイン | マイページ'
+  -description  = ''
+  -keywords     = ''
+  -pageID       = 'mypage'
+  -pageSubID    = 'mypage-top'
+  -typePage     = 'type-c'
+  -path         = '..'
+  -imgPC        = path+'/img/'+pageID+'/'
+  -imgSP        = path+'/img/'+pageID+'/sp/'
+
+block container
+  +keyvisual('mypage-top','マイページTOP')
+  section.section-mypage-content
+    .wrapper
+      h2.common-title.color-orange
+        span コンテンツ一覧
+      ul.list-content
+        -
+          var
+            list = [
+              {
+                number: '01',
+                title: 'お仕事検索',
+                text: '最新のお仕事情報の検索、<br class="md">エントリー'
+              },
+              {
+                number: '02',
+                title: 'キャリアアップ<br>支援制度',
+                text: '各種研修、eラーニングなど'
+              },
+              {
+                number: '03',
+                title: 'お友達紹介<span>（全エリア）</span>',
+                text: '全エリア対象！'
+              },
+              {
+                number: '04',
+                title: '福利厚生',
+                text: 'クラブオフ、健康サポートなど'
+              },
+              {
+                number: '05',
+                title: '規定・各種申請書',
+                text: '各種ダウンロード<br>WEB給与明細案内'
+              },
+              {
+                number: '06',
+                title: '各種限定<br class="sm">キャンペーン',
+                text: '登録エリア別'
+              },
+              {
+                number: '07',
+                title: '登録情報',
+                text: 'パスワード、基本情報や希望<br class="sm">条件の変更'
+              },
+              {
+                number: '08',
+                title: '各種お問合せ',
+                text: '各種ダウンロード<br>WEB給与明細案内'
+              },
+              {
+                number: '09',
+                title: '法律関連',
+                text: '各種法改正に伴うご案内、<br>労働者代表など'
+              }
+            ]
+        each item in list
+          li.item-content
+            a.item-link(class=item.className href=item.url?path+item.url:'#')
+              h3.item-title
+                span.title-icon
+                  img.md(src=imgPC+"mypage_top_img_"+item.number+".png" width="30" height="25" alt=item.title.replace(/<[^>]*>/,''))
+                  img.sm(src=imgSP+"mypage_top_img_"+item.number+".png" width="60" height="54" alt=item.title.replace(/<[^>]*>/,''))
+                span.text-title!=item.title
+              p.item-text!=item.text
+
+  section.section-common-news.section-notice-important
+    .wrapper
+      .news-left
+        h2.common-title.color-orange
+          span 重要なお知らせ
+      .news-right
+        +newsList([
+          {
+            datetime: '2021-10-20',
+            time: '2021.10.20',
+            category: '注意喚起',
+            title: 'WEBタイムシート ログインサイトについて（2021.07.06）'
+          },
+          {
+            datetime: '2021-10-20',
+            time: '2021.10.20',
+            category: '注意喚起',
+            title: 'WEBタイムシート ログインサイトについて（2021.07.06）'
+          },
+          {
+            datetime: '2021-10-20',
+            time: '2021.10.20',
+            category: '注意喚起',
+            title: '旭化成アミダス 契約社員募集のお知らせ【募集は終了しました】'
+          }
+        ])
+
+  section.section-common-news.section-notice
+    .wrapper
+      .news-left
+        h2.common-title.color-orange
+          span お知らせ
+      .news-right
+        +newsList([
+          {
+            datetime: '2021-10-20',
+            time: '2021.10.20',
+            title: '新型コロナウイルス感染時の罹患・罹患疑いの基本対応について'
+          },
+          {
+            datetime: '2021-10-20',
+            time: '2021.10.20',
+            title: '電子署名システム（SignDoc）の導入遅延について'
+          },
+          {
+            datetime: '2021-10-20',
+            time: '2021.10.20',
+            title: '過半数労働者の選出（投票）について'
+          }
+        ])
+
+  section.section-mypage-work
+    .wrapper
+      .content-title
+        h2.common-title.color-orange
+          span ブックマークされたお仕事
+        p.text-article 1-2 / 2件中
+      ul.list-article
+        -
+          var
+            list = [
+              {
+                title: 'CADオペレーター・集合住宅の図面作成（旭化成グループ）週4～5日'
+              },
+              {
+                title: '電話少　データ入力などの事務（ノーベル賞で知られる旭化成グループ）丁寧にOJT　在宅勤務あり'
+              }
+            ]
+        each item in list
+          li.item-article
+            h3.title-article
+              a.link-article(href="#")
+                span!=item.title
+      .pagination-work.md
+        include ../_parts/common_pagination_03
+      .pagination-work.sm
+        include ../_parts/common_pagination_02
+
+  section.section-mypage-work
+    .wrapper
+      .content-title
+        h2.common-title.color-orange
+          span お仕事アクセス履歴
+        p.text-article 11-20 / 48件中
+      ul.list-article
+        -
+          var
+            list = [
+              {
+                title: '住宅の修理・点検の一次受付と事務（大手ハウスメーカー・コールセンター）週5日勤務・研修しっかり'
+              },
+              {
+                title: '輸出事務（機械メーカー）英語コレポン程度できる方！'
+              },
+              {
+                title: '11月末まで　税務関連部署で行政事務と窓口（区役所　延長可能性あり）役所での税務事務経験必須'
+              },
+              {
+                title: 'コロナのワクチン接種に関する部署で行政事務と窓口（区役所10～18：45）区の財務会計システム使用経験必須'
+              },
+              {
+                title: '伝票処理や旅費精算などの事務（官公庁海洋研究の機関）車OK'
+              },
+              {
+                title: '電話少　データ入力などの事務（ノーベル賞で知られる旭化成グループ）丁寧にOJT　在宅勤務あり'
+              },
+              {
+                title: '伝票処理や旅費精算などの事務（官公庁海洋研究の機関）車OK'
+              },
+              {
+                title: '入力や資料作成などの事務簡単なCAD操作（水日祝休み・週5日）旭化成グループ'
+              },
+              {
+                title: '入力や資料作成などの事務簡単なCAD操作（水日祝休み・週5日）旭化成グループ'
+              },
+              {
+                title: 'VLOOK使用の給与計算やデータ集計など（学校法人　私立大学）17時まで　自転車OK'
+              }
+            ]
+        each item in list
+          li.item-article
+            h3.title-article
+              a.link-article(href="#")
+                span!=item.title
+      .pagination-work.md
+        include ../_parts/common_pagination_03
+      .pagination-work.sm
+        include ../_parts/common_pagination_02
+
+  section.section-mypage-work.last-content-work
+    .wrapper
+      .content-title
+        h2.common-title.color-orange
+          span お仕事エントリー履歴
+        p.text-article 11-20 / 48件中
+      ul.list-article
+        -
+          var
+            list = [
+              {
+                title: '住宅の修理・点検の一次受付と事務（大手ハウスメーカー・コールセンター）週5日勤務・研修しっかり'
+              },
+              {
+                title: '輸出事務（機械メーカー）英語コレポン程度できる方！'
+              },
+              {
+                title: '11月末まで　税務関連部署で行政事務と窓口（区役所　延長可能性あり）役所での税務事務経験必須　'
+              },
+              {
+                title: 'コロナのワクチン接種に関する部署で行政事務と窓口（区役所10～18：45）区の財務会計システム使用経験必須'
+              },
+              {
+                title: '伝票処理や旅費精算などの事務（官公庁海洋研究の機関）車OK'
+              },
+              {
+                title: '電話少　データ入力などの事務（ノーベル賞で知られる旭化成グループ）丁寧にOJT　在宅勤務あり'
+              },
+              {
+                title: '伝票処理や旅費精算などの事務（官公庁海洋研究の機関）車OK'
+              },
+              {
+                title: '入力や資料作成などの事務簡単なCAD操作（水日祝休み・週5日）旭化成グループ'
+              },
+              {
+                title: '入力や資料作成などの事務簡単なCAD操作（水日祝休み・週5日）旭化成グループ'
+              },
+              {
+                title: 'VLOOK使用の給与計算やデータ集計など（学校法人　私立大学）17時まで　自転車OK'
+              }
+            ]
+        each item in list
+          li.item-article
+            h3.title-article
+              a.link-article(href="#")
+                span!=item.title
+      .pagination-work.md
+        include ../_parts/common_pagination_03
+      .pagination-work.sm
+        include ../_parts/common_pagination_02

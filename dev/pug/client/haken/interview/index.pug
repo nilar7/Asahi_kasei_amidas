@@ -1,0 +1,80 @@
+extends ../../../_layouts/default
+
+block vars
+  -title        = '人材派遣サービス導入事例インタビュー'
+  -description  = ''
+  -keywords     = ''
+  -pageID       = 'client'
+  -pageSubID    = 'client-haken'
+  -typePage     = 'type-b'
+  -path         = '../../..'
+  -imgPC        = path+'/img/'+pageID+'/'
+  -imgSP        = path+'/img/'+pageID+'/sp/'
+
+block container
+  +keyvisual('client-interview','導入事例インタビュー')
+    +breadcrumb('導入事例インタビュー', [{title: '企業向けTOP',url: '/client/'},{title: '旭化成アミダスの人材派遣サービス',url: '/client/haken/'}])
+  +listMenuClient([
+    {
+      title: '人材派遣サービスTOP',
+      url: '/client/haken/index.html'
+    },
+    {
+      title: '得意とする領域・職種',
+      url: '/client/haken/field.html'
+    },
+    {
+      title: '導入事例インタビュー',
+      url: '/client/haken/interview/index.html',
+      active: true
+    },
+    {
+      title: '派遣チーム×顧客座談会',
+      url: '/client/haken/whitepaper.html'
+    },
+    {
+      title: '記事コンテンツ',
+      url: '/client/haken/article/index.html'
+    }
+  ])
+  section.section-client-interview
+    .wrapper
+      p.text-interview.md 説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明
+      ul.common-list-interview
+        -
+          var blockList = [
+            {
+              number: '01'
+            },
+            {
+              number: '02'
+            },
+            {
+              number: '01'
+            },
+            {
+              number: '02'
+            },
+            {
+              number: '01'
+            },
+            {
+              number: '02'
+            }
+          ];
+        each item in blockList
+          li.item-interview
+            a.link-interview(href=path+"/client/haken/interview/detail.html")
+              .block-interview
+                figure.image-interview
+                  img.md(src=imgPC+"client_img_"+item.number+".jpg" width="496" height="280" loading="lazy" alt="会社名会社名会社名")
+                  img.sm(src=imgSP+"client_img_01.jpg" width="352" height="200" loading="lazy" alt="会社名会社名会社名")
+                .button-arrow
+              h2.title-item 会社名会社名会社名
+              ul.common-list-category.is-big
+                li
+                  span.item-category 業種名業種名
+                li
+                  span.item-category 課題名課題名
+              p.text-item 説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが
+      a.common-button-more.font-alata(href="#") View All

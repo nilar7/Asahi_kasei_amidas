@@ -1,0 +1,39 @@
+extends ../../_layouts/default
+
+block vars
+  -title        = 'お知らせ・イベント情報詳細'
+  -description  = ''
+  -keywords     = ''
+  -pageID       = 'client'
+  -pageSubID    = 'client-news'
+  -typePage     = 'type-b'
+  -pageSubFooter= 'no'
+  -path         = '../..'
+  -imgPC        = path+'/img/'+pageID+'/'
+  -imgSP        = path+'/img/'+pageID+'/sp/'
+
+block container
+  +breadcrumb('「クラブオフ」のページを更新しました', [{title: '企業向けTOP',className: true,url: '/client/'},{title: 'お知らせ・イベント情報',url: '/client/news/'}])
+  section.section-client-detail
+    .inner-wrapper
+      h1.title-detail 「クラブオフ」のページを更新しました<br><span class="sm">「クラブオフ」のページを更新しました</span>
+      .post-time
+        time.font-alata(datetime="2021-10-20") 2021.10.20
+        span.highlight 登録スタッフ
+      .post-content
+        h2 章タイトル章タイトル
+        p 説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります。
+        p 説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります。
+        img.md(src=imgPC+"topics_img_01.jpg" width="848" height="400" loading="lazy" alt="章タイトル章タイトル")
+        img.sm(src=imgSP+"topics_img_01.jpg" width="704" height="400" loading="lazy" alt="章タイトル章タイトル")
+        h2 章タイトル章タイトル
+        p 説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります。
+        p 説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります。
+        img.md(src=imgPC+"topics_img_01.jpg" width="848" height="400" loading="lazy" alt="章タイトル章タイトル")
+        img.sm(src=imgSP+"topics_img_01.jpg" width="704" height="400" loading="lazy" alt="章タイトル章タイトル")
+      include ../../_parts/common_pagination_02
+      .wrapper-link
+        a.button-common-line.is-style-direct.trans(href=path+'/client/index.html')
+          span.button-wrapper お知らせ一覧
+          span.button-icon
+      a.common-big-button.is-arrow(href="#") 資料請求・お問い合わせ

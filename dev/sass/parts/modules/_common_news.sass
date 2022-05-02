@@ -1,0 +1,160 @@
+.section-common-news
+  .section-title
+    font-weight: bold
+    letter-spacing: .08em
+    text-align: center
+  .is-english
+    display: block
+    position: absolute
+    img
+      width: 100%
+  .news-left
+    position: relative
+
+.common-news-list
+  padding-left: 0
+  list-style: none
+  .news-detail
+    border-bottom: 1px solid $base-color-light-blue
+    &:first-child
+      border-top: 1px solid $base-color-light-blue
+    &:hover
+      border-bottom-width: 2px
+  .news-link
+    text-decoration: none
+    position: relative
+    &:after
+      content: ''
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      background: url(../img/common/icon_arrow_06.svg) no-repeat center left/100% auto
+    &:hover
+      .news-title
+        color: $base-color-light-blue
+  .news-title
+    font-weight: bold
+    color: #202020
+    overflow: hidden
+    text-overflow: ellipsis
+    display: -webkit-box
+    -webkit-line-clamp: 1
+    -webkit-box-orient: vertical
+    margin-bottom: 0
+    transition: color .3s
+  .news-time-category
+    display: flex
+    align-items: center
+  .news-time
+    flex-shrink: 0
+    color: $base-color-light-blue
+  .news-category
+    color: #fff
+    background: $base-color-light-blue
+    text-align: center
+    &.background-orange
+      background-color: $base-color-orange
+
++desktop
+  .section-common-news
+    padding: 80px 0 120px
+    .section-title
+      font-size: .16rem
+    .is-english
+      top: -8px
+      left: -164px
+      width: 159px
+    .wrapper
+      display: flex
+      justify-content: space-between
+    .news-left
+      flex-shrink: 0
+      padding-top: 24px
+      width: 160px
+    .news-right
+      width: 848px
+      flex-shrink: 0
+      margin-left: 16px
+
+  .common-news-list
+    margin-bottom: 40px
+    .news-link
+      display: flex
+      align-items: center
+      font-size: .14rem
+      min-height: 86px
+      padding: 5px 40px 5px 0
+      &:after
+        right: 20px
+        width: 20px
+        height: 20px
+    .news-title
+      font-size: .14rem
+    .news-time
+      width: 115px
+    .news-category
+      border-radius: 50px
+      font-size: .13rem
+      padding: 2px 8px 4px
+      width: 112px
+      margin-right: 24px
+
+  .is-mac.is-chrome
+    .common-news-list
+      .news-category
+        padding-top: 3px
+        padding-bottom: 3px
+
+@media print, (min-width: 768.98px) and (max-width: 1279px)
+  .section-common-news
+    .is-english
+      left: -95px
+
+@media print, (min-width: 768.98px) and (max-width: 1189px)
+  .section-common-news
+    .is-english
+      left: 0
+      top: 50px
+
+@media print, (min-width: 768.98px) and (max-width: 900px)
+  .common-news-list
+    max-width: 570px
+    width: 100%
+
++mobile
+  .section-common-news
+    padding: 1.04rem 0 1.2rem
+    .section-title
+      font-size: .26rem
+      margin-bottom: .8rem
+    .is-english
+      top: 47%
+      left: 50%
+      transform: translate(-50%,-50%)
+      width: 5.02rem
+
+  .common-news-list
+    margin-bottom: .64rem
+    .news-time-category
+      margin-bottom: .32rem
+    .news-link
+      display: block
+      font-size: .24rem
+      min-height: 1.96rem
+      padding: .32rem .48rem .32rem 0
+      &:after
+        right: .2rem
+        width: .36rem
+        height: .36rem
+    .news-title
+      font-size: .24rem
+      margin-bottom: 0
+      transition: color .3s
+    .news-time
+      margin-right: .4rem
+    .news-category
+      border-radius: .2rem
+      font-size: .22rem
+      padding: .01rem .05rem .03rem
+      min-width: 1.78rem
+      margin-right: .24rem

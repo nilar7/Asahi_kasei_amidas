@@ -1,0 +1,37 @@
+.common-list-category
+  list-style-type: none
+  padding-left: 0
+  display: flex
+  flex-wrap: wrap
+  .item-category
+    display: block
+    border: solid 1px $base-color-blue
+    color: $base-color-blue
+    &:before
+      content: "#"
+
++desktop
+  .common-list-category
+    max-width: 865px
+    margin: 0 auto
+    li
+      margin: 0 8px 16px
+    .item-category
+      font-size: .12rem
+      padding: 8px 16px
+    &.is-big
+      .item-category
+        font-size: .13rem
+
++mobile
+  .common-list-category
+    margin: 0 -.08rem
+    li
+      margin: 0 .08rem .24rem
+    .item-category
+      font-size: .18rem
+      border-width: .02rem
+      padding: .08rem .15rem
+    &.is-big
+      .item-category
+        font-size: $base-font-size-sp

@@ -1,0 +1,47 @@
+.inner-wrapper
+  .header-left
+    if pageID == 'top'
+      h1.header-logo
+        a.trans.logo(href=path+"/")
+          img(src=path+"/img/common/common_logo.png" width="189" height="57" loading="lazy" alt="旭化成アミダス")
+    else
+      .header-logo
+        a.trans.logo(href=path+"/")
+          img(src=path+"/img/common/common_logo.png" width="189" height="57" loading="lazy" alt="旭化成アミダス")
+    p.text-service 総合人材<br class="md">サービスサイト
+  .header-right.md
+    .content-top
+      if(pageID=='top')
+        ul.list-function
+          li.item-list.background-orange
+            a.item-link(href=path+"/mypage/register.html") 派遣登録はこちら
+          li.item-list.background-orange
+            a.item-link(href=path+"/job/") 派遣のお仕事検索
+          li.item-list.background-blue
+            a.item-link(href=path+"/mypage/") マイページログイン
+      else
+        ul.list-function
+          li.item-list.background-blue
+            a.item-link(href=path+"/mypage/") マイページログイン
+          li.item-list.background-blue
+            a.item-link(href=path+"/mypage/register.html") 派遣登録はこちら
+      form.form-search
+        .content-form
+          input.input-text(type='text' name='search' value='')
+          .item-search.background-blue
+            a(href="javascript:;")
+    .content-bottom
+      nav.header-navigation
+        ul.list-navigation
+          li.item-navigation
+            a(class=pageID=='top' ? 'active-menu': '' href=path+"/") ホーム
+          li.item-navigation
+            a(class=(pageID=='job' || pageID=='mypage') ? 'active-menu': '' href=path+"/job/") お仕事をお探しの方
+          li.item-navigation
+            a(href='#') 企業のご担当者の方
+          li.item-navigation
+            a(class=pageID=='recruit' ? 'active-menu': '' href=path+"/recruit/") 採用情報
+          li.item-navigation
+            a(class=pageID=='company' ? 'active-menu': '' href=path+"/company/") 企業情報
+          li.item-navigation
+            a(href="#") アクセス

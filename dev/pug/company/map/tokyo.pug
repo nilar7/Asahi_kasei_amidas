@@ -1,0 +1,88 @@
+extends ../../_layouts/default
+
+block vars
+  -title        = '本社'
+  -description  = ''
+  -keywords     = ''
+  -pageID       = 'company'
+  -pageSubID    = 'company-tokyo'
+  -typePage     = 'type-a'
+  -path         = '../..'
+  -imgPC        = path+'/img/'+pageID+'/'
+  -imgSP        = path+'/img/'+pageID+'/sp/'
+
+block container
+  include ../../_parts/common_list_menu
+  +breadcrumb('東京都：本社', [{title: '企業情報',url: '/company/'},{title: '拠点一覧',url: '/company/map/'}])
+  section.section-company-map.map-detail
+    .wrapper
+      h2.title-company-tokyo 東京都：本社
+      .block-content.block-top
+        h3.sub-title 住所
+        .block-detail
+          address.address 〒101-8480<br>東京都千代田区神田錦町三丁目22番地　<br class="sm">テラススクエア 5階
+          a.trans.phone(href="tel:03-6777-1100") 代表電話番号: 03-6777-1100
+          .block-location
+            .block-map
+              .map-api#js-map
+            a.trans.button-location.js-print-map(href="javascript:;") 印刷する
+      .block-content.block-middle
+        h3.sub-title 事業部名
+        ul.list-business
+          li.item-business.item-service
+            p.text-service 一般派遣 / 紹介予定派遣サービス
+          li.item-business
+            p.name-company 人材ソリューション事業部　東京第一支店
+            .content-contact
+              a.trans.phone(href="tel:03-6777-3700") TEL: 03-6777-3700
+              a.trans.phone(href="tel:0120-244-077")  FREE: 0120-244-077
+          li.item-business
+            p.name-company 人材ソリューション事業部　東京第一支店
+            .content-contact
+              a.trans.phone(href="tel:03-6777-3700") TEL: 03-6777-3700
+              a.trans.phone(href="tel:0120-244-077")  FREE: 0120-244-077
+          li.item-business.item-service
+            p.text-service 一般派遣 / 紹介予定派遣サービス
+          li.item-business
+            p.name-company 人材ソリューション事業部　東京第一支店
+            .content-contact
+              a.trans.phone(href="tel:03-6777-3700") TEL: 03-6777-3700
+              a.trans.phone(href="tel:0120-244-077")  FREE: 0120-244-077
+          li.item-business
+            p.name-company 人材ソリューション事業部　東京第一支店
+            .content-contact
+              a.trans.phone(href="tel:03-6777-3700") TEL: 03-6777-3700
+              a.trans.phone(href="tel:0120-244-077")  FREE: 0120-244-077
+          li.item-business.item-service
+            p.text-service 一般派遣 / 紹介予定派遣サービス
+          li.item-business
+            p.name-company 人材ソリューション事業部　東京第一支店
+            .content-contact
+              a.trans.phone(href="tel:03-6777-3700") TEL: 03-6777-3700
+              a.trans.phone(href="tel:0120-244-077")  FREE: 0120-244-077
+          li.item-business
+            p.name-company 人材ソリューション事業部　東京第一支店
+            .content-contact
+              a.trans.phone(href="tel:03-6777-3700") TEL: 03-6777-3700
+              a.trans.phone(href="tel:0120-244-077")  FREE: 0120-244-077
+          li.item-business.item-service
+            p.text-service 一般派遣 / 紹介予定派遣サービス
+          li.item-business
+            p.name-company 人材ソリューション事業部　東京第一支店
+            .content-contact
+              a.trans.phone(href="tel:03-6777-3700") TEL: 03-6777-3700
+              a.trans.phone(href="tel:0120-244-077")  FREE: 0120-244-077
+          li.item-business
+            p.name-company 人材ソリューション事業部　東京第一支店
+            .content-contact
+              a.trans.phone(href="tel:03-6777-3700") TEL: 03-6777-3700
+              a.trans.phone(href="tel:0120-244-077")  FREE: 0120-244-077
+      .block-content.block-bottom
+        h3.sub-title 交通案内<br class="md">（最寄駅）
+        ul.list-guide
+          li.item-guide 東京メトロ半蔵門線、都営地下鉄新宿線・三田線<br class="sm"><span>「神保町駅」A9出口より 徒歩2分</span>
+          li.item-guide 東京メトロ東西線<span>「竹橋駅」3b出口より 徒歩5分</span>
+          li.item-guide 東京メトロ丸ノ内線<span>「淡路町駅」B7出口より 徒歩7分</span>
+          li.item-guide 東京メトロ千代田線<span>「新御茶ノ水駅」B7出口より <br class="sm">徒歩7分</span>
+          li.item-guide JR中央線・総武線<span>「御茶ノ水駅」<br class="sm">御茶ノ水橋口より 徒歩10分</span>
+      include ../../_parts/common_list_company

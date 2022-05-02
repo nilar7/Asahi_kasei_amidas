@@ -1,0 +1,145 @@
+extends ../_layouts/default
+
+block vars
+  -title        = 'お知らせ一覧'
+  -description  = ''
+  -keywords     = ''
+  -pageID       = 'topics'
+  -typePage     = 'type-a'
+  -path         = '..'
+  -imgPC        = path+'/img/'+pageID+'/'
+  -imgSP        = path+'/img/'+pageID+'/sp/'
+
+block container
+  +breadcrumb('お知らせ・イベント情報')
+  section.section-topics
+    .wrapper
+      h1.common-title
+        span お知らせ・イベント情報
+      .common-content-aside
+        aside.side-bar
+          p.text-aside 種別
+          form
+            .wrap-checkbox
+              .vertical-item.square-blue
+                label
+                  input(type='checkbox' name='category' value='カテゴリ1' checked)
+                  span.checkbox-field-text カテゴリ1
+              .vertical-item.square-orange
+                label
+                  input(type='checkbox' name='category' value='カテゴリ2' checked)
+                  span.checkbox-field-text カテゴリ2
+              .vertical-item.square-yellow
+                label
+                  input(type='checkbox' name='category' value='カテゴリ3')
+                  span.checkbox-field-text カテゴリ3
+        .content-list
+          +newsList([
+            {
+              datetime: '2021-10-20',
+              time: '2021.10.20',
+              category: '登録スタッフ',
+              title: '「クラブオフ」のページを更新しました',
+              url: '/topics/detail.html'
+            },
+            {
+              datetime: '2021-10-20',
+              time: '2021.10.20',
+              category: '派遣',
+              title: '名古屋支店が移転しました',
+              isBackground: true,
+              url: '/topics/detail.html'
+            },
+            {
+              datetime: '2021-10-20',
+              time: '2021.10.20',
+              category: '登録スタッフ',
+              title: '旭化成アミダス 契約社員募集のお知らせ【募集は終了しました】',
+              url: '/topics/detail.html'
+            },
+            {
+              datetime: '2021-10-20',
+              time: '2021.10.20',
+              category: '登録スタッフ',
+              title: '「クラブオフ」のページを更新しました',
+              url: '/topics/detail.html'
+            },
+            {
+              datetime: '2021-10-20',
+              time: '2021.10.20',
+              category: '登録スタッフ',
+              title: '「クラブオフ」のページを更新しました',
+              url: '/topics/detail.html'
+            },
+            {
+              datetime: '2021-10-20',
+              time: '2021.10.20',
+              category: '登録スタッフ',
+              title: '「クラブオフ」のページを更新しました',
+              url: '/topics/detail.html'
+            },
+            {
+              datetime: '2021-10-20',
+              time: '2021.10.20',
+              category: '登録スタッフ',
+              title: '「クラブオフ」のページを更新しました',
+              url: '/topics/detail.html'
+            },
+            {
+              datetime: '2021-10-20',
+              time: '2021.10.20',
+              category: '登録スタッフ',
+              title: '「クラブオフ」のページを更新しました',
+              url: '/topics/detail.html'
+            },
+            {
+              datetime: '2021-10-20',
+              time: '2021.10.20',
+              category: '登録スタッフ',
+              title: '「クラブオフ」のページを更新しました',
+              url: '/topics/detail.html'
+            },
+            {
+              datetime: '2021-10-20',
+              time: '2021.10.20',
+              category: '登録スタッフ',
+              title: '「クラブオフ」のページを更新しました',
+              url: '/topics/detail.html'
+            },
+            {
+              datetime: '2021-10-20',
+              time: '2021.10.20',
+              category: '登録スタッフ',
+              title: '「クラブオフ」のページを更新しました',
+              url: '/topics/detail.html'
+            },
+            {
+              datetime: '2021-10-20',
+              time: '2021.10.20',
+              category: '登録スタッフ',
+              title: '「クラブオフ」のページを更新しました',
+              url: '/topics/detail.html'
+            },
+            {
+              datetime: '2021-10-20',
+              time: '2021.10.20',
+              category: '登録スタッフ',
+              title: '「クラブオフ」のページを更新しました',
+              url: '/topics/detail.html'
+            },
+            {
+              datetime: '2021-10-20',
+              time: '2021.10.20',
+              category: '登録スタッフ',
+              title: '「クラブオフ」のページを更新しました',
+              url: '/topics/detail.html'
+            },
+            {
+              datetime: '2021-10-20',
+              time: '2021.10.20',
+              category: '登録スタッフ',
+              title: '「クラブオフ」のページを更新しました',
+              url: '/topics/detail.html'
+            }
+          ])
+          include ../_parts/common_pagination

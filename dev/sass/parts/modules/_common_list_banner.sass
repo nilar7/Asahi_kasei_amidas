@@ -1,0 +1,80 @@
+.common-block-banner
+  background-color: rgba(196,227,255,.25)
+.common-list-banner
+  list-style-type: none
+  padding-left: 0
+  .item-banner
+    font-weight: 700
+  .text-banner
+    color: $base-color-blue
+    position: relative
+    text-align: center
+    &:before,
+    &:after
+      position: absolute
+      content: ""
+      top: 50%
+      transform: translateY(-50%)
+      height: 1px
+      background-color: $base-color-blue
+    &:before
+      left: 0
+    &:after
+      right: 0
+    span
+      display: inline-block
+  .button-banner
+    text-decoration: none
+    display: flex
+    align-items: center
+    justify-content: center
+    background-color: #fff
+    color: $base-font-color
+    transition: background-color .26s, color .26s
+    &:hover
+      background-color: $base-color-blue
+      color: #fff
+
++desktop
+  .common-block-banner
+    padding: 48px 16px
+  .common-list-banner
+    display: flex
+    justify-content: space-between
+    max-width: 848px
+    margin: 0 auto
+    .item-banner
+      width: calc(50% - 16px)
+      font-size: .16rem
+    .text-banner
+      margin-bottom: 16px
+      &:before,
+      &:after
+        width: 40px
+      span
+        padding: 0 48px
+    .button-banner
+      min-height: 67px
+      box-shadow: 0 3px 6px rgba(0,0,0,.16)
+      padding: 16px
+
++mobile
+  .common-block-banner
+    margin: 0 .48rem
+    padding: .64rem .16rem .32rem
+  .common-list-banner
+    .item-banner
+      font-size: .24rem
+      &:not(:last-child)
+        margin-bottom: .64rem
+    .text-banner
+      margin-bottom: .32rem
+      &:before,
+      &:after
+        width: .52rem
+      span
+        padding: 0 .48rem
+    .button-banner
+      min-height: .8rem
+      box-shadow: 0 .03rem .06rem rgba(0,0,0,.16)
+      padding: .16rem

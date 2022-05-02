@@ -1,0 +1,99 @@
+extends ../../../_layouts/default
+
+block vars
+  -title        = '人材派遣サービス記事コンテンツ詳細'
+  -description  = ''
+  -keywords     = ''
+  -pageID       = 'client'
+  -pageSubID    = 'client-haken'
+  -typePage     = 'type-b'
+  -path         = '../../..'
+  -imgPC        = path+'/img/'+pageID+'/'
+  -imgSP        = path+'/img/'+pageID+'/sp/'
+
+block container
+  .sm
+    +breadcrumb('有期雇用派遣労働者の雇用安定措置について', [{title: '企業向けTOP',url: '/client/'},{title: '旭化成アミダスの人材派遣サービス',url: '/client/haken/'},{title: 'ブログ・コラム（仮）',url: '/client/haken/article/'}])
+  +listMenuClient([
+    {
+      title: '人材派遣サービスTOP',
+      url: '/client/haken/index.html'
+    },
+    {
+      title: '得意とする領域・職種',
+      url: '/client/haken/field.html'
+    },
+    {
+      title: '導入事例インタビュー',
+      url: '/client/haken/interview/index.html'
+    },
+    {
+      title: '派遣チーム×顧客座談会',
+      url: '/client/haken/interview/detail.html'
+    },
+    {
+      title: '記事コンテンツ',
+      url: '/client/haken/article/index.html',
+      active: true
+    }
+  ])
+  .md
+    +breadcrumb('有期雇用派遣労働者の雇用安定措置について', [{title: '企業向けTOP',url: '/client/'},{title: '旭化成アミダスの人材派遣サービス',url: '/client/haken/'},{title: 'ブログ・コラム（仮）',url: '/client/haken/article/'}])
+  section.section-article-detail
+    .wrapper
+      .content-article
+        h1.title-article-detail 有期雇用派遣労働者の雇用安定措置について
+        .content-time
+          time.font-alata(datetime="2021-10-20") 2021.10.20
+          span.category カテゴリ1
+      .post-content
+        .block-content
+          img.md(src=imgPC+"client_img_dummy.jpg" width="848" height="400" loading="lazy" alt="有期雇用派遣労働者の雇用安定措置について")
+          img.sm(src=imgSP+"client_img_dummy.jpg" width="701" height="399" loading="lazy" alt="有期雇用派遣労働者の雇用安定措置について")
+          p 説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります。説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります。
+        h2 目次
+        ol
+          li 目次テキスト目次テキスト目次テキスト目次テキスト目次テキスト
+          li 目次テキスト目次テキスト目次テキスト目次テキスト目次テキスト
+          li 目次テキスト目次テキスト目次テキスト目次テキスト目次テキスト
+          li 目次テキスト目次テキスト目次テキスト目次テキスト目次テキスト
+        h2 見出し見出し見出し見出し見出し見出し見出し
+        img.md(src=imgPC+"client_img_dummy.jpg" width="848" height="400" loading="lazy" alt="見出し見出し見出し見出し見出し見出し見出し")
+        img.sm(src=imgSP+"client_img_dummy.jpg" width="701" height="399" loading="lazy" alt="見出し見出し見出し見出し見出し見出し見出し")
+        p 説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります。説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります。
+        p 説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります。説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります。
+        p 説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります。説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります。
+    include ../../../_parts/common_banner
+    .wrapper
+      .post-content
+        h2 見出し見出し見出し見出し見出し見出し見出し
+        p 説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります。説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります。
+        p 説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります。説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります。
+        p.half-width 説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります。説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります。
+        img.md(src=imgPC+"client_img_dummy.jpg" width="848" height="400" loading="lazy" alt="見出し見出し見出し見出し見出し見出し見出し")
+        img.sm(src=imgSP+"client_img_dummy.jpg" width="701" height="399" loading="lazy" alt="見出し見出し見出し見出し見出し見出し見出し")
+    include ../../../_parts/common_banner
+    .wrapper
+      .post-content
+        h2 見出し見出し見出し見出し見出し見出し見出し
+        img.md(src=imgPC+"client_img_dummy.jpg" width="848" height="400" loading="lazy" alt="見出し見出し見出し見出し見出し見出し見出し")
+        img.sm(src=imgSP+"client_img_dummy.jpg" width="701" height="399" loading="lazy" alt="見出し見出し見出し見出し見出し見出し見出し")
+        p 説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります。説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります。
+        p 説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります。説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります。
+        p 説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります。説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります。
+      .block-social
+        .text-share
+          p.font-alata SHARE
+        ul.list-social
+          li
+            a.trans(href="#" target="_blank" rel="noopener")
+              img(src=imgPC+"icon_social_01.svg" width="49" height="49" loading="lazy" alt="Twitter")
+          li
+            a.trans(href="#" target="_blank" rel="noopener")
+              img(src=imgPC+"icon_social_02.svg" width="49" height="49" loading="lazy" alt="Facebook")
+          li
+            a.trans(href="#" target="_blank" rel="noopener")
+              img(src=imgPC+"icon_social_03.svg" width="49" height="49" loading="lazy" alt="Line")
+        a.button-common-line.is-style-direct(href="#")
+          span.button-wrapper ブログ・コラム一覧に戻る
+          span.button-icon

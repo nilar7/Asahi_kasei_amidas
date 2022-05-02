@@ -1,0 +1,213 @@
+.block-navigation
+  text-align: center
+.common-list-pagination
+  display: inline-flex
+  justify-content: center
+  align-items: center
+  flex-wrap: wrap
+  position: relative
+  list-style-type: none
+  a,
+  .dots
+    color: $base-color-light-blue
+  a
+    text-decoration: none
+  .arrow
+    position: absolute
+    top: 0
+    a
+      border: none
+      position: relative
+      &:before
+        position: absolute
+        content: ""
+        background: center / 100% auto no-repeat
+        transition: all .26s
+      &:hover
+        color: $base-color-light-blue
+        background-color: #fff
+        opacity: .8
+  .next
+    a
+      &:before
+        transform: scale(-1)
+  li
+    a,
+    span
+      border: solid 1px $base-color-light-blue
+      display: flex
+      align-items: center
+      justify-content: center
+      border-radius: 50%
+    a
+      transition: background .26s, color .26s
+      &:hover
+        background-color: $base-color-light-blue
+        color: #fff
+  .current
+    color: #fff
+    background-color: $base-color-light-blue
+
++desktop
+  .common-list-pagination
+    padding: 0 208px
+    min-width: 657px
+    font-size: .14rem
+    .arrow
+      a
+        &:before
+          background-image: url(../img/common/icon_arrow_blue.svg)
+          top: 14px
+          width: 9px
+          height: 12px
+    .prev
+      left: 0
+      margin-left: 144px
+      a
+        &:before
+          left: -20px
+        &:hover:before
+          left: -30px
+    .next
+      right: 0
+      margin-right: 144px
+      a
+        &:before
+          right: -20px
+        &:hover:before
+          right: -30px
+    li
+      margin: 0 4px 8px
+      a,
+      span
+        width: 40px
+        height: 40px
+
+  .block-pagination
+    text-align: center
+
+  .is-safari
+    .common-list-pagination
+      .arrow
+        a
+          &:before
+            top: 15px
+
+@media print, (min-width: 768.98px) and (max-width: 882px)
+  .common-list-pagination
+    padding: 0 104px
+    min-width: 490px
+    .prev
+      margin-left: 16px
+    .next
+      margin-right: 16px
+
++mobile
+  .common-list-pagination
+    padding: 0 1.28rem
+    min-width: 6.77rem
+    .arrow
+      a
+        &:before
+          background-image: url(../img/common/sp/icon_arrow_blue.svg)
+          top: .21rem
+          width: .15rem
+          height: .22rem
+    .prev
+      left: -.07rem
+      margin-left: .48rem
+      a
+        &:before
+          left: -.42rem
+        &:hover:before
+          left: -.5rem
+    .next
+      right: -.03rem
+      margin-right: .48rem
+      a
+        &:before
+          right: -.42rem
+        &:hover:before
+          right: -.5rem
+    li
+      margin: 0 .08rem .16rem
+      a,
+      span
+        width: .66rem
+        height: .66rem
+
+.block-pagination-line
+  .common-list-pagination
+    width: 100%
+    position: relative
+    &:after
+      position: absolute
+      content: ""
+      left: 50%
+      transform: translateX(-50%)
+      height: 2px
+      background-color: $base-color-light-blue
+
++desktop
+  .block-pagination-line
+    .common-list-pagination
+      max-width: unset
+      &:after
+        top: 18px
+        width: 79.6%
+    .prev
+      margin-left: 24px
+    .next
+      margin-right: 24px
+
+  .is-mac.is-safari,
+  .is-firefox
+    .block-pagination-line
+      .common-list-pagination
+        &:after
+          top: 20px
+
++mobile
+  .block-pagination-line
+    .common-list-pagination
+      &:after
+        top: .3rem
+        width: 57.2%
+    .prev
+      margin-left: .64rem
+    .next
+      margin-right: .64rem
+      a
+        width: .66rem
+
+.pagination-orange
+  .common-list-pagination a,
+  .common-list-pagination .dots,
+  .common-list-pagination span
+    color: $base-color-orange
+  .current
+    background-color: $base-color-orange
+  .common-list-pagination li a,
+  .common-list-pagination li span
+    border-color: rgba(233,97,0,.3)
+  .common-list-pagination
+    a
+      &:hover
+        background-color: $base-color-orange
+  .arrow
+    a
+      &:hover
+        background-color: #fff
+        color: $base-color-orange
+      &:before,
+        background-image: url(../img/mypage/icon_arrow_right_orange.png)
+        height: 13px
+  .next
+    a
+      &:before
+        transform: unset
+  .prev
+    a
+      &:before
+        top: 13px
+        transform: scale(-1)

@@ -1,0 +1,47 @@
+.list-menu-bottom
+  list-style-type: none
+  padding-left: 0
+  width: 100%
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+  .item-company
+    position: relative
+    text-align: center
+    &:not(:last-child)
+      &:after
+        position: absolute
+        content: ""
+        top: 50%
+        transform: translateY(-50%)
+        right: 0
+        width: 1px
+        background-color: $base-font-color
+    a
+      color: $base-color-light-blue
+    &.active-menu
+      a
+        color: $base-font-color
+        text-decoration: none
+        pointer-events: none
+
++desktop
+  .list-menu-bottom
+    .item-company
+      &:not(:last-child)
+        &:after
+          height: 11px
+      a
+        padding: 0 16px
+
++mobile
+  .list-menu-bottom
+    margin-bottom: 0
+    .item-company
+      margin-bottom: .32rem
+      &:not(:last-child)
+        &:after
+          height: .2rem
+      a
+        font-size: .22rem
+        padding: 0 .32rem

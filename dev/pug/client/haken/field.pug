@@ -1,0 +1,161 @@
+extends ../../_layouts/default
+
+block vars
+  -title        = '人材派遣サービス得意とする領域・職種'
+  -description  = ''
+  -keywords     = ''
+  -pageID       = 'client'
+  -pageSubID    = 'client-haken'
+  -typePage     = 'type-b'
+  -path         = '../..'
+  -imgPC        = path+'/img/'+pageID+'/'
+  -imgSP        = path+'/img/'+pageID+'/sp/'
+
+block container
+  +keyvisual('client-field','得意とする領域・職種')
+    +breadcrumb('得意とする領域・職種', [{title: '企業向けTOP',url: '/client/'},{title: '旭化成アミダスの人材派遣サービス',url: '/client/haken/'}])
+  +listMenuClient([
+    {
+      title: '人材派遣サービスTOP',
+      url: '/client/haken/index.html'
+    },
+    {
+      title: '得意とする領域・職種',
+      url: '/client/haken/field.html',
+      active: true
+    },
+    {
+      title: '導入事例インタビュー',
+      url: '/client/haken/interview/index.html',
+    },
+    {
+      title: '派遣チーム×顧客座談会',
+      url: '/client/haken/interview/detail.html'
+    },
+    {
+      title: '記事コンテンツ',
+      url: '/client/haken/article/index.html'
+    }
+  ])
+  section.section-client-field
+    .wrapper
+      p.text-top 説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明
+      .content-list-top
+        ul.list-field
+          li.item-field
+            a(href="#office") オフィス系
+          li.item-field
+            a(href="#architectural") 建築関系
+          li.item-field
+            a(href="#it") IT系
+          li.item-field
+            a(href="#related") 研究開発関連
+      ol.list-work
+        -
+          var
+            list = [
+              {
+                nameID: 'office',
+                nameField: '得意領域',
+                numberField: '01',
+                title: 'オフィス系',
+                text: '説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります。',
+                subTile: '主な対応職種',
+                subList: [
+                  {
+                    textOccupations: '一般事務'
+                  },
+                  {
+                    textOccupations: '営業事務'
+                  },
+                  {
+                    textOccupations: '貿易・経理事務'
+                  },
+                  {
+                    textOccupations: 'その他オフィスワーク全般'
+                  }
+                ],
+                number: '01'
+              },
+              {
+                nameID: 'architectural',
+                nameField: '得意領域',
+                numberField: '02',
+                title: '建築関係',
+                text: '説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります。',
+                subTile: '主な対応職種',
+                subList: [
+                  {
+                    textOccupations: 'CADオペレーター'
+                  },
+                  {
+                    textOccupations: 'インテリアコーディネーター'
+                  },
+                  {
+                    textOccupations: '設計補助'
+                  },
+                  {
+                    textOccupations: '住宅展示場での接客など'
+                  }
+                ],
+                number: '02'
+              },
+              {
+                nameID: 'it',
+                nameField: '得意領域',
+                numberField: '03',
+                title: 'IT系',
+                text: '説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります。',
+                subTile: '主な対応職種',
+                subList: [
+                  {
+                    textOccupations: 'PG'
+                  },
+                  {
+                    textOccupations: 'ヘルプデスク・<br class="md">ユーザーサポート'
+                  },
+                  {
+                    textOccupations: '運用管理・保守など'
+                  }
+                ],
+                number: '03'
+              },
+              {
+                nameID: 'related',
+                nameField: '得意領域',
+                numberField: '04',
+                title: '研究開発関連',
+                text: '説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります。',
+                subTile: '主な対応職種',
+                subList: [
+                  {
+                    textOccupations: '製品開発'
+                  },
+                  {
+                    textOccupations: '実験アシスタント'
+                  },
+                  {
+                    textOccupations: '分析・評価'
+                  },
+                  {
+                    textOccupations: '文献調査など'
+                  }
+                ],
+                number: '04'
+              }
+            ];
+        each item in list
+          li(class="item-work" id=item.nameID)
+            .content-block
+              .content-number
+                p.name-field!=item.nameField
+                span.number-field!=item.numberField
+              h2.title-work!=item.title
+              p.text-work!=item.text
+              h3.title-occupations!=item.subTile
+              ul.list-occupations
+                each items in item.subList
+                  li.item-occupations!=items.textOccupations
+            figure.image-work
+              img.md(src=imgPC+'client_field_img_'+item.number+'.jpg' width="496" height="432" loading="lazy" alt=item.title)
+              img.sm(src=imgSP+'client_field_img_'+item.number+'.jpg' width="672" height="421" loading="lazy" alt=item.title)

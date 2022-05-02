@@ -1,0 +1,193 @@
+mixin jobItem(value, name, text, desc)
+  span.job-number
+    | 探し方
+    span.number.font-alata!=value
+  .job-item
+    figure.job-image
+      img.md(src=imgPC+"job_img_"+value+".jpg", width="672", height="285", alt!=name.replace(/(<([^>]+)>)/gi, ''), loading="lazy")
+      img.sm(src=imgSP+"job_img_"+value+".jpg", width="672", height="414", alt!=name.replace(/(<([^>]+)>)/gi, ''), loading="lazy")
+      h2.job-title!=name
+    h3.job-text!=text
+    p.job-description!=desc
+
+mixin newsList(items)
+  ul.common-news-list
+    each item in items
+      li.news-detail
+        a.news-link(href=item.url?path+item.url:'#')
+          .news-time-category
+            time.news-time(datetime!=item.datetime)!=item.time
+            if (item.isBackground)
+              span.news-category.background-orange!=item.category
+            else
+              span.news-category!=item.category
+          if (pageID == 'topics' || pageSubID == 'client-news')
+            h2.news-title!=item.title
+          else
+            h3.news-title!=item.title
+
+mixin breadcrumb(last, list=[])
+  nav(class=pageSubID=='client-article'|| pageSubID=='client-article-detail'?'breadcrumb is-margin':'breadcrumb')
+    ol(class=pageSubID== 'topics-detail' || pageSubID== 'client-news' ?'breadcrumb-detail':'').breadcrumb-list
+      li
+        a(href=path+"/") ホーム
+      each item in list
+        li(class=item.className?'md':'')
+          a.trans(href=item.url?path+item.url:'#')!= item.title
+      li
+        span!= last
+
+mixin breadcrumbEnglish(last, list=[])
+  nav(class=pageSubID=='recruit-top'?'breadcrumb is-margin':'breadcrumb')
+    ol.breadcrumb-list
+      li
+        a(href=path+"/") HOME
+      each item in list
+        li(class=item.className?'md':'')
+          a.trans(href=item.url?path+item.url:'#')!= item.title
+      li
+        span!= last
+
+mixin breadcrumbJapan(last, list=[])
+  nav(class=pageSubID=='recruit-top'?'breadcrumb is-margin':'breadcrumb')
+    ol.breadcrumb-list
+      li
+        a(href=path+"/") トップ
+      each item in list
+        li(class=item.className?'md':'')
+          a.trans(href=item.url?path+item.url:'#')!= item.title
+      li
+        span!= last
+
+mixin listMenu(list)
+  ul.list-menu-top
+    each item in list
+      if pageSubID
+        li(class=(pageSubID==item.pageName || pageSubID==item.pageName02)?'active-hover':'').item-list-top
+          a(href=item.url?path+item.url: '#')!=item.title
+      else
+        li(class=pageID==item.pageName?'active-hover':'').item-list-top
+          a(href=item.url?path+item.url: '#')!=item.title
+
+mixin keyvisual(pageName,title)
+  .keyvisual(class=`keyvisual-${pageName}`)
+    if block
+      block
+    if(pageSubID=="mypage-top" || pageSubID=="mypage-application")
+      p.text-login 谷川　テスコ様 (170000) のマイページ<br> (前回ログイン日時：2022/02/01 15:47)
+    .wrapper
+      h1.keyvisual-title!=title
+
+mixin listMenuClient(list)
+  .content-menu-client
+    ul.list-menu-client
+      each item in list
+        li(class=item.active?'item-client active-hover':'item-client')
+          a(href=item.url?path+item.url: '#')!=item.title
+
+mixin applicationTable({data})
+  table.application-table
+    thead
+      tr
+        th 書類
+        th ダウンロード
+        th.md 備考
+    tbody
+      each item in data
+        tr.table-title
+          th(colspan="3")!=item.tableTitle
+        each items in item.tableDetail
+          tr(class=items.custom?items.custom:"")
+            th.is-header!=items.tableHeader
+            td.is-download
+              ul.download-file
+                if items.linkFile == "pdf"
+                  li
+                    a(href=items.linkPdf?items.linkPdf:"#" target="_blank" rel="noopener").trans
+                      img.md(src=imgPC+"forms_icn_02.svg" width="18" height="22" alt="PDF" loading="lazy" )
+                      img.sm(src=imgSP+"forms_icn_02.svg" width="54" height="65" alt="PDF" loading="lazy" )
+                else if items.linkFile == "other"
+                  li
+                    a(href=items.linkOther?items.linkOther:"#" target="_blank" rel="noopener").trans
+                      img.md(src=imgPC+"forms_icn_01.svg" width="18" height="22" alt="X" loading="lazy" )
+                      img.sm(src=imgSP+"forms_icn_01.svg" width="54" height="65" alt="X" loading="lazy" )
+                else
+                  li
+                    a(href=items.linkPdf?items.linkOther:"#" target="_blank" rel="noopener").trans
+                      img.md(src=imgPC+"forms_icn_01.svg" width="18" height="22" alt="X" loading="lazy" )
+                      img.sm(src=imgSP+"forms_icn_01.svg" width="54" height="65" alt="X" loading="lazy" )
+                  li
+                    a(href=items.linkOther?items.linkPdf:"#" target="_blank" rel="noopener").trans
+                      img.md(src=imgPC+"forms_icn_02.svg" width="18" height="22" alt="PDF" loading="lazy" )
+                      img.sm(src=imgSP+"forms_icn_02.svg" width="54" height="65" alt="PDF" loading="lazy" )
+            td.is-remarks!=items.remarks
+
+mixin jobCaseItem(value, name, text, link1, link2, linkText)
+  .case-item
+    h3.case-title!=name
+    p.case-description!=text
+    ul.list-link
+      li
+        a(href="#")!=link1
+      if (link2 == 'link')
+        li
+          a(href="#")!=linkText
+    figure.case-image
+      img.md(src=imgPC+"job_case_img_"+value+".jpg", width="672", height="483", alt!=name.replace(/(<([^>]+)>)/gi, ''))
+      img.sm(src=imgSP+"job_case_img_"+value+".jpg", width="672", height="482", alt!=name.replace(/(<([^>]+)>)/gi, ''))
+
+mixin jobVoiceItem(value, name)
+  .slide-item
+    a.voice-item.trans(href=path+"/job/haken/interview/detail.html")
+      .voice-detail
+        h3.voice-name!=name
+      figure.voice-image
+        img(src=imgPC+"job_voice_img_"+value+".jpg", width="302", height="207", alt!=name.replace(/(<([^>]+)>)/gi, ''))
+
+mixin listImageSpecial(list)
+  ul.list-image-special.is-special-custom
+    each item in list
+      li.special-detail
+        a.special-link(href='#')
+          .special-block
+            figure.special-image
+              img.md(src=imgPC+"company_img_"+item.number+".jpg" width='320' height='188' alt=item.title loading='lazy')
+              img.sm(src=imgSP+"company_img_"+item.number+".jpg" width='336' height='288' alt=item.title loading='lazy')
+            h2.special-title!= item.title
+          p.common-text!= item.text
+
+mixin jobListItem({hasTitle,title,href,src,alt,text})
+  if hasTitle == "yes"
+    li.special-detail&attributes(attributes)
+      h3.job-list-title!= title
+      a.special-link(href= href)
+        .special-block
+          figure.special-image
+            img.md(src=imgPC+ src width="320" height="188" loading="lazy" alt= alt)
+            img.sm(src=imgSP+ src width="672" height="414" loading="lazy" alt= alt)
+        p.common-text!= text
+  else
+    li.special-detail&attributes(attributes)
+      a.special-link(href= href)
+        .special-block
+          figure.special-image
+            img.md(src=imgPC+ src width="320" height="188" loading="lazy" alt= alt)
+            img.sm(src=imgSP+ src width="672" height="414" loading="lazy" alt= alt)
+          h3.special-title!= title
+        p.common-text!= text
+
+mixin buttonTransparent({href,text})
+  if(pageSubID === 'client-program')
+    h3.common-title-arrow!= text
+  else
+    a.common-title-arrow(href= href)!= text
+
+mixin blockTitle({titleFirst,title,subtext})
+  if titleFirst == "yes"
+    .block-title&attributes(attributes)
+      h2.block-title-text!= title
+      p.block-title-subtext!= subtext
+  else
+    .block-title&attributes(attributes)
+      p.block-title-subtext!= subtext
+      h2.block-title-text!= title

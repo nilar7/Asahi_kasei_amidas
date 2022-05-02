@@ -1,0 +1,56 @@
+extends ../_layouts/default
+
+block vars
+  -title        = '企業情報'
+  -description  = ''
+  -keywords     = ''
+  -pageID       = 'company'
+  -pageSubID    = 'company-top'
+  -typePage     = 'type-a'
+  -path         = '..'
+  -imgPC        = path+'/img/'+pageID+'/'
+  -imgSP        = path+'/img/'+pageID+'/sp/'
+
+block container
+  include ../_parts/common_list_menu
+  +keyvisual('company-top','企業情報')
+    +breadcrumb('会社情報')
+  section.section-company
+    .wrapper
+      +listImageSpecial([
+        {
+          title: 'コーポレートスローガン',
+          text: '説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります。',
+          number: '02'
+        },
+        {
+          title: '代表あいさつ',
+          text: 'テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテ',
+          number: '03'
+        },
+        {
+          title: '事業紹介',
+          text: 'テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテ',
+          number: '04'
+        },
+        {
+          title: '会社概要 /<br>旭化成グループについて',
+          text: '説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります。',
+          number: '05'
+        },
+        {
+          title: '沿革',
+          text: 'テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテ',
+          number: '06'
+        },
+        {
+          title: '拠点一覧',
+          text: 'テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテ',
+          number: '07'
+        },
+        {
+          title: '労働者派遣事業に係る<br>各種情報のお知らせ',
+          text: '説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります。',
+          number: '08'
+        }
+      ])

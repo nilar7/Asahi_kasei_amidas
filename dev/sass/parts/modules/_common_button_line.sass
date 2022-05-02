@@ -1,0 +1,174 @@
+@charset "utf-8"
+
+.button-common-line
+  display: flex
+  align-items: center
+  position: relative
+  font-weight: 700
+  color: #000
+  text-decoration: none
+  transition: border .3s ease, background .3s ease, color .3s ease
+  &.is-style-direct, &.is-style-more
+    &:hover
+      .button-icon
+        &::before
+          opacity: 0
+        &::after
+          opacity: 1
+    .button-icon
+      display: block
+      &::before, &::after
+        content: ''
+        background: center center / 100% 100% no-repeat
+        position: absolute
+        top: 0
+        right: 0
+        bottom: 0
+        left: 0
+        transition: opacity .3s ease, transform .3s ease
+      &::before
+        z-index: 1
+      &::after
+        z-index: 0
+        opacity: 0
+  &.is-style-direct
+    border: 1px solid #6996be
+    +mobile
+      border-width: .02rem
+      border-color: $base-color-blue
+    &:hover
+      background-color: rgba(0,91,170,.5)
+      color: #fff
+    .button-icon
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+  &.is-style-more
+    border: 1px solid #000
+    justify-content: center
+    text-align: center
+    +mobile
+      border-width: .02rem
+    &:hover
+      border-color: #fff
+      color: #fff
+    .button-icon
+      flex: 0 0 auto
+      position: relative
+  .button-wrapper
+    display: block
+    position: relative
+  +desktop
+    border-radius: 24px
+    font-size: .14rem
+    &.is-style-direct
+      padding: 13px 40px 13px 16px
+      .button-icon
+        width: 20px
+        height: 20px
+        right: 14px
+        &::before
+          background-image: url(../img/common/icon_arrow_01.svg)
+        &::after
+          background-image: url(../img/common/icon_arrow_02.svg)
+    &.is-style-more
+      padding: 11px 16px 9px
+      .button-icon
+        width: 20px
+        height: 20px
+        margin: 0 -10px 0 10px
+        &::before
+          background-image: url(../img/common/icon_arrow_04.svg)
+        &::after
+          background-image: url(../img/common/icon_arrow_05.svg)
+    .button-wrapper
+      top: 0
+      &.font-alata
+        top: -1px
+  +mobile
+    border-radius: .4rem
+    &.is-style-direct
+      min-height: .8rem
+      padding: .04rem .64rem .04rem .48rem
+      line-height: 1.42
+      .button-icon
+        width: .4rem
+        height: .4rem
+        right: .32rem
+        &::before
+          background-image: url(../img/common/sp/icon_arrow_01.svg)
+        &::after
+          background-image: url(../img/common/sp/icon_arrow_02.svg)
+    &.is-style-more
+      min-height: .8rem
+      padding: .1rem .24rem
+      .button-icon
+        width: .4rem
+        height: .4rem
+        margin: 0 -.2rem 0 .2rem
+        &::before
+          background-image: url(../img/common/sp/icon_arrow_04.svg)
+        &::after
+          background-image: url(../img/common/sp/icon_arrow_05.svg)
+    .button-wrapper
+      top: -1px
+
+  .is-android
+    .button-common-line.is-style-more
+      padding-bottom: .08rem
+
+.common-button-more
+  background-color: $base-color-blue
+  color: #fff
+  border: solid 1px $base-color-blue
+  margin: 0 auto
+  display: flex
+  align-items: center
+  justify-content: center
+  text-decoration: none
+  transition: all .26s
+  &:hover
+    background-color: #036fcc
+
++desktop
+  .common-button-more
+    font-size: .18rem
+    max-width: 848px
+    height: 56px
+
++mobile
+  .common-button-more
+    font-size: .34rem
+    width: 95.455%
+    height: .96rem
+
+.button-transparent
+  position: relative
+  display: block
+  text-decoration: none
+  color: #000
+  letter-spacing: 0
+  &::before
+    content: ""
+    position: absolute
+    background: url(../img/common/icon_arrow_01.svg) no-repeat center / 20px 20px
+    border: 1px solid rgba(0,91,170,.3)
+    transition: border-color 0.3s
+    border-radius: 50%
+    top: 0
+    right: 0
+  &:hover
+    &::before
+      border: 1px solid rgb(0,91,170)
+
++desktop
+  .button-transparent
+    font-size: .16rem
+    font-weight: bold
+    line-height: calc(28 / 16)
+    &::before
+      width: 40px
+      height: 40px
+      top: -4px
+
++mobile

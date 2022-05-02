@@ -1,0 +1,169 @@
+extends ../_layouts/default
+
+block vars
+  -title        = '企業担当者の方（法人向けTOP）'
+  -description  = ''
+  -keywords     = ''
+  -pageID       = 'client'
+  -pageSubID    = 'client-top'
+  -typePage     = 'type-b'
+  -path         = '..'
+  -imgPC        = path+'/img/'+pageID+'/'
+  -imgSP        = path+'/img/'+pageID+'/sp/'
+
+block container
+  section.section-client-company
+    .introduction-content
+      .wrapper
+        h1.title-company 企業のご担当者の方へ
+        figure.image-company
+          img.md(src=imgPC+"client_img_03.jpg" width="672" height="346" loading="lazy" alt="企業のご担当者の方へ")
+          img.sm(src=imgSP+"client_img_03.jpg" width="768" height="540" loading="lazy" alt="企業のご担当者の方へ")
+        figure.image-person
+          img.md(src=imgPC+"client_img_05.png" width="549" height="346" loading="lazy" alt="企業のご担当者の方へ")
+          img.sm(src=imgSP+"client_img_05.png" width="784" height="540" loading="lazy" alt="企業のご担当者の方へ")
+    .main-content
+      .content-top
+        .wrapper
+          h2.common-title.title-square
+            span 課題別ソリューション
+          .content-how-to
+            h3.sub-title 旭化成アミダスが<br>できること
+            p.common-text テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+      .content-bottom
+        .wrapper
+          ul.list-work
+            li.item-work
+              a.link-main(href="#")
+                img.md(src=imgPC+"client_img_06.jpg" width="848" height="248" loading="lazy" alt="遣人材を探している")
+                img.sm(src=imgSP+"client_img_06.jpg" width="672" height="670" loading="lazy" alt="遣人材を探している")
+                h3.title-work 派遣人材を探している
+                .common-block-arrow
+              .item-detail
+                p.text-detail.is-limit テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                ul.list-sub-work
+                  li
+                    a(href="#") 人材派遣サービス
+                  li
+                    a(href="#") ITエンジニア派遣サービス
+            li.item-work.is-flex
+              .item-left
+                a.link-main(href="#")
+                  img.md(src=imgPC+"client_img_07.jpg" width="404" height="257" loading="lazy" alt="教育研修を導入・見直したい")
+                  img.sm(src=imgSP+"client_img_07.jpg" width="672" height="421" loading="lazy" alt="教育研修を導入・見直したい")
+                  h3.title-work 教育研修を導入・見直したい
+                  .common-block-arrow
+                .item-detail
+                  p.text-detail テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト<br>キストテキストテキストテキストテキストテキストテキスト
+                  ul.list-sub-work
+                    li
+                      a(href="#") 教育研修サービス
+              ul.list-item-right
+                li.sub-item-right
+                  a.link-main(href="#")
+                    img.md(src=imgPC+"client_img_08.jpg" width="408" height="111" loading="lazy" alt="中途で人材を採用したい")
+                    img.sm(src=imgSP+"client_img_08.jpg" width="672" height="182" loading="lazy" alt="中途で人材を採用したい")
+                    h3.title-work 中途で人材を採用したい
+                    .common-block-arrow
+                  ul.list-sub-work
+                    li
+                      a(href="#") 人材紹介サービス
+                li.sub-item-right
+                  a.link-main(href="#")
+                    img.md(src=imgPC+"client_img_09.jpg" width="408" height="111" loading="lazy" alt="さまざまな社内業務をアウトソーシングしたい")
+                    img.sm(src=imgSP+"client_img_09.jpg" width="672" height="182" loading="lazy" alt="さまざまな社内業務をアウトソーシングしたい")
+                    h3.title-work さまざまな社内業務をアウトソーシングしたい
+                    .common-block-arrow
+                  ul.list-sub-work
+                    li
+                      a(href="#") 各種アウトソーシングサービス
+          a.common-button-more.font-alata(href="#") View All
+
+  section.section-common-news
+    .wrapper
+      .news-left
+        h2.section-title
+          span.is-english
+            img.md(src=imgPC+"news_ttl_english.png", width="159" height="336" alt="NEWS" loading="lazy")
+            img.sm(src=imgSP+"news_ttl_english.png", width="502" height="240" alt="NEWS" loading="lazy")
+          span.md.is-japanese お知らせ<br>イベント情報
+          span.sm.is-japanese お知らせ・イベント情報
+      .news-right
+        +newsList([
+          {
+            datetime: '2021-10-20',
+            time: '2021.10.20',
+            category: '登録スタッフ',
+            title: '「クラブオフ」のページを更新しました'
+          },
+          {
+            datetime: '2021-10-20',
+            time: '2021.10.20',
+            category: '派遣',
+            title: '名古屋支店が移転しました'
+          },
+          {
+            datetime: '2021-10-20',
+            time: '2021.10.20',
+            category: '登録スタッフ',
+            title: '旭化成アミダス 契約社員募集のお知らせ【募集は終了しました】'
+          },
+          {
+            datetime: '2021-10-20',
+            time: '2021.10.20',
+            category: '登録スタッフ',
+            title: '「クラブオフ」のページを更新しました'
+          },
+          {
+            datetime: '2021-10-20',
+            time: '2021.10.20',
+            category: '登録スタッフ',
+            title: '「クラブオフ」のページを更新しました'
+          }
+        ])
+        a.middle-button.font-alata(href="#") View All
+
+  section.section-client-service
+    .wrapper
+      h2.common-title.title-square
+        span サービス一覧
+      ul.list-service
+        -
+          var
+            list = [
+              {
+                number: '10',
+                title: '人材派遣サービス'
+              },
+              {
+                number: '11',
+                title: 'ITエンジニア派遣サービス'
+              },
+              {
+                number: '12',
+                title: '人材紹介サービス'
+              },
+              {
+                number: '13',
+                title: '教育・研修サービス'
+              },
+              {
+                number: '14',
+                title: '各種アウトソーシング<br class="sm">サービス'
+              },
+              {
+                number: '15',
+                title: 'ISO事業'
+              }
+            ];
+        each item in list
+          li.item-service
+            a.content-service(href="#")
+              .content-image
+                figure.image-service
+                  img.md(src=imgPC+"client_img_"+item.number+'.jpg' width="320" height="187" loading="lazy" alt=item.title.replace(/<[^>]*>/,''))
+                  img.sm(src=imgSP+"client_img_"+item.number+'.jpg' width="640" height="374" loading="lazy" alt=item.title.replace(/<[^>]*>/,''))
+                .common-block-arrow
+              h3.title-service!=item.title
+              p.text-service テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテ
+      a.common-big-button.is-arrow(href="#") 資料請求・お問い合わせ

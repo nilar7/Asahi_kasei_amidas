@@ -1,0 +1,33 @@
+@charset "utf-8"
+
+=desktop
+  @media print, (min-width: 769px)
+    @content
+=desktop-pc
+  @media print, (min-width: 1280.02px)
+    @content
+=desktop-tablet
+  @media print, (min-width: 769px) and (max-width: 1280px)
+    @content
+=mobile
+  @media only screen and (max-width: 768.98px)
+    @content
+=mobile-xs
+  @media only screen and (max-width: 374px)
+    @content
+
+=text-wrap
+  word-break: break-word
+=placeholder
+  &::-webkit-input-placeholder
+    @content
+  &::-ms-input-placeholder
+    @content
+  &:-ms-input-placeholder
+    @content
+  &::-moz-placeholder
+    @content
+  &:-moz-placeholder
+    @content
+  &::placeholder
+    @content

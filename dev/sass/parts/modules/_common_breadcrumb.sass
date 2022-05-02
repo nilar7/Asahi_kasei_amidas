@@ -1,0 +1,67 @@
+@charset "utf-8"
+
+.breadcrumb
+  background: rgba(255,255,255,.7)
+  position: relative
+.breadcrumb-list
+  display: flex
+  flex-wrap: wrap
+  list-style-type: none
+  padding-left: 0
+  > li
+    color: #000
+    &:not(:last-child)
+      &::after
+        content: ">"
+        position: relative
+        bottom: 0
+    a
+      color: #000
+      text-decoration: none
+      &:hover
+        text-decoration: underline
+
++desktop
+  .breadcrumb
+    min-height: 40px
+    display: flex
+    align-items: center
+  .breadcrumb-list
+    width: 100%
+    max-width: 1087px
+    margin: 0 auto
+    flex-wrap: wrap
+    padding: 0 32px
+    > li
+      font-size: 12px
+      &:not(:last-child)
+        margin-right: 16px
+        &::after
+          margin-left: 8px
+
++mobile
+  .breadcrumb
+    padding-bottom: .01rem
+    &.breadcrumb-different
+      margin-bottom: -1.28rem
+    .breadcrumb-list
+      letter-spacing: 0
+      margin-bottom: 0
+      padding: .32rem .24rem .16rem .32rem
+      &::-webkit-scrollbar
+        display: none
+      > li
+        font-size: .2rem
+        margin-bottom: .12rem
+        &:not(:last-child)
+          margin-right: .16rem
+          &::after
+            margin-left: .16rem
+
++mobile-xs
+  .breadcrumb
+    .breadcrumb-list
+      padding-bottom: .17rem
+      &:not(:last-child)
+        &::after
+          bottom: -.01rem

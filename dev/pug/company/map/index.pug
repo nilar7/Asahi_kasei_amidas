@@ -1,0 +1,125 @@
+extends ../../_layouts/default
+
+block vars
+  -title        = '拠点一覧'
+  -description  = ''
+  -keywords     = ''
+  -pageID       = 'company'
+  -pageSubID    = 'company-map'
+  -typePage     = 'type-a'
+  -path         = '../..'
+  -imgPC        = path+'/img/'+pageID+'/'
+  -imgSP        = path+'/img/'+pageID+'/sp/'
+
+block container
+  include ../../_parts/common_list_menu
+  +keyvisual('company-map','拠点一覧')
+    +breadcrumb('拠点一覧', [{title: '会社情報', url: '/company/'}])
+  section.section-company-map
+    include ../../_parts/common_list_company
+    .wrapper
+      ul.list-address
+        -
+          var
+            list = [
+              {
+                title: '東京都：本社',
+                address: '〒101-8480<br>東京都千代田区神田錦町三丁目22番地テラススクエア 5F',
+                number: 'TEL:03-6777-1100',
+                fax: 'FAX: 03-6777-1307'
+              },
+              {
+                title: '川崎',
+                address: '〒210-0863<br>神奈川県川崎市川崎区夜光1-3-1 旭化成（株）川崎製造所 合同9号館',
+                number: 'TEL:044-271-3860',
+                fax: 'FAX：044-271-3859',
+                textNumber: 'FREE:0120-161-926',
+              },
+              {
+                title: '袖ヶ浦',
+                address: '〒299-0297<br>千葉県袖ヶ浦市中袖5-1　旭化成㈱千葉工場内',
+                number: 'TEL:0438-62-9948',
+                fax: 'FAX: 0438-62-7152'
+              },
+              {
+                title: '名古屋',
+                address: '〒450-0002<br>愛知県名古屋市中村区名駅3-24-14 LCビル 7F',
+                number: 'TEL:052-587-2210',
+                fax: 'FAX: 052-587-2209',
+                textNumber: 'FREE:0120-522-212',
+              },
+              {
+                title: '富士',
+                address: '〒416-8501<br>静岡県富士市鮫島2-1 旭化成（株）富士支社内',
+                number: 'TEL:0545-62-2077',
+                fax: 'FAX: 0545-62-2369',
+                textNumber: 'FREE:0120-952-144',
+              },
+              {
+                title: '大阪',
+                address: '〒530-8205<br>大阪府大阪市北区中之島3-3-23 中之島ダイビル 32F',
+                number: 'TEL:06-7636-3087',
+                fax: 'FAX: 06-7636-3126',
+                textNumber: 'FREE:0120-473-087',
+              },
+              {
+                title: '守山',
+                address: '〒524-0002<br>滋賀県守山市小島町515　旭化成㈱守山製造所',
+                number: 'TEL:077-581-4920',
+                fax: 'FAX: 077-581-4921',
+                textNumber: 'FREE:0120-176-557',
+              },
+              {
+                title: '水島',
+                address: '〒712-8633<br>岡山県倉敷市潮通3-13 旭化成（株）水島製造所内',
+                number: 'TEL:086-455-2552',
+                fax: 'FAX: 086-458-2812',
+                textNumber: 'FREE0120-455-171',
+              },
+              {
+                title: '福岡',
+                address: '〒810-0012<br>福岡県福岡市中央区白金1-20-3 紙与薬院ビル10Ｆ',
+                number: 'TEL:092-526-2052',
+                fax: 'FAX: 092-526-2054',
+                textNumber: 'FREE:0120-751-670',
+              },
+              {
+                title: '延岡',
+                address: '〒882-0847<br>宮崎県延岡市旭町2-1-3 旭化成（株）延岡支社3F',
+                number: 'TEL:0982-22-2015',
+                fax: 'FAX: 0982-22-2016',
+                textNumber: 'FREE:0120-213-477',
+              },
+              {
+                title: '宮崎',
+                address: '〒880-0803<br>宮崎県宮崎市旭1-7-26 3106BLDG.旭3階',
+                number: 'TEL:0985-26-3021',
+                fax: 'FAX: 0985-26-3023',
+                textNumber: 'FREE:0120-968-808',
+              },
+              {
+                title: '大分',
+                address: '〒870-0303<br>大分県大分市大字里2620番地',
+                number: 'TEL:097-560-3718',
+                fax: 'FAX: 097-560-3380'
+              },
+              {
+                title: '日向',
+                address: '〒883-0062<br>宮崎県日向市日知屋16863-1　旭化成(株)ハイポア日向工場内',
+                number: 'TEL:0982-55-2014',
+                fax: 'FAX: 0982-55-2163'
+              }
+            ]
+        each item in list
+          li.item-address
+            a(href=path+"/company/map/tokyo.html").item-link
+              h2.title-list!= item.title
+              .block-contact
+                .contact-detail
+                  address.address!= item.address
+                  .contact-number
+                    p!=item.number
+                    p.fax!= item.fax
+                    if(item.textNumber)
+                      p!= item.textNumber
+                p.common-button-small Learn More

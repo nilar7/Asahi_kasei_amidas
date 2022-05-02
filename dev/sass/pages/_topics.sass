@@ -1,0 +1,122 @@
+@charset "utf-8"
+
+.section-topics
+  .common-title
+    color: $base-color-light-blue
+    &:before,
+    &:after
+      background-color: $base-color-light-blue
+
++desktop
+  .section-topics
+    padding-top: 64px
+    padding-bottom: 80px
+    .common-title
+      margin-bottom: 56px
+    .common-news-list
+      margin-bottom: 80px
+
+@media print, (min-width: 768.98px) and (max-width: 1070px)
+  .section-topics
+    padding-left: 16px
+    padding-right: 16px
+
++mobile
+  .breadcrumb-list,
+  .breadcrumb-list.breadcrumb-detail
+    letter-spacing: -.03em
+  .breadcrumb-list.breadcrumb-detail
+    padding-right: .18rem
+  .section-topics
+    padding-top: .48rem
+    padding-bottom: 1.12rem
+    .common-title
+      margin-bottom: .96rem
+    .common-news-list
+      .news-category
+        min-width: 1.72rem
+
+.section-topics-detail
+  .post-time
+    display: flex
+    align-items: center
+    opacity: 0
+    transition: opacity .26s
+    time
+      flex-shrink: 0
+    .wf-active &
+      opacity: 1
+    .highlight
+      color: #fff
+      background: $base-color-light-blue
+      text-align: center
+  .button-common-line.is-style-direct
+    border-color: $base-color-light-blue
+    color: #202020
+    &:hover
+      color: #fff
+      border-color: #6996be
+  .wrapper-link
+    margin: 0 auto
+
++desktop
+  .section-topics-detail
+    padding: 64px 24px 112px
+    .inner-wrapper
+      max-width: 848px
+      margin: 0 auto
+    .title-detail
+      font-size: .24rem
+      margin-bottom: 40px
+    .post-time
+      margin-bottom: 64px
+      time
+        margin-right: 24px
+        font-size: .14rem
+      .highlight
+        border-radius: 15px
+        padding: 2px 5px 4px
+        min-width: 112px
+    .block-pagination-line
+      margin-bottom: 80px
+    .wrapper-link
+      width: 320px
+    .button-common-line.is-style-direct
+      .button-icon::before
+        background-image: url(../img/common/icon_arrow_light_blue.svg)
+      .button-icon::before
+        background-size: 9px 12px
+  .is-mac
+    .section-topics-detail
+      .post-time
+        .highlight
+          padding-top: 3px
+          padding-bottom: 3px
+
++mobile
+  .section-topics-detail
+    padding: .8rem 0 1.6rem
+    .inner-wrapper
+      padding: 0 .32rem
+    .title-detail
+      font-size: .34rem
+      line-height: calc(60 / 34)
+      margin-bottom: .48rem
+    .post-time
+      margin-bottom: .8rem
+      time
+        margin-right: .32rem
+      .highlight
+        border-radius: .2rem
+        font-size: .22rem
+        padding: .01rem .05rem .03rem
+        min-width: 1.72rem
+    .block-pagination-line
+      margin-bottom: 1.12rem
+    .button-common-line.is-style-direct
+      padding-top: .06rem
+      .button-icon::before
+        background-image: url(../img/common/sp/icon_arrow_light_blue.svg)
+        background-size: .15rem .22rem
+    .wrapper-link
+      width: 3.36rem

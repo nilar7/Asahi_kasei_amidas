@@ -1,0 +1,33 @@
+.keyvisual
+  background: no-repeat center/cover
+  display: flex
+  flex-direction: column
+  .wrapper
+    display: flex
+    align-items: center
+    justify-content: center
+    height: 100%
+.keyvisual-title
+  color: #fff
+  font-weight: 700
+  margin-bottom: 0
+  opacity: 0
+  transition: opacity .26s
+  text-align: center
+  .wf-active &
+    opacity: 1
+
++desktop
+  .keyvisual
+    height: 280px
+  .keyvisual-title
+    font-size: .24rem
+
++mobile
+  .keyvisual
+    height: 5.4rem
+    .wrapper
+      width: 100%
+  .keyvisual-title
+    font-size: .34rem
+    padding-bottom: 0

@@ -1,0 +1,154 @@
+extends ../_layouts/default
+
+block vars
+  -title        = '求人詳細（案件）'
+  -description  = ''
+  -keywords     = ''
+  -pageID       = 'mypage'
+  -pageSubID    = 'mypage-search'
+  -typePage     = 'type-a'
+  -path         = '..'
+  -imgPC        = path+'/img/'+pageID+'/'
+  -imgSP        = path+'/img/'+pageID+'/sp/'
+
+block container
+  include ../_parts/common_list_menu_04
+  +keyvisual('mypage-detail','設備工事の書類作成や<br class="sm">業者対応などの事務<br class="sm">（大手グループビル管理会社）<br>土日休み残業なし')
+    +breadcrumbJapan('設備工事の書類作成や業者対応などの事務（大手グループビル管理会社）土日休み残業なし', [{title: '人材派遣トップ', url: '/job/'},{title: 'すべての条件から検索'}],true)
+  .section-mypage-detail
+    .wrapper
+      .block-content-table
+        table.table-info
+          tbody
+            tr.cell-row
+              th.cell-name お仕事No.
+              td.cell-detail 0000020538
+            tr.cell-row
+              th.cell-name 会社情報
+              td.cell-detail 大手グループのビル管理会社です。
+            tr.cell-row
+              th.cell-name 勤務地
+              td.cell-detail 墨田区<br>JR山手線 ・JR京浜東北線「浜松町」駅　 北口より徒歩7分<br>ゆりかもめ「竹芝」駅直結
+            tr.cell-row
+              th.cell-name 職種
+              td.cell-detail オフィスワーク・事務　〉一般事務
+            tr.cell-row
+              th.cell-name お仕事内容
+              td.cell-detail 管理しているビルなどの設備工事に関わる事務のお仕事です。<br>・工事に関するデータ入力、カンタンな集計<br>・書類の作成・管理（契約書や稟議書など）<br>・業者手配、見積書送付、電話対応<br>・交通費精算、会議準備　など
+            tr.cell-row
+              th.cell-name 資格・条件
+              td.cell-detail WordやExcelでのフォーマット入力、カンタンな書類作成が可能な方
+            tr.cell-row
+              th.cell-name 給与
+              td.cell-detail 時給1,800円<br>交通費全額支給　【月収例】302,400円＝1800円×8H×21日
+            tr.cell-row
+              th.cell-name 雇用形態
+              td.cell-detail 派遣
+            tr.cell-row
+              th.cell-name 期間
+              td.cell-detail 即日～長期<br>2022年●月●日～就業可能
+            tr.cell-row
+              th.cell-name 勤務時間
+              td.cell-detail 08時30分～17時30分(休憩60分)<br>※残業なし。あってもは5時間／月程度。
+            tr.cell-row
+              th.cell-name 勤務日
+              td.cell-detail 月～金／週5日勤務
+            tr.cell-row
+              th.cell-name 休日・休暇
+              td.cell-detail 土日、祝日
+            tr.cell-row
+              th.cell-name 残業
+              td.cell-detail 残業なし　　あってもは5時間／月程度。
+            tr.cell-row
+              th.cell-name 募集人数
+              td.cell-detail 000名
+            tr.cell-row
+              th.cell-name お仕事のポイント
+              td.cell-detail
+                p ＜駅から直結のビルで通勤もラクラク！＞＜眺めもいいキレイなビル＞<br>▼大手ビル管理会社での工事に関わる事務のお仕事！<br>▼残業ほぼなし。オンオフきっちり分けて働けます。<br>▼事務さんがもう1人いらっしゃいますので、わからないことはいつでもきける環境です。<br>▼眺めも抜群♪きれいなオフィスビルでのお仕事です。
+                p 【部署人数】14名（男性10名、女性4名）<br>※もう1人事務さんがいらっしゃいますので、わからないことはいつでも訊ける環境です。<br>【備考】オフィスカジュアル
+                p ＜自宅でかんたん最短30分＞<br class="sm">オンライン（WEB）面談実施中！
+        .block-more
+          .block-left
+            a.middle-button(href="#") 応募する
+            p.text-note すぐにお仕事を見つけたい方は<br class="sm">仮登録後に登録予約をお願いします。
+          form.form-check
+            .wrap-checkbox
+              .vertical-item.square-blue
+                label
+                  input(type='checkbox' name='keep' value='キープする' checked='')
+                  span.checkbox-field-text キープする
+      .block-content-table
+        table.table-info
+          tbody
+            tr.cell-row
+              th.cell-name お問合せ先
+              td.cell-detail 東京第二支店
+            tr.cell-row
+              th.cell-name 支店情報
+              td.cell-detail
+                p 私たちは旭化成株式会社100%出資の総合人材サービス会社として働く人たちを思い続けている会社です。人材派遣・紹介予定派遣・人材紹介などのサービスを通じて、派遣社員・正社員・契約社員・アルバイトなど、様々な働き方に合ったお仕事をご紹介しています。新卒・第2新卒・20代・30代・40代をはじめ、幅広い年代のスタッフの方々が、弊社スタッフとしてご活躍いただいております。
+                p 職種は、一般事務、データ入力、営業事務、不動産事務、コールセンタースタッフ、テレフォンオペレーター、CADオペレーター、インテリアコーディネーター、設計補助、施工管理、役所調査、建築検査立会い、確認申請、住宅点検員、安全、現場巡回、住宅展示場接客、接客、ショールーム受付、システム開発、ヘルプデスクなどを中心に、ご希望に合わせたお仕事を専門のコーディネーターがご紹介いたします。新着の求人も随時更新していますので、気になるものがありましたらまずはお気軽にお問い合わせください。
+            tr.cell-row
+              th.cell-name こだわり条件
+              td.cell-detail
+                ul.common-list-category.is-big
+                  li.item-category 未経験歓迎
+                  li.item-category ブランク応援
+                  li.item-category 駅チカ
+                  li.item-category 残業なし
+                  li.item-category 大手・優良企業
+                  li.item-category 住宅･建築･不動産業界
+        .block-more
+          .block-left
+            a.middle-button(href="#") 応募する
+            p.text-note すぐにお仕事を見つけたい方は<br class="sm">仮登録後に登録予約をお願いします。
+          form.form-check
+            .wrap-checkbox
+              .vertical-item.square-blue
+                label
+                  input(type='checkbox' name='keep' value='キープする' checked='')
+                  span.checkbox-field-text キープする
+
+  section.section-job-registration
+    .wrapper
+      h2.title-registration
+        a(href="#") 派遣登録∼お仕事開始までの流れ
+      ul.list-registration
+        li.item-registration.background-light-blue
+          span.text-step STEP
+          h3.item-title WEB仮登録
+        li.item-registration.background-yellow
+          span.text-step STEP
+          h3.item-title 登録予約
+        li.item-registration.background-orange
+          span.text-step STEP
+          h3.item-title ご来社・登録手続
+          p.item-text ご来社いただく前に、職歴、スキルなどを事前にWEB仮登録・マイページで情報登録しておくと、ご来社時の手続きを30分程度短縮することができます。
+        li.item-registration.background-blue
+          span.text-step STEP
+          h3.item-title お仕事紹介
+        li.item-registration.background-blue
+          span.text-step STEP
+          h3.item-title お仕事スタート
+      .job-box
+        .condition-inner
+          h2.default-title
+            span.text まずはエントリー！登録は無料です！！
+          a.default-button(href='#')
+            span エントリーはこちらから
+          p.job-note すぐにお仕事を見つけたい方は<br class="sm">仮登録後に登録予約をお願いします。
+
+  section.section-mypage-detail.section-order-job
+    .wrapper
+      h2.title-order 条件に近いその他のお仕事
+      .block-content-table
+        table.table-info
+          tbody
+            tr.cell-row
+              th.cell-name.is-line-height オフィスワーク・<br class="md">事務のお仕事
+              td.cell-detail 図面チェックとデータ入力（大手住宅メーカー）日月祝休・17時まで時短OK・在宅勤務あり<br>名刺作成などの事務（旭化成グループ企業で正社員の可能性あり）介護職から転身OK　 職歴目安は5社位まで<br>紹介予定派遣で正社員　受注登録などの事務（音響メーカー）男性活躍中　第二新卒歓迎　
+            tr.cell-row
+              th.cell-name 同じエリアのお仕事
+              td.cell-detail 大手グループ不動産管理会社で経理事務（土日休み・残業なし・長期安定）<time datetime="08:30">8:30</time>～17:30残業なし
+      include ../_parts/common_contact_03

@@ -1,0 +1,1203 @@
+@charset "utf-8"
+
+.section-top-keyvisual
+  position: relative
+  &:after
+    position: absolute
+    content: ""
+    background: no-repeat bottom center/100% auto
+  .inner-wrapper
+    position: relative
+  .keyvisual-content
+    margin-left: auto
+  .title-keyvisual
+    display: inline-block
+    top: 0
+  .text-keyvisual
+    background-color: #fff
+    letter-spacing: .12em
+    position: relative
+  .image-background,
+  .image-text
+    position: absolute
+  .image-background
+    &:after
+      position: absolute
+      content: ""
+      top: 0
+      background-color: $base-color-yellow
+      opacity: .8
+  .keyvisual-wrapper
+    position: relative
+  .top-keyvisual:not(.slick-initialized)
+    .keyvisual-wrapper
+      &:not(:first-child)
+        display: none
+
++desktop
+  .section-top-keyvisual
+    padding-bottom: 48px
+    .inner-wrapper
+      &:before
+        position: absolute
+        content: ""
+        top: 0
+        left: 0
+        width: 98px
+        height: 100%
+        background-color: #fff
+        z-index: 1
+    &:after
+      background-image: url(../img/top/keyvisual_img_01.png)
+      top: 89px
+      left: calc(50% - 668px)
+      width: 1326px
+      height: 248px
+      z-index: 2
+    .keyvisual-wrapper,
+    .keyvisual-image
+      height: 590px
+    .keyvisual-image
+      width: 81.1%
+      height: 590px
+      img
+        border-radius: 10px
+        width: 100%
+        height: 100%
+        object-fit: cover
+    .keyvisual-content
+      width: 563px
+    .title-keyvisual
+      position: absolute
+      padding-top: 80px
+      width: 9.7%
+      right: 5.5%
+      z-index: 1
+    .text-keyvisual
+      font-size: .14rem
+      line-height: calc(26 / 14)
+      margin-top: -72px
+      padding: 24px 28px
+      border-radius: 10px
+    .image-background,
+    .image-background:after,
+    .image-text,
+    .content-scroll
+      z-index: 2
+    .image-background
+      width: 16.094%
+      left: calc(50% - 661px)
+      bottom: 0
+      &:after
+        right: 100%
+        width: 50vw
+        height: 172px
+    .image-text
+      width: 3.75%
+      bottom: 19px
+      left: 23px
+    .content-scroll
+      position: relative
+      display: block
+
+@media print, (min-width: 768.98px) and (max-width: 1164px)
+  .section-top-keyvisual
+    .image-background
+      left: 0
+
++mobile
+  .section-top-keyvisual
+    padding-bottom: .72rem
+    &:after
+      background-image: url(../img/top/sp/keyvisual_img_01.png)
+      width: 13.73rem
+      height: 2rem
+      top: 1.55rem
+      left: -.97rem
+    .keyvisual-image
+      margin-bottom: 3.56rem
+      img
+        width: 100%
+    .keyvisual-content
+      text-align: center
+    .title-keyvisual
+      position: relative
+      padding-bottom: .48rem
+      width: 4.64rem
+      margin: 0 auto .32rem
+      &:after
+        position: absolute
+        content: ""
+        width: 6.4rem
+        bottom: 0
+        left: 50%
+        transform: translateX(-50%)
+        border-bottom: solid .05rem $base-color-yellow
+      img
+        width: 100%
+    .text-keyvisual
+      font-size: .24rem
+      font-weight: 700
+      line-height: calc(50 / 24)
+      margin-bottom: .32rem
+    .image-background,
+    .image-text
+      img
+        width: 100%
+    .image-background
+      top: 3.95rem
+      left: -.86rem
+      width: 2.29rem
+    .image-text
+      top: 4.31rem
+      left: .16rem
+      width: .64rem
+
+.section-top-job
+  ul
+    list-style: none
+    padding-left: 0
+  .introduction-content
+    background: url(../img/top/job_bg.png) no-repeat bottom -26px center/100% auto
+  .base-title
+    font-weight: bold
+    letter-spacing: -.08em
+  .main-content
+    background: rgba($base-color-blue,.04)
+  .main-title
+    .link-title
+      color: $base-color-blue
+      font-weight: bold
+      display: inline-block
+      position: relative
+      text-decoration: none
+      &:before
+        content: ''
+        position: absolute
+        right: 0
+        top: 50%
+        transform: translateY(-50%)
+        border-radius: 50%
+        border: 1px solid rgba($base-color-blue,.3)
+        transition: border .3s
+        background: url(../img/common/icon_arrow_01.svg) no-repeat center/20px 20px
+      &:hover
+        &:before
+          border-color: $base-color-blue
+  .banner-image
+    width: 100%
+    height: 100%
+    -webkit-mask-size: 100%
+    mask-size: 100%
+    -webkit-mask-repeat: no-repeat
+    mask-repeat: no-repeat
+    background: url(../img/top/job_bnr.jpg) no-repeat center/cover
+    .block-title
+      font-weight: bold
+      color: #fff
+      top: 48%
+      transform: translateY(-50%)
+      position: absolute
+  .banner-content
+    position: relative
+    .inner-content
+      font-weight: bold
+      overflow: hidden
+      text-overflow: ellipsis
+      display: -webkit-box
+      -webkit-box-orient: vertical
+      -webkit-line-clamp: 3
+  .link-content
+    display: block
+    text-decoration: none
+    color: #000
+    &:before
+      content: ''
+      position: absolute
+      border-radius: 50%
+      border: 1px solid rgba($base-color-blue,.3)
+      transition: border .3s
+      background: url(../img/common/icon_arrow_01.svg) no-repeat center/18px 18px
+    &:hover
+      &:before
+        border-color: $base-color-blue
++desktop
+  .section-top-job
+    padding-top: 32px
+    .introduction-content
+      padding: 0 24px 104px
+      .inner-content
+        margin-left: 88px
+      .common-text
+        width: 408px
+        line-height: 2.3
+    .base-title
+      font-size: .28rem
+      margin-bottom: 32px
+      line-height: 2
+    .common-title,
+    .main-title
+      margin-bottom: 48px
+    .main-content
+      padding: 64px 0 24px
+    .main-title
+      .link-title
+        font-size: .24rem
+        padding-right: 112px
+        &:before
+          width: 40px
+          height: 40px
+    .banner-image
+      position: absolute
+      top: 0
+      left: 0
+      -webkit-mask-image: url(../img/top/mask_bnr.png)
+      mask-image: url(../img/top/mask_bnr.png)
+      .block-title
+        font-size: .22rem
+        text-shadow: 0 3px 10px #000
+        left: 56px
+    .banner-content
+      height: 281px
+      padding-bottom: 80px
+      margin-bottom: 32px
+      border-radius: 10px
+      .inner-content
+        padding: 32px 64px 0 24px
+        line-height: 1.846
+        top: 190px
+        right: 0
+        position: absolute
+    .main-content
+      .wrapper
+        padding: 0 16px
+        max-width: 880px
+      .inner-content
+        width: 408px
+    .link-content
+      &:before
+        bottom: 15px
+        right: 14px
+        width: 40px
+        height: 40px
+  .banner-content
+    .inner-content
+      p
+        margin-bottom: 0
+
++mobile
+  .section-top-job
+    padding-top: .5rem
+    .introduction-content
+      padding-bottom: .8rem
+      background-image: url(../img/top/sp/job_bg.png)
+      background-position: bottom .29rem center
+      background-size: auto 7.82rem
+      .wrapper
+        padding: 0 .32rem
+      .inner-content
+        padding: 0 .45rem
+      .common-text
+        line-height: 2.1
+        width: 4.16rem
+    .base-title
+      font-size: .38rem
+      margin-bottom: .4rem
+      line-height: 1.84
+    .common-title
+      margin-bottom: .64rem
+    .main-content
+      padding: .96rem 0 1.12rem
+    .main-title
+      margin-bottom: .72rem
+      .link-title
+        font-size: .34rem
+        padding-right: 1.42rem
+        line-height: 1.764
+        &:before
+          width: .64rem
+          height: .64rem
+          background-size: .4rem .4rem
+    .banner-image
+      height: 4.14rem
+      margin-bottom: .24rem
+      position: relative
+      -webkit-mask-image: url(../img/top/sp/mask_bnr.png)
+      mask-image: url(../img/top/sp/mask_bnr.png)
+      background: url(../img/top/sp/job_bnr.jpg) no-repeat center/cover
+      .block-title
+        font-size: .32rem
+        text-shadow: 0 .03rem .1rem #000
+        left: .32rem
+    .banner-content
+      overflow: hidden
+      margin-bottom: .56rem
+      border-radius: .1rem
+      .inner-content
+        line-height: 1.83
+    .link-content
+      &:before
+        right: 0
+        top: 3.5rem
+        width: .64rem
+        height: .64rem
+        background-size: .4rem .4rem
+
+@media print, (min-width: 897px) and (max-width: 1038px)
+  .section-common-news
+    .common-news-list
+      width: 80%
+
+
+.pick-up-content
+  background: rgba($base-color-blue,.6)
+  position: relative
+  &:before
+    content: ''
+    position: absolute
+    left: 50%
+    transform: translateX(-50%)
+    background: url(../img/top/pickup_icon_arrow_01.png) no-repeat center/100% auto
+  .pick-up-title
+    color: #fff
+    text-align: center
+  .pick-up-list
+    padding-left: 0
+  .button-common-line
+    &.is-style-direct
+      background: #fff
+      &:hover
+        background: #b2cde5
+
++desktop
+  .pick-up-content
+    border-radius: 10px
+    padding: 16px 64px 24px
+    margin-bottom: 32px
+    &:before
+      top: -20px
+      width: 85px
+      height: 20px
+    .pick-up-title
+      margin-bottom: 16px
+      font-size: 18px
+    .pick-up-list
+      display: flex
+      flex-wrap: wrap
+      margin: 0 -8px
+    .pick-up-item
+      width: calc(50% - 16px)
+      margin: 0 8px 8px
+
++mobile
+  .pick-up-content
+    border-radius: .2rem
+    padding: .32rem .48rem .12rem
+    margin-bottom: .64rem
+    &:before
+      top: -.67rem
+      width: 1.98rem
+      height: 1.04rem
+      background-image: url(../img/top/sp/pickup_icon_arrow_01.png)
+    .pick-up-title
+      margin-bottom: .32rem
+      font-size: .3rem
+    .pick-up-item
+      margin-bottom: .16rem
+
+.work-list
+  .work-link
+    display: block
+    color: #000
+    text-decoration: none
+    &:hover
+      .work-block
+        &:before
+          border-color: $base-color-blue
+  .work-image
+    -webkit-mask-size: 100%
+    mask-size: 100%
+    -webkit-mask-repeat: no-repeat
+    mask-repeat: no-repeat
+    img
+      height: 100%
+      width: 100%
+      object-fit: cover
+  .work-block
+    position: relative
+    overflow: hidden
+    &:before
+      content: ''
+      position: absolute
+      border: 1px solid rgba($base-color-blue,.3)
+      transition: border-color .3s
+      border-radius: 50%
+      background: url(../img/common/icon_arrow_01.svg) no-repeat center/20px 20px
+  .work-title
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    font-weight: bold
+    color: #fff
+  .common-text
+    font-weight: 700
+
++desktop
+  .work-list
+    display: flex
+    align-items: center
+    margin: 0 -16px
+    .work-detail
+      width: calc(50% - 32px)
+      margin: 0 16px 20px
+    .work-image
+      -webkit-mask-image: url(../img/top/mask_work.png)
+      mask-image: url(../img/top/mask_work.png)
+    .work-block
+      border-radius: 10px
+      height: 280px
+      margin-bottom: 16px
+      &:before
+        right: 14px
+        bottom: 14px
+        width: 40px
+        height: 40px
+    .work-title
+      left: 24px
+      font-size: .2rem
+      line-height: 1.8
+      text-shadow: 0 3px 10px #000
+    .common-text
+      width: 320px
+      line-height: 1.846
+
++mobile
+  .work-list
+    .work-detail
+      &:not(:last-child)
+        margin-bottom: .96rem
+    .work-image
+      -webkit-mask-image: url(../img/top/sp/mask_work.png)
+      mask-image: url(../img/top/sp/mask_work.png)
+    .work-block
+      border-radius: .1rem
+      height: 4.14rem
+      margin-bottom: .24rem
+      &:before
+        right: 0
+        bottom: 0
+        width: .64rem
+        height: .64rem
+        background-size: .36rem .36rem
+    .work-title
+      left: .32rem
+      font-size: .32rem
+      line-height: 1.5625
+      text-shadow: 0 .03rem .1rem #000
+    .common-text
+      line-height: 1.83
+
+.title-top-menu
+  display: block
+  position: relative
+  font-weight: 700
+  overflow: hidden
+  pointer-events: none
+  .title-wrapper
+    display: flex
+    position: relative
+    z-index: 1
+  .button-common-line.is-style-more
+    pointer-events: auto
+    font-weight: 400
+    border-color: rgba(#000,.3)
+    &:hover
+      border-color: #fff
+  .title-label
+    margin: 0
+    display: block
+    position: relative
+    &::before
+      content: ''
+      background: center center / 100% 100% no-repeat
+      position: absolute
+      top: 50%
+      left: 0
+      transform: translateY(-50%)
+  .label-wrapper
+    display: block
+    position: relative
+  .title-detail
+    margin: 0
+  .detail-wrapper
+    display: block
+    position: relative
+  .title-background
+    width: 100%
+    min-height: 100%
+    background: top center / 100% auto no-repeat
+    position: absolute
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    z-index: 0
+    pointer-events: none
+  +desktop
+    padding: 48px 0
+    .title-wrapper
+      margin: 0 auto
+    .title-label
+      width: 264px
+      margin-right: 32px
+      padding: 0 32px 0 64px
+      display: flex
+      align-items: center
+      flex: 0 0 auto
+      font-size: .18rem
+      &::after
+        content: ''
+        width: 2px
+        height: 100%
+        background: #000
+        position: absolute
+        top: 0
+        right: 0
+    .label-wrapper
+      top: -1px
+    .title-detail
+      display: flex
+      flex: 1 1 auto
+      align-items: center
+      line-height: 1.85
+    .detail-wrapper
+      margin: -4px 0
+      top: -1px
+    .button-common-line
+      width: 200px
+      flex: 0 0 auto
+      align-self: center
+  +desktop-pc
+    .title-wrapper
+      width: calc(100% - 256px)
+      max-width: 1664px
+    .button-common-line
+      margin-left: 112px
+  +desktop-tablet
+    .title-wrapper
+      width: calc(100% - 64px)
+      max-width: 1024px
+    .button-common-line
+      margin-left: 32px
+  +mobile
+    padding: .32rem .48rem .8rem
+    .title-wrapper
+      justify-content: space-between
+      align-items: center
+      flex-wrap: wrap
+    .title-label
+      width: calc(100% - 3.18rem)
+      padding: .16rem 0 .16rem .96rem
+      font-size: .28rem
+      order: 1
+    .title-detail
+      width: 100%
+      margin-top: .24rem
+      line-height: 1.83
+      order: 3
+    .button-common-line
+      width: 3.02rem
+      margin-left: .16rem
+      order: 2
+
+.story-top-menu
+  .story-list-issue, .story-list-staff
+    display: block
+    ul, li
+      display: block
+    ul
+      padding: 0
+  .story-list-staff
+    ul
+      margin: 0
+  +desktop
+    .story-wrapper
+      width: calc(100% - 64px)
+      max-width: 848px
+      margin: 0 auto
+      padding: 40px 0 48px
+    .story-list-issue
+      &:not(:last-child)
+        margin-bottom: 32px
+      ul
+        margin: 0 -32px -8px 0
+        display: flex
+        flex-wrap: wrap
+      li
+        width: 50%
+        padding: 0 32px 8px 0
+    .story-list-staff
+      max-width: 448px
+      li
+        &:not(:last-child)
+          margin-bottom: 8px
+  +mobile
+    .story-wrapper
+      padding: .48rem .64rem
+    .story-list-issue
+      padding: 0 .32rem
+      &:not(:last-child)
+        margin-bottom: .48rem
+      li
+        &:not(:last-child)
+          margin-bottom: .16rem
+    .story-list-staff
+      li
+        &:not(:last-child)
+          margin-bottom: .16rem
+.is-accordion-active
+  .direction-arrow
+    .button-icon:after,
+    .button-icon:before
+      transform: rotate(180deg)
+.list-top-menu
+  padding: 0
+  display: block
+  .list-item
+    display: block
+    position: relative
+    overflow: hidden
+    &.is-item-01
+      .title-top-menu
+        .title-label
+          &::before
+            background-image: url(../img/top/icon_menu_01.svg)
+    &.is-item-02
+      .title-top-menu
+        .title-label
+          &::before
+            background-image: url(../img/top/icon_menu_02.svg)
+    &.is-item-03
+      .title-top-menu
+        .title-label
+          &::before
+            background-image: url(../img/top/icon_menu_03.svg)
+    &.is-item-04
+      .title-top-menu
+        .title-label
+          &::before
+            background-image: url(../img/top/icon_menu_04.svg)
+  .item-wrapper
+    position: relative
+    z-index: 1
+  .story-top-menu
+    display: none
+    &.is-accordion-active
+      display: block
+
+  .item-background
+    width: 100%
+    background: top center / 100% auto no-repeat
+    position: absolute
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    z-index: 0
+    pointer-events: none
+  +desktop
+    .list-item
+      &:not(:last-child)
+        margin-bottom: 4px
+      &.is-item-01
+        .title-top-menu
+          .title-label
+            &::before
+              width: 39px
+              height: 39px
+              left: 8px
+          .title-background
+            background-image: url(../img/top/menu_background_01_blur.jpg)
+        .item-background
+          background-image: url(../img/top/menu_background_01.jpg)
+      &.is-item-02
+        .title-top-menu
+          .title-label
+            &::before
+              width: 40px
+              height: 40px
+              left: 5px
+          .title-background
+            background-image: url(../img/top/menu_background_02_blur.jpg)
+        .item-background
+          background-image: url(../img/top/menu_background_02.jpg)
+      &.is-item-03
+        .title-top-menu
+          .title-label
+            &::before
+              width: 52px
+              height: 40px
+              left: 1px
+          .title-background
+            background-image: url(../img/top/menu_background_03_blur.jpg)
+        .item-background
+          background-image: url(../img/top/menu_background_03.jpg)
+      &.is-item-04
+        .title-top-menu
+          .title-label
+            &::before
+              width: 44px
+              height: 40px
+              left: 5px
+          .title-background
+            background-image: url(../img/top/menu_background_04_blur.jpg)
+        .item-background
+          background-image: url(../img/top/menu_background_04.jpg)
+  +mobile
+    .list-item
+      .item-background
+        background-size: 100% 100%
+      &:not(:last-child)
+        margin-bottom: .04rem
+      &.is-item-01
+        .title-top-menu
+          .title-label
+            &::before
+              width: .6rem
+              height: .6rem
+              left: .13rem
+          .title-background
+            background-image: url(../img/top/sp/menu_background_01_blur.jpg)
+        .item-background
+          background-image: url(../img/top/sp/menu_background_01.jpg)
+      &.is-item-02
+        .title-top-menu
+          .title-label
+            &::before
+              width: .7rem
+              height: .7rem
+              left: .08rem
+          .title-background
+            background-image: url(../img/top/sp/menu_background_02_blur.jpg)
+        .item-background
+          background-image: url(../img/top/sp/menu_background_02.jpg)
+      &.is-item-03
+        .title-top-menu
+          .title-label
+            &::before
+              width: .78rem
+              height: .78rem
+              margin-top: -.04rem
+              left: 0
+          .title-background
+            background-image: url(../img/top/sp/menu_background_03_blur.jpg)
+        .item-background
+          background-image: url(../img/top/sp/menu_background_03.jpg)
+      &.is-item-04
+        .title-top-menu
+          .title-label
+            &::before
+              width: .64rem
+              height: .64rem
+              margin-top: -.04rem
+              left: .12rem
+          .title-background
+            background-image: url(../img/top/sp/menu_background_04_blur.jpg)
+        .item-background
+          background-image: url(../img/top/sp/menu_background_04.jpg)
+
+.section-top-menu
+  position: relative
+  .section-label
+    margin: 0
+    display: block
+    position: absolute
+    pointer-events: none
+    img
+      width: 100%
+      height: 100%
+  &>.button-common-highlight.is-style-blue
+    margin: 0 auto
+  +desktop
+    padding: 86px 0 112px
+    .section-label
+      width: 330px
+      height: 87px
+      top: 0
+    .list-top-menu
+      margin-bottom: 40px
+    &>.button-common-highlight.is-style-blue
+      width: calc(100% - 64px)
+      max-width: 496px
+      &:hover
+        .button-wrapper
+          padding-right: 88px
+  +desktop-pc
+    .section-label
+      right: calc(50% - 64px)
+  +desktop-tablet
+    .section-label
+      right: calc(50% - 384px)
+  +mobile
+    padding: 1.28rem 0 1.6rem
+    .section-label
+      width: 4.92rem
+      height: 1.29rem
+      top: 0
+      right: 0
+    .list-top-menu
+      margin-bottom: .64rem
+      .button-common-highlight.is-style-orange .button-wrapper,
+      .button-common-highlight.is-style-orange .button-icon
+        border-color: $base-color-orange
+    &>.button-common-highlight.is-style-blue
+      width: calc(100% - 1.28rem)
+
+.list-top-about
+  margin: 0
+  padding: 0
+  display: block
+  position: relative
+  .list-item
+    margin: 0
+    padding: 0
+    display: block
+    &.is-blue
+      .item-decoration
+        &::before
+          background-color: $base-color-blue
+        &::after
+          background-color: rgba(0,91,170,.5)
+      .item-label
+        color: $base-color-blue
+      .button-common-line.is-style-more
+        border-color: rgba($base-color-blue,.3)
+        color: $base-color-blue
+        &:hover
+          border-color: $base-color-blue
+          background: $base-color-blue
+          color: #fff
+      .info-detail
+        color: $base-color-blue
+    &.is-orange
+      .item-decoration
+        &::before
+          background-color: $base-color-orange
+        &::after
+          background-color: rgba(233,97,0,.5)
+      .item-label
+        color: $base-color-orange
+      .button-common-line.is-style-more
+        border-color: rgba($base-color-orange,.3)
+        color: $base-color-orange
+        &:hover
+          border-color: $base-color-orange
+          background: $base-color-orange
+          color: #fff
+      .info-detail
+        color: $base-color-orange
+    &.is-skyblue
+      .item-decoration
+        &::before
+          background-color: $base-color-light-blue
+        &::after
+          background-color: rgba(0,159,231,.5)
+      .item-label
+        color: $base-color-light-blue
+      .button-common-line.is-style-more
+        border-color: rgba($base-color-light-blue,.3)
+        color: $base-color-light-blue
+        &:hover
+          border-color: $base-color-light-blue
+          background: $base-color-light-blue
+          color: #fff
+      .info-detail
+        color: $base-color-light-blue
+  .item-wrapper
+    position: relative
+  .item-decoration
+    position: absolute
+    top: 0
+    right: 0
+    left: 0
+    z-index: 2
+    pointer-events: none
+    &::before, &::after
+      content: ''
+      position: absolute
+      top: 0
+    &::after
+      height: 1px
+  .item-label
+    margin: 0
+    background: #fff
+    display: block
+    position: absolute
+    top: 0
+    z-index: 1
+    font-weight: 700
+  .label-wrapper
+    display: block
+    position: relative
+  .item-thumbnail
+    position: relative
+    z-index: 0
+    overflow: hidden
+  .thumbnail-background
+    position: relative
+    z-index: 0
+    img
+      width: 100%
+      margin: 0
+  .info-detail
+    font-weight: 700
+  .info-list-staff
+    margin: 0
+    padding: 0
+    display: block
+    li
+      margin: 0
+      padding: 0
+      display: block
+  .button-common-highlight
+    color: #000
+  +desktop
+    .list-item
+      &:not(:last-child)
+        margin-bottom: 112px
+      &:nth-child(odd)
+        .item-decoration
+          &::before
+            left: 0
+          &::after
+            right: 0
+            left: 4px
+        .item-label
+          border-radius: 0 10px 10px 0
+          left: 0
+        .item-thumbnail
+          border-radius: 0 10px 10px 0
+        .info-wrapper
+          max-width: 340px
+      &:nth-child(even)
+        .item-wrapper
+          flex-direction: row-reverse
+        .item-decoration
+          &::before
+            right: 0
+          &::after
+            right: 4px
+            left: 0
+        .item-label
+          border-radius: 10px 0 0 10px
+          right: 0
+          text-align: right
+        .item-thumbnail
+          border-radius: 10px 0 0 10px
+        .info-wrapper
+          max-width: 408px
+          margin-left: auto
+    .item-wrapper
+      display: flex
+      align-items: flex-start
+    .item-decoration
+      &::before
+        border-radius: 4px
+    .item-thumbnail
+      flex: 0 0 auto
+    .item-info
+      flex: 1 1 auto
+    .info-detail
+      margin-bottom: 32px
+      font-size: .13rem
+      line-height: 2.31
+    .button-common-line.is-style-more
+      width: 197px
+      padding: 13px 16px
+      &:not(:last-child)
+        margin-bottom: 48px
+    .info-list-staff
+      li
+        &:not(:last-child)
+          margin-bottom: 16px
+    .button-common-highlight
+      &:hover
+        padding-right: 0
+  +desktop-pc
+    .list-item
+      &:nth-child(odd)
+        .item-decoration
+          right: calc(50% - 696px)
+          left: calc(50% - 776px)
+        .item-label
+          width: calc(50% - 464px)
+          max-width: calc(50% + 62px)
+          padding: 40px 16px 40px calc(50% - 776px)
+        .item-thumbnail
+          width: calc(50% + 62px)
+          margin-right: 96px
+        .item-info
+          padding: 240px 32px 0 0
+      &:nth-child(even)
+        .item-decoration
+          right: calc(50% - 520px)
+          left: calc(50% - 696px)
+        .item-label
+          width: calc(50% - 336px)
+          max-width: calc(50% - 126px)
+          padding: 40px calc(50% - 520px) 40px 16px
+        .item-thumbnail
+          width: calc(50% - 126px)
+          margin-left: 272px
+        .item-info
+          padding: 80px 0 0 32px
+    .item-decoration
+      &::before
+        width: 56px
+        height: 11px
+    .item-label
+      font-size: .25rem
+    .label-wrapper
+      top: -2px
+  @media print, (min-width: 1280.02px) and (max-width: 1616px)
+    .list-item
+      &:nth-child(odd)
+        .item-decoration
+          left: 32px
+  @media print, (min-width: 1280.02px) and (max-width: 1456px)
+    .list-item
+      &:nth-child(odd)
+        .item-decoration
+          right: 32px
+  +desktop-tablet
+    .list-item
+      &:nth-child(odd)
+        .item-decoration
+          width: calc(100% - 64px)
+          margin: 0 auto
+          &::before
+            width: 40px
+            height: 8px
+        .item-label
+          width: calc(50% - 284px)
+          max-width: calc(50% + 72px)
+          padding: 27px 16px 27px calc(50% - 512px)
+        .item-thumbnail
+          width: calc(50% + 72px)
+          margin-right: 32px
+        .item-info
+          padding: 88px 32px 0 0
+      &:nth-child(even)
+        .item-decoration
+          right: calc(50% - 336px)
+          left: calc(50% - 512px)
+        .item-label
+          width: calc(50% - 208px)
+          max-width: calc(50% - 72px)
+          padding: 27px calc(50% - 336px) 27px 16px
+        .item-thumbnail
+          width: calc(50% - 72px)
+          margin-left: 88px
+        .item-info
+          padding: 80px 0 0 32px
+    .item-decoration
+      max-width: 1024px
+      &::before
+        width: 40px
+        height: 8px
+    .item-label
+      font-size: .18rem
+    .label-wrapper
+      top: -1px
+  @media print, (min-width: 769px) and (max-width: 1088px)
+    .list-item
+      &:nth-child(odd)
+        .item-label
+          width: auto
+          min-width: 264px
+          padding: 27px 32px
+        .item-info
+          padding-top: 32px
+      &:nth-child(even)
+        .item-decoration
+          left: 32px
+        .item-thumbnail
+          margin-left: 32px
+        .item-info
+          padding-top: 32px
+  +mobile
+    .list-item
+      &:not(:last-child)
+        margin-bottom: 1.12rem
+      &:nth-child(odd)
+        .item-decoration
+          &::before
+            left: 0
+          &::after
+            right: 0
+            left: .08rem
+        .item-label
+          border-radius: 0 .2rem .2rem 0
+          left: 0
+        .item-thumbnail
+          margin-right: .32rem
+          border-radius: 0 0 .2rem
+      &:nth-child(even)
+        .item-decoration
+          &::before
+            right: 0
+          &::after
+            right: .08rem
+            left: 0
+        .item-label
+          border-radius: .2rem 0 0 .2rem
+          right: 0
+          text-align: center
+        .item-thumbnail
+          margin-left: .32rem
+          border-radius: 0 0 0 .2rem
+    .item-decoration
+      width: calc(100% - .64rem)
+      margin: 0 auto
+      &::before
+        width: .64rem
+        height: .16rem
+        border-radius: .08rem
+    .item-label
+      max-width: calc(100% - .64rem)
+      min-width: 3.36rem
+      padding: .36rem .32rem
+      font-size: .28rem
+    .label-wrapper
+      top: -1px
+    .item-thumbnail
+      margin-bottom: .48rem
+    .item-info
+      padding: 0 .48rem
+    .info-detail
+      line-height: 1.833
+      &:not(:last-child)
+        margin-bottom: 1.12rem
+    .button-common-line.is-style-more
+      width: 3.02rem
+      margin: 0 auto
+      &:not(:last-child)
+        margin-bottom: .54rem
+    .info-list-staff
+      li
+        &:not(:last-child)
+          margin-bottom: .32rem
+
+.section-top-about
+  .button-common-line
+    font-weight: 400
+  +desktop
+    padding-bottom: 112px
+  +mobile
+    padding-bottom: 1.6rem
+
+@media print, (min-width: 1280px) and (max-width: 1600px)
+  .section-top-about
+    .list-item:nth-child(odd)
+      .item-label
+        padding-left: 16px

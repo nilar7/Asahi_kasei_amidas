@@ -1,0 +1,119 @@
+@charset "utf-8"
+
+.button-common-highlight
+  display: block
+  position: relative
+  font-weight: 700
+  text-decoration: none
+  transition: padding .3s ease
+  &:hover
+    .button-icon
+      &::before
+        opacity: 0
+      &::after
+        opacity: 1
+  &.is-style-orange
+    color: $base-color-orange
+    &:hover
+      .button-wrapper,
+      .button-icon
+        border-color: $base-color-orange
+    .button-wrapper,
+    .button-icon
+      border: 1px solid rgba(233,97,0,.3)
+      +mobile
+        border-width: .02rem
+    .button-icon
+      &::before
+        opacity: 1!important
+      &::after
+        display: none
+  &.is-style-blue
+    color: $base-color-blue
+    &:hover
+      color: $base-color-blue
+      .button-wrapper,
+      .button-icon
+        border-color: $base-color-blue
+    .button-wrapper,
+    .button-icon
+      border: 1px solid rgba(0,91,170,.3)
+    .button-wrapper,
+    .button-icon
+      +mobile
+        border-width: .02rem
+  .button-wrapper
+    display: block
+    position: relative
+    transition: border .3s ease, color .3s ease
+  .button-text
+    display: block
+    position: relative
+  .button-icon
+    position: absolute
+    top: -1px
+    right: -1px
+    bottom: -1px
+    transition: border .3s ease
+    &::before, &::after
+      content: ''
+      background: center center no-repeat
+      position: absolute
+      top: 0
+      right: 0
+      bottom: 0
+      left: 0
+      transition: opacity .3s ease
+    &::before
+      background-image: url(../img/common/icon_arrow_01.svg)
+      z-index: 1
+    &::after
+      background-image: url(../img/common/icon_arrow_03.svg)
+      z-index: 0
+      opacity: 0
+  +desktop
+    font-size: .16rem
+    &:hover
+      padding-right: 40px
+    &.is-style-orange
+      .button-icon
+        &::before
+          background-image: url(../img/common/icon_arrow_03.svg)
+    &.is-style-blue
+      .button-icon
+        &::before,
+        &::after
+          background-image: url(../img/common/icon_arrow_01.svg)
+    .button-wrapper
+      padding: 12px 64px 12px 32px
+    .button-wrapper,
+    .button-icon
+      border-radius: 24px
+    .button-text
+      top: -1px
+    .button-icon
+      width: 48px
+      &::before, &::after
+        background-size: 20px 20px
+  +mobile
+    &.is-style-orange
+      border-width: .02rem
+      .button-icon
+        &::before
+          background-image: url(../img/common/sp/icon_arrow_03.svg)
+    &.is-style-blue
+      border-width: .02rem
+      .button-icon
+        &::before,
+        &::after
+          background-image: url(../img/common/sp/icon_arrow_01.svg)
+    .button-wrapper
+      padding: .21rem 1.04rem .21rem .24rem
+      border-radius: .4rem
+    .button-text
+      top: 0
+    .button-icon
+      width: .8rem
+      border-radius: .4rem
+      &::before, &::after
+        background-size: .4rem .4rem

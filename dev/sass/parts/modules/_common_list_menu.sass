@@ -1,0 +1,114 @@
+.content-list-menu
+  background-color: $base-color-light-blue
+.list-menu-top
+  list-style-type: none
+  margin-bottom: 0
+  padding-left: 0
+  display: flex
+  flex-wrap: wrap
+  a
+    text-decoration: none
+    color: #fff
+    font-weight: 700
+  .item-list-top
+    text-align: center
+    position: relative
+    &:not(:last-child)
+      &:after
+        position: absolute
+        content: ""
+        top: 50%
+        transform: translateY(-50%)
+        right: 0
+        width: 1px
+        background-color: #fff
+    a
+      position: relative
+      &:after
+        position: absolute
+        content: ""
+        bottom: -1px
+        left: 50%
+        transform: translateX(-50%)
+        width: 85%
+        height: 1px
+        background-color: #fff
+        opacity: 0
+        transition: opacity .26s
+      &:hover:after
+        opacity: 1
+    &.active-hover
+      a
+        &:after
+          opacity: 1
+
++desktop
+  .list-menu-top
+    padding: 8px 0
+    max-width: 1100px
+    margin: 0 auto
+    a
+      padding: 0 16px
+    .item-list-top
+      &:not(:last-child)
+        &:after
+          height: 12px
+    .item-client
+      margin-bottom: 8px
+
+@media print, (min-width: 768.98px) and (max-width: 1020px)
+  .content-list-menu
+    display: flex
+    justify-content: center
+  .list-menu-top
+    .item-list-top
+      a
+        font-size: .1rem
+        padding-left: 8px
+        padding-right: 8px
+@media print, (min-width: 768.98px) and (max-width: 1140px)
+  .list-menu-company
+    justify-content: center
+    .item-list
+      a
+        font-size: .1rem
+
+.list-service-menu
+  background-color: rgba(0,91,170,.65)
+  backdrop-filter: blur(6px) brightness(1.9)
+  .item-list-top
+    a
+      text-decoration: none
+      position: relative
+      &:after
+        position: absolute
+        content: ""
+        bottom: -9px
+        left: 50%
+        transform: translateX(-50%)
+        width: 82%
+        height: 6px
+        background-color: #fff
+        opacity: 0
+        transition: opacity .26s
+      &:hover:after
+        opacity: 1
+    &.active-hover
+      a:after
+        opacity: 1
+
+.menu-mypage
+  background-color: $base-color-orange
+  display: flex
+
+.list-menu-job
+  .list-menu-top
+    justify-content: center
+    padding-bottom: 0
+    a
+      text-decoration: none
+  .item-list-top
+    margin-bottom: 8px
+    &:nth-child(7)
+      &:after
+        height: 0

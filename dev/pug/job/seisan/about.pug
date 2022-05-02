@@ -1,0 +1,126 @@
+extends ../../_layouts/default
+
+block vars
+  -title        = '製造現場のお仕事について'
+  -description  = ''
+  -keywords     = ''
+  -pageID       = 'job'
+  -pageSubID    = 'job-seisan'
+  -typePage     = 'type-a'
+  -path         = '../..'
+  -imgPC        = path+'/img/'+pageID+'/'
+  -imgSP        = path+'/img/'+pageID+'/sp/'
+
+block container
+  include ../../_parts/common_list_menu_05
+  +keyvisual('job-seisan','旭化成アミダスの製造現場の<br class="sm">お仕事について')
+    +breadcrumbJapan('製造現場のお仕事について', [{title: 'お仕事をお探しの方', url: '/job/'},{title: '製造現場のお仕事トップ'}])
+  section.section-job-about
+    .wrapper
+      h2.common-title.title-light-blue
+        span 製造現場業務のしくみ
+      p.common-text 説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明
+      figure.image-top
+        img.md(src=imgPC+"job_jinzai_img_01.png" width="850" height="495" loading="lazy" alt="転職支援サービスのしくみ")
+        img.sm(src=imgSP+"job_jinzai_img_01.png" width="704" height="570" loading="lazy" alt="転職支援サービスのしくみ")
+  section.section-job-benefits.section-seisan-benefits
+    .wrapper
+      h2.common-title.title-light-blue
+        span 旭化成アミダスで働くメリット
+      p.common-text.text-benefits 説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明
+      ol.list-benefits
+        -
+          var
+            list = [
+              {
+                title: 'あなたの成長をサポート',
+                text: '入社受入時～現場で独り立ちできるまでの教育体制を整えており、困ったときには、先輩・上司・採用担当のみんなでフォロー致します。 また、研修（階層別・パソコン）や資格取得支援など、成長を支える仕組みがあります。',
+                number: '01'
+              },
+              {
+                title: '活発な社員交流、福利厚生の充実',
+                text: 'ミニバレー、ボーリング、運動会、駅伝大会などのレクや同好会活動の補助など、社員交流の場に力を入れております。 また、福利厚生として、優待利用できる施設、サービスが多数あります。',
+                number: '02'
+              },
+              {
+                title: 'コンプライアンス遵守',
+                text: '従業員の安全確保を最優先とし、環境整備・安全教育に日々取り組んでおります。 また、労働時間は1分単位で管理し、着替え、作業場までの移動時間も労働時間として扱うなど、適正な労務管理に努めています。',
+                number: '03'
+              },
+              {
+                title: '描きやすいキャリアプラン',
+                text: '当社の職階転換制度では、本人の希望と能力評価、担当業務の範囲・難易度、責任の範囲により、ステップアップできる仕組みがあります。',
+                number: '04',
+                isBorder: true
+              }
+            ];
+        each item in list
+          li.item-benefits
+            .block-content
+              span メリット
+              .content-left
+                h3.title-benefits!=item.title
+                p.common-text!= item.text
+              figure(class=item.isBorder ? 'no-border' : '').image-right
+                img.md(src=imgPC+"job_seisan_img_"+item.number+".jpg" width="496" height="264" loading="lazy" alt=item.title.replace(/<[^>]*>/,''))
+                img.sm(src=imgSP+"job_seisan_img_"+item.number+".jpg" width="672" height="358" loading="lazy" alt=item.title.replace(/<[^>]*>/,''))
+      a.common-button-inquiry(href="#") 求人情報はこちら
+      p.text-note 案件エントリー後、登録の流れとなります。
+      .block-jox.is-reverse
+        .block-bottom
+          .common-job-box
+            .content-title
+              h2.title-box 募集中求人・お問い合わせはこちら
+              p.text-box あなたも旭化成グループの一員として、<br class="sm">製造をサポートしませんか？
+            ul.list-buttons
+              li
+                h2.default-title
+                  span.text 現在募集している求人はこちらから
+                a.default-button(href="#")
+                  span 求人情報
+              li
+                h2.default-title.is-custom-title
+                  span.text まず問い合わせたい方はこちら
+                a.default-button(href="#")
+                  span フォームからの問い合わせ
+            .contact-row
+              h2.default-title.is-tel お電話でのお問い合わせも受け付けています。
+              ul.list-contact
+                li
+                  h3.contact-text 守山事業所
+                  a.contact-tel.font-alata(href="tel:0120-85-4622") TEL : 0120-85-4622
+                  p.contact-time （旭化成アミダス守山事業所採用担当宛）<br>※受付時間: <time datetime="08:30">8:30</time>～<time>17:00</time>（土日祝除く）
+                li
+                  h3.contact-text 日向事業所
+                  a.contact-tel.font-alata(href="tel:0982-55-2014") TEL : 0982-55-2014
+                  p.contact-time （旭化成アミダス日向事業所採用担当宛）<br>※受付時間: <time datetime="08:30">8:30</time>～<time>17:00</time>（土日祝除く）
+        .block-common-contact
+          .block-content-bottom
+            .content-bottom
+              h3.title-bottom お役立ちコンテンツ
+              p.text-small 初めて派遣で働く方も、実際に派遣で働いている人にもぴったりなコンテンツを揃えました。
+            ul.list-story-issue
+              li
+                a.button-common-line.is-style-direct(href='#')
+                  span.button-wrapper 募集中案件
+                  span.button-icon
+              li
+                a.button-common-line.is-style-direct(href='#')
+                  span.button-wrapper 社員インタビュー
+                  span.button-icon
+              li
+                a.button-common-line.is-style-direct(href='#')
+                  span.button-wrapper 製造現場のお仕事について
+                  span.button-icon
+              li
+                a.button-common-line.is-style-direct(href='#')
+                  span.button-wrapper 研修制度
+                  span.button-icon
+              li
+                a.button-common-line.is-style-direct(href='#')
+                  span.button-wrapper 配属地域紹介
+                  span.button-icon
+              li
+                a.button-common-line.is-style-direct(href='#')
+                  span.button-wrapper よくあるご質問
+                  span.button-icon

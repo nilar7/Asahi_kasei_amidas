@@ -1,0 +1,108 @@
+extends ../../../_layouts/default
+
+block vars
+  -title        = 'スタッフインタビュー'
+  -description  = ''
+  -keywords     = ''
+  -pageID       = 'job'
+  -pageSubID    = 'job-interview'
+  -typePage     = 'type-a'
+  -path         = '../../..'
+  -imgPC        = path+'/img/'+pageID+'/'
+  -imgSP        = path+'/img/'+pageID+'/sp/'
+
+block container
+  include ../../../_parts/common_list_menu_04
+  +keyvisual('job-interview','スタッフインタビュー')
+    +breadcrumbJapan('スタッフインタビュー', [{title: '人材派遣トップ', url: '/job/'}])
+  section.section-job-interview
+    p.common-text.text-top 説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明
+    .block-highlight
+      ul.common-list-category
+        -
+          var
+            list = [
+              {
+                text: 'ビジョン・ミッション'
+              },
+              {
+                text: '働き方'
+              },
+              {
+                text: 'やりがい'
+              },
+              {
+                text: '女性の活躍'
+              },
+              {
+                text: 'チームビルディング'
+              },
+              {
+                text: 'キャリアチェンジ'
+              },
+              {
+                text: '未経験'
+              },
+              {
+                text: '転職'
+              },
+              {
+                text: 'キーパーソン'
+              },
+              {
+                text: 'エンジニア'
+              },
+              {
+                text: '社内制度'
+              },
+              {
+                text: 'ワーキングママ'
+              },
+              {
+                text: 'わたしの働き方'
+              },
+              {
+                text: '社員・職員'
+              },
+              {
+                text: 'キャリア'
+              },
+              {
+                text: 'チームワーク'
+              },
+              {
+                text: '研究開発'
+              },
+            ]
+        each item in list
+          li
+            a.trans.item-category(href="#")!=item.text
+    .wrapper
+      ul.list-job-interview
+        -
+          var n = 0;
+          var
+            listJob = [
+              {
+                number: '01'
+              },
+              {
+                number: '02'
+              },
+              {
+                number: '03'
+              }
+            ]
+        while n++ < 8
+          each item in listJob
+            li.item-job
+              a.trans.item-link(href=path+"/job/haken/interview/detail.html")
+                figure.image-job
+                  img.md(src=imgPC+"job_interview_img_"+item.number+".jpg" width="320" height="200" loading="lazy" alt="すべては好奇心から始まる──普通科出身の未経験者が技術者として成長するまで")
+                  img.sm(src=imgSP+"job_interview_img_"+item.number+".jpg" width="320" height="200" loading="lazy" alt="すべては好奇心から始まる──普通科出身の未経験者が技術者として成長するまで")
+                .content-job
+                  h2.item-title すべては好奇心から始まる──普通科出身の未経験者が技術者として成長するまで
+                  ul.list-category
+                    li 未経験
+                    li 転職
+      include ../../../_parts/common_contact_04

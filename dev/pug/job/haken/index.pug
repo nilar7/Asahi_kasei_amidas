@@ -1,0 +1,291 @@
+extends ../../_layouts/default
+
+block vars
+  -title        = '人材派遣TOP'
+  -description  = ''
+  -keywords     = ''
+  -pageID       = 'job'
+  -pageSubID    = 'haken-index'
+  -typePage     = 'type-a'
+  -path         = '../..'
+  -imgPC        = path+'/img/'+pageID+'/'
+  -imgSP        = path+'/img/'+pageID+'/sp/'
+
+block container
+  include ../../_parts/common_list_menu_04
+  +keyvisual('job-index','お仕事をお探しの方')
+    +breadcrumbJapan('人材派遣トップ', [{title: 'お仕事をお探しの方', url: '/job/'}])
+  section.section-index-top
+    .introduction-content.introduction-top
+      .wrapper
+        .inner-content
+          h2.base-title タイトルが入りますタイトルが<br class="sm">入ります<br class="md">タイトルが入ります<br class="sm">タイトルが入ります
+          p.common-text テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+    .wrapper
+      .top-search
+        h3.search-title カンタン！お仕事検索
+        .wrapper-form
+          form.form-search
+            .row-form
+              .row-fill.js-select-box
+                .custom-select
+                  .custom-select-trigger.select-box.box-prefecture
+                    span 都道府県を選ぶ
+                  ul.select-option.js-select-option.js-scrollbar
+                    li.custom-option(data-value="北海道") 北海道
+                    li.custom-option(data-value="青森県") 青森県
+                    li.custom-option(data-value="岩手県") 岩手県
+                    li.custom-option(data-value="宮城県") 宮城県
+                    li.custom-option(data-value="秋田県") 秋田県
+                    li.custom-option(data-value="福島県") 福島県
+                    li.custom-option(data-value="茨城県") 茨城県
+                    li.custom-option(data-value="栃木県") 栃木県
+                    li.custom-option(data-value="群馬県") 群馬県
+                    li.custom-option(data-value="埼玉県") 埼玉県
+                    li.custom-option(data-value="千葉県") 千葉県
+                    li.custom-option(data-value="東京都") 東京都
+                    li.custom-option(data-value="神奈川県") 神奈川県
+                    li.custom-option(data-value="新潟県") 新潟県
+                    li.custom-option(data-value="富山県") 富山県
+                    li.custom-option(data-value="石川県") 石川県
+                    li.custom-option(data-value="福井県") 福井県
+                    li.custom-option(data-value="山梨県") 山梨県
+                    li.custom-option(data-value="長野県") 長野県
+                    li.custom-option(data-value="岐阜県") 岐阜県
+                    li.custom-option(data-value="静岡県") 静岡県
+                    li.custom-option(data-value="愛知県") 愛知県
+                    li.custom-option(data-value="三重県") 三重県
+                    li.custom-option(data-value="滋賀県") 滋賀県
+                    li.custom-option(data-value="京都府") 京都府
+                    li.custom-option(data-value="大阪府") 大阪府
+                    li.custom-option(data-value="兵庫県") 兵庫県
+                    li.custom-option(data-value="奈良県") 奈良県
+                    li.custom-option(data-value="和歌山県") 和歌山県
+                    li.custom-option(data-value="鳥取県") 鳥取県
+                    li.custom-option(data-value="島根県") 島根県
+                    li.custom-option(data-value="岡山県") 岡山県
+                    li.custom-option(data-value="広島県") 広島県
+                    li.custom-option(data-value="山口県") 山口県
+                    li.custom-option(data-value="徳島県") 徳島県
+                    li.custom-option(data-value="香川県") 香川県
+                    li.custom-option(data-value="愛媛県") 愛媛県
+                    li.custom-option(data-value="高知県") 高知県
+                    li.custom-option(data-value="福岡県") 福岡県
+                    li.custom-option(data-value="佐賀県") 佐賀県
+                    li.custom-option(data-value="長崎県") 長崎県
+                    li.custom-option(data-value="熊本県") 熊本県
+                    li.custom-option(data-value="大分県") 大分県
+                    li.custom-option(data-value="宮崎県") 宮崎県
+                    li.custom-option(data-value="鹿児島県") 鹿児島県
+                    li.custom-option(data-value="沖縄県") 沖縄県
+            .row-form
+              .row-fill.js-select-box
+                .custom-select.select-job
+                  .custom-select-trigger.select-box
+                    span 職種を選ぶ
+                  ul.select-option.js-select-option.js-scrollbar
+                    li.trans.custom-option(data-value="オフィスワーク・事務（すべて選択）") オフィスワーク・事務（すべて選択）
+                    li.trans.custom-option(data-value="営業・販売・サービス（すべて選択）") 営業・販売・サービス（すべて選択）
+                    li.trans.custom-option(data-value="IT・エンジニア・技術（すべて選択)") IT・エンジニア・技術（すべて選択)
+                    li.trans.custom-option(data-value="クリエイティブ（すべて選択）") クリエイティブ（すべて選択）
+                    li.trans.custom-option(data-value="研究・開発（すべて選択）") 研究・開発（すべて選択）
+                    li.trans.custom-option(data-value="住宅・建築・不動産（すべて選択）") 住宅・建築・不動産（すべて選択）
+                    li.trans.custom-option(data-value="医療・介護・福祉・教育（すべて選択）") 医療・介護・福祉・教育（すべて選択）
+                    li.trans.custom-option(data-value="製造・物流・軽作業（すべて選択）") 製造・物流・軽作業（すべて選択）
+                    li.trans.custom-option(data-value="その他（すべて選択）") その他（すべて選択）
+            .row-form
+              .row-fill.js-select-box
+                .custom-select.select-working
+                  .custom-select-trigger.select-box
+                    span 働き方を選ぶ
+                  ul.select-option.js-select-option.js-scrollbar
+                    li.trans.custom-option(data-value="働き方を選ぶ") 働き方を選ぶ
+                    li.trans.custom-option(data-value="働き方を選ぶ") 働き方を選ぶ
+                    li.trans.custom-option(data-value="働き方を選ぶ") 働き方を選ぶ
+                    li.trans.custom-option(data-value="働き方を選ぶ") 働き方を選ぶ
+            .row-form.wrap-button
+              a.button-text(href="#") ＋さらに詳しい条件で検索
+              button(class="trans search-submit" type="submit" value="search" name="search") この条件で検索
+      ul.list-buttons
+        li
+          a.middle-button(href="#") 初めて派遣で働く方へ
+          p.button-note 派遣の仕組みやメリット、仕事紹介までの流れ
+        li
+          a.middle-button(href="#") 登録済みスタッフの方へ
+          p.button-note マイページの使い方や利用可能サービスのご紹介
+        li
+          a.middle-button(href="#") よくあるご質問
+          p.button-note 登録時の疑問や派遣についての<br class="md">よくある質問とその回答
+  section.section-index-middle
+    .wrapper
+      +blockTitle({
+        titleFirst: "",
+        title: "あなたの未来につながる働き方",
+        subtext: '旭化成株式会社100％出資の<br class="sm">人材派遣会社だからできる'
+      })
+      ol.point-list
+        li.is-point-blue
+          span.point-title.font-alata POINT
+          .point-content.font-alata
+            h3.point-subtitle 可能性を広げる多彩な<br class="md">お仕事をご紹介
+            p.point-text ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト
+          +buttonTransparent({
+            href: "#",
+            text: "派遣求人情報を探してみる"
+          })
+        li.is-point-ocean
+          span.point-title.font-alata POINT
+          .point-content.font-alata
+            h3.point-subtitle スキルアップのための<br class="md">バックアップ
+            p.point-text ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト
+          +buttonTransparent({
+            href: "#",
+            text: 'スキルアップサポートを<br class="md">詳しく見る'
+          })
+        li.is-point-orange
+          span.point-title.font-alata POINT
+          .point-content.font-alata
+            h3.point-subtitle ベストな環境で働くための<br>充実した福利厚生
+            p.point-text ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト
+          +buttonTransparent({
+            href: "#",
+            text: "福利厚生を詳しく見る"
+          })
+      .common-job-box
+        .condition-inner
+          h2.default-title
+            span.text まずはWEB登録！登録は無料です！！
+          a.default-button(href="#")
+            span WEB仮登録はこちらから
+          p.job-note 担当者との面談等を行った後、<br class="sm">本登録となります。
+  section.section-index-begin
+    .wrapper
+      +blockTitle({
+        titleFirst: "yes",
+        title: "初めて派遣で働く方へ",
+        subtext: '「派遣と正社員って本当はどちらが良いんだろう」<br class="sm">「紹介予定派遣って何？」<br>そんな、初めての派遣にお悩みの方に<br class="sm">おすすめのコンテンツをご用意しました。'
+      }).block-title-orange
+      ul.list-image-special.is-special-custom
+        +jobListItem({
+          hasTitle: "yes",
+          title: "旭化成アミダスの派遣について",
+          href: "#",
+          src: "job_item_img_01.jpg",
+          alt: "旭化成アミダスの派遣について",
+          text: "派遣で働く際の仕組みや、正社員雇用との違い、旭化成アミダスがお薦めの理由など、初めて派遣で働く方必見です！"
+        })
+        +jobListItem({
+          hasTitle: "yes",
+          title: "紹介予定派遣とは？",
+          href: "#",
+          src: "job_item_img_02.jpg",
+          alt: "紹介予定派遣とは？",
+          text: "「紹介予定派遣は普通の派遣とは違うの？」と気になる方向けに、雇用形態やメリットなど、詳しく解説します！"
+        })
+        +jobListItem({
+          hasTitle: "yes",
+          title: "登録から就業までの流れ",
+          href: "#",
+          src: "job_item_img_03.jpg",
+          alt: "登録から就業までの流れ",
+          text: "旭化成アミダスで派遣スタッフとしてお仕事をしていただくための登録から実際の終業までの流れを説明します！"
+        })
+      +buttonTransparent({
+        href: "#",
+        text: '「初めて派遣で働く方へ」の<br class="sm">コンテンツをもっと詳しくみる'
+      })
+      include ../../_parts/common_contact_06
+  section.section-index-recommended
+    .wrapper
+      h2.common-title.color-orange
+        span おすすめコンテンツ
+      ul.list-image-special.special-orange.is-special-custom
+        +jobListItem({
+          hasTitle: "",
+          title: "ライフスタイル別特集",
+          href: "#",
+          src: "job_item_img_04.jpg",
+          alt: "ライフスタイル別特集",
+          text: "説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります。"
+        })
+        +jobListItem({
+          hasTitle: "",
+          title: "拠点別特集",
+          href: "#",
+          src: "job_item_img_05.jpg",
+          alt: "拠点別特集",
+          text: "テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテ"
+        })
+        +jobListItem({
+          hasTitle: "",
+          title: "業界・職種別特集",
+          href: "#",
+          src: "job_item_img_06.jpg",
+          alt: "業界・職種別特集",
+          text: "テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテ"
+        })
+        +jobListItem({
+          hasTitle: "",
+          title: "スタッフインタビュー",
+          href: "#",
+          src: "job_item_img_07.jpg",
+          alt: "スタッフインタビュー",
+          text: "説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります。"
+        })
+  section.section-index-staff
+    .wrapper
+      +blockTitle({
+        titleFirst: "yes",
+        title: "ご登録済み派遣スタッフの方へ",
+        subtext: '既に旭化成アミダスの登録をされているスタッフの<br class="sm">皆さまは、<br class="md">マイページや旭化成グループの<br class="sm">福利厚生サービスを活用されていますか？<br>マイページの使い方や、スキルアップ、福利厚生など<br class="sm">何か気になったら下記をチェックしてください。'
+      }).block-title-ocean
+      ul.list-image-special.special-ocean.is-special-custom
+        +jobListItem({
+          hasTitle: "yes",
+          title: "マイページ機能紹介",
+          href: "#",
+          src: "job_item_img_08.jpg",
+          alt: "マイページ機能紹介",
+          text: "お仕事探しやスキルアップサポート、福利厚生サービスを利用する時に必要なマイページ機能について詳しく解説します！"
+        })
+        +jobListItem({
+          hasTitle: "yes",
+          title: "スキルアップサポート",
+          href: "#",
+          src: "job_item_img_09.jpg",
+          alt: "スキルアップサポート",
+          text: "あなたにベストな働き方、あなたの目指すキャリア形成を幅広く支援できるようたくさんの教育研修をご用意しています。"
+        })
+        +jobListItem({
+          hasTitle: "yes",
+          title: "福利厚生",
+          href: "#",
+          src: "job_item_img_10.jpg",
+          alt: "福利厚生",
+          text: "旭化成アミダスは、スタッフの皆様の派遣で働く環境やプライベートを、充実した福利厚生でバックアップしています。"
+        })
+      +buttonTransparent({
+        href: "#",
+        text: '「ご登録済み派遣スタッフの方」の<br class="sm">コンテンツをもっと詳しくみる'
+      })
+      ul.staff-buttons-list
+        li
+          a.middle-button.is-staff-orange(href="#") 初めて派遣で働く方へ
+          p.staff-buttons-note 派遣の仕組みやメリット、仕事紹介までの流れ
+        li
+          a.middle-button.is-staff-ocean(href="#") 登録済みスタッフの方へ
+          p.staff-buttons-note マイページの使い方や利用可能サービスのご紹介
+        li
+          a.middle-button.is-staff-blue(href="#") よくあるご質問
+          p.staff-buttons-note 登録時の疑問や派遣についての<br>よくある質問とその回答
+  section.section-index-benefit
+    .introduction-content.introduction-benefit
+      .wrapper
+        .inner-content
+          h2.base-title さまざまな事業を展開している<br class="sm">旭化成グループで働く。<br>あなたにぴったりの働き方を<br>旭化成アミダスで見つける。
+          p.common-text テキストテキストテキストテキストテキストテキストテキストテキスト<br>テキストテキストテキストテキストテキストテキストテキストテキスト<br>キストテキストテキストテキストテキストテキストテキスト<br>テキストテキストテキストテキストテキストテキスト
+        a.button-common-highlight.is-style-orange(href="#")
+          span.button-wrapper
+            span.button-text 新卒採用（ITエンジニア）
+            span.button-icon
+

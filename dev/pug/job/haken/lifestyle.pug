@@ -1,0 +1,126 @@
+extends ../../_layouts/default
+
+block vars
+  -title        = 'ライフスタイル別特集'
+  -description  = ''
+  -keywords     = ''
+  -pageID       = 'job'
+  -pageSubID    = 'job-lifestyle'
+  -typePage     = 'type-a'
+  -path         = '../..'
+  -imgPC        = path+'/img/'+pageID+'/'
+  -imgSP        = path+'/img/'+pageID+'/sp/'
+
+block container
+  include ../../_parts/common_list_menu_04
+  +keyvisual('job-lifestyle','ライフスタイルに合わせてはじめる、<br class="sm">自分らしい働き方')
+    +breadcrumbJapan('ライフスタイル別特集', [{title: '人材派遣トップ', url: '/job/'}])
+  section.section-job-voice
+    .wrapper
+      .job-entry
+        .entry-inner
+          h2.common-basic-title
+            span まずはエントリー！登録は無料です！！
+          a.common-default-button(href="#")
+            span WEB仮登録はこちらから
+          p.entry-text すぐにお仕事を見つけたい方は<br class="sm">仮登録後に登録予約をお願いします。
+      .job-voice
+        h2.common-title.title-light-blue
+          span Real Voice
+        p.voice-description 多様性が当たり前になり始めた今、たくさんの人が自分らしい働き方を求めています。
+    .voice-block
+      .voice-wrapper
+        .list-voice.js-voice-slider
+          +jobVoiceItem('04', '家庭と仕事を両立させたいけれど、定時で上がれる職場でないと正直キビシイ…。')
+          +jobVoiceItem('01', '趣味の時間を確保したいから、希望の時間で働きたい。')
+          +jobVoiceItem('02', '自分の希望の職種に就きながら、色んな会社で働いて、さまざまな人と会いたい。')
+          +jobVoiceItem('03', '仕事柄、転勤が多く家族と疎遠になっていたので、今の職種のまま、転勤も異動もない働き方がしたい。')
+          +jobVoiceItem('04', '家庭と仕事を両立させたいけれど、定時で上がれる職場でないと正直キビシイ…。')
+          +jobVoiceItem('01', '趣味の時間を確保したいから、希望の時間で働きたい。')
+          +jobVoiceItem('02', '自分の希望の職種に就きながら、色んな会社で働いて、さまざまな人と会いたい。')
+          +jobVoiceItem('03', '仕事柄、転勤が多く家族と疎遠になっていたので、今の職種のまま、転勤も異動もない働き方がしたい。')
+          +jobVoiceItem('04', '家庭と仕事を両立させたいけれど、定時で上がれる職場でないと正直キビシイ…。')
+          +jobVoiceItem('01', '趣味の時間を確保したいから、希望の時間で働きたい。')
+          +jobVoiceItem('02', '自分の希望の職種に就きながら、色んな会社で働いて、さまざまな人と会いたい。')
+          +jobVoiceItem('03', '仕事柄、転勤が多く家族と疎遠になっていたので、今の職種のまま、転勤も異動もない働き方がしたい。')
+          +jobVoiceItem('04', '家庭と仕事を両立させたいけれど、定時で上がれる職場でないと正直キビシイ…。')
+          +jobVoiceItem('01', '趣味の時間を確保したいから、希望の時間で働きたい。')
+          +jobVoiceItem('02', '自分の希望の職種に就きながら、色んな会社で働いて、さまざまな人と会いたい。')
+          +jobVoiceItem('03', '仕事柄、転勤が多く家族と疎遠になっていたので、今の職種のまま、転勤も異動もない働き方がしたい。')
+      .wrapper
+        .voice-choice
+          h3.choice-title.md 働き方の選択肢を増やすことで、<br>あなたの活躍の場は広がります。
+          .choice-info
+            h4.common-basic-title
+              span まずはエントリー！登録は無料です！！
+            a.common-default-button(href="#")
+              span WEB仮登録はこちらから
+            p.choice-text すぐにお仕事を見つけたい方は<br class="sm">仮登録後に登録予約をお願いします。
+  section.section-job-case
+    .wrapper
+      h2.common-title.title-light-blue
+        span Case Study
+      ol.list-case
+        li.case-01
+          +jobCaseItem('01', 'プライベートと両立するため在宅勤務で働きたい', '在宅勤務で働きたい人の心情などを一般的な表現で記載。ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー', '在宅勤務可能なお仕事を探してみる', '', '')
+        li.case-02
+          +jobCaseItem('02', '小さい子どもがいても就業できる環境で働きたい', '小さい子どものいる人の心情などを一般的な表現で記載。ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー', '在宅勤務可能なお仕事を探してみる', 'link', '時短勤務可能なお仕事を探してみる')
+        li.case-03
+          +jobCaseItem('03', '継続して就業できる環境で働きたい', '継続して働きたい人の心情などを一般的な表現で記載。ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー', '長く働く事が可能なお仕事を探してみる', '', '')
+        li.case-04
+          +jobCaseItem('04', '時間を自分で選べたり、<br>休みが取りやすい環境で働きたい', '家の事情でフレキシブルな働き方をしたい人の心情などを一般的な表現で記載。ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー', 'シフト制で働けるお仕事を探してみる', 'link', '週4日から就業可能なお仕事を探してみる')
+
+  section.section-job-work
+    .wrapper
+      h2.work-title 旭化成株式会社100％出資の<br class="sm">人材派遣会社だからできる<br>あなたの未来につながる働き方
+    .work-banner
+    .wrapper
+      .block-common-contact
+        .block-content-top
+          h2.title-contact まずはエントリー！<br class="sm">登録は無料です！
+          .block-content
+            p.common-text 旭化成アミダスが皆様にお仕事をご紹介するために、職務経歴、スキル、プロフィール、ご希望の職種や勤務条件等、詳しくお伺いします。ご登録は無料です。<br>詳しい情報をご登録いただくことで、本登録の際のご来社時に手続きが30分ほど短縮されます。
+            .content-right
+              a.button-contact(href="#") WEB仮登録<span class="md">はこちらから</span>
+              p.text-note-detail 担当者との面談等を行った後、本登録となります。
+        .block-content-bottom
+          .content-bottom
+            h3.title-bottom お役立ちコンテンツ
+            p.text-small 初めて派遣で働く方も、実際に派遣で働いている人にもぴったりなコンテンツを揃えました。
+          ul.list-story-issue
+            li
+              a.button-common-line.is-style-direct(href="#")
+                span.button-wrapper 派遣求人検索
+                span.button-icon
+            li
+              a.button-common-line.is-style-direct(href="#")
+                span.button-wrapper よくあるご質問
+                span.button-icon
+            li
+              a.button-common-line.is-style-direct(href="#")
+                span.button-wrapper ライフスタイル別特集
+                span.button-icon
+            li
+              a.button-common-line.is-style-direct(href="#")
+                span.button-wrapper 初めて派遣で働く方へ
+                span.button-icon
+            li
+              a.button-common-line.is-style-direct(href="#")
+                span.button-wrapper 拠点別特集
+                span.button-icon
+            li
+              a.button-common-line.is-style-direct(href="#")
+                span.button-wrapper ご登録済み派遣スタッフの方
+                span.button-icon
+            li
+              a.button-common-line.is-style-direct(href="#")
+                span.button-wrapper 業界・職種別特集
+                span.button-icon
+            li
+              a.button-common-line.is-style-direct(href="#")
+                span.button-wrapper 労働者派遣法改正関連
+                span.button-icon
+            li
+              a.button-common-line.is-style-direct(href="#")
+                span.button-wrapper スタッフインタビュー
+                span.button-icon

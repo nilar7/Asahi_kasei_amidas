@@ -1,0 +1,380 @@
+extends ../../_layouts/default
+
+block vars
+  -title        = '教育研修一覧-課題別研修検索'
+  -description  = ''
+  -keywords     = ''
+  -pageID       = 'client'
+  -pageSubID    = 'client-program'
+  -typePage     = 'type-b'
+  -path         = '../..'
+  -imgPC        = path+'/img/'+pageID+'/'
+  -imgSP        = path+'/img/'+pageID+'/sp/'
+
+block container
+  +keyvisual('client-program','旭化成アミダスの教育研修一覧')
+    +breadcrumbJapan('教育研修一覧', [{title: '企業向けTOP',url: '/client/'},{title: '旭化成アミダスの教育研修サービス',url: '/client/program/'}])
+  .section-client-program
+    p.common-text.text-top 説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明
+    .inner-wrapper
+      .tabs-wrapper
+        ul.list-tabs.js-tabs
+          li.tab-link.current(data-tab='first-tab')
+            span.link-wrapper テーマ・お悩みから選ぶ
+          li.tab-link(data-tab='second-tab')
+            span.link-wrapper 役職・スキルから選ぶ
+          li.tab-link(data-tab='third-tab')
+            span.link-wrapper セミナーの形式
+      .tabs-content.js-tab-content
+        #first-tab.tab-content.current
+          ul.common-list-category
+            -
+              var
+                list = [
+                  {
+                    text: '個人と組織の活性化'
+                  },
+                  {
+                    text: '新入社員/若手・中堅'
+                  },
+                  {
+                    text: 'マネジメント'
+                  },
+                  {
+                    text: '製造、技術系'
+                  },
+                  {
+                    text: '安全環境'
+                  },
+                  {
+                    text: 'スキル別'
+                  },
+                  {
+                    text: '安全環境つくりを強化したい'
+                  },
+                  {
+                    text: 'ビジネス面での自分磨きを行いたい'
+                  },
+                  {
+                    text: 'マネジメントのスキルを磨きたい'
+                  },
+                  {
+                    text: 'ビジネスマナーやビジネス文書の基礎を学びたい'
+                  },
+                  {
+                    text: '人前でうまく話したい'
+                  },
+                  {
+                    text: '交渉術を学びたい'
+                  },
+                  {
+                    text: '事故が繰り返されないよう注意することを学びたい'
+                  },
+                  {
+                    text: '製造、技術現場での問題解決手法を学びたい'
+                  },
+                  {
+                    text: '個人と組織の活性化'
+                  },
+                  {
+                    text: '新入社員/若手・中堅'
+                  },
+                  {
+                    text: 'マネジメント'
+                  },
+                  {
+                    text: '製造、技術系'
+                  },
+                  {
+                    text: '安全環境'
+                  },
+                  {
+                    text: 'スキル別'
+                  },
+                  {
+                    text: '安全環境つくりを強化したい'
+                  },
+                  {
+                    text: 'ビジネス面での自分磨きを行いたい'
+                  },
+                  {
+                    text: 'マネジメントのスキルを磨きたい'
+                  },
+                  {
+                    text: 'ビジネスマナーやビジネス文書の基礎を学びたい'
+                  },
+                  {
+                    text: '人前でうまく話したい'
+                  },
+                  {
+                    text: '交渉術を学びたい'
+                  },
+                  {
+                    text: '事故が繰り返されないよう注意することを学びたい'
+                  },
+                  {
+                    text: '製造、技術現場での問題解決手法を学びたい'
+                  }
+                ]
+            each item in list
+              li.item-category.js-item-category!= item.text
+          a.button-show-more.js-read-more(href="javascript:;") 全てのタグを見る
+        #second-tab.tab-content
+          ul.common-list-category
+            -
+              var
+                list = [
+                  {
+                    text: '個人と組織の活性化1'
+                  },
+                  {
+                    text: '新入社員/若手・中堅'
+                  },
+                  {
+                    text: 'マネジメント'
+                  },
+                  {
+                    text: '製造、技術系'
+                  },
+                  {
+                    text: '安全環境'
+                  },
+                  {
+                    text: 'スキル別'
+                  },
+                  {
+                    text: '安全環境つくりを強化したい'
+                  },
+                  {
+                    text: 'ビジネス面での自分磨きを行いたい'
+                  },
+                  {
+                    text: 'マネジメントのスキルを磨きたい'
+                  },
+                  {
+                    text: 'ビジネスマナーやビジネス文書の基礎を学びたい'
+                  },
+                  {
+                    text: '人前でうまく話したい'
+                  },
+                  {
+                    text: '交渉術を学びたい'
+                  },
+                  {
+                    text: '事故が繰り返されないよう注意することを学びたい'
+                  },
+                  {
+                    text: '製造、技術現場での問題解決手法を学びたい'
+                  },
+                  {
+                    text: '個人と組織の活性化'
+                  },
+                  {
+                    text: '新入社員/若手・中堅'
+                  },
+                  {
+                    text: 'マネジメント'
+                  },
+                  {
+                    text: '製造、技術系'
+                  },
+                  {
+                    text: '安全環境'
+                  },
+                  {
+                    text: 'スキル別'
+                  },
+                  {
+                    text: '安全環境つくりを強化したい'
+                  },
+                  {
+                    text: 'ビジネス面での自分磨きを行いたい'
+                  },
+                  {
+                    text: 'マネジメントのスキルを磨きたい'
+                  },
+                  {
+                    text: 'ビジネスマナーやビジネス文書の基礎を学びたい'
+                  },
+                  {
+                    text: '人前でうまく話したい'
+                  },
+                  {
+                    text: '交渉術を学びたい'
+                  },
+                  {
+                    text: '事故が繰り返されないよう注意することを学びたい'
+                  },
+                  {
+                    text: '製造、技術現場での問題解決手法を学びたい'
+                  }
+                ]
+            each item in list
+              li
+                a.trans.item-category.js-item-category(href="#")!= item.text
+          a.trans.button-show-more.js-read-more(href="javascript:;") 全てのタグを見る
+        #third-tab.tab-content
+          ul.common-list-category
+            -
+              var
+                list = [
+                  {
+                    text: '個人と組織の活性化2'
+                  },
+                  {
+                    text: '新入社員/若手・中堅'
+                  },
+                  {
+                    text: 'マネジメント'
+                  },
+                  {
+                    text: '製造、技術系'
+                  },
+                  {
+                    text: '安全環境'
+                  },
+                  {
+                    text: 'スキル別'
+                  },
+                  {
+                    text: '安全環境つくりを強化したい'
+                  },
+                  {
+                    text: 'ビジネス面での自分磨きを行いたい'
+                  },
+                  {
+                    text: 'マネジメントのスキルを磨きたい'
+                  },
+                  {
+                    text: 'ビジネスマナーやビジネス文書の基礎を学びたい'
+                  },
+                  {
+                    text: '人前でうまく話したい'
+                  },
+                  {
+                    text: '交渉術を学びたい'
+                  },
+                  {
+                    text: '事故が繰り返されないよう注意することを学びたい'
+                  },
+                  {
+                    text: '製造、技術現場での問題解決手法を学びたい'
+                  },
+                  {
+                    text: '個人と組織の活性化'
+                  },
+                  {
+                    text: '新入社員/若手・中堅'
+                  },
+                  {
+                    text: 'マネジメント'
+                  },
+                  {
+                    text: '製造、技術系'
+                  },
+                  {
+                    text: '安全環境'
+                  },
+                  {
+                    text: 'スキル別'
+                  },
+                  {
+                    text: '安全環境つくりを強化したい'
+                  },
+                  {
+                    text: 'ビジネス面での自分磨きを行いたい'
+                  },
+                  {
+                    text: 'マネジメントのスキルを磨きたい'
+                  },
+                  {
+                    text: 'ビジネスマナーやビジネス文書の基礎を学びたい'
+                  },
+                  {
+                    text: '人前でうまく話したい'
+                  },
+                  {
+                    text: '交渉術を学びたい'
+                  },
+                  {
+                    text: '事故が繰り返されないよう注意することを学びたい'
+                  },
+                  {
+                    text: '製造、技術現場での問題解決手法を学びたい'
+                  }
+                ]
+            each item in list
+              li
+                a.trans.item-category.js-item-category(href="#")!= item.text
+          a.trans.button-show-more.js-read-more(href="javascript:;") 全てのタグを見る
+  section.section-client-cases
+    .wrapper
+      h2.common-title
+        span 全件一覧
+      ul.common-list-case
+        -
+          var
+            list = [
+              {
+                title: 'ビジネス・シミュレーション・<br>ラリー®（BSR）野外体験'
+              },
+              {
+                title: '（自己開示）コミュニケーション研修<br>室内体験'
+              },
+              {
+                title: 'ビジネス・シミュレーション・ゲーム・<br>ブロック(BSGB)'
+              },
+              {
+                title: '個人と組織の生産性向上研修<br>（個人の取扱説明書付き）'
+              },
+              {
+                title: 'ビジネスマナー研修'
+              },
+              {
+                title: '課題発見力向上研修'
+              },
+              {
+                title: '裁判で学ぶ！<br>ロジカルシンキング入門'
+              },
+              {
+                title: 'ビジネス文書作成/<br>基礎コース'
+              },
+              {
+                title: '次世代リーダー研修'
+              },
+              {
+                title: '体験型リーダーシップ<br>強化トレーニング'
+              },
+              {
+                title: 'Flight of Vega <br>～世界一周飛行レース1位をめざせ～'
+              },
+              {
+                title: 'BMC<br>～管理の基礎コース～'
+              },
+              {
+                title: 'Misson Vision Strategy<br>ブレイクダウン研修'
+              },
+              {
+                title: '目標管理の基本セミナー'
+              },
+              {
+                title: 'アンガーマネジメント研修'
+              },
+              {
+                title: '若手育成研修'
+              }
+            ]
+        each item in list
+          li.item-case
+            a.item-link(href=path+"/client/program/active-bsr.html")
+              +buttonTransparent({
+                text: item.title
+              })
+              ul.common-list-category
+                li.item-category ビジネスマナーやビジネス文書の基礎を学びたい
+                li.item-category テーマ名タグ
+                li.item-category 新入社員
+                li.item-category 若手・中堅社員社員
+                li.item-category ベテラン社員
+                li.item-category 公開セミナー開催中
+              p.item-text 旭化成アミダスが独自に開発した”気づき”から自己成長を図る教育プログラムです。ビジネスで遭遇する諸状況をシュミレーションした野外実習と、その後の振り返りを通して、自己成長を図るユニークな野外体験学習です。

@@ -1,0 +1,40 @@
+if ['company-top','company-map','company-tokyo'].some(id => id == pageSubID)
+  .content-list-menu.md
+    ul.list-menu-top.list-menu-company
+      -
+        var
+          list = [
+            {
+              title: 'コーポレートスローガン'
+            },
+            {
+              title: '代表あいさつ'
+            },
+            {
+              title: '事業紹介'
+            },
+            {
+              title: '会社概要/旭化成グループについて'
+            },
+            {
+              title: '沿革'
+            },
+            {
+              title: '拠点一覧',
+              pageName: 'company-map'
+            },
+            {
+              title: '労働者派遣事業に係る各種情報のお知らせ'
+            }
+          ];
+      each item in list
+        li.item-list-top(class=pageSubID==item.pageName?'active-hover':'')
+          a(href=item.url?path+item.url: '#')!=item.title
+else if (typePage == 'type-b')
+  include ../_parts/common_list_menu_02
+else if (typePage == 'type-c')
+  include ../_parts/common_list_menu_03
+else if ['job-haken-faq','haken-index','job-lifestyle','job-interview-detail','job-interview','mypage-job-detail','mypage-search','mypage-job'].some(id => id == pageSubID)
+  include ../_parts/common_list_menu_04
+else if ['job-seisan'].some(id => id == pageSubID)
+  include ../_parts/common_list_menu_05

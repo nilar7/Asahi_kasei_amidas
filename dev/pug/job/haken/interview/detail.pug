@@ -1,0 +1,173 @@
+extends ../../../_layouts/default
+
+block vars
+  -title        = 'インタビュー詳細'
+  -description  = ''
+  -keywords     = ''
+  -pageID       = 'job'
+  -pageSubID    = 'job-interview-detail'
+  -typePage     = 'type-a'
+  -path         = '../../..'
+  -imgPC        = path+'/img/'+pageID+'/'
+  -imgSP        = path+'/img/'+pageID+'/sp/'
+
+block container
+  include ../../../_parts/common_list_menu_04
+  +breadcrumbJapan('すべては好奇心から始まる──普通科出身の未経験者が技術者として成長するまで', [{title: '人材派遣トップ', url: '/job/'},{title: 'スタッフインタビュー', url: '/job/haken/'}])
+  section.section-interview-detail
+    .inner-wrapper
+      .block-detail
+        h1.title-detail
+          span すべては好奇心から始まる
+          span 普通科出身の未経験者が
+          span 技術者として成長するまで
+        figure.image-keyvisual
+          img.md(src=imgPC+"job_detail_interview_bg.jpg" width="888" height="473" alt="すべては好奇心から始まる 普通科出身の未経験者が 技術者として成長するまで")
+          img.sm(src=imgSP+"job_detail_interview_bg.jpg" width="656" height="540" alt="すべては好奇心から始まる 普通科出身の未経験者が 技術者として成長するまで")
+    .wrapper
+      ul.common-list-category
+        li
+          a.trans.item-category(href="#") ビジョン・ミッション
+        li
+          a.trans.item-category(href="#") 働き方
+        li
+          a.trans.item-category(href="#") やりがい
+        li
+          a.trans.item-category(href="#") 女性の活躍
+        li
+          a.trans.item-category(href="#") チームビルディング
+        li
+          a.trans.item-category(href="#") キャリアチェンジ
+      .post-content-haken-interview
+        p 毛利 敏宏が働き始めたのはWindows95が発売されたパソコンブームの最中。高校は普通科でしたがプログラミングに熱中し、現在は半導体メーカーの技術者として、20年以上活躍しています。まったくの未経験にもかかわらず、興味のある分野で才能を発揮できたのは、旭化成アミダスとの出会いがきっかけでした。
+        .block-interview-detail
+          h2 プログラミングへの好奇心が、<br>新たな仕事の可能性を広げるきっかけに
+          img.md(src=imgPC+"job_detail_img_01.jpg" width="848" height="530" loading="lazy" alt="プログラミングへの好奇心が、 新たな仕事の可能性を広げるきっかけに")
+          img.sm(src=imgSP+"job_detail_img_01.jpg" width="672" height="420" loading="lazy" alt="プログラミングへの好奇心が、 新たな仕事の可能性を広げるきっかけに")
+          .content-text
+            p 毛利 敏宏は、現在、半導体の製造販売を行う企業で、エンジニアや設計者のサポートをする業務に就いています。旭化成アミダスからの派遣という形で、もう20年になります。
+            p 最初に就職したのは自動車メーカーでした。溶接や板金に関する業務に携わりますが、くしくも毛利が入社した1995年は、Windows95が発売された歴史的な年。インターネットやパソコンが一気に流行ったころです。普通科を卒業した毛利は、専門外でしたが、プログラミングに強く引かれていきました。
+          .content-highlight
+            p 「僕の家にもパソコンがありました。遊びでいろいろ触ったりしていましたね。もともと興味があったし、プログラミングができれば人材として重宝されるのではとも思って、当時は独学でプログラミングを勉強しました」
+          .content-text
+            p そんな毛利の仕事人生において大きな転機となったのは、入社して約3年が経ったころのことでした。
+            p 現在、毛利が派遣されている半導体メーカーで働く知人から「自分が勤める会社で一緒に働いてみないか」と声が掛かったのです。その会社は、ちょうど人員の入れ替わりで、新たな人材を求めていた時期でした。
+          .content-highlight
+            p 「まったくの未経験者でしたが、電子機器やプログラミングに興味もあったし、『旭化成』という会社の信用もあったので、それならとその話を受けました」
+          .content-text
+            p 旭化成アミダスに入社した2000年。ここから、毛利の新たな世界が広がり始めたのです。
+
+        .block-interview-detail
+          h2 雑談で言った自分の言葉を<br class="sm">覚えてくれていた。<br>好きな分野が仕事に
+          img.md(src=imgPC+"job_detail_img_02.jpg" width="848" height="530" loading="lazy" alt="雑談で言った自分の言葉を覚えてくれていた。好きな分野が仕事に")
+          img.sm(src=imgSP+"job_detail_img_02.jpg" width="672" height="420" loading="lazy" alt="雑談で言った自分の言葉を覚えてくれていた。好きな分野が仕事に")
+          .content-text
+            p 楽観的な方なので、未経験でも仕事への不安はあまりなかった──。
+            p もともとの気質から悩まない方だと毛利は言いますが、未経験であっても仕事をしやすい、恵まれた環境であることに気づきます。毛利が最初に所属したのは、半導体の試作品を検査する部署でした。LSIテスターという特殊なコンピュータを使って、不良品がないか、量産できるかのシミュレーションを行うのです。
+          .content-highlight
+            p 「まったく初めてでしたが、教えてくれる先輩方やいっしょに仕事をする職場の方々に非常に恵まれたので、難しいと悩むことはありませんでした。仕事以外でもよく先輩や同僚とはよく話す機会があります。そんな雑談の中で自然に業務について教えてもらうことも多かったですね」
+          .content-text
+            p 周囲のサポートを受け順調に技術を身につけ成長する毛利。10年ほど過ぎたころ、突然、上司から告げられます。
+            p プログラミングを組んでシステムを動かすような仕事をやってみないか――。
+            p そう、毛利が最も興味のあるプログラミングでした。
+          .content-highlight
+            p 「あまり覚えていないのですが、とても唐突だった気がしますね。でも、今思い返すと、職場はみんな仲良くて本当によく話をするので、僕が『プログラミングがやりたい』と話していたのかもしれません。それを上司が覚えていてくださったのかなと思います。おかげで業務の幅も広がりました」
+          .content-text
+            p さらに毛利は、上司のすすめで2019年には品質管理の資格を取得します。所属するチームで、一番乗りでした。本来は2020年3月に資格試験が実施され、社内メンバーも受験の予定でしたが、コロナ禍で試験は中止。現在、有資格者が毛利のみとなってしまいました。そのため毛利が中心になり資格取得希望者向けに社内勉強会も開催しています。
+          .content-highlight
+            p 「それまではパワーポイントをほとんど使ったことがなかったのですが、勉強会の資料づくりのために徹底的に活用しました。実は、それ自体も楽しかったんです。子どものころから、なんでも新しいことに興味があって、やりたい方です。部活動も野球やバスケット、サッカーとかいろいろやりたい。ひとつのことに長く続かないタイプなんです（笑）」
+          .content-text
+            p そんな毛利にとって、アミダスに入社してからの20年は「あっという間」でした。
+
+        .block-interview-detail
+          h2 仕事をする上で“人”に恵まれ、働く上で“環境”に恵まれた
+          img.md(src=imgPC+"job_detail_img_03.jpg" width="848" height="530" loading="lazy" alt="仕事をする上で“人”に恵まれ、働く上で“環境”に恵まれた")
+          img.sm(src=imgSP+"job_detail_img_03.jpg" width="672" height="420" loading="lazy" alt="仕事をする上で“人”に恵まれ、働く上で“環境”に恵まれた")
+          .content-highlight
+            p 「長く続けてこられたのは、業務内容が楽しかったこともあります。仕事ってやり始めると奥が深い。それを追求していくのが楽しいんですね。それに周りの人が本当に良くしてくれたからだと思います。でないと、この僕がこんなに長く続けてられなかった」
+          .content-text
+            p 毛利が「恵まれた」と言うのは、派遣先である企業と、派遣元である旭化成アミダスのふたつの環境を指します。
+          .content-highlight
+            p 「派遣先の上司にいつも感じるのは、マイナスの部分を指摘するというより、プラスの部分をいつも評価してくれているということです。もちろん『もっと頑張ってほしい』といわれることもありますが、『ここは、すごくよかった』という部分をすごくよく見てくれていて、必ず言葉にして伝えてくれます。モチベーションが上がりますよね」
+          .content-text
+            p また、働く環境をサポートしてくれる旭化成アミダスについて印象的なのは、東日本大震災後のエピソードです。
+          .content-highlight
+            p 「震災後、当時働いていたビルに、ヒビが入るなど破損があったり、停電があったり、出社がままならない状況が続きました。コロナの影響下の今の状況と似ているかもしれませんが、働けないと生活にも影響しますから、みな不安ですよね。<span>そんなときアミダス側の主導で話し合いの場がつくられ、いろんな工夫の中仕事をできる環境を整えてくれました。仕事をする上でのフォロー体制が手厚いと感じます。これは今も印象に残っていますね」</span>
+          .content-text
+            p 2020年現在、毛利が取り組んでいるのは業務マニュアルの作成です。毛利のように未経験で入社した人でも見ればわかる、難なく業務をこなせるようなマニュアルを目指しています。マニュアルしかり、今では毛利自身が若い人に教える機会が増えました。
+          .content-highlight
+            p 「僕は若くして入社したから、最初のころは言葉遣いも挨拶さえもできてなかったと思うし、それで先輩方に迷惑をかけたこともあると思います。でも丁寧に指導してくださった。そうしたものを若い人たちに返していきたいですね」
+
+        .block-interview-detail
+          h2 入社20年が経っても、<br>新しいチャレンジへの想いは止まらない
+          img.md(src=imgPC+"job_detail_img_04.jpg" width="848" height="530" loading="lazy" alt="入社20年が経っても、新しいチャレンジへの想いは止まらない")
+          img.sm(src=imgSP+"job_detail_img_04.jpg" width="672" height="420" loading="lazy" alt="入社20年が経っても、新しいチャレンジへの想いは止まらない")
+          .content-text
+            p これからチャレンジしたいことはたくさんあると毛利は言います。
+          .content-highlight
+            p 「僕らの業務では、課題をひとつずつ出していくと、すごくたくさんあると思うんです。まだまだ経験していないことはたくさんありますね。今後は、難しいことにもっとチャレンジしていきたいです。失敗しても責められるような社風もありませんから。『できるか、できないか』のギリギリのところを攻めていきたい（笑）」
+          .content-text
+            p なんにでも興味津々の毛利が、今一番気になっているのは、人工知能です。
+          .content-highlight
+            p 「今年度の目標は、人工知能も構築できるPythonという言語で、新しいテストプラグラムをつくることなので、勉強を進めています。人工知能自体は目標というわけではないですが、Pythonを学ぶことで、人工知能についてもいろいろやってみることはできそうだなと思っています。それができれば、たとえば自分の業務を自動化するとか、仕事を効率化してラクにできるプログラムなんかもできるかなもと考えています」
+          .content-text
+            p 教える、教えられる、そのどちらの能力も育てることができ、いろんなことにチャレンジできる環境――。そんな中で、どんどん新しい発想やチャレンジの想いがあふれる毛利は、未知なるキャリアを着々と築いています。
+
+        .block-interview-detail
+          h2 見出し見出し見出し見出し見出し見出し<br>見出し見出し見出し見出し見出し見出し
+          img.md(src=imgPC+"image_img_dummy.jpg" width="848" height="530" loading="lazy" alt="見出し見出し見出し見出し見出し見出し<br>見出し見出し見出し見出し見出し見出し")
+          img.sm(src=imgSP+"image_img_dummy.jpg" width="674" height="421" loading="lazy" alt="見出し見出し見出し見出し見出し見出し<br>見出し見出し見出し見出し見出し見出し")
+          .content-text
+            p 本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト
+            p 本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト本文テキスト
+
+      .block-slider
+        h2.title-slider 他の人の記事を読む
+        .wrapper-slider.js-slider-interview
+          .item-slider
+            a.item-link.trans(href="#")
+              figure.image-slider
+                img.md(src=imgPC+"job_interview_detail_06.jpg" width="320" height="175" alt="会社名会社名会社名")
+                img.sm(src=imgSP+"job_interview_detail_06.jpg" width="672" height="270" alt="会社名会社名会社名")
+              .content-slider
+                h3.title-item 会社名会社名会社名
+                ul.list-highlight
+                  li 業種名
+                  li 課題名課題名
+                p.text-item 説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが
+          .item-slider
+            a.item-link.trans(href="#")
+              figure.image-slider
+                img.md(src=imgPC+"job_interview_detail_06.jpg" width="320" height="175" alt="会社名会社名会社名")
+                img.sm(src=imgSP+"job_interview_detail_06.jpg" width="672" height="270" alt="会社名会社名会社名")
+              .content-slider
+                h3.title-item 会社名会社名会社名
+                ul.list-highlight
+                  li 業種名
+                  li 課題名課題名
+                p.text-item 説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが
+          .item-slider
+            a.item-link.trans(href="#")
+              figure.image-slider
+                img.md(src=imgPC+"job_interview_detail_06.jpg" width="320" height="175" alt="会社名会社名会社名")
+                img.sm(src=imgSP+"job_interview_detail_06.jpg" width="672" height="270" alt="会社名会社名会社名")
+              .content-slider
+                h3.title-item 会社名会社名会社名
+                ul.list-highlight
+                  li 業種名
+                  li 課題名課題名
+                p.text-item 説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが
+          .item-slider
+            a.item-link.trans(href="#")
+              figure.image-slider
+                img.md(src=imgPC+"job_interview_detail_06.jpg" width="320" height="175" alt="会社名会社名会社名")
+                img.sm(src=imgSP+"job_interview_detail_06.jpg" width="672" height="270" alt="会社名会社名会社名")
+              .content-slider
+                h3.title-item 会社名会社名会社名
+                ul.list-highlight
+                  li 業種名
+                  li 課題名課題名
+                p.text-item 説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが
+      .wrapper-link
+        a(href="#") インタビュー一覧に戻る
+      include ../../../_parts/common_contact

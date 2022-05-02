@@ -1,0 +1,141 @@
+extends ../_layouts/default
+
+block vars
+  -title        = '旭化成アミダスができること'
+  -description  = ''
+  -keywords     = ''
+  -pageID       = 'client'
+  -pageSubID    = 'client-service'
+  -typePage     = 'type-b'
+  -path         = '..'
+  -imgPC        = path+'/img/'+pageID+'/'
+  -imgSP        = path+'/img/'+pageID+'/sp/'
+
+block container
+  +keyvisual('client-service','旭化成アミダスができること')
+    +breadcrumb('旭化成アミダスができること', [{title: '企業向けTOP',url: '/client/'}])
+  section.section-service-function
+    p.common-text.text-intro 説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明
+    .wrapper
+      h2.common-title.title-square
+        span 私たちができること
+      ol.list-service
+        -
+          var
+            list = [
+              {
+                linkUrl:'#dispatch',
+                number: '01',
+                title: '人材派遣サービス',
+              },
+              {
+                linkUrl:'#engineer',
+                number: '02',
+                title: 'ITエンジニア派遣サービス',
+              },
+              {
+                linkUrl:'#staffing',
+                number: '03',
+                title: '人材紹介サービス',
+              },
+              {
+                linkUrl:'#training',
+                number: '04',
+                title: '教育研修サービス',
+              },
+              {
+                linkUrl:'#outsourcing',
+                number: '05',
+                title: 'アウトソーシングサービス',
+              },
+              {
+                linkUrl:'#iso',
+                number: '06',
+                title: 'ISO事業',
+              }
+            ];
+        each item in list
+          li.item-service
+            a.trans.link-service(href=item.linkUrl)
+              figure.image-service
+                img.md(src=imgPC+"client_service_img_"+item.number+".jpg" width="152" height="152" loading="lazy" alt=item.title)
+                img.sm(src=imgSP+"client_service_img_"+item.number+".jpg" width="200" height="200" loading="lazy" alt=item.title)
+              h3.title-service
+                span!=item.title
+              p.common-text 説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります
+
+  section.section-service-detail
+    ol.list-service-detail
+      -
+        var
+          list = [
+            {
+              title: '人材派遣サービス',
+              number: '07',
+              id: 'dispatch',
+              width: true,
+              height: true
+            },
+            {
+              title: 'ITエンジニア派遣サービス',
+              number: '08',
+              className: true,
+              id: 'engineer'
+            },
+            {
+              title: '人材紹介サービス',
+              number: '09',
+              id: 'staffing'
+            },
+            {
+              title: '教育研修サービス',
+              number: '10',
+              className: true,
+              id: 'training'
+            },
+            {
+              title: 'アウトソーシングサービス',
+              number: '11',
+              id: 'outsourcing'
+            },
+            {
+              title: 'ISO事業',
+              number: '12',
+              className: true,
+              id: 'iso'
+            }
+          ];
+      each item in list
+        li(class=item.className?'is-reverse':'' id=item.id).item-detail
+          .block-main
+            h2.common-title.title-square
+              span!=item.title
+            .block-content
+              .block-top
+                .block-text
+                  h3.sub-title タイトルが入りますタイトルが入ります<br>タイトルが入りますタイトルが入ります
+                  p.common-text 400文字。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間
+                figure.block-image
+                  img.md(src=imgPC+"client_service_img_"+item.number+".jpg" width=item.width?"560":"680" height=item.height?"310":"528" loading="lazy" alt=item.title)
+                  img.sm(src=imgSP+"client_service_img_"+item.number+".jpg" width="704" height="546" loading="lazy" alt=item.title)
+              .block-bottom
+                h3.title-example ソリューション事例の一例
+                ul.list-example
+                  li.item-example
+                    h4.title-list お悩み
+                    ul.sub-list
+                      li お悩み事例お悩み事例お悩み事例お悩み事例お悩み事例
+                      li お悩み事例お悩み事例お悩み事例お悩み事例お悩み事例
+                      li お悩み事例お悩み事例お悩み事例お悩み事例お悩み事例
+                  li.item-example
+                    h4.title-list 解決
+                    p.common-text.md 解決や効果事例解決や効果事例解決や効果事例解決や効果事例解決や効果事例解決や効果事例解決や効果事例解決や効果事例解決や効果事例効果事例解決や効果事例解決や効果事例解決や効果事例解決や効果事例解決や効果事例
+                    ul.sub-list.sm
+                      li お悩み事例お悩み事例お悩み事例お悩み事例お悩み事例
+                      li お悩み事例お悩み事例お悩み事例お悩み事例お悩み事例
+                      li お悩み事例お悩み事例お悩み事例お悩み事例お悩み事例
+              .wrapper-link
+                a.common-button-inquiry(href="#") 人材派遣サービスを詳しく見る
+              .button-to-top.js-to-top
+                span.trans
+    a.common-big-button.is-arrow(href="#") 資料請求・お問い合わせ

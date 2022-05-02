@@ -1,0 +1,26 @@
+{
+  "name": "fc-templates-grunt-pug-sass",
+  "version": "2.0.2",
+  "description": "",
+  "main": "gruntfile.js",
+  "scripts": {
+    "dev": "grunt",
+    "lighthouse": "./node_modules/.bin/lighthouse",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "files": "node ./auto_create/create.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://bitbucket.org/fastcodinginc/fc-templates-grunt-pug-sass.git"
+  },
+  "author": "FASTCODING Thanh",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/fastcodinginc/fc-templates-grunt-pug-sass",
+  "devDependencies": {
+    "grunt": "^1.0.4",
+    "grunt-autoprefixer": "^3.0.4",
+    "grunt-contrib-sass": "^2.0.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "node-sass": "^5.0.0"
+  }
+}

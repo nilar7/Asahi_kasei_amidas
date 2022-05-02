@@ -1,0 +1,45 @@
+
+block vars
+  -title        = ''
+  -description  = ''
+  -keywords     = ''
+  -pageID       = ''
+  -path         = ''
+
+doctype html
+include ../_mixins/_all
+html(lang="ja")
+  head
+    meta(charset="utf-8")
+    meta(name="HandheldFriendly", content="True")
+    meta(name="MobileOptimized", content="320")
+    meta(name="format-detection", content="telephone=no")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    //[if IE]><meta http-equiv="cleartype" content="on"><![endif]
+    meta(name="viewport", content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=0", id="viewport")
+    meta(name="description", content=description)
+    meta(name="keywords", content=keywords)
+    title=title
+    if(pageID == 'mypage' || pageSubID == 'haken-index')
+      link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css")
+    link(rel='stylesheet', href=path+'/css/common.css')
+    if(pageID != '')
+      link(rel="stylesheet", href=`${path}/css/${pageID.replace('-','_')}.css`)
+  body
+    .container
+      include ../_parts/header
+      main(class= pageID =='client' ? 'page-client': pageSubID == 'mypage-top' ?'mypage-top' : pageSubID == 'mypage-application' ?'mypage-top': pageSubID == 'job-interview-detail' ?'job-interview': '')
+        block container
+      include ../_parts/footer
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js")
+    if pageID == 'top' || pageSubID == 'job-interview-detail' || pageSubID == 'job-lifestyle'
+      script(src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js")
+    if pageID == 'mypage' || pageSubID == 'haken-index'
+      script(src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js")
+    if pageSubID == 'client-haken'
+      script(src='https://ajaxzip3.github.io/ajaxzip3.js' charset="UTF-8")
+    if pageSubID == 'company-tokyo'
+      script(src="//maps.googleapis.com/maps/api/js?key=AIzaSyC9EtSzqx3wwO857zn7u5iy9Vp0XpA2guk&language=ja&region=JP")
+    if pageID == 'client'
+      script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.2/jquery.matchHeight-min.js")
+    script(src=path+"/js/scripts.js")

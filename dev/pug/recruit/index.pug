@@ -1,0 +1,98 @@
+extends ../_layouts/default
+
+block vars
+  -title        = '採用TOP'
+  -description  = ''
+  -keywords     = ''
+  -pageID       = 'recruit'
+  -pageSubID    = 'recruit-top'
+  -typePage     = 'type-a'
+  -path         = '..'
+  -imgPC        = path+'/img/'+pageID+'/'
+  -imgSP        = path+'/img/'+pageID+'/sp/'
+
+block container
+  +breadcrumbEnglish('採用情報')
+  .section-recruit-keyvisual
+    .content-keyvisual
+      .wrapper
+        h1.title-keyvisual 採用情報
+        figure.image-information.image-blue
+          img.md(src=imgPC+"recruit_top_img_02.png" width="219" height="208" loading="lazy" alt="採用情報")
+          img.sm(src=imgSP+"recruit_top_img_02.png" width="255" height="242" loading="lazy" alt="採用情報")
+        figure.image-information.image-people-01
+          img.md(src=imgPC+"recruit_top_img_03.png" width="324" height="283" loading="lazy" alt="採用情報")
+          img.sm(src=imgSP+"recruit_top_img_03.png" width="256" height="259" loading="lazy" alt="採用情報")
+        figure.image-information.image-people-02
+          img.md(src=imgPC+"recruit_top_img_04.png" width="254" height="267" loading="lazy" alt="採用情報")
+          img.sm(src=imgSP+"recruit_top_img_04.png" width="234" height="246" loading="lazy" alt="採用情報")
+        figure.image-information.image-people-03
+          img.md(src=imgPC+"recruit_top_img_05.png" width="464" height="428" loading="lazy" alt="採用情報")
+          img.sm(src=imgSP+"recruit_top_img_05.png" width="464" height="428" loading="lazy" alt="採用情報")
+        figure.image-information.image-people-04
+          img.md(src=imgPC+"recruit_top_img_12.png" width="135" height="150" loading="lazy" alt="採用情報")
+          img.sm(src=imgSP+"recruit_top_img_12.png" width="111" height="123" loading="lazy" alt="採用情報")
+
+  section.section-recruit-how
+    .wrapper
+      h2.common-title.title-light-blue
+        span 旭化成アミダスとは
+      .block-content
+        figure.image-left
+          img.md(src=imgPC+"recruit_top_img_06.jpg" width="496" height="220" loading="lazy" alt="旭化成アミダスとは")
+          img.sm(src=imgSP+"recruit_top_img_06.jpg" width="672" height="414" loading="lazy" alt="旭化成アミダスとは")
+        .content-right
+          p.common-text テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+          a.common-button-inquiry.background-blue(href="#") 詳しく見る
+
+  section.section-recruit-environment
+    .wrapper
+      h2.common-title.title-light-blue
+        span 働く環境を知る
+      ul.list-environment
+        li.item-environment
+          h3.title-environment 教育研修制度
+          .content-environment
+            figure.image-environment
+              img.md(src=imgPC+"recruit_top_img_07.jpg" width="496" height="220" loading="lazy" alt="教育研修制度")
+              img.sm(src=imgSP+"recruit_top_img_07.jpg" width="672" height="414" loading="lazy" alt="教育研修制度")
+            p.common-text テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+            a.common-button-inquiry.background-blue(href="#") 詳しく見る
+        li.item-environment
+          h3.title-environment 福利厚生制度
+          .content-environment
+            figure.image-environment
+              img.md(src=imgPC+"recruit_top_img_08.jpg" width="496" height="220" loading="lazy" alt="福利厚生制度")
+              img.sm(src=imgSP+"recruit_top_img_08.jpg" width="672" height="414" loading="lazy" alt="福利厚生制度")
+            p.common-text テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+            a.common-button-inquiry.background-blue(href="#") 詳しく見る
+
+  section.section-recruit-employment
+    .wrapper
+      h2.common-title.title-light-blue
+        span 採用情報
+      ul.list-employment
+        li.item-employment
+          a.link-employment(href="#")
+            .block-image
+              figure.image-employment
+                img.md(src=imgPC+"recruit_top_img_09.png" width="321" height="471" loading="lazy" alt="新卒採用　ITエンジニア")
+                img.sm(src=imgSP+"recruit_top_img_09.png" width="682" height="424" loading="lazy" alt="新卒採用　ITエンジニア")
+              h3.title-employment 新卒採用　ITエンジニア
+            p.common-text テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+        li.item-employment
+          a.link-employment(href="#")
+            .block-image
+              figure.image-employment
+                img.md(src=imgPC+"recruit_top_img_10.png" width="321" height="471" loading="lazy" alt="新卒採用　総合職")
+                img.sm(src=imgSP+"recruit_top_img_10.png" width="682" height="424" loading="lazy" alt="新卒採用　総合職")
+              h3.title-employment 新卒採用　総合職
+            p.common-text テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+        li.item-employment
+          a.link-employment(href="#")
+            .block-image
+              figure.image-employment
+                img.md(src=imgPC+"recruit_top_img_11.png" width="321" height="471" loading="lazy" alt="中途採用")
+                img.sm(src=imgSP+"recruit_top_img_11.png" width="682" height="424" loading="lazy" alt="中途採用")
+              h3.title-employment 中途採用
+            p.common-text テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト

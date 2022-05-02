@@ -1,0 +1,297 @@
+header
+  if ['type-a'].some(id => id == typePage)
+    include ../_parts/header_type_A
+  else if ['type-b'].some(id => id == typePage)
+    include ../_parts/header_type_B
+  else if ['type-c'].some(id => id == typePage)
+    include ../_parts/header_type_C
+  if (typePage !== 'type-a' )
+    include ../_parts/common_list_menu
+  nav.menu-navigation.js-navigation
+    .navigation-block
+      ul.header-menu
+        li.item-menu
+          .title-menu.js-accordion
+            a.trans.js-accordion-heading(href=path+"/") ホーム
+          ul.sub-menu.js-accordion-content.md
+            li.item-sub-menu
+              a.trans(href="#") お知らせ
+            li.item-sub-menu
+              a.trans(href="#") お問い合わせ
+          .block-menu.md
+            .title-menu
+              a.trans(href="#") 企業情報
+            ul.sub-menu
+              li.item-sub-menu
+                a.trans(href="#") コーポレートスローガン
+              li.item-sub-menu
+                a.trans(href="#") 代表あいさつ
+              li.item-sub-menu
+                a.trans(href=path+"/company/") 会社概要／<br>旭化成グループについて
+              li.item-sub-menu
+                a.trans(href="#") 沿革
+              li.item-sub-menu
+                a.trans(href="#") 拠点一覧
+              li.item-sub-menu
+                a.trans(href="#") 労働者派遣事業に係る<br>各種情報のお知らせ
+        li.item-menu.js-accordion
+          .title-menu.icon-plus-big.js-accordion-heading.is-pointer
+            span.trans お仕事をお探しの方
+          .content-sub-menu.js-accordion-content
+            ul.sub-menu
+              li.item-sub-menu
+                a.trans(href=path+"/job/haken/") 旭化成アミダスで出来る<br class="md">仕事の探し方
+              li.item-sub-menu.sm
+                a.trans(href="#") 人材派遣サービス
+              li.item-sub-menu.sm
+                a.trans(href="#") 転職支援サービス
+              li.item-sub-menu.sm
+                a.trans(href="#") 製造職のお仕事
+              li.item-sub-menu.sm
+                a.trans(href="#") 受付業務のお仕事
+              li.item-sub-menu.js-accordion.md
+                span.trans.icon-plus.js-accordion-heading 人材派遣
+                .content-last-menu.js-accordion-content
+                  ul.list-last-menu
+                    li.item-sub-menu
+                      a.trans(href="#") 派遣求人検索
+                    li.item-sub-menu
+                      a.trans(href="#") WEB仮登録
+                    li.item-sub-menu
+                      a.trans(href="#") マイページ
+                    li.item-sub-menu
+                      a.trans(href="#") ライフスタイル別特集
+                    li.item-sub-menu
+                      a.trans(href="#") 拠点別特集
+                    li.item-sub-menu
+                      a.trans(href="#") 業界・職種別特集
+                    li.item-sub-menu
+                      a.trans(href="#") スタッフインタビュー
+                    li.item-sub-menu
+                      a.trans(href="#") よくあるご質問
+                    li.item-sub-menu
+                      a.trans(href="#") 初めて派遣で働く方へ
+                    li.item-sub-menu
+                      a.trans(href="#") ご登録済み派遣スタッフの方
+                    li.item-sub-menu
+                      a.trans(href="#") 労働者派遣法改正関連
+              li.item-sub-menu.md
+                span.trans.icon-plus.js-accordion-heading 転職支援
+                .content-last-menu.js-accordion-content
+                  ul.list-last-menu
+                    li.item-sub-menu
+                      a.trans(href="#") 求人検索
+                    li.item-sub-menu
+                      a.trans(href="#") 旭化成アミダスの転職支援<br>サ ービスについて
+                    li.item-sub-menu
+                      a.trans(href="#") 旭化成グループの会社<br>だからできる転職支援
+                    li.item-sub-menu
+                      a.trans(href="#") 旭化成アミダスの<br>得意な領域・職種
+                    li.item-sub-menu
+                      a.trans(href="#") お仕事が決まるまでの流れ
+                    li.item-sub-menu
+                      a.trans(href="#") 転職コンサルタント紹介
+                    li.item-sub-menu
+                      a.trans(href="#") コンサルタント×転職者 対談
+                    li.item-sub-menu
+                      a.trans(href="#") よくあるご質問
+              li.item-sub-menu.md
+                span.trans.icon-plus.js-accordion-heading 製造現場のお仕事
+                .content-last-menu.js-accordion-content
+                  ul.list-last-menu
+                    li.item-sub-menu
+                      a.trans(href="#") 製造現場のお仕事について
+                    li.item-sub-menu
+                      a.trans(href="#") 配属地域紹介<br>（守山、日向、千葉）
+                    li.item-sub-menu
+                      a.trans(href="#") 社員インタビュー
+                    li.item-sub-menu
+                      a.trans(href="#") 研修制度
+                    li.item-sub-menu
+                      a.trans(href="#") よくあるご質問
+                    li.item-sub-menu
+                      a.trans(href="#") 募集中案件
+              li.item-sub-menu.md
+                span.trans.icon-plus.js-accordion-heading 受付業務のお仕事
+                .content-last-menu.js-accordion-content
+                  ul.list-last-menu
+                    li.item-sub-menu
+                      a.trans(href="#") アミダスの受付業務について
+                    li.item-sub-menu
+                      a.trans(href="#") 社員インタビュー
+                    li.item-sub-menu
+                      a.trans(href="#") 研修制度
+                    li.item-sub-menu
+                      a.trans(href="#") よくあるご質問
+                    li.item-sub-menu
+                      a.trans(href="#") 募集業務
+        li.item-menu.js-accordion
+          .title-menu.icon-plus-big.js-accordion-heading.is-pointer
+            span.trans 企業担当者の方
+          .content-sub-menu.js-accordion-content
+            ul.sub-menu.md
+              li.item-sub-menu
+                a.trans(href="#") お知らせ
+              li.item-sub-menu
+                a.trans(href="#") 旭化成アミダスができること
+              li.item-sub-menu
+                span.trans.icon-plus.js-accordion-heading 旭化成アミダスの人材派遣<br>サービス
+                .content-last-menu.js-accordion-content
+                  ul.list-last-menu
+                    li.item-sub-menu
+                      a.trans(href="#") 得意とする領域・職種
+                    li.item-sub-menu
+                      a.trans(href="#") 導入事例インタビュー
+                    li.item-sub-menu
+                      a.trans(href="#") 派遣チーム×顧客座談会
+                    li.item-sub-menu
+                      a.trans(href="#") ブログ・コラム
+                    li.item-sub-menu
+                      a.trans(href="#") 資料請求・お問い合わせ
+                    li.item-sub-menu
+                      a.trans(href="#") ホワイトペーパー
+              li.item-sub-menu
+                span.trans.icon-plus.js-accordion-heading 旭化成アミダスの<br>ITエンジニア派遣サービス
+                .content-last-menu.js-accordion-content
+                  ul.list-last-menu
+                    li.item-sub-menu
+                      a.trans(href="#") 得意とする領域・職種
+                    li.item-sub-menu
+                      a.trans(href="#") お問い合わせ
+              li.item-sub-menu
+                span.trans.icon-plus.js-accordion-heading 旭化成アミダスの<br>人材紹介サービス
+                .content-last-menu.js-accordion-content
+                  ul.list-last-menu
+                    li.item-sub-menu
+                      a.trans(href="#") 得意とする領域・職種
+                    li.item-sub-menu
+                      a.trans(href="#") 導入事例インタビュー
+                    li.item-sub-menu
+                      a.trans(href="#") 記事コンテンツ
+                    li.item-sub-menu
+                      a.trans(href="#") 資料請求・お問い合わせ
+              li.item-sub-menu
+                span.trans.icon-plus.js-accordion-heading 旭化成アミダスの<br>教育研修サービス
+                .content-last-menu.js-accordion-content
+                  ul.list-last-menu
+                    li.item-sub-menu
+                      a.trans(href="#") 教育研修一覧・<br>課題別研修検索
+                    li.item-sub-menu
+                      a.trans(href="#") 資料請求・お問い合わせ
+              li.item-sub-menu
+                span.trans.icon-plus.js-accordion-heading 旭化成アミダスの各種<br>アウトソーシングサービス
+                .content-last-menu.js-accordion-content
+                  ul.list-last-menu
+                    li.item-sub-menu
+                      a.trans(href="#") 導入事例インタビュー
+                    li.item-sub-menu
+                      a.trans(href="#") 資料請求・お問い合わせ
+              li.item-sub-menu
+                span.trans.icon-plus.js-accordion-heading 旭化成アミダスのISO事業
+                .content-last-menu.js-accordion-content
+                  ul.list-last-menu
+                    li.item-sub-menu
+                      a.trans(href="#") ISO審査／ISO研修
+                    li.item-sub-menu
+                      a.trans(href="#") 資料請求・お問い合わせ
+            ul.sub-menu.sm
+              li.item-sub-menu
+                a.trans(href="#") 旭化成アミダスが出来ること
+              li.item-sub-menu
+                a.trans(href="#") 人材派遣サービス
+              li.item-sub-menu
+                a.trans(href="#") ITエンジニア派遣サービス
+              li.item-sub-menu
+                a.trans(href="#") 人材紹介サービス
+              li.item-sub-menu
+                a.trans(href="#") 教育研修サービス
+              li.item-sub-menu
+                a.trans(href="#") 各種アウトソーシングサービス
+              li.item-sub-menu
+                a.trans(href="#") ISO事業
+        li.item-menu.js-accordion
+          .title-menu.icon-plus-big.js-accordion-heading.is-pointer
+            span.trans 採用情報
+          .content-sub-menu.js-accordion-content
+            ul.sub-menu.md
+              li.item-sub-menu
+                a.trans(href="#") 旭化成アミダスとは
+              li.item-sub-menu
+                a.trans(href="#") 事業の未来座談会
+              li.item-sub-menu
+                a.trans(href="#") 教育研修制度
+              li.item-sub-menu
+                a.trans(href="#") 福利厚生制度
+              li.item-sub-menu
+                a.trans(href="#") 採用に関するお問い合わせ
+              li.item-sub-menu
+                span.trans.icon-plus.js-accordion-heading 新卒採用（ITエンジニア）
+                .content-last-menu.js-accordion-content
+                  ul.list-last-menu
+                    li.item-sub-menu
+                      a.trans(href="#") 仕事を知る
+                    li.item-sub-menu
+                      a.trans(href="#") 社員紹介
+                    li.item-sub-menu
+                      a.trans(href="#") よくあるご質問
+                    li.item-sub-menu
+                      a.trans(href="#") 専門研修制度
+                    li.item-sub-menu
+                      a.trans(href="#") 採用情報
+                    li.item-sub-menu
+                      a.trans(href="#") エントリー
+              li.item-sub-menu
+                a.trans.icon-plus(href="#") 新卒採用（総合職）
+              li.item-sub-menu
+                a.trans(href="#") 中途採用（外部）
+            ul.sub-menu.sm
+              li.item-sub-menu
+                a.trans(href="#") 旭化成アミダスとは
+              li.item-sub-menu
+                a.trans(href="#") 教育研修制度
+              li.item-sub-menu
+                a.trans(href="#") 福利厚生制度
+              li.item-sub-menu
+                a.trans(href="#") 新卒採用（ITエンジニア）
+              li.item-sub-menu
+                a.trans(href="#") 新卒採用（総合職）
+              li.item-sub-menu
+                a.trans(href="#") 採用に関するお問い合わせ
+              li.item-sub-menu
+                a.trans(href="#") 中途採用
+        li.item-menu.sm.js-accordion
+          .title-menu.icon-plus-big.js-accordion-heading
+            span.trans 企業情報
+          .content-sub-menu.js-accordion-content
+            ul.sub-menu
+              li.item-sub-menu
+                a.trans(href="#") コーポレートスローガン
+              li.item-sub-menu
+                a.trans(href="#") 代表あいさつ
+              li.item-sub-menu.sm
+                a.trans(href="#") 事業紹介
+              li.item-sub-menu.md
+                a.trans(href="#") 会社概要／<br>旭化成グループについて
+              li.item-sub-menu.sm
+                a.trans(href="#") 会社概要・旭化成グループについて
+              li.item-sub-menu
+                a.trans(href="#") 沿革
+              li.item-sub-menu
+                a.trans(href="#") 拠点一覧
+              li.item-sub-menu
+                a.trans(href="#") 労働者派遣事業に係る<br>各種情報のお知らせ
+        li.item-menu.sm
+          .title-menu
+            a.trans(href="#") アクセス
+      ul.list-notice.sm
+        li.item-notice
+          a.trans(href="#") おしらせ
+        li.item-notice
+          a.trans(href="#") お問い合わせ
+      form.form-search.sm
+        input.input-search(type='search' name='search' placeholder="検索する")
+        button.icon-search(type="submit")
+  .button-menu.trans.js-button-menu(class=typePage!=='type-c'?'':'sm')
+    span
+    span
+    span

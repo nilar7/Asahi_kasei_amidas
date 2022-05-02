@@ -1,0 +1,68 @@
+extends ../../_layouts/default
+
+block vars
+  -title        = '旭化成アミダスの転職支援サービスについて'
+  -description  = ''
+  -keywords     = ''
+  -pageID       = 'job'
+  -pageSubID    = 'job-jinzai'
+  -typePage     = 'type-a'
+  -path         = '../..'
+  -imgPC        = path+'/img/'+pageID+'/'
+  -imgSP        = path+'/img/'+pageID+'/sp/'
+
+block container
+  include ../../_parts/common_list_menu_06
+  +keyvisual('job-jinzai','旭化成アミダスの<br class="sm">転職支援サービスについて')
+    +breadcrumbJapan('旭化成アミダスの転職支援サービスについて', [{title: 'お仕事をお探しの方', url: '/job/'},{title: '転職支援トップ'}])
+  section.section-job-about.section-job-jinzai
+    .wrapper
+      h2.common-title.title-light-blue
+        span 転職支援サービスのしくみ
+      p.common-text 説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明
+      figure.image-top
+        img.md(src=imgPC+"job_jinzai_img_02.png" width="848" height="535" loading="lazy" alt="転職支援サービスのしくみ")
+        img.sm(src=imgSP+"job_jinzai_img_02.png" width="688" height="488" loading="lazy" alt="転職支援サービスのしくみ")
+  section.section-job-benefits
+    .wrapper
+      h2.common-title.title-light-blue
+        span 旭化成アミダスで転職することのメリット
+      p.common-text.text-benefits 説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明
+      ol.list-benefits
+        -
+          var
+            list = [
+              {
+                title: '幅広い領域を扱う旭化成グループ<br>だからこその幅広い案件',
+                number: '02'
+              },
+              {
+                title: '求人企業様と求職者様を一人の<br>コンサルタントが担当する<br>「一元管理方式」',
+                number: '03'
+              },
+              {
+                title: '人材紹介の豊富な経験をもつ<br>コンサルタントが、<br>皆さまの就職や転職活動をサポート',
+                number: '02'
+              },
+              {
+                title: 'ダミーダミーダミーダミーダミー<br>ダミーダミーダミーダミー',
+                number: '03'
+              },
+              {
+                title: 'ダミーダミーダミーダミーダミー<br>ダミーダミーダミーダミー',
+                number: '02'
+              }
+            ];
+        each item in list
+          li.item-benefits
+            .block-content
+              span メリット
+              .content-left
+                h3.title-benefits!=item.title
+                p.common-text ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー
+              figure.image-right
+                img.md(src=imgPC+"job_jinzai_img_"+item.number+".jpg" width="496" height="264" loading="lazy" alt=item.title.replace(/<[^>]*>/,''))
+                img.sm(src=imgSP+"job_jinzai_img_"+item.number+".jpg" width="672" height="358" loading="lazy" alt=item.title.replace(/<[^>]*>/,''))
+      a.common-button-inquiry(href="#") 求人情報はこちら
+      p.text-note 案件エントリー後、登録の流れとなります。
+      include ../../_parts/common_contact_02

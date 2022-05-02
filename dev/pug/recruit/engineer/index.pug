@@ -1,0 +1,79 @@
+extends ../../_layouts/default
+
+block vars
+  -title        = '新卒採用サイト（ITエンジニア）'
+  -description  = ''
+  -keywords     = ''
+  -pageID       = 'recruit'
+  -pageSubID    = 'recruit-engineer'
+  -typePage     = 'type-a'
+  -path         = '../..'
+  -imgPC        = path+'/img/'+pageID+'/'
+  -imgSP        = path+'/img/'+pageID+'/sp/'
+
+block container
+  +keyvisual('recruit-engineer','新卒採用　ITエンジニア')
+    +breadcrumbEnglish('ITエンジニア新卒採用', [{title: '採用情報', url: '/recruit/'}])
+  section.section-recruit-engineer
+    .wrapper
+      p.common-text.text-top 採用概要テキスト100文字。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文
+      ul.list-engineer
+        li.item-engineer
+          a(href="#work").common-button-arrow 仕事を知る
+        li.item-engineer
+          a(href="#business").common-button-arrow 事業の<br>未来座談会
+        li.item-engineer
+          a(href="#employee").common-button-arrow 社員紹介
+        li.item-engineer
+          a(href="#training").common-button-arrow 専門職<br>研修制度
+        li.item-engineer
+          a(href="#training").common-button-arrow よくある<br>ご質問
+        li.item-engineer
+          a(href="#information").common-button-arrow 採用情報
+      ul.list-engineer-detail
+        li.item-list#work
+          figure.image-detail
+            img.md(src=imgPC+"recruit_engineer_img_01.jpg" width="672" height="355" loading="lazy" alt="仕事を知る")
+            img.sm(src=imgSP+"recruit_engineer_img_01.jpg" width="672" height="414" loading="lazy" alt="仕事を知る")
+          .block-content
+            h2.item-title 仕事を知る
+            p.common-text テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+            a.common-button-inquiry.background-blue(href="#") 詳しく見る
+        li.item-list.full-width.is-icon#business
+          figure.image-detail
+            img.md(src=imgPC+"recruit_engineer_img_02.jpg" width="1024" height="355" loading="lazy" alt="事業の未来座談会")
+            img.sm(src=imgSP+"recruit_engineer_img_02.jpg" width="672" height="414" loading="lazy" alt="事業の未来座談会")
+          .block-content
+            h2.item-title 事業の未来座談会
+            p.common-text テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+            a.common-button-inquiry.background-blue(href="#") 詳しく見る
+        li.item-list#employee
+          figure.image-detail
+            img.md(src=imgPC+"recruit_engineer_img_03.jpg" width="672" height="355" loading="lazy" alt="社員紹介")
+            img.sm(src=imgSP+"recruit_engineer_img_03.jpg" width="672" height="414" loading="lazy" alt="社員紹介")
+          .block-content
+            h2.item-title 社員紹介
+            p.common-text テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+            a.common-button-inquiry.background-blue(href="#") 詳しく見る
+      ul.list-system#training
+        li.item-system
+          h3.title-system 専門職研修制度
+          figure.image-system
+            img.md(src=imgPC+"recruit_engineer_img_04.jpg" width="496" height="220" loading="lazy" alt="専門職研修制度")
+            img.sm(src=imgSP+"recruit_engineer_img_04.jpg" width="672" height="414" loading="lazy" alt="専門職研修制度")
+          p.common-text テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+          a.common-button-inquiry.background-blue(href="#") 詳しく見る
+        li.item-system
+          h3.title-system よくあるご質問
+          figure.image-system
+            img.md(src=imgPC+"recruit_engineer_img_05.jpg" width="496" height="220" loading="lazy" alt="よくあるご質問")
+            img.sm(src=imgSP+"recruit_engineer_img_05.jpg" width="672" height="414" loading="lazy" alt="よくあるご質問")
+          p.common-text テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+          a.common-button-inquiry.background-blue(href="#") 詳しく見る
+    .block-information#information
+      .wrapper
+        .content-information
+          h2.title-information ITエンジニア採用情報（募集要項）
+          p.common-text テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+        a.common-button-inquiry.background-blue(href="#") 詳しく見る
+    a.common-big-button.trans(href="#") エントリーはこちら

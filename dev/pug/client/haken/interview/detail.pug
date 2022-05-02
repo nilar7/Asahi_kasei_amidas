@@ -1,0 +1,202 @@
+extends ../../../_layouts/default
+
+block vars
+  -title        = '人材派遣サービスインタビュー詳細'
+  -description  = ''
+  -keywords     = ''
+  -pageID       = 'client'
+  -pageSubID    = 'client-haken'
+  -typePage     = 'type-b'
+  -path         = '../../..'
+  -imgPC        = path+'/img/'+pageID+'/'
+  -imgSP        = path+'/img/'+pageID+'/sp/'
+
+block container
+  +listMenuClient([
+    {
+      title: '人材派遣サービスTOP',
+      url: '/client/haken/index.html'
+    },
+    {
+      title: '得意とする領域・職種',
+      url: '/client/haken/field.html'
+    },
+    {
+      title: '導入事例インタビュー',
+      url: '/client/haken/interview/index.html'
+    },
+    {
+      title: '派遣チーム×顧客座談会',
+      url: '/client/haken/interview/detail.html',
+      active: true
+    },
+    {
+      title: '記事コンテンツ',
+      url: '/client/haken/article/index.html'
+    }
+  ])
+  +breadcrumb('株式会社●●様導入事例', [{title: '企業向けTOP',url: '/client/'},{title: '旭化成アミダスの人材派遣サービス',url: '/client/haken/'},{title: '導入事例インタビュ',url: '/client/haken/interview/'}])
+  section.section-interview-detail
+    .inner-wrapper
+      .content-main
+        .block-top
+          .content-top
+            h1.title-interview-detail
+              span メインタイトルが入ります
+              span メインタイトルが入りますメイン
+            p.text-detail.is-padding 100文字。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文
+          figure.image-detail
+            img.md(src=imgPC+"client_detail_img_01.jpg" width="888" height="502" alt="メインタイトルが入ります メインタイトルが入りますメイン")
+            img.sm(src=imgSP+"client_detail_img_01.jpg" width="656" height="540" alt="メインタイトルが入ります メインタイトルが入りますメイン")
+        .block-bottom
+          .content-left
+            ul.common-list-category.is-big
+              li.item-category 業種名業種名
+              li.item-category 課題名課題名
+              li.item-category 分野がはいります
+            h2.title-industry 会社名会社名会社名
+          p.text-detail 会社の説明150文字程度。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ
+
+  section.section-detail-problem
+    .wrapper
+      ul.list-problem
+        li.item-problem
+          h2.title-problem 背景・課題
+          p.text-problem 背景・課題の解説200文字程度。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、
+        li.item-problem
+          h2.title-problem 効果
+          p.text-problem 効果の解説200文字程度。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、
+
+  section.section-detail-introduction
+    .wrapper
+      ul.list-staff
+        li.item-staff
+          a.trans.link-staff(href="#")
+            .content-detail
+              figure.image-staff
+                img.md(src=imgPC+"client_detail_img_02.jpg" width="288" height="198" loading="lazy" alt="山田 太郎")
+                img.sm(src=imgSP+"client_detail_img_02.jpg" width="330" height="227" loading="lazy" alt="山田 太郎")
+              .content-staff
+                h2.name-staff 山田 太郎
+                p.position-staff.font-alata CO-FOUNDER &amp; CTO
+            p.text-staff 親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした事がある。なぜそんな無闇をしたと聞く人があるかも
+        li.item-staff
+          a.trans.link-staff(href="#")
+            .content-detail
+              figure.image-staff
+                img.md(src=imgPC+"client_detail_img_03.jpg" width="288" height="198" loading="lazy" alt=" 山田 太郎")
+                img.sm(src=imgSP+"client_detail_img_03.jpg" width="330" height="227" loading="lazy" alt="山田 太郎")
+              .content-staff
+                h2.name-staff 山田 太郎
+                p.position-staff.font-alata CO-FOUNDER &amp; CTO
+            p.text-staff 親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした事がある。なぜそんな無闇をしたと聞く人があるかも
+        li.item-staff
+          a.trans.link-staff(href="#")
+            .content-detail
+              figure.image-staff
+                img.md(src=imgPC+"client_detail_img_04.jpg" width="288" height="198" loading="lazy" alt="山田 太郎")
+                img.sm(src=imgSP+"client_detail_img_04.jpg" width="330" height="227" loading="lazy" alt="山田 太郎")
+              .content-staff
+                h2.name-staff 山田 太郎
+                p.position-staff.font-alata CO-FOUNDER &amp; CTO
+            p.text-staff 親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした事がある。なぜそんな無闇をしたと聞く人があるかも
+      .block-information
+        p.text-big 導入前の課題・背景
+        h2.title-sub-detail.is-width タイトルが入りますタイトルが入ります<br>タイトルが入りますタイトルが入ります
+        .list-information.full-width
+          dl
+            dt 山田
+            dd この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文
+          dl
+            dt 山田
+            dd この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文
+          dl
+            dt 山田
+            dd この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文
+          dl
+            dt 山田
+            dd この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文
+          dl
+            dt 山田
+            dd この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文
+    figure.image-big
+      img.md(src=imgPC+"client_detail_img_05.jpg" width="1280" height="502" loading="lazy" alt="タイトルが入りますタイトルが入りますタイトルが入りますタイトルが入ります")
+      img.sm(src=imgSP+"client_detail_img_05.jpg" width="768" height="301" loading="lazy" alt="タイトルが入りますタイトルが入りますタイトルが入りますタイトルが入ります")
+    .wrapper
+      .block-content-information
+        .content-left
+          p.text-big 活用事例
+          h2.title-sub-detail タイトルが入りますタイトルが入ります<br>タイトルが入りますタイトルが入ります
+          .list-information
+            dl
+              dt 山田
+              dd この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文
+            dl
+              dt 山田
+              dd この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文
+            dl
+              dt 山田
+              dd この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文
+            dl
+              dt 山田
+              dd この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文
+            dl
+              dt 山田
+              dd この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文
+        figure.image-information
+          img.md(src=imgPC+"client_detail_img_09.jpg" width="360" height="595" loading="lazy" alt="タイトルが入りますタイトルが入ります<br>タイトルが入りますタイトルが入ります")
+          img.sm(src=imgSP+"client_detail_img_09.jpg" width="552" height="560" loading="lazy" alt="タイトルが入りますタイトルが入ります<br>タイトルが入りますタイトルが入ります")
+      .block-content-information.is-reverse
+        .content-left
+          p.text-big 効果
+          h2.title-sub-detail.is-width タイトルが入りますタイトルが入ります<br>タイトルが入りますタイトルが入ります
+          .list-information
+            dl
+              dt 山田
+              dd この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文
+            dl
+              dt 山田
+              dd この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文
+            dl
+              dt 山田
+              dd この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文
+            dl
+              dt 山田
+              dd この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文
+            dl
+              dt 山田
+              dd この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文
+        figure.image-information
+          img.md(src=imgPC+"client_detail_img_10.jpg" width="360" height="595" loading="lazy" alt="タイトルが入りますタイトルが入ります タイトルが入りますタイトルが入ります")
+          img.sm(src=imgSP+"client_detail_img_10.jpg" width="552" height="560" loading="lazy" alt="タイトルが入りますタイトルが入ります タイトルが入りますタイトルが入ります")
+      a.common-big-button.is-arrow(href="#") 人材派遣についての資料請求<span class="md">・</span><br class="sm">お問い合わせ
+
+  section.section-detail-help
+    .wrapper
+      h2.title-sub-detail この記事が参考になった方への<br>おすすめ事例
+      ul.common-list-interview
+        -
+          var blockList = [
+            {
+              number: '06'
+            },
+            {
+              number: '07'
+            },
+            {
+              number: '08'
+            }
+          ];
+        each item in blockList
+          li.item-interview
+            a.link-interview(href=path+"/client/haken/interview/detail.html")
+              .block-interview
+                figure.image-interview
+                  img.md(src=imgPC+"client_detail_img_"+item.number+".jpg" width="320" height="204" loading="lazy" alt="会社名会社名会社名")
+                  img.sm(src=imgSP+"client_img_01.jpg" width="352" height="200" loading="lazy" alt="会社名会社名会社名")
+                .button-arrow
+              h2.title-item 会社名会社名会社名
+              ul.common-list-category.is-big
+                li.item-category 業種名
+                li.item-category 課題名課題名
+              p.text-item 説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが

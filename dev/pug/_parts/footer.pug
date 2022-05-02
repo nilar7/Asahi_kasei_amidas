@@ -1,0 +1,229 @@
+if(pageID == 'top')
+  footer.footer-main
+    .footer-top
+      .wrapper
+        h2.title-contact
+          span.title-english.font-alata CONTACT
+          span.title-japan お問い合わせ
+        a.common-button.common-button-inquiry(href="#")
+          span フォームからお問い合わせする
+    .footer-middle.md
+      .inner-wrapper
+        .footer-detail
+          a.trans.footer-logo(href="#")
+            img(src=path+"/img/common/footer_logo.png" width="202" height="167" loading="lazy" alt="旭化成アミダス株式会社")
+          address.address 〒101-8480<br>東京都千代田区神田錦町三丁目<br>22番地 テラススクエア
+        nav.footer-navigation
+          ul.list-navigation
+            li.item-navigation
+              span.text-navigation ダミーですお知らせ
+              ul.sub-navigation
+                li.item-sub
+                  a.trans(href="#") ダミーですお知らせ
+                li.item-sub
+                  a.trans(href="#") 企業情報
+                li.item-sub
+                  a.trans(href="#") 企業担当者の方
+                li.item-sub
+                  a.trans(href="#") 派遣・紹介予定派遣をご希望の方
+                li.item-sub
+                  a.trans(href="#") ご登録済み派遣スタッフの方
+                li.item-sub
+                  a.trans(href="#") 転職をお考えの方
+                li.item-sub
+                  a.trans(href="#") 新卒採用情報
+                li.item-sub
+                  a.trans(href="#") お問合せ（一覧）
+            li.item-navigation
+              span.text-navigation ダミーですお知らせ
+              ul.sub-navigation
+                li.item-sub
+                  a.trans(href="#") ダミーですお知らせ
+                li.item-sub
+                  a.trans(href="#") 企業情報
+                li.item-sub
+                  a.trans(href="#") 企業担当者の方
+                li.item-sub
+                  a.trans(href="#") 派遣・紹介予定派遣をご希望の方
+                li.item-sub
+                  a.trans(href="#") ご登録済み派遣スタッフの方
+                li.item-sub
+                  a.trans(href="#") 転職をお考えの方
+                li.item-sub
+                  a.trans(href="#") 新卒採用情報
+                li.item-sub
+                  a.trans(href="#") お問合せ（一覧）
+            li.item-navigation
+              span.text-navigation ダミーですお知らせ
+              ul.sub-navigation
+                li.item-sub
+                  a.trans(href="#") ダミーですお知らせ
+                li.item-sub
+                  a.trans(href="#") 企業情報
+                li.item-sub
+                  a.trans(href="#") 企業担当者の方
+                li.item-sub
+                  a.trans(href="#") 派遣・紹介予定派遣をご希望の方
+                li.item-sub
+                  a.trans(href="#") ご登録済み派遣スタッフの方
+                li.item-sub
+                  a.trans(href="#") 転職をお考えの方
+    .footer-bottom
+      ul.list-guide.md
+        li.item-guide
+          a.trans(href="#") 優良派遣事業者行動指針
+        li.item-guide
+          a.trans(href="#") ご利用条件
+        li.item-guide
+          a.trans(href="#") 個人情報保護方針
+        li.item-guide
+          a.trans(href="#") お問い合わせ
+        li.item-guide.item-logo
+          a.trans(href="#")
+            img(src=path+"/img/common/footer_logo_02.svg" width="118" height="16" loading="lazy" alt="AsahiKASEI")
+      small.copyright.font-alata Copyright <span>&copy;</span> Asahi Kasei Amidas Corporation. All rights reserved.
+    .content-job.js-show-button
+      ul.list-job
+        li.item-job.is-job
+          a.link-job(href="#")
+            span 派遣の<br class="sm">お仕事検索
+        li.item-job.is-register
+          a.link-job(href="#")
+            span 派遣登録は<br class="sm">こちら
+        li.item-job.is-login.sm
+          a.link-job(href="#")
+            span マイページ<br>ログイン
+
+else
+  footer
+    if ['client-interview','client-field','client-haken','client-interview-detail','client-article','client-article-detail'].some(id => id == pageSubID)
+      .footer-top.footer-different
+        .wrapper
+          h2.title-contact
+            span.title-english.font-alata CONTACT
+            span.title-japan お問い合わせ
+          p.text-contact 人材派遣サービスに関して、<br>気になる事がある方は<br class="sm">お気軽にお問い合わせください。
+          ul.list-inquiry
+            li.item-inquiry.button-big
+              a(href="#") 資料請求・お問い合わせ
+            li.item-inquiry.button-small
+              p.text-inquiry-small
+                span 人材派遣に関するお役立ち資料を<br class="sm">無料でご活用いただけます
+              a(href="#") お役立ち資料ダウンロード
+    else if ['client-program'].some(id => id == pageSubID)
+      .footer-top.footer-different
+        .wrapper
+          h2.title-contact
+            span.title-english.font-alata CONTACT
+            span.title-japan お問い合わせ
+          p.text-contact 教育研修サービスに関して、<br>気になる事がある方はお気軽にお問い合わせください。
+          ul.list-inquiry
+            li.item-inquiry.button-big
+              a(href="#") 教育研修サービスについての<br>資料請求・お問い合わせ
+            li.item-inquiry.button-small
+              p.text-inquiry-small
+                span 教育研修に関するお役立ち資料を無料でご活用いただけます
+              a(href="#") お役立ち資料ダウンロード
+    else if ['client-top','mypage-top','mypage-application','client-whitepaper','client-active'].some(id => id == pageSubID)
+      .footer-top.is-none
+        .wrapper
+          h2.title-contact
+            span.title-english.font-alata CONTACT
+            span.title-japan お問い合わせ
+          a.common-button.common-button-inquiry(href="#")
+            span フォームからお問い合わせする
+    else if  ['recruit-top','recruit-engineer'].some(id => id == pageSubID)
+      .footer-top.footer-recruit
+        .wrapper
+          h2.title-contact
+            span.title-english.font-alata CONTACT
+            span.title-japan 採用に関して気になる点がある方は、<br class="sm">お気軽にお問い合わせください。
+          a.common-button.common-button-inquiry(href="#")
+            span 採用についてのお問い合わせ
+    else if ['client-service'].some(id => id == pageSubID) || ['no'].some(id => id == pageSubFooter)
+    else
+      .footer-top
+        .wrapper
+          h2.title-contact
+            span.title-english.font-alata CONTACT
+            span.title-japan お問い合わせ
+          a.common-button.common-button-inquiry(href="#")
+            span フォームからお問い合わせする
+    .footer-middle.md
+      .inner-wrapper
+        .footer-detail
+          a.trans.footer-logo(href="#")
+            img(src=path+"/img/common/footer_logo.png" width="202" height="167" loading="lazy" alt="旭化成アミダス株式会社")
+          address.address 〒101-8480<br>東京都千代田区神田錦町三丁目<br>22番地 テラススクエア
+        nav.footer-navigation
+          ul.list-navigation
+            li.item-navigation
+              span.text-navigation ダミーですお知らせ
+              ul.sub-navigation
+                li.item-sub
+                  a.trans(href="#") ダミーですお知らせ
+                li.item-sub
+                  a.trans(href="#") 企業情報
+                li.item-sub
+                  a.trans(href="#") 企業担当者の方
+                li.item-sub
+                  a.trans(href="#") 派遣・紹介予定派遣をご希望の方
+                li.item-sub
+                  a.trans(href="#") ご登録済み派遣スタッフの方
+                li.item-sub
+                  a.trans(href="#") 転職をお考えの方
+                li.item-sub
+                  a.trans(href="#") 新卒採用情報
+                li.item-sub
+                  a.trans(href="#") お問合せ（一覧）
+            li.item-navigation
+              span.text-navigation ダミーですお知らせ
+              ul.sub-navigation
+                li.item-sub
+                  a.trans(href="#") ダミーですお知らせ
+                li.item-sub
+                  a.trans(href="#") 企業情報
+                li.item-sub
+                  a.trans(href="#") 企業担当者の方
+                li.item-sub
+                  a.trans(href="#") 派遣・紹介予定派遣をご希望の方
+                li.item-sub
+                  a.trans(href="#") ご登録済み派遣スタッフの方
+                li.item-sub
+                  a.trans(href="#") 転職をお考えの方
+                li.item-sub
+                  a.trans(href="#") 新卒採用情報
+                li.item-sub
+                  a.trans(href="#") お問合せ（一覧）
+            li.item-navigation
+              span.text-navigation ダミーですお知らせ
+              ul.sub-navigation
+                li.item-sub
+                  a.trans(href="#") ダミーですお知らせ
+                li.item-sub
+                  a.trans(href="#") 企業情報
+                li.item-sub
+                  a.trans(href="#") 企業担当者の方
+                li.item-sub
+                  a.trans(href="#") 派遣・紹介予定派遣をご希望の方
+                li.item-sub
+                  a.trans(href="#") ご登録済み派遣スタッフの方
+                li.item-sub
+                  a.trans(href="#") 転職をお考えの方
+    .footer-bottom
+      ul.list-guide.md
+        li.item-guide
+          a.trans(href="#") 優良派遣事業者行動指針
+        li.item-guide
+          a.trans(href="#") ご利用条件
+        li.item-guide
+          a.trans(href="#") 個人情報保護方針
+        li.item-guide
+          a.trans(href="#") お問い合わせ
+        li.item-guide.item-logo
+          a.trans(href="#")
+            img(src=path+"/img/common/footer_logo_02.svg" width="118" height="16" loading="lazy" alt="AsahiKASEI")
+      small.copyright.font-alata Copyright <span>&copy;</span> Asahi Kasei Amidas Corporation. All rights reserved.
+
+if pageSubID == 'haken-index'
+  a.to-top-haken(href=path+"/company/") お仕事検索

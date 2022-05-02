@@ -1,0 +1,185 @@
+.common-job-box
+  background: #eff8ff
+  .list-buttons,
+  .list-contact
+    list-style-type: none
+  .title-box
+    color: $base-color-blue
+  .title-box,
+  .text-box
+    text-align: center
+  .default-button
+    background: #fff
+    display: flex
+    justify-content: center
+    align-items: center
+    line-height: 1.5
+    font-weight: bold
+    text-align: center
+    color: #000
+    text-decoration: none
+    transition: background-color .26s, color .26s
+    &:hover
+      background-color: $base-color-blue
+      color: #fff
+  .default-title
+    font-weight: bold
+    color: #005baa
+    position: relative
+    .text
+      background: #eff8ff
+      display: inline-block
+      position: relative
+      z-index: 2
+    &:not(.is-tel):after,
+    &.is-tel:before
+      content: ''
+      position: absolute
+      left: 0
+    &:not(.is-tel)
+      text-align: center
+      &:after
+        background: #005baa
+        width: 100%
+        top: 50%
+        height: 1px
+        pointer-events: none
+    &.is-tel
+      &:before
+        background: url(../img/job/tel_icon.svg) no-repeat center center/100% auto
+  .job-note
+    font-weight: normal
+    text-align: center
+  .is-text-setting
+    font-feature-settings: "palt"
+
++desktop
+  .common-job-box
+    padding: 40px 32px 24px
+    margin-bottom: 40px
+    border-radius: 0 10px 10px 0
+    .content-title
+      margin-bottom: 32px
+    .title-box
+      font-size: .24rem
+      margin-bottom: 24px
+    .text-box
+      font-size: .13rem
+    .default-button,
+    .default-title
+      font-size: .16rem
+    .default-button
+      min-height: 67px
+      box-shadow: 0 3px 6px rgba(0,0,0,.16)
+      border-radius: 34px
+      padding: 8px 24px
+    .default-title
+      line-height: 1.6
+      .text
+        padding: 0 8px
+      &:not(.is-tel)
+        margin-bottom: 16px
+      &.is-tel
+        padding-left: 50px
+        &:before
+          top: -4px
+          width: 34px
+          height: 34px
+    .is-custom-title
+      margin-top: -24px
+      &:after
+        margin-top: 11px
+    .list-buttons
+      margin: 0 auto -16px
+      max-width: 882px
+      &>li
+        width: 50%
+        padding: 0 16px
+        margin-bottom: 16px
+    .job-note
+      margin: 8px 0 0
+    .condition-inner,
+    .contact-row
+      margin: 0 auto
+    .condition-inner
+      max-width: 672px
+    .contact-row
+      max-width: 882px
+      padding: 0 16px
+      &:not(:first-child)
+        margin-top: 48px
+      .default-title
+        margin-bottom: 40px
+
+@media print, (min-width: 768.98px) and (max-width: 986px)
+  .common-job-box .default-title
+    font-size: .14rem
+
+@media print, (min-width: 768.98px) and (max-width: 900px)
+  .common-job-box
+    .default-title
+      font-size: .12rem
+
++mobile
+  .common-job-box
+    padding: .54rem .46rem
+    margin-bottom: .8rem
+    border-radius: .2rem
+    .title-box
+      font-size: .28rem
+      margin-bottom: .32rem
+    .text-box
+      line-height: calc(40 / 24)
+    .content-title
+      margin-bottom: .64rem
+    .default-button
+      min-height: .8rem
+      font-size: .24rem
+      box-shadow: 0 .03rem .06rem rgba(0,0,0,.16)
+      border-radius: 1rem
+      padding: .1rem .2rem
+    .list-buttons
+      &>li:not(:last-child)
+        margin-bottom: .54rem
+    .default-title
+      font-size: .24rem
+      line-height: calc(44 / 24)
+      .text
+        padding: 0 .12rem
+      &:not(.is-tel)
+        margin-bottom: .24rem
+      &.is-tel
+        padding-top: .84rem
+        &:before
+          top: -.04rem
+          left: 50%
+          margin-left: -.34rem
+          width: .68rem
+          height: .68rem
+    .contact-row
+      &:not(:first-child)
+        margin-top: .48rem
+      .default-title
+        margin-bottom: .32rem
+        padding-bottom: .03rem
+    .list-contact
+      text-align: center
+      padding-bottom: .06rem
+      &>li:not(:last-child)
+        margin-bottom: .4rem
+        padding-bottom: .02rem
+      .contact-text
+        font-size: .24rem
+        padding-bottom: .02rem
+        margin-bottom: .32rem
+      .contact-tel
+        font-size: .36rem
+        margin-bottom: .08rem
+      .contact-time
+        font-size: .22rem
+        line-height: calc(38 / 22)
+        padding-top: .06rem
+  .block-jox
+    &.is-reverse
+      display: flex
+      flex-direction: column-reverse

@@ -1,0 +1,31 @@
+.inner-wrapper.header-different
+  .header-left
+    .header-logo
+      a.trans.logo(href=path+"/")
+        img(src=path+"/img/common/common_logo.png" width="189" height="57" loading="lazy" alt="旭化成アミダス")
+    p.text-service 総合人材<br class="md">サービスサイト
+  .header-right.md
+    .content-top
+      ul.list-function
+        li.item-list.background-blue
+          a.item-link(href="#") 資料請求・お問い合わせ
+      form.form-search
+        .content-form
+          input.input-text(type='text' name='search' value='')
+          .item-search.background-blue
+            a(href="javascript:;")
+    .content-bottom
+      nav.header-navigation
+        ul.list-navigation
+          li.item-navigation
+            a(href=path+"/") ホーム
+          li.item-navigation
+            a(href="#") お仕事をお探しの方
+          li.item-navigation
+            a(class=(pageID=='client')?'active-menu':'' href=path+"/client/") 企業のご担当者の方
+          li.item-navigation
+            a(href="#") 採用情報
+          li.item-navigation
+            a(href="#") 企業情報
+          li.item-navigation
+            a(href="#") アクセス

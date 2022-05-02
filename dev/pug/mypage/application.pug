@@ -1,0 +1,296 @@
+extends ../_layouts/default
+
+block vars
+  -title        = '登録情報の変更 STEP1(ご住所や職歴など) | マイページ'
+  -description  = ''
+  -keywords     = ''
+  -pageID       = 'mypage'
+  -pageSubID    = 'mypage-application'
+  -typePage     = 'type-c'
+  -path         = '..'
+  -imgPC        = path+'/img/'+pageID+'/'
+  -imgSP        = path+'/img/'+pageID+'/sp/'
+
+block container
+  +keyvisual('mypage-top','規定・各種申請書')
+
+  ul.application-anchor
+    li
+      a(href="#section-application-forms").common-button-inquiry.is-arrow 各種申請書
+    li
+      a(href="#section-application-regulations").common-button-inquiry.is-arrow 規程
+    li
+      a(href="#section-application-web").common-button-inquiry.is-arrow WEB給与明細
+    li
+      a(href="#section-application-contact").common-button-inquiry.is-arrow お問合せ先
+
+  section.section-application-forms.section-common-application(id="section-application-forms")
+    .wrapper
+      h2.common-title.color-orange.application-title
+        span 各種申請書
+      ul.application-note
+        li 申請方法、提出先など詳細は、担当スタッフプランナーまでお問合せ下さい。
+        li 対象のアイコンをクリックしてダウンロードして下さい。
+      +applicationTable({
+        data: [
+          {
+            tableTitle: '通信交通費・外出・立替金関係書類',
+            tableDetail: [
+              {
+                tableHeader: '定期券申請書',
+                remarks: '交通費（定期）の申請時'
+              },
+              {
+                tableHeader: '公用外出清算票',
+                remarks: 'お仕事週の移動交通費精算時（通勤交通費は除く）'
+              },
+              {
+                tableHeader: '出張票',
+                remarks: '交通費（定期）の申請時'
+              },
+              {
+                tableHeader: '立替金清算票',
+                remarks: '交通費（定期）の申請時'
+              }
+            ]
+          },
+          {
+            tableTitle: '労務関係',
+            tableDetail: [
+              {
+                tableHeader: 'タイムシート修正申請書',
+                remarks: 'ご記入したタイムシートに誤りがあった場合まずは担当スタッフプランナーへご連絡ください'
+              }
+            ]
+          },
+          {
+            tableTitle: '福利厚生関係書類',
+            tableDetail: [
+              {
+                tableHeader: '休暇申請書',
+                remarks: '交通費（定期）の申請時'
+              },
+              {
+                tableHeader: '特別休暇申請書',
+                remarks: 'お仕事週の移動交通費精算時（通勤交通費は除く）'
+              },
+              {
+                tableHeader: '祝金申請書',
+                remarks: '交通費（定期）の申請時'
+              },
+              {
+                tableHeader: '弔慰金申請書',
+                remarks: '交通費（定期）の申請時'
+              },
+              {
+                tableHeader: '特別有給休暇申請書（ワクチン休暇）記入例ダミー',
+                linkFile: 'pdf',
+                custom: 'border-custom'
+              },
+            ]
+          },
+        ]
+      })
+
+  section.section-application-regulations.section-common-application(id="section-application-regulations")
+    .wrapper
+      h2.common-title.color-orange.application-title
+        span 規程
+      ul.application-note
+        li 契約形態によっては個別の取り扱いを定めている場合があります。
+        li 詳細は、担当スタッフプランナーまでお問合せ下さい。
+      +applicationTable({
+        data: [
+          {
+            tableTitle: '有期雇用派遣社員の方',
+            tableDetail: [
+              {
+                tableHeader: '有期雇用派遣社員就業規則',
+                linkFile: 'pdf',
+                remarks: '<time datetime="2021-12-01">2021年12月1日</time>　改定'
+              }
+            ]
+          },
+          {
+            tableTitle: '無期雇用派遣社員の方',
+            tableDetail: [
+              {
+                tableHeader: '無期雇用派遣社員就業規則',
+                linkFile: 'pdf',
+                remarks: '<time datetime="2021-12-01">2021年12月1日</time>　改定'
+              },
+              {
+                tableHeader: 'キャリアチェンジ支援金制度運用規程',
+                linkFile: 'pdf',
+                remarks: '<time datetime="2021-12-01">2021年12月1日</time>　制定'
+              }
+            ]
+          },
+          {
+            tableTitle: '有期・無期雇用派遣社員の方共通規程',
+            tableDetail: [
+              {
+                tableHeader: '派遣社員育児・介護休業等に関する規程',
+                linkFile: 'pdf',
+                remarks: '<time datetime="2021-12-01">2021年12月1日</time>　改定'
+              },
+              {
+                tableHeader: '派遣社員慶弔見舞金規程',
+                linkFile: 'pdf',
+                remarks: '<time datetime="2021-12-01">2021年12月1日</time>　制定'
+              },
+              {
+                tableHeader: '派遣社員慶弔見舞金規程',
+                linkFile: 'pdf',
+                remarks: '<time datetime="2021-12-01">2021年12月1日</time>　制定'
+              },
+              {
+                tableHeader: '派遣社員慶弔見舞金規程',
+                linkFile: 'pdf',
+                remarks: '<time datetime="2021-12-01">2021年12月1日</time>　制定'
+              },
+              {
+                tableHeader: '派遣社員慶弔見舞金規程',
+                linkFile: 'pdf',
+                remarks: '<time datetime="2021-12-01">2021年12月1日</time>　制定'
+              },
+              {
+                tableHeader: '派遣社員慶弔見舞金規程',
+                linkFile: 'pdf',
+                remarks: '<time datetime="2021-12-01">2021年12月1日</time>　制定'
+              },
+              {
+                tableHeader: '派遣社員慶弔見舞金規程',
+                linkFile: 'pdf',
+                remarks: '<time datetime="2021-12-01">2021年12月1日</time>　制定'
+              }
+            ]
+          },
+        ]
+      })
+
+  section.section-application-web.section-common-application(id="section-application-web")
+    .wrapper
+      h2.common-title.color-orange.application-title
+        span WEB給与明細
+      ul.application-note.md
+        li 契約形態によっては個別の取り扱いを定めている場合があります。
+        li 詳細は、担当スタッフプランナーまでお問合せ下さい。
+      .web-login.md
+        p.web-text 携帯電話からのログインはこちら
+        figure.qr-code
+          img.md(src=imgPC+"web_img_code.jpg" width="74" height="74" alt="携帯電話からのログインはこちら" loading="lazy" )
+      ul.web-link
+        li
+          a(href="#").common-button-inquiry.is-arrow WEB給与明細ログイン
+        li
+          a(href="#").common-button-inquiry.is-arrow 操作マニュアル
+        li
+          a(href=path+"/job/haken/faq.html").common-button-inquiry.is-arrow よくあるご質問
+      .web-pay
+        h3.web-title
+          span これからWEB給与明細をご利用になる方へ
+        ul.web-anchor.md
+          li
+            a(href="#benefits-using").trans ご利用のメリット
+          li
+            a(href="#usage-flow").trans ご利用の流れ
+          li
+            a(href="#operation-environment").trans 動作保証環境
+          li
+            a(href="#precautions-inquiries").trans 注意事項・お問合せ先
+        .js-web-accordion
+          .web-block(id="benefits-using")
+            h4.web-name.js-accordion-application ご利用のメリット
+            .js-application-content.web-content
+              .web-inner.web-benefits
+                ul.benefits-list
+                  li
+                    h5.benefits-name 明細の確認がスピーディー！
+                    p.benefits-description 振込日の3日前に明細書の更新をメールでお知らせしますので、郵送よりも早く内容を確認することができます。
+                  li
+                    h5.benefits-name 携帯端末からも確認が可能！
+                    p.benefits-description ご自宅や外出先などからいつでも、どこでも明細書をご確認いただけます。
+                  li
+                    h5.benefits-name 環境にやさしく、エコロジー！
+                    p.benefits-description 給与明細書をPDFデータにて保存・管理することで、紙に出力することなくパソコンやスマートデバイスで確認が可能です。
+                  li
+                    h5.benefits-name 個人情報・プライバシーを守ります
+                    p.benefits-description WEB給与明細にログインしてご確認いただくので他の人に見られる心配がありません。
+          .web-block(id="usage-flow")
+            h4.web-name.js-accordion-application ご利用の流れ
+            .js-application-content.web-content
+              .web-inner
+                ol.web-flow
+                  li
+                    .flow-information
+                      h5.flow-name 初回ログイン
+                      p.flow-description アミダスWEB給与明細URLへアクセスし、パスワードとメール配信先となるメールアドレスを登録します。
+                  li
+                    .flow-information
+                      h5.flow-name 明細確定・メール受信
+                      p.flow-description 振込日の3日前に、ご登録いただいたメールアドレスへ「明細更新のお知らせ」というタイトルのメールが配信されます。
+                  li
+                    .flow-information
+                      h5.flow-name 明細確認
+                      p.flow-description 通知メールに記載されたURLからアミダスWEB給与明細へログインし、明細書や各種お知らせの内容を確認します。
+                    .screen-image
+                      figure.pc-screen
+                        .is-image
+                          img(src=imgPC+"web_img_01.jpg" width="295" height="177" alt="パソコン画面イメージ" loading="lazy" )
+                        figcaption パソコン画面イメージ
+                      figure.phone-screen
+                        .is-image
+                          img(src=imgPC+"web_img_02.jpg" width="142" height="232" alt="スマートフォン画面イメージ" loading="lazy" )
+                        figcaption スマートフォン画面イメージ
+                  li
+                    .flow-information
+                      h5.flow-name 明細ダウンロード
+                      p.flow-description パスワード付PDFファイル形式で明細データをダウンロードします。
+          .web-block(id="operation-environment")
+            h4.web-name.js-accordion-application 動作保証環境
+            .js-application-content.web-content
+              .web-inner
+                p.browser-environment WEB給与明細をご利用いただくために推奨するブラウザ環境は以下をご確認ください。<br>動作保証環境以外で利用された場合、文字が一部表示されない・設定されていない箇所で改行されるなど、レイアウトが崩れて正常に表示されない可能性があります。
+                .table-block
+                  table.environment-table
+                    tbody
+                      tr
+                        th 携帯端末※<br>スマートデバイス
+                        td
+                          ul.device-list
+                            li iOS7 : Safari
+                            li Android : Google Chrome
+                      tr
+                        th パソコン※
+                        td
+                          ul.device-list
+                            li Internet Explorer 11
+                            li Microsoft Edge
+                            li FireFox
+                            li Safari
+                            li Google Chrome
+                      tr
+                        th PDFリーダ
+                        td PDFバージョン1.4が閲覧可能なPDFリーダ（推奨：Adobe&reg;Reader&reg;）
+                  p.note-text ※セキュリティとパフォーマンス向上を理由に利用できる最新のものをご利用いただくことを推奨しています。
+          .web-block(id="precautions-inquiries")
+            h4.web-name.js-accordion-application
+              span.md 注意事項
+              span.sm 注意事項・お問合せ先
+            .js-application-content.web-content
+              .web-inner
+                ul.precautions-list
+                  li WEB給与明細をご利用の場合、原則として紙の明細書は送付されません。
+                  li 配信先のメールアドレスに迷惑メール防止の設定をされている方は、WEB給与明細からの配信メールが届かない場合があります。事前に「@om.asahi-kasei.co.jp」「amidas-meisai@om.asahi-kasei.co.jp」のドメインまたはメールアドレスの受信指定をしていただく必要があります。
+                  li WEB給与明細のご利用にかかるインターネット利用料・データ通信料は、ご自身での負担となります。ご了承ください。
+
+  section.section-application-contact(id="section-application-contact")
+    .wrapper
+      h2.common-title.color-orange
+        span お問合せ先
+      ul.contact-link
+        li
+          a(href="#").common-button-inquiry.is-arrow お問合せフォームへ
+        li
+          a(href=path+"/job/haken/faq.html").common-button-inquiry.is-arrow よくあるご質問

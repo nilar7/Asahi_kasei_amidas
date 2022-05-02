@@ -1,0 +1,176 @@
+.block-common-contact
+  font-weight: 700
+  .block-content-top
+    background-color: rgba(196,227,255,.25)
+  .title-contact
+    text-align: center
+    color: $base-color-blue
+  .text-right
+    color: $base-color-blue
+    position: relative
+    text-align: center
+    &:before,
+    &:after
+      position: absolute
+      content: ""
+      top: 50%
+      transform: translateY(-50%)
+      background: $base-color-blue
+      height: 1px
+    &:before
+      left: 0
+    &:after
+      right: 0
+    span
+      display: inline-block
+  .button-contact
+    color: $base-font-color
+    display: flex
+    align-items: center
+    justify-content: center
+    background-color: #fff
+    transition: background-color .26s, color .26s
+    text-decoration: none
+    &:hover
+      background-color: $base-color-blue
+      color: #fff
+  .title-bottom
+    color: $base-color-blue
+  .text-note-detail
+    text-align: center
+    font-weight: $base-font-weight
+  .list-story-issue
+    list-style-type: none
+    padding-left: 0
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+
++desktop
+  .block-common-contact
+    .block-content-top
+      border-radius: 10px
+      margin-bottom: 112px
+      padding: 40px 40px 8px
+    .title-contact
+      font-size: .24rem
+      margin-bottom: 40px
+    .block-content
+      display: flex
+      justify-content: space-between
+      .common-text
+        flex-shrink: 0
+        width: calc(50% - 16px)
+    .text-right
+      font-size: .16rem
+      margin-bottom: 16px
+      &:before,
+      &:after
+        width: 48px
+      span
+        padding: 0 48px
+    .button-contact
+      max-width: 408px
+      margin: 0 auto 16px
+      min-height: 67px
+      border-radius: 34px
+      box-shadow: 0 3px 6px rgba(0,0,0,.16)
+      font-size: .16rem
+    .block-content
+      max-width: 868px
+      margin: 0 auto
+      .common-text
+        margin-right: 16px
+    .title-bottom
+      font-size: .18rem
+      max-width: 300px
+      flex-shrink: 0
+      margin-right: 16px
+    .content-text
+      margin-bottom: 20px
+    .list-story-issue
+      max-width: 880px
+      margin: 0 auto
+      padding: 0 16px
+      li
+        width: calc(50% - 16px)
+        margin-bottom: 8px
+    .content-bottom
+      padding-left: 16px
+      display: flex
+      align-items: center
+      justify-content: space-between
+      max-width: 848px
+      margin: 0 auto 16px
+
++mobile
+  .block-common-contact
+    .block-content-top
+      border-radius: .2rem
+      padding: .64rem .48rem .32rem
+    .title-contact
+      font-size: .34rem
+      line-height: calc(60 / 34)
+      margin-bottom: .32rem
+    .text-right
+      margin-bottom: .32rem
+      &:before,
+      &:after
+        width: .4rem
+      span
+        padding: 0 .48rem
+    .button-contact
+      width: 5.76rem
+      min-height: .8rem
+      margin: 0 auto .32rem
+      border-radius: .34rem
+      box-shadow: 0 .03rem .06rem rgba(0,0,0,.16)
+    .block-content
+      .common-text
+        margin-bottom: .8rem
+    .text-note-detail
+      font-size: .22rem
+      margin-bottom: 0
+    .title-bottom
+      text-align: center
+      font-size: .28rem
+    .text-small
+      line-height: calc(50 / 24)
+    .list-story-issue
+      li
+        width: 5.76rem
+        margin: 0 auto
+        &:not(:last-child)
+          margin-bottom: .16rem
+      &.is-position
+        li
+          &:nth-child(even)
+            order: 1
+          &:last-child
+            margin-bottom: .16rem
+    .block-content-top
+      margin-bottom: 1.12rem
+    .title-bottom
+      margin-bottom: .32rem
+    .text-small
+      margin-bottom: .48rem
+
+
++desktop
+  .contact-free
+    .block-content-top
+      padding-bottom: 48px
+    .block-content
+      align-items: flex-end
+      .common-text
+        line-height: calc(23 / 13)
+      .content-right
+        width: 100%
+      .text-note-detail
+        margin-bottom: 0
+
+.block-common-contact.contact-index
+  .block-content-top
+    background-color: rgba(233,97,0,.4)
+  .title-contact
+    color: #e96100

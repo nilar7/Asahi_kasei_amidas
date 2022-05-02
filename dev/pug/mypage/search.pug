@@ -1,0 +1,825 @@
+extends ../_layouts/default
+
+block vars
+  -title        = '派遣求人検索'
+  -description  = ''
+  -keywords     = ''
+  -pageID       = 'mypage'
+  -pageSubID    = 'mypage-search'
+  -typePage     = 'type-a'
+  -path         = '..'
+  -imgPC        = path+'/img/'+pageID+'/'
+  -imgSP        = path+'/img/'+pageID+'/sp/'
+
+block container
+  include ../_parts/common_list_menu_04
+  +keyvisual('mypage-search','派遣求人検索')
+    +breadcrumbJapan('すべての条件から検索', [{title: '人材派遣トップ', url: '/mypage/'}])
+  section.section-mypage-search
+    .wrapper
+      form.form-mypage-search
+        .row-form.block-street
+          .block-row.is-flex
+            .row-title
+              span.title-big 地域選択
+            .row-content.is-flex
+              .row-fill
+                select.select-box.select-district
+                  option(value='') 都道府県をご選択ください
+                  option(value='北海道') 北海道
+                  option(value='青森県') 青森県
+                  option(value='岩手県') 岩手県
+                  option(value='宮城県') 宮城県
+                  option(value='秋田県') 秋田県
+                  option(value='福島県') 福島県
+                  option(value='茨城県') 茨城県
+                  option(value='栃木県') 栃木県
+                  option(value='群馬県') 群馬県
+                  option(value='埼玉県') 埼玉県
+                  option(value='千葉県') 千葉県
+                  option(value='東京都') 東京都
+                  option(value='神奈川県') 神奈川県
+                  option(value='新潟県') 新潟県
+                  option(value='富山県') 富山県
+                  option(value='石川県') 石川県
+                  option(value='福井県') 福井県
+                  option(value='山梨県') 山梨県
+                  option(value='長野県') 長野県
+                  option(value='岐阜県') 岐阜県
+                  option(value='静岡県') 静岡県
+                  option(value='愛知県') 愛知県
+                  option(value='三重県') 三重県
+                  option(value='滋賀県') 滋賀県
+                  option(value='京都府') 京都府
+                  option(value='大阪府') 大阪府
+                  option(value='兵庫県') 兵庫県
+                  option(value='奈良県') 奈良県
+                  option(value='和歌山県') 和歌山県
+                  option(value='鳥取県') 鳥取県
+                  option(value='島根県') 島根県
+                  option(value='岡山県') 岡山県
+                  option(value='広島県') 広島県
+                  option(value='山口県') 山口県
+                  option(value='徳島県') 徳島県
+                  option(value='香川県') 香川県
+                  option(value='愛媛県') 愛媛県
+                  option(value='高知県') 高知県
+                  option(value='福岡県') 福岡県
+                  option(value='佐賀県') 佐賀県
+                  option(value='長崎県') 長崎県
+                  option(value='熊本県') 熊本県
+                  option(value='大分県') 大分県
+                  option(value='宮崎県') 宮崎県
+                  option(value='鹿児島県') 鹿児島県
+                  option(value='沖縄県') 沖縄県
+              .row-fill
+                select.select-box.select-district
+                  option(value='') 市区町村をご選択ください
+                  option(value='北海道') 北海道
+                  option(value='青森県') 青森県
+                  option(value='岩手県') 岩手県
+                  option(value='宮城県') 宮城県
+                  option(value='秋田県') 秋田県
+                  option(value='福島県') 福島県
+                  option(value='茨城県') 茨城県
+                  option(value='栃木県') 栃木県
+                  option(value='群馬県') 群馬県
+                  option(value='埼玉県') 埼玉県
+                  option(value='千葉県') 千葉県
+                  option(value='東京都') 東京都
+                  option(value='神奈川県') 神奈川県
+                  option(value='新潟県') 新潟県
+                  option(value='富山県') 富山県
+                  option(value='石川県') 石川県
+                  option(value='福井県') 福井県
+                  option(value='山梨県') 山梨県
+                  option(value='長野県') 長野県
+                  option(value='岐阜県') 岐阜県
+                  option(value='静岡県') 静岡県
+                  option(value='愛知県') 愛知県
+                  option(value='三重県') 三重県
+                  option(value='滋賀県') 滋賀県
+                  option(value='京都府') 京都府
+                  option(value='大阪府') 大阪府
+                  option(value='兵庫県') 兵庫県
+                  option(value='奈良県') 奈良県
+                  option(value='和歌山県') 和歌山県
+                  option(value='鳥取県') 鳥取県
+                  option(value='島根県') 島根県
+                  option(value='岡山県') 岡山県
+                  option(value='広島県') 広島県
+                  option(value='山口県') 山口県
+                  option(value='徳島県') 徳島県
+                  option(value='香川県') 香川県
+                  option(value='愛媛県') 愛媛県
+                  option(value='高知県') 高知県
+                  option(value='福岡県') 福岡県
+                  option(value='佐賀県') 佐賀県
+                  option(value='長崎県') 長崎県
+                  option(value='熊本県') 熊本県
+                  option(value='大分県') 大分県
+                  option(value='宮崎県') 宮崎県
+                  option(value='鹿児島県') 鹿児島県
+                  option(value='沖縄県') 沖縄県
+        .row-form.block-search
+          .block-row.is-flex
+            .row-title
+              span.title-big キーワードで探す
+            .row-detail
+              .wrap-input-search.full-width
+                input.input-text(type='text' name='Search' value='' placeholder = '東京都  一般事務')
+        .row-form.js-faq-accordion
+          .block-row.js-accordion-heading.heading-outside
+            .row-title
+              span.title-big 路線
+              span.title-normal 路線を選ぶ
+          .block-accordion.js-accordion-content
+            .row-detail
+              .row-heading.js-accordion-question.js-checkbox
+                .wrapper-check
+                  label.is-padding
+                    input(type='checkbox' name='street' value='JR')
+                    span.checkbox-field-text JR
+              .block-option.js-accordion-answer
+                .block-row
+                  .row-sub-content
+                    .wrap-input.is-checkbox
+                      .vertical-item
+                        label
+                          input(type='checkbox' name='street' value='ＪＲ東北新幹線')
+                          span.checkbox-field-text ＪＲ東北新幹線
+                      .vertical-item
+                        label
+                          input(type='checkbox' name='street' value='ＪＲ上越新幹線')
+                          span.checkbox-field-text ＪＲ上越新幹線
+                      .vertical-item
+                        label
+                          input(type='checkbox' name='street' value='ＪＲ北陸新幹線(東京－上越妙高)')
+                          span.checkbox-field-text ＪＲ北陸新幹線(東京－上越妙高)
+                      .vertical-item
+                        label
+                          input(type='checkbox' name='street' value='ＪＲ東海道本線(東京－熱海)')
+                          span.checkbox-field-text ＪＲ東海道本線(東京－熱海)
+                      .vertical-item
+                        label
+                          input(type='checkbox' name='street' value='ＪＲ山手線')
+                          span.checkbox-field-text ＪＲ山手線
+                      .vertical-item
+                        label
+                          input(type='checkbox' name='street' value='ＪＲ武蔵野線')
+                          span.checkbox-field-text ＪＲ武蔵野線
+                      .vertical-item
+                        label
+                          input(type='checkbox' name='street' value='ＪＲ横浜線')
+                          span.checkbox-field-text ＪＲ横浜線
+                      .vertical-item
+                        label
+                          input(type='checkbox' name='street' value='ＪＲ南武線(川崎－立川)')
+                          span.checkbox-field-text ＪＲ南武線(川崎－立川)
+                      .vertical-item
+                        label
+                          input(type='checkbox' name='street' value='ＪＲ京浜東北線')
+                          span.checkbox-field-text ＪＲ京浜東北線
+                      .vertical-item
+                        label
+                          input(type='checkbox' name='street' value='ＪＲ横須賀線')
+                          span.checkbox-field-text ＪＲ横須賀線
+                      .vertical-item
+                        label
+                          input(type='checkbox' name='street' value='ＪＲ総武本線')
+                          span.checkbox-field-text ＪＲ総武本線
+                      .vertical-item
+                        label
+                          input(type='checkbox' name='street' value='ＪＲ総武線')
+                          span.checkbox-field-text ＪＲ総武線
+                      .vertical-item
+                        label
+                          input(type='checkbox' name='street' value='ＪＲ京葉線(東京－蘇我)')
+                          span.checkbox-field-text ＪＲ京葉線(東京－蘇我)
+                      .vertical-item
+                        label
+                          input(type='checkbox' name='street' value='ＪＲ東北本線(上野－盛岡)')
+                          span.checkbox-field-text ＪＲ東北本線(上野－盛岡)
+                      .vertical-item
+                        label
+                          input(type='checkbox' name='street' value='ＪＲ常磐線(上野－仙台)')
+                          span.checkbox-field-text ＪＲ常磐線(上野－仙台)
+                      .vertical-item
+                        label
+                          input(type='checkbox' name='street' value='ＪＲ常磐線(北千住－取手)')
+                          span.checkbox-field-text ＪＲ常磐線(北千住－取手)
+                      .vertical-item
+                        label
+                          input(type='checkbox' name='street' value='ＪＲ埼京線')
+                          span.checkbox-field-text ＪＲ埼京線
+                      .vertical-item
+                        label
+                          input(type='checkbox' name='street' value='ＪＲ高崎線')
+                          span.checkbox-field-text ＪＲ高崎線
+                      .vertical-item
+                        label
+                          input(type='checkbox' name='street' value='ＪＲ中央線')
+                          span.checkbox-field-text ＪＲ中央線
+                      .vertical-item
+                        label
+                          input(type='checkbox' name='street' value='ＪＲ中央本線(東京－松本)')
+                          span.checkbox-field-text ＪＲ中央本線(東京－松本)
+                      .vertical-item
+                        label
+                          input(type='checkbox' name='street' value='ＪＲ青梅線')
+                          span.checkbox-field-text ＪＲ青梅線
+                      .vertical-item
+                        label
+                          input(type='checkbox' name='street' value='ＪＲ五日市線')
+                          span.checkbox-field-text ＪＲ五日市線
+                      .vertical-item
+                        label
+                          input(type='checkbox' name='street' value='ＪＲ八高線')
+                          span.checkbox-field-text ＪＲ八高線
+                      .vertical-item
+                        label
+                          input(type='checkbox' name='street' value='ＪＲ湘南新宿ライン(高崎－東海道本線)')
+                          span.checkbox-field-text ＪＲ湘南新宿ライン(高崎－東海道本線)
+                      .vertical-item
+                        label
+                          input(type='checkbox' name='street' value='ＪＲ湘南新宿ライン(東北本線－横須賀)')
+                          span.checkbox-field-text ＪＲ湘南新宿ライン(東北本線－横須賀)
+                      .vertical-item
+                        label
+                          input(type='checkbox' name='street' value='ＪＲ上野東京ライン')
+                          span.checkbox-field-text ＪＲ上野東京ライン
+                      .vertical-item
+                        label
+                          input(type='checkbox' name='street' value='ＪＲ相鉄直通線')
+                          span.checkbox-field-text ＪＲ相鉄直通線
+                      .vertical-item
+                        label
+                          input(type='checkbox' name='street' value='ＪＲ東海道新幹線')
+                          span.checkbox-field-text ＪＲ東海道新幹線
+
+            .row-detail
+              .row-heading.js-accordion-question.js-checkbox
+                .wrapper-check
+                  label.is-padding
+                    input(type='checkbox' name='railway' value='京王電鉄')
+                    span.checkbox-field-text 京王電鉄
+              .block-option.js-accordion-answer
+                .block-row
+                  .row-sub-content
+                    .wrap-input.is-checkbox
+                      .vertical-item
+                        label
+                          input(type='checkbox' name='street' value='ＪＲ東北新幹線')
+                          span.checkbox-field-text ＪＲ東北新幹線
+                      .vertical-item
+                        label
+                          input(type='checkbox' name='street' value='ＪＲ上越新幹線')
+                          span.checkbox-field-text ＪＲ上越新幹線
+
+            .row-detail
+              .row-heading.js-accordion-question.js-checkbox
+                .wrapper-check
+                  label.is-padding
+                    input(type='checkbox' name='electric-railway' value='京急電鉄')
+                    span.checkbox-field-text 京急電鉄
+              .block-option.js-accordion-answer
+                .block-row
+                  .row-sub-content
+                    .wrap-input.is-checkbox
+                      .vertical-item
+                        label
+                          input(type='checkbox' name='street' value='ＪＲ東北新幹線')
+                          span.checkbox-field-text ＪＲ東北新幹線
+                      .vertical-item
+                        label
+                          input(type='checkbox' name='street' value='ＪＲ上越新幹線')
+                          span.checkbox-field-text ＪＲ上越新幹線
+
+            .row-detail
+              .row-heading.js-accordion-question.js-checkbox
+                .wrapper-check
+                  label.is-padding
+                    input(type='checkbox' name='electric-railway' value='京成電鉄')
+                    span.checkbox-field-text 京成電鉄
+              .block-option.js-accordion-answer
+                .block-row
+                  .row-sub-content
+                    .wrap-input.is-checkbox
+                      .vertical-item
+                        label
+                          input(type='checkbox' name='street' value='ＪＲ東北新幹線')
+                          span.checkbox-field-text ＪＲ東北新幹線
+                      .vertical-item
+                        label
+                          input(type='checkbox' name='street' value='ＪＲ上越新幹線')
+                          span.checkbox-field-text ＪＲ上越新幹線
+
+            .row-detail
+              .row-heading.js-accordion-question.js-checkbox
+                .wrapper-check
+                  label.is-padding
+                    input(type='checkbox' name='corporation' value='東急電鉄')
+                    span.checkbox-field-text 東急電鉄
+              .block-option.js-accordion-answer
+                .block-row
+                  .row-sub-content
+                    .wrap-input.is-checkbox
+                      .vertical-item
+                        label
+                          input(type='checkbox' name='street' value='ＪＲ東北新幹線')
+                          span.checkbox-field-text ＪＲ東北新幹線
+                      .vertical-item
+                        label
+                          input(type='checkbox' name='street' value='ＪＲ上越新幹線')
+                          span.checkbox-field-text ＪＲ上越新幹線
+
+            .row-detail
+              .row-heading.js-accordion-question.js-checkbox
+                .wrapper-check
+                  label.is-padding
+                    input(type='checkbox' name='metro' value='東京メトロ')
+                    span.checkbox-field-text 東京メトロ
+              .block-option.js-accordion-answer
+                .block-row
+                  .row-sub-content
+                    .wrap-input.is-checkbox
+                      .vertical-item
+                        label
+                          input(type='checkbox' name='street' value='ＪＲ東北新幹線')
+                          span.checkbox-field-text ＪＲ東北新幹線
+                      .vertical-item
+                        label
+                          input(type='checkbox' name='street' value='ＪＲ上越新幹線')
+                          span.checkbox-field-text ＪＲ上越新幹線
+
+            .row-detail
+              .row-heading.js-accordion-question.js-checkbox
+                .wrapper-check
+                  label.is-padding
+                    input(type='checkbox' name='railway' value='東武鉄道')
+                    span.checkbox-field-text 東武鉄道
+              .block-option.js-accordion-answer
+                .block-row
+                  .row-sub-content
+                    .wrap-input.is-checkbox
+                      .vertical-item
+                        label
+                          input(type='checkbox' name='street' value='ＪＲ東北新幹線')
+                          span.checkbox-field-text ＪＲ東北新幹線
+                      .vertical-item
+                        label
+                          input(type='checkbox' name='street' value='ＪＲ上越新幹線')
+                          span.checkbox-field-text ＪＲ上越新幹線
+
+            .row-detail
+              .row-heading.js-accordion-question.js-checkbox
+                .wrapper-check
+                  label.is-padding
+                    input(type='checkbox' name='transportation' value='都営地下鉄・都営交通')
+                    span.checkbox-field-text 都営地下鉄・都営交通
+              .block-option.js-accordion-answer
+                .block-row
+                  .row-sub-content
+                    .wrap-input.is-checkbox
+                      .vertical-item
+                        label
+                          input(type='checkbox' name='street' value='ＪＲ東北新幹線')
+                          span.checkbox-field-text ＪＲ東北新幹線
+                      .vertical-item
+                        label
+                          input(type='checkbox' name='street' value='ＪＲ上越新幹線')
+                          span.checkbox-field-text ＪＲ上越新幹線
+
+            .row-detail
+              .row-heading.js-accordion-question.js-checkbox
+                .wrapper-check
+                  label.is-padding
+                    input(type='checkbox' name='railway' value='西武鉄道')
+                    span.checkbox-field-text 西武鉄道
+              .block-option.js-accordion-answer
+                .block-row
+                  .row-sub-content
+                    .wrap-input.is-checkbox
+                      .vertical-item
+                        label
+                          input(type='checkbox' name='street' value='ＪＲ東北新幹線')
+                          span.checkbox-field-text ＪＲ東北新幹線
+                      .vertical-item
+                        label
+                          input(type='checkbox' name='street' value='ＪＲ上越新幹線')
+                          span.checkbox-field-text ＪＲ上越新幹線
+
+        .row-form.js-faq-accordion
+          .block-row.js-accordion-heading.heading-outside
+            .row-title
+              span.title-big 職種
+              span.title-normal 職種を選ぶ
+          .block-accordion.js-accordion-content
+            .row-detail
+              .row-heading.js-accordion-question.js-checkbox
+                .wrapper-check
+                  label.is-padding
+                    input(type='checkbox' name='office' value='オフィスワーク・事務（すべて選択）')
+                    span.checkbox-field-text オフィスワーク・事務（すべて選択）
+              .block-option.js-accordion-answer
+                .block-row
+                  .row-sub-content
+                    .wrap-input.is-checkbox
+                      .vertical-item
+                        label
+                          input(type='checkbox' name='job' value='一般事務')
+                          span.checkbox-field-text 一般事務
+                      .vertical-item
+                        label
+                          input(type='checkbox' name='job' value='営業事務')
+                          span.checkbox-field-text 営業事務
+                      .vertical-item
+                        label
+                          input(type='checkbox' name='job' value='総務・人事・広報')
+                          span.checkbox-field-text 総務・人事・広報
+                      .vertical-item
+                        label
+                          input(type='checkbox' name='job' value='会計・財務')
+                          span.checkbox-field-text 会計・財務
+                      .vertical-item
+                        label
+                          input(type='checkbox' name='job' value='貿易事務')
+                          span.checkbox-field-text 貿易事務
+                      .vertical-item
+                        label
+                          input(type='checkbox' name='job' value='秘書')
+                          span.checkbox-field-text 秘書
+                      .vertical-item
+                        label
+                          input(type='checkbox' name='job' value='受付')
+                          span.checkbox-field-text 受付
+                      .vertical-item
+                        label
+                          input(type='checkbox' name='job' value='通訳・翻訳')
+                          span.checkbox-field-text 通訳・翻訳
+                      .vertical-item
+                        label
+                          input(type='checkbox' name='job' value='企画・マーケティング')
+                          span.checkbox-field-text 企画・マーケティング
+                      .vertical-item
+                        label
+                          input(type='checkbox' name='job' value='その他オフィスワーク・事務')
+                          span.checkbox-field-text その他オフィスワーク・事務
+
+            .row-detail
+              .row-heading.js-accordion-question.js-checkbox
+                .wrapper-check
+                  label.is-padding
+                    input(type='checkbox' name='service' value='営業・販売・サービス（すべて選択）')
+                    span.checkbox-field-text 営業・販売・サービス（すべて選択）
+              .block-option.js-accordion-answer
+                .block-row
+                  .row-sub-content
+                    .wrap-input.is-checkbox
+                      .vertical-item
+                        label
+                          input(type='checkbox' name='job' value='一般事務')
+                          span.checkbox-field-text 一般事務
+                      .vertical-item
+                        label
+                          input(type='checkbox' name='job' value='営業事務')
+                          span.checkbox-field-text 営業事務
+
+            .row-detail
+              .row-heading.js-accordion-question.js-checkbox
+                .wrapper-check
+                  label.is-padding
+                    input(type='checkbox' name='technology' value='IT・エンジニア・技術（すべて選択）')
+                    span.checkbox-field-text IT・エンジニア・技術（すべて選択）
+              .block-option.js-accordion-answer
+                .block-row
+                  .row-sub-content
+                    .wrap-input.is-checkbox
+                      .vertical-item
+                        label
+                          input(type='checkbox' name='job' value='一般事務')
+                          span.checkbox-field-text 一般事務
+                      .vertical-item
+                        label
+                          input(type='checkbox' name='job' value='営業事務')
+                          span.checkbox-field-text 営業事務
+
+            .row-detail
+              .row-heading.js-accordion-question.js-checkbox
+                .wrapper-check
+                  label.is-padding
+                    input(type='checkbox' name='creative' value='クリエイティブ（すべて選択）')
+                    span.checkbox-field-text クリエイティブ（すべて選択）
+              .block-option.js-accordion-answer
+                .block-row
+                  .row-sub-content
+                    .wrap-input.is-checkbox
+                      .vertical-item
+                        label
+                          input(type='checkbox' name='job' value='一般事務')
+                          span.checkbox-field-text 一般事務
+                      .vertical-item
+                        label
+                          input(type='checkbox' name='job' value='営業事務')
+                          span.checkbox-field-text 営業事務
+
+            .row-detail
+              .row-heading.js-accordion-question.js-checkbox
+                .wrapper-check
+                  label.is-padding
+                    input(type='checkbox' name='development' value='研究・開発（すべて選択）')
+                    span.checkbox-field-text 研究・開発（すべて選択）
+              .block-option.js-accordion-answer
+                .block-row
+                  .row-sub-content
+                    .wrap-input.is-checkbox
+                      .vertical-item
+                        label
+                          input(type='checkbox' name='job' value='一般事務')
+                          span.checkbox-field-text 一般事務
+                      .vertical-item
+                        label
+                          input(type='checkbox' name='job' value='営業事務')
+                          span.checkbox-field-text 営業事務
+
+            .row-detail
+              .row-heading.js-accordion-question.js-checkbox
+                .wrapper-check
+                  label.is-padding
+                    input(type='checkbox' name='estate' value='住宅・建築・不動産（すべて選択）')
+                    span.checkbox-field-text 住宅・建築・不動産（すべて選択）
+              .block-option.js-accordion-answer
+                .block-row
+                  .row-sub-content
+                    .wrap-input.is-checkbox
+                      .vertical-item
+                        label
+                          input(type='checkbox' name='job' value='一般事務')
+                          span.checkbox-field-text 一般事務
+                      .vertical-item
+                        label
+                          input(type='checkbox' name='job' value='営業事務')
+                          span.checkbox-field-text 営業事務
+
+            .row-detail
+              .row-heading.js-accordion-question.js-checkbox
+                .wrapper-check
+                  label.is-padding
+                    input(type='checkbox' name='education' value='医療・介護・福祉・教育（すべて選択）')
+                    span.checkbox-field-text 医療・介護・福祉・教育（すべて選択）
+              .block-option.js-accordion-answer
+                .block-row
+                  .row-sub-content
+                    .wrap-input.is-checkbox
+                      .vertical-item
+                        label
+                          input(type='checkbox' name='job' value='一般事務')
+                          span.checkbox-field-text 一般事務
+                      .vertical-item
+                        label
+                          input(type='checkbox' name='job' value='営業事務')
+                          span.checkbox-field-text 営業事務
+
+            .row-detail
+              .row-heading.js-accordion-question.js-checkbox
+                .wrapper-check
+                  label.is-padding
+                    input(type='checkbox' name='manufacturing' value='製造・物流・軽作業（すべて選択）')
+                    span.checkbox-field-text 製造・物流・軽作業（すべて選択）
+              .block-option.js-accordion-answer
+                .block-row
+                  .row-sub-content
+                    .wrap-input.is-checkbox
+                      .vertical-item
+                        label
+                          input(type='checkbox' name='job' value='一般事務')
+                          span.checkbox-field-text 一般事務
+                      .vertical-item
+                        label
+                          input(type='checkbox' name='job' value='営業事務')
+                          span.checkbox-field-text 営業事務
+
+            .row-detail
+              .row-heading.js-accordion-question.js-checkbox
+                .wrapper-check
+                  label.is-padding
+                    input(type='checkbox' name='other' value='その他（すべて選択）')
+                    span.checkbox-field-text その他（すべて選択）
+              .block-option.js-accordion-answer
+                .block-row
+                  .row-sub-content
+                    .wrap-input.is-checkbox
+                      .vertical-item
+                        label
+                          input(type='checkbox' name='job' value='一般事務')
+                          span.checkbox-field-text 一般事務
+                      .vertical-item
+                        label
+                          input(type='checkbox' name='job' value='営業事務')
+                          span.checkbox-field-text 営業事務
+
+        .row-form.block-commuting
+          .block-row
+            .row-title.is-flex
+              span.title-big 通勤手段
+              .wrapper-check
+                label.is-padding
+                  input(type='checkbox' name='possible' value='車通勤可能')
+                  span.checkbox-field-text 車通勤可能
+
+        .row-form
+          .block-row.is-flex
+            .row-title
+              span.title-big 給与
+            .row-detail.block-salary
+              .row-content.is-flex
+                .row-fill
+                  select.select-box.select-normal
+                    option(value='') 都道府県をご選択ください
+                    option(value='北海道') 北海道
+                    option(value='青森県') 青森県
+                span.text-character 〜
+                .row-fill
+                  select.select-box.select-normal
+                    option(value='') 都道府県をご選択ください
+                    option(value='北海道') 北海道
+                    option(value='青森県') 青森県
+
+        .row-form.block-closing
+          .block-row.is-flex
+            .row-title
+              span.title-big 終業開始月
+            .row-detail
+              .row-content.is-flex
+                .row-fill
+                  select.select-box.select-normal
+                    option(value='') ご選択ください
+                    option(value='北海道') 北海道
+                    option(value='青森県') 青森県
+
+        .row-form
+          .block-row.is-flex.block-time
+            .row-title
+              span.title-big 就業期間
+            .row-detail
+              .wrap-input.is-checkbox
+                .vertical-item
+                  label
+                    input(type='checkbox' name='work' value='単発（●日以内）')
+                    span.checkbox-field-text 単発（●日以内）
+                .vertical-item.is-width
+                  label
+                    input(type='checkbox' name='work' value='短期のお仕事（6ヶ月未満）')
+                    span.checkbox-field-text 短期のお仕事（6ヶ月未満）
+                .vertical-item.is-width
+                  label
+                    input(type='checkbox' name='work' value='短期のお仕事（6ヶ月未満）')
+                    span.checkbox-field-text 短期のお仕事（6ヶ月未満）
+
+        .row-form
+          .block-bottom.js-faq-accordion
+            .block-row.js-accordion-heading.heading-outside.block-time
+              .block-top.is-flex
+                .row-title
+                  span.title-big こだわり条件
+                .row-detail
+                  .wrap-input.is-checkbox
+                    .vertical-item
+                      label
+                        input(type='checkbox' name='conditions' value='全部にあてはまる')
+                        span.checkbox-field-text 全部にあてはまる
+                    .vertical-item.is-width
+                      label
+                        input(type='checkbox' name='conditions' value='どれか１つでもあてはまる')
+                        span.checkbox-field-text どれか１つでもあてはまる
+            .block-sub.js-accordion-content
+              .row-sub-content.block-commitment
+                .block-row
+                  .row-form.is-flex
+                    .row-title
+                      span.title-big 働き方の条件
+                    .row-detail
+                      .wrap-input.is-checkbox
+                        .vertical-item
+                          label
+                            input(type='checkbox' name='work-style' value='週5日勤務')
+                            span.checkbox-field-text 週5日勤務
+                        .vertical-item
+                          label
+                            input(type='checkbox' name='work-style' value='週4日以内勤務')
+                            span.checkbox-field-text 週4日以内勤務
+                        .vertical-item
+                          label
+                            input(type='checkbox' name='work-style' value='土・日・祝日のみ勤務')
+                            span.checkbox-field-text 土・日・祝日のみ勤務
+                        .vertical-item
+                          label
+                            input(type='checkbox' name='work-style' value='フルタイム（6～8時間）')
+                            span.checkbox-field-text フルタイム（6～8時間）
+                        .vertical-item
+                          label
+                            input(type='checkbox' name='work-style' value='フルタイム以外（6時間未満）')
+                            span.checkbox-field-text フルタイム以外（6時間未満）
+                        .vertical-item
+                          label
+                            input(type='checkbox' name='work-style' value='残業なし')
+                            span.checkbox-field-text 残業なし
+                        .vertical-item
+                          label
+                            input(type='checkbox' name='work-style' value='残業少なめ（20時間未満）')
+                            span.checkbox-field-text 残業少なめ（20時間未満）
+                        .vertical-item
+                          label
+                            input(type='checkbox' name='work-style' value='残業多め（20時間以上）')
+                            span.checkbox-field-text 残業多め（20時間以上）
+                        .vertical-item
+                          label
+                            input(type='checkbox' name='work-style' value='シフト制')
+                            span.checkbox-field-text シフト制
+                        .vertical-item
+                          label
+                            input(type='checkbox' name='work-style' value='夜勤あり')
+                            span.checkbox-field-text 夜勤あり
+                        .vertical-item
+                          label
+                            input(type='checkbox' name='work-style' value='扶養範囲内')
+                            span.checkbox-field-text 扶養範囲内
+                        .vertical-item
+                          label
+                            input(type='checkbox' name='work-style' value='在宅勤務あり')
+                            span.checkbox-field-text 在宅勤務あり
+
+              .row-sub-content.block-commitment
+                .block-row
+                  .row-form.is-flex
+                    .row-title
+                      span.title-big その他の条件
+                    .row-detail
+                      .wrap-input.is-checkbox
+                        .vertical-item
+                          label
+                            input(type='checkbox' name='other-conditions' value='急募')
+                            span.checkbox-field-text 急募
+                        .vertical-item
+                          label
+                            input(type='checkbox' name='other-conditions' value='未経験者歓迎')
+                            span.checkbox-field-text 未経験者歓迎
+                        .vertical-item
+                          label
+                            input(type='checkbox' name='other-conditions' value='ブランク応援')
+                            span.checkbox-field-text ブランク応援
+                        .vertical-item
+                          label
+                            input(type='checkbox' name='other-conditions' value='新卒・第2新卒応援')
+                            span.checkbox-field-text 新卒・第2新卒応援
+                        .vertical-item
+                          label
+                            input(type='checkbox' name='other-conditions' value='フルタイム以外（6時間未満）')
+                            span.checkbox-field-text フルタイム以外（6時間未満）
+                        .vertical-item
+                          label
+                            input(type='checkbox' name='other-conditions' value='残業なし')
+                            span.checkbox-field-text 残業なし
+                        .vertical-item
+                          label
+                            input(type='checkbox' name='other-conditions' value='残業少なめ（20時間未満）')
+                            span.checkbox-field-text 残業少なめ（20時間未満）
+                        .vertical-item
+                          label
+                            input(type='checkbox' name='other-conditions' value='残業多め（20時間以上）')
+                            span.checkbox-field-text 残業多め（20時間以上）
+                        .vertical-item
+                          label
+                            input(type='checkbox' name='other-conditions' value='シフト制')
+                            span.checkbox-field-text シフト制
+                        .vertical-item
+                          label
+                            input(type='checkbox' name='other-conditions' value='夜勤あり')
+                            span.checkbox-field-text 夜勤あり
+                        .vertical-item
+                          label
+                            input(type='checkbox' name='other-conditions' value='扶養範囲内')
+                            span.checkbox-field-text 扶養範囲内
+                        .vertical-item
+                          label
+                            input(type='checkbox' name='other-conditions' value='在宅勤務あり')
+                            span.checkbox-field-text 在宅勤務あり
+        .wrap-button
+          button.common-button-inquiry(type='submit' value='Button Submit' name='confirmation') この条件で検索
+      include ../_parts/common_contact_05
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

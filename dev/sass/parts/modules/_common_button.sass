@@ -1,0 +1,320 @@
+
+.common-button-inquiry
+  display: flex
+  align-items: center
+  justify-content: center
+  background-color: $base-color-orange
+  color: #fff
+  font-weight: 700
+  margin: 0 auto
+  text-decoration: none
+  transition: background-color .26s
+  &.is-arrow
+    position: relative
+    &::before
+      content: ""
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      background: center/contain no-repeat
+  span
+    position: relative
+    &:before,
+    &:after
+      position: absolute
+      content: ""
+      transition: opacity .26s
+      background: center / 100% auto no-repeat
+    &:before
+      background-image: url(../img/common/footer_icon_01.svg)
+    &:after
+      background-image: url(../img/common/footer_icon_02.svg)
+      opacity: 0
+  &:hover
+    background-color: #ff791a
+  &:hover span:after
+    opacity: 1
+  &:hover span:before
+    opacity: 0
+  &.background-blue
+    background-color: #4dbcef
+
++desktop
+  .common-button-inquiry
+    width: 320px
+    min-height: 64px
+    font-size: 14px
+    border-radius: 50px
+    box-shadow: 0 3px 6px rgba(0,0,0,.16)
+    &.is-arrow
+      &::before
+        right: 18px
+        background-image: url("../img/common/button_icn_arrow.svg")
+        width: 17px
+        height: 13px
+    span
+      padding-left: 40px
+      &:before,
+      &:after
+        left: 0
+      &:before
+        top: 2px
+        width: 23px
+        height: 17px
+      &:after
+        width: 23px
+        height: 25px
+        top: -6px
+    &.background-blue
+      min-height: 56px
+
++mobile
+  .common-button-inquiry
+    width: 6.4rem
+    min-height: 1.12rem
+    border-radius: .56rem
+    font-size: .24rem
+    &.is-arrow
+      min-height: .96rem
+      border-radius: .2rem
+      &::before
+        background-image: url("../img/common/sp/button_icn_arrow.svg")
+        right: .26rem
+        width: .15rem
+        height: .24rem
+    span
+      padding-left: .48rem
+      &:before,
+      &:after
+        left: -.16rem
+      &:before
+        width: .44rem
+        height: .32rem
+      &:after
+        width: .4rem
+        height: .42rem
+        top: -.09rem
+    &.background-blue
+      width: 5.76rem
+      min-height: .96rem
+
+.middle-button
+  display: block
+  text-decoration: none
+  border: 1px solid $base-color-light-blue
+  color: $base-color-light-blue
+  text-align: center
+  letter-spacing: .08em
+  transition: color .3s, border-color .3s
+  &:hover
+    border-color: $base-color-blue
+    color: $base-color-blue
+
++desktop
+  .middle-button
+    width: 480px
+    border-radius: 100px
+    min-height: 56px
+    padding: 15px 20px
+    font-size: .18rem
+
++mobile
+  .middle-button
+    width: 4.3rem
+    border-radius: 1rem
+    min-height: .96rem
+    padding: .25rem .2rem
+    margin: 0 auto
+    font-size: .34rem
+
+.common-block-arrow
+  position: absolute
+  bottom: 0
+  right: 0
+  background-color: #fff
+  &:after
+    position: absolute
+    content: ""
+    background: url(../img/common/icon_arrow_01.svg) center no-repeat
+    border: solid 1px rgba(0,91,170,.3)
+    border-radius: 50%
+    transform: translate(-50%,-50%)
+    transition: border-color .3s
+  &:hover:after
+    border-color: $base-color-blue
+
++desktop
+  .common-block-arrow
+    width: 80px
+    height: 80px
+    &:after
+      top: 55%
+      left: 55%
+      width: 40px
+      height: 40px
+      background-size: 20px 20px
+
++mobile
+  .common-block-arrow
+    width: .96rem
+    height: .96rem
+    &:after
+      background-image: url(../img/client/sp/client_icon_02.svg)
+      width: .64rem
+      height: .64rem
+      background-size: .15rem .22rem
+      border-width: .02rem
+      top: 58%
+      left: 58%
+
+.common-big-button
+  display: flex
+  align-items: center
+  background-color: $base-color-blue
+  color: #fff
+  font-weight: 700
+  margin: 0 auto
+  text-decoration: none
+  transition: background-color .26s
+  &:hover
+    background-color: #036fcc
+
++desktop
+  .common-big-button
+    justify-content: center
+    font-size: .16rem
+    width: 672px
+    min-height: 112px
+    box-shadow: 0 3px 6px rgba(0,0,0,.16)
+
++mobile
+  .common-big-button
+    font-size: .25rem
+    width: 100%
+    min-height: 2.08rem
+    box-shadow: 0 .03rem .06rem rgba(0,0,0,.16)
+    line-height: calc(48 / 26)
+    padding: 0 1.76rem 0 .96rem
+    &.is-arrow
+    position: relative
+    &:after
+      position: absolute
+      content: ""
+      top: 51%
+      transform: translateY(-50%)
+      background: url(../img/client/sp/icon_arrow_right_01.svg) center/100% auto no-repeat
+      right: 1.76rem
+      width: .6rem
+      height: .6rem
+
+.button-small-arrow
+  position: relative
+  display: flex
+  align-items: center
+  justify-content: center
+  text-decoration: none
+  &:after
+    position: absolute
+    content: ""
+    top: 50%
+    transform: translateY(-50%)
+    background: center / 100% auto no-repeat
+  &.is-blue
+    background-color: $base-color-blue
+    color: #fff
+    transition: background-color .26s
+    &:hover
+      background-color: #036fcc
+    &:after
+      background-image: url(../img/client/client_icon_arrow_white_02.svg)
+  &.is-white
+    border: solid 1px #b2cde5
+    color: $base-color-blue
+    transition: border-color .26s
+    background-color: #fff
+    &:hover
+      border-color: $base-color-blue
+    &:after
+      background-image: url(../img/client/client_icon_arrow_blue_02.svg)
+
++desktop
+  .button-small-arrow
+    font-size: .14rem
+    min-height: 48px
+    padding: 8px 56px 8px 48px
+    &:after
+      width: 9px
+      height: 12px
+      right: 42px
+    &.is-blue
+      width: 174px
+    &.is-white
+      width: 189px
+
++mobile
+  .button-small-arrow
+    width: 4rem
+    min-height: .96rem
+    margin: 0 auto
+    padding: .16rem .32rem
+    &:after
+      width: .09rem
+      height: .12rem
+      right: .24rem
+
+.common-button-small
+  border: solid 1px $base-color-blue
+  color: $base-color-blue
+  font-family: "Alata", sans-serif
+  display: flex
+  align-items: center
+  justify-content: center
+  font-weight: $base-font-weight
+  transition: background-color .26s, color .26s
+  text-decoration: none
+  &:hover
+    background-color: $base-color-blue
+    color: #fff
+
++desktop
+  .common-button-small
+    font-size: .14rem
+    border-radius: 50px
+    width: 197px
+    min-height: 48px
+
++mobile
+  .common-button-small
+    font-size: .34rem
+    border-radius: 5rem
+    width: 4.32rem
+    min-height: .96rem
+    border-width: .02rem
+
+.common-button-arrow
+  text-decoration: none
+  border: solid 1px #b2cde5
+  text-align: center
+  display: flex
+  align-items: center
+  justify-content: center
+  color: $base-color-blue
+  position: relative
+  transition: border-color .26s
+  &:after
+    position: absolute
+    content: ""
+    top: 50%
+    transform: translateY(-50%)
+    background: url(../img/recruit/recruit_icon_arrow_02.svg) center / 100% auto no-repeat
+  &:hover
+    border-color: $base-color-blue
+
++desktop
+  .common-button-arrow
+    min-height: 48px
+    padding: 0 32px
+    &:after
+      width: 12px
+      height: 9px
+      right: 13px

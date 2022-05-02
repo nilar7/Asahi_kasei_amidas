@@ -1,0 +1,54 @@
+ul.list-menu-bottom
+  -
+    var
+      list = [
+        {
+          title: '拠点一覧TOP',
+          url: '/company/map/index.html',
+          pageName: 'company-map'
+        },
+        {
+          title: '東京都：本社',
+          url: '/company/map/tokyo.html',
+          pageName: 'company-tokyo'
+        },
+        {
+          title: '川崎'
+        },
+        {
+          title: '袖ヶ浦'
+        },
+        {
+          title: '名古屋'
+        },
+        {
+          title: '富士'
+        },
+        {
+          title: '大阪'
+        },
+        {
+          title: '守山'
+        },
+        {
+          title: '水島'
+        },
+        {
+          title: '福岡'
+        },
+        {
+          title: '延岡'
+        },
+        {
+          title: '宮崎'
+        },
+        {
+          title: '大分'
+        },
+        {
+          title: '日向'
+        }
+      ];
+  each item in list
+    li(class=pageSubID==item.pageName?'item-company active-menu': 'item-company')
+      a(href=item.url?path+item.url: '#')!=item.title

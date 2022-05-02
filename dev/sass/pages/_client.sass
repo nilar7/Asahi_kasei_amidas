@@ -1,0 +1,3848 @@
+.section-client
+  .common-news-list .news-category
+    border-radius: 0
+  .common-news-list
+    .news-detail
+      border-color: rgba(0,91,170,.3)
+      &:hover
+        border-color: $base-color-blue
+        border-top-color: rgba(0,91,170,.3)
+    .news-link
+      &::after
+        background-image: url(../img/common/icon_arrow_01.svg)
+    .news-time,
+    .news-link:hover .news-title,
+    .arrow a
+      color: $base-color-blue
+    .news-time
+      font-family: "Alata", sans-serif
+      opacity: 0
+      transition: opacity .26s
+      .wf-active &
+        opacity: 1
+  .news-category,
+  .common-list-pagination .current,
+  .common-list-pagination li a:hover
+    background-color: $base-color-blue
+  .common-list-pagination
+    a,span
+      border-color: $base-color-blue
+    .dots
+      color: $base-color-blue
+    .arrow a:hover
+      background-color: #fff
+
++desktop
+  .section-client
+    padding: 64px 16px 80px
+    .common-title:before
+      border-radius: 0
+    .common-content-aside
+      margin-top: 56px
+    .block-pagination
+      text-align: left
+    .common-news-list
+      margin-bottom: 64px
+    .news-category
+      padding-bottom: 3px
+
+  .is-mac
+    .section-client
+      .news-category
+        padding-top: 3px
+        padding-bottom: 3px
+
++mobile
+  .section-client
+    padding-top: .64rem
+    padding-bottom: 1.12rem
+    .common-title
+      margin-bottom: .64rem
+    .common-news-list
+      .news-title
+        -webkit-line-clamp: 2
+    .common-content-aside
+      .side-bar
+        margin-bottom: .8rem
+
+.section-client-detail
+  .post-time
+    display: flex
+    align-items: center
+    opacity: 0
+    transition: opacity .26s
+    time
+      flex-shrink: 0
+    .wf-active &
+      opacity: 1
+    .highlight
+      color: #fff
+      background: $base-color-blue
+      text-align: center
+  .wrapper-link
+    margin: 0 auto
+  .block-pagination-line
+    .common-list-pagination:after
+      background-color: $base-color-blue
+.button-common-line.is-style-direct
+  color: #202020
+.common-list-pagination
+  li
+    a
+      color: $base-color-blue
+  .arrow
+    transition: color .26s
+    a:before
+      background-image: url(../img/common/icon_arrow_01.svg)
+    a
+      &:hover
+        color: $base-color-blue
+        opacity: 1
+  .next
+    a:before
+      transform: none
+  .prev
+    a:before
+      transform: scale(-1)
+
++desktop
+  .section-client-detail
+    padding: 64px 24px 112px
+    .inner-wrapper
+      max-width: 848px
+      margin: 0 auto
+    .title-detail
+      font-size: .24rem
+      margin-bottom: 40px
+    .post-time
+      margin-bottom: 64px
+      time
+        width: 85px
+        margin-right: 24px
+        font-size: .14rem
+      .highlight
+        padding: 3px 5px
+        min-width: 112px
+    .post-title
+      font-size: .18rem
+      margin-bottom: 24px
+    .post-text
+      line-height: calc(30 / 13)
+      margin-bottom: 16px
+    .block-pagination-line
+      margin-bottom: 80px
+    .wrapper-link
+      width: 320px
+      margin-bottom: 112px
+  .common-list-pagination
+    .arrow a:before
+      width: 20px
+      height: 20px
+      top: 9px
+    .prev
+      a:before
+        top: 10px
+  .is-safari
+    .common-list-pagination
+      .arrow
+        a
+          &:before
+            top: 10px
+      .prev
+        a
+          &:before
+            top: 11px
+
++mobile
+  .breadcrumb-list
+    &.breadcrumb-detail
+      padding-right: .18rem
+      letter-spacing: -.03em
+  .section-client-detail
+    padding: .8rem 0 .6rem
+    .inner-wrapper
+      padding: 0 .32rem
+    .title-detail
+      font-size: .34rem
+      line-height: calc(60 / 34)
+      margin-bottom: .48rem
+    .post-time
+      margin-bottom: .8rem
+      time
+        margin-right: .32rem
+      .highlight
+        font-size: .22rem
+        padding: .01rem .05rem .03rem
+        min-width: 1.72rem
+    .post-title
+      font-size: .28rem
+      margin-bottom: .32rem
+    .post-text
+      line-height: calc(50 / 24)
+      margin-bottom: .16rem
+    .content-text
+      margin-bottom: 1.44rem
+    .block-pagination-line
+      margin-bottom: 1.12rem
+    .wrapper-link
+      width: 3.36rem
+      margin-bottom: 2rem
+    .common-big-button
+      min-height: 1.6rem
+      padding-right: .96rem
+      justify-content: center
+      &.is-arrow
+        &:after
+          right: .7rem
+  .common-list-pagination
+    .arrow
+      a:before
+        background-image: url(../img/common/sp/icon_arrow_01.svg)
+        width: .4rem
+        height: .4rem
+        top: .13rem
+
+.section-client-interview
+  .text-interview
+    font-weight: 700
+  .common-list-category
+    .item-category
+      &:before
+        content: none
+
++desktop
+  .keyvisual-client-interview
+    background-image: url(../img/client/client_interview_bg.jpg)
+  .section-client-interview
+    padding: 80px 32px 112px
+    .text-interview
+      line-height: calc(30 / 13)
+      margin-bottom: 112px
+    .common-list-category
+      margin: 0 -4px
+      li
+        margin: 0 4px 16px
+      .item-category
+        padding-top: 2px
+        padding-bottom: 2px
+
++mobile
+  .keyvisual-client-interview
+    background-image: url(../img/client/sp/client_interview_bg.jpg)
+  .section-client-interview
+    padding-top: .8rem
+    padding-bottom: 1.6rem
+    .wrapper
+      padding-left: .32rem
+      padding-right: .32rem
+    .common-list-category
+      .item-category
+        font-size: .22rem
+
+.section-client-field
+  font-weight: 700
+  .list-field,
+  .list-work,
+  .list-occupations
+    list-style-type: none
+    padding-left: 0
+  .content-list-top,
+  .item-field a,
+  .number-field,
+  .item-occupations
+    display: flex
+  .content-list-top
+    justify-content: center
+  .item-field
+    background-color: $base-color-blue
+    a
+      text-decoration: none
+      color: #fff
+      position: relative
+      transition: background .26s, color .26s
+      &:after
+        position: absolute
+        content: ""
+        top: 50%
+        transform: translateY(-50%)
+        background: center / 100% auto no-repeat
+      &:hover
+        background-color: #036fcc
+  .content-number,
+  .title-work,
+  .title-occupations,
+  .item-occupations
+    color: $base-color-blue
+  .title-work,
+  .content-number,
+  .item-field
+    opacity: 0
+    transition: opacity .26s
+    .wf-active &
+      opacity: 1
+  .content-number
+    display: inline-flex
+    align-items: center
+    border-bottom: solid 1px $base-color-blue
+  .name-field
+    margin-bottom: 0
+  .number-field,
+  .item-occupations,
+  .item-field a
+    align-items: center
+    justify-content: center
+  .number-field
+    color: #fff
+    background-color: $base-color-blue
+  .item-occupations
+    border: solid 1px $base-color-blue
+    transition: background .26s, color .26s
+  .image-work
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+
++desktop
+  .keyvisual-client-field
+    background-image: url(../img/client/client_field_bg.jpg)
+  .section-client-field
+    padding: 64px 24px 0
+    .list-field
+      display: flex
+      flex-wrap: wrap
+      margin-bottom: 80px
+    .text-top
+      line-height: calc(30 / 13)
+      width: 849px
+      margin: 0 auto 80px
+    .item-field
+      margin: 0 8px 16px
+      a
+        font-size: .14rem
+        width: 200px
+        height: 48px
+        &:after
+          background-image: url(../img/client/icon_arrow_down_01.svg)
+          right: 27px
+          width: 12px
+          height: 9px
+    .item-work
+      display: flex
+      margin-bottom: 64px
+      padding-top: 16px
+    .content-block
+      width: 45.314%
+      flex-shrink: 0
+      margin-right: 64px
+    .content-number,
+    .content-block,
+    .text-work,
+    .title-occupations
+      margin-bottom: 16px
+    .text-work
+      line-height: calc(30 / 13)
+    .name-field
+      font-size: .18rem
+      margin-right: 16px
+    .number-field
+      font-size: .14rem
+      width: 29px
+      height: 29px
+    .title-work
+      font-size: .28rem
+      margin-bottom: 32px
+    .title-occupations
+      font-size: .18rem
+    .list-occupations
+      display: flex
+      flex-wrap: wrap
+      margin: 0 -8px
+    .item-occupations
+      margin: 0 8px 16px
+      width: 43.96%
+      min-height: 48px
+      font-size: .14rem
+    .image-work
+      width: 496px
+      height: 432px
+
+@media print, (min-width: 768.98px) and (max-width: 1010px)
+  .section-client-field
+    .item-occupations
+      font-size: .1rem
+
++mobile
+  .keyvisual-client-field
+    background-image: url(../img/client/sp/client_field_bg.jpg)
+  .section-client-field
+    padding-top: .64rem
+    padding-bottom: .96rem
+    .content-block,
+    .text-top
+      padding-left: .32rem
+      padding-right: .32rem
+    .text-top
+      line-height: calc(50 / 24)
+      margin-bottom: .64rem
+    .item-work
+      margin-bottom: .48rem
+      padding-top: .16rem
+    .list-field
+      margin-bottom: 1.28rem
+    .item-field,
+    .title-occupations
+      margin-bottom: .32rem
+    .item-field
+      a
+        width: 6.08rem
+        height: .96rem
+        &:after
+          background-image: url(../img/client/sp/icon_arrow_down_01.svg)
+          right: .3rem
+          width: .22rem
+          height: .15rem
+    .content-number,
+    .title-work,
+    .list-occupations
+      margin-bottom: .16rem
+    .name-field
+      margin-right: .16rem
+    .number-field
+      font-size: .28rem
+      width: .48rem
+      height: .48rem
+    .title-work
+      font-size: .32rem
+    .text-work
+      line-height: calc(50 / 24)
+      margin-bottom: .64rem
+    .title-occupations
+      font-size: .24rem
+    .item-occupations
+      width: 6.08rem
+      height: .96rem
+      border-width: .02rem
+      margin: 0 auto .32rem
+    .image-work
+      height: 4.21rem
+
+.section-haken-dispatch
+  .inner-wrapper
+    font-weight: 700
+  .image-dispatch
+    img
+      width: 100%
+  .title-dispatch
+    opacity: 0
+    transition: opacity .26s
+    .wf-active &
+      opacity: 1
+
++desktop
+  .keyvisual-client-haken
+    background-image: url(../img/client/client_haken_bg.jpg)
+  .section-haken-dispatch
+    padding: 72px 0 48px
+    .inner-wrapper
+      display: flex
+      justify-content: space-between
+    .content-left
+      width: 34.25%
+      flex-shrink: 0
+      margin-right: 80px
+      margin-left: auto
+      padding-left: 24px
+    .image-dispatch
+      width: calc(50% + 16px)
+      margin-top: 8px
+    .title-dispatch
+      font-size: .28rem
+      line-height: calc(56 / 28)
+      margin-bottom: 16px
+
+@media print, (min-width: 768.98px) and (max-width: 911px)
+  .section-haken-dispatch
+    .content-left
+      width: 41.6%
+
++mobile
+  .keyvisual-client-haken
+    background-image: url(../img/client/sp/client_haken_bg.jpg)
+  .section-haken-dispatch
+    padding: .64rem 0 1.6rem
+    .inner-wrapper
+      padding: 0 .32rem
+    .content-left
+      padding: 0 .32rem 0 .48rem
+    .common-text
+      margin-bottom: .64rem
+    .title-dispatch
+      word-break: break-all
+      font-size: .38rem
+      line-height: calc(70 / 38)
+      margin-bottom: .16rem
+
+.section-haken-features
+  .list-features
+    list-style-type: none
+    padding-left: 0
+  .common-text
+    margin-bottom: 0
+  .content-bottom
+    font-weight: 700
+    background-color: $base-color-blue
+    color: #fff
+
++desktop
+  .section-haken-features
+    background-color: #f5f8fc
+    padding: 88px 24px 72px
+    .common-title
+      margin-bottom: 40px
+    .list-features
+      display: flex
+      flex-wrap: wrap
+      margin: 0 -1.5%
+    .content-features
+      width: 100%
+    .item-features
+      width: 30.34%
+      margin: 0 1.495% 16px
+    .content-bottom
+      padding: 24px 24px 16px
+      line-height: calc(32 / 18)
+    .title-item
+      text-align: center
+      font-size: .18rem
+      margin-bottom: 16px
+    .image-features
+      padding-bottom: 71.875%
+      width: 100%
+      position: relative
+      img
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+
+  .is-firefox
+    .section-haken-features
+      .image-features
+        padding-bottom: 71%
+
++mobile
+  .section-haken-features
+    .wrapper
+      padding-left: .32rem
+      padding-right: .32rem
+    .common-title
+      margin-bottom: .8rem
+    .item-features
+      padding: 0 .16rem
+      &:not(:last-child)
+        margin-bottom: .64rem
+    .content-bottom
+      padding: .32rem .16rem .64rem .32rem
+    .title-item
+      font-size: .28rem
+      margin-bottom: .16rem
+    .common-text
+      line-height: calc(44 / 24)
+      letter-spacing: .055em
+    .image-features
+      text-align: center
+      img
+        width: 100%
+
+.section-haken-content
+  .list-content
+    list-style-type: none
+    padding-left: 0
+    display: flex
+    flex-wrap: wrap
+  .common-text
+    overflow: hidden
+    text-overflow: ellipsis
+    display: -webkit-box
+    -webkit-line-clamp: 2
+    -webkit-box-orient: vertical
+  .title-item
+    color: $base-color-blue
+  .common-text
+    color: $base-font-color
+  .block-content
+    display: block
+    text-decoration: none
+    &:hover .common-block-arrow:after
+      border-color: $base-color-blue
+  .content-image
+    position: relative
+
++desktop
+  .section-haken-content
+    padding: 88px 24px 72px
+    .common-title
+      margin-bottom: 48px
+    .list-content
+      margin: 0 -1.51%
+    .item-content
+      width: 30.333%
+      margin: 0 1.5% 16px
+    .image-content
+      margin-bottom: 32px
+      padding-bottom: 71.89%
+      width: 100%
+      position: relative
+      img
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+    .title-item
+      font-size: .16rem
+      margin-bottom: 16px
+
+@media print, (min-width: 768.98px) and (max-width: 1012px)
+  .section-haken-content
+    .common-block-arrow
+      bottom: -1px
+@media print, (min-width: 768.98px) and (max-width: 1070px)
+  .section-haken-content
+    .item-content
+      width: 30.33%
+
+@media print, (min-width: 1280px)
+  .section-haken-content
+    .item-content
+      width: 30.33%
+
++mobile
+  .section-haken-content
+    padding: 1.28rem 0 .8rem
+    .wrapper
+      padding-left: .32rem
+      padding-right: .32rem
+    .common-title
+      margin-bottom: .8rem
+    .image-content
+      img
+        width: 100%
+    .title-item
+      font-size: .28rem
+      margin-bottom: .16rem
+    .common-text
+      line-height: calc(44 / 24)
+    .item-content
+      padding: 0 .16rem
+      &:not(:last-child)
+        margin-bottom: .64rem
+    .item-interview:not(:last-child),
+    .image-content
+      margin-bottom: .32rem
+
+.section-haken-article
+  .list-article
+    list-style-type: none
+    padding-left: 0
+  .item-article
+    font-weight: 700
+  .time
+    display: inline-block
+  .time,
+  .title-article,
+  .link-more
+    color: $base-color-blue
+  .content-image
+    position: relative
+    &:hover .common-block-arrow:after
+      border-color: $base-color-blue
+  .content-detail .common-text,
+  .title-article
+    overflow: hidden
+    text-overflow: ellipsis
+    display: -webkit-box
+    -webkit-box-orient: vertical
+  .content-detail
+    .common-text
+      -webkit-line-clamp: 2
+
++desktop
+  .section-haken-article
+    background-color: #f5f8fc
+    padding: 88px 24px
+    .common-title
+      margin-bottom: 46px
+    .item-article
+      &:not(:last-child)
+        margin-bottom: 24px
+    .content-image
+      flex-shrink: 0
+      width: 320px
+    .content-article
+      padding: 24px 32px 0
+    .block-article
+      display: flex
+      align-items: flex-start
+    .common-block-arrow
+      background-color: #f5f8fc
+    .time,
+    .title-article
+      margin-bottom: 16px
+    .time
+      font-size: .14rem
+    .title-article
+      font-size: .16rem
+      -webkit-line-clamp: 1
+    .content-detail
+      position: relative
+    .link-more
+      font-size: .12rem
+      position: absolute
+      top: 38px
+      right: 218px
+    .list-article
+      margin-bottom: 56px
+    .image-article
+      padding-bottom: 50%
+      width: 100%
+      position: relative
+      img
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+
+@media print, (min-width: 768.98px) and (max-width: 1037px)
+  .section-haken-article
+    .link-more
+      position: unset
+
++mobile
+  .section-haken-article
+    padding: .48rem 0 1.6rem
+    .wrapper
+      padding-left: .32rem
+      padding-right: .32rem
+    .common-title
+      margin-bottom: .8rem
+    .item-article
+      padding: 0 .16rem
+    .image-article,
+    .item-article:not(:last-child)
+      margin-bottom: .32rem
+    .image-article
+      img
+        width: 100%
+    .title-article
+      line-height: calc(38 / 28)
+      font-size: .28rem
+      -webkit-line-clamp: 2
+    .time,
+    .title-article1
+      margin-bottom: .16rem
+    .common-text
+      line-height: calc(44 / 24)
+      margin-bottom: .48rem
+    .link-more
+      font-size: .22rem
+    .list-article
+      margin-bottom: 1.12rem
+    .common-button-more
+      font-size: .38rem
+      width: 100%
+      height: 1.6rem
+    .content-image
+      display: block
+
+.section-interview-detail
+  .inner-wrapper
+    font-weight: 700
+  .title-interview-detail span,
+    display: inline-block
+  .title-interview-detail
+    color: $base-color-blue
+    span
+      position: relative
+      background: #fff
+      line-height: 1.2
+      &:nth-child(2)
+        display: block
+  .block-top
+    display: flex
+  .image-detail
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+  .common-list-category
+    .item-category
+      &:before
+        content: none
+  .title-industry
+    color: $base-color-blue
+  .text-detail,
+  .title-interview-detail,
+  .title-industry
+    opacity: 0
+    transition: opacity .26s
+    .wf-active &
+      opacity: 1
+
++desktop
+  .section-interview-detail
+    margin-top: -40px
+    padding-bottom: 40px
+    .block-top
+      margin-left: 128px
+      margin-bottom: 72px
+    .title-interview-detail
+      font-size: 28px
+      width: 471px
+      span
+        margin-bottom: 24px
+        padding-right: 32px
+        padding-bottom: 1px
+    .content-top
+      flex-shrink: 0
+      width: 240px
+      margin-top: 112px
+      margin-right: 24px
+      margin-left: auto
+    .text-detail
+      font-size: .14rem
+      line-height: calc(32 / 14)
+    .block-bottom
+      display: flex
+      max-width: 880px
+      margin: 0 auto
+      padding: 0 16px
+    .content-left
+      flex-shrink: 0
+      width: 300px
+      margin-top: 8px
+      margin-right: 48px
+    .image-detail
+      min-height: 502px
+      width: calc(50% + 310px)
+    .common-list-category
+      margin: 0 -4px 16px
+      .item-category
+        padding-top: 2px
+        padding-bottom: 2px
+        margin: 0 4px 8px
+    .title-industry
+      font-size: .24rem
+
+@media print, (min-width: 768.98px) and (max-width: 998px)
+  .section-interview-detail
+    .block-top
+      margin-left: 16px
+
++mobile
+  .section-interview-detail
+    margin-top: -1.29rem
+    padding-bottom: 1.12rem
+    .block-top
+      flex-direction: column-reverse
+    .title-interview-detail
+      width: 87%
+      font-size: .38rem
+      margin-bottom: .4rem
+      span
+        margin-bottom: .24rem
+        padding: 0 .24rem
+    .image-detail
+      width: 6.56rem
+      margin-left: auto
+      img
+        width: 100%
+    .content-top
+      margin-top: -1.12rem
+      margin-bottom: 1.92rem
+    .text-detail
+      line-height: calc(50 / 24)
+      margin-bottom: 0
+      &.is-padding
+        padding: 0 1.12rem
+    .title-industry
+      font-size: .34rem
+      margin-bottom: .32rem
+    .common-list-category
+      order: 2
+    .content-left
+      display: flex
+      flex-direction: column
+    .block-bottom
+      padding: 0 .32rem
+
++mobile-xs
+  .section-interview-detail
+    margin-top: -1.24rem
+
+.section-detail-problem
+  background-color: #f5f8fc
+  font-weight: 700
+  .list-problem
+    background-color: #fff
+    justify-content: space-between
+    list-style-type: none
+  .title-problem
+    color: $base-color-blue
+    text-align: center
+  .item-problem
+    position: relative
+    &:not(:last-child)
+      &:after
+        position: absolute
+        content: ""
+        width: 0
+        height: 0
+        border-style: solid
+
++desktop
+  .section-detail-problem
+    padding: 64px 0
+    .list-problem
+      display: flex
+      flex-wrap: wrap
+      padding: 32px 24px
+      max-width: 848px
+      margin: 0 auto
+    .title-problem
+      font-size: .18rem
+      margin-bottom: 16px
+    .text-problem
+      font-size: .14rem
+      line-height: calc(32 / 14)
+    .item-problem
+      width: 45%
+      &:not(:last-child)
+        &:after
+          border-color: transparent transparent transparent $base-color-blue
+          top: 45.6%
+          right: -65px
+          transform: translateY(-50%)
+          border-width: 16px
+
++mobile
+  .section-detail-problem
+    padding: .8rem 0
+    .list-problem
+      width: 95.24%
+      margin: 0 auto
+      padding: .48rem
+    .title-problem
+      font-size: .28rem
+      margin-bottom: .16rem
+    .text-problem
+      line-height: calc(50 / 24)
+    .item-problem
+      &:not(:last-child)
+        margin-bottom: 1.6rem
+        &:after
+          top: calc(100% + .88rem)
+          left: 50%
+          transform: translateX(-50%)
+          border-width: .23rem
+          border-color: $base-color-blue transparent transparent
+
+.title-sub-detail,
+.text-big
+  text-align: center
+.title-sub-detail,
+  color: $base-color-blue
+.text-big
+  font-weight: 700
+
+.section-detail-introduction
+  .list-staff
+    list-style-type: none
+    background-color: rgba(0,91,170,.6)
+    padding-left: 0
+    display: flex
+    flex-wrap: wrap
+  .link-staff
+    color: #fff
+    display: block
+  .list-information dd,
+  .text-staff
+    overflow: hidden
+    text-overflow: ellipsis
+    display: -webkit-box
+    -webkit-box-orient: vertical
+  .list-information
+    margin: 0 auto
+    dl
+      display: flex
+      align-items: flex-start
+    dt
+      color: $base-color-blue
+  .image-big
+    img
+      width: 100%
+  .list-information
+    font-weight: 700
+  .block-content-information
+    .list-information
+      margin-left: 0
+
++desktop
+  .title-sub-detail
+    margin: 0 auto 40px
+    padding-bottom: 40px
+    width: 585px
+    border-bottom: solid 3px $base-color-blue
+    line-height: calc(40 / 24)
+    &.is-width
+      width: 672px
+  .text-big
+    font-size: .18rem
+    margin-bottom: 16px
+  .section-detail-introduction
+    padding: 80px 16px
+    .list-staff
+      margin: 0 -40px 72px
+    .item-staff
+      width: 33.334%
+      &:not(:last-child)
+        border-right: solid 1px #fff
+        .content-detail
+          margin-right: -1px
+    .link-staff
+      padding: 40px
+    .image-staff
+      margin-bottom: 24px
+      padding-bottom: 68.75%
+      width: 100%
+      position: relative
+      img
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+    .content-staff
+      display: flex
+      align-items: center
+      justify-content: space-between
+      margin-bottom: 24px
+    .name-staff,
+    .position-staff
+      margin-bottom: 0
+    .name-staff
+      flex-shrink: 0
+      width: 110px
+      margin-right: 16px
+      font-size: .18rem
+
+    .position-staff
+      margin-top: 5px
+      font-size: .14rem
+    .text-staff
+      line-height: calc(24 / 13)
+      -webkit-line-clamp: 4
+    .list-information
+      dl
+        &:not(:last-child)
+          margin-bottom: 56px
+      dt
+        flex-shrink: 0
+        width: 39px
+        margin-top: 5px
+        margin-right: 16px
+      dd
+        font-size: .14rem
+        line-height: calc(32 / 14)
+        -webkit-line-clamp: 2
+      &.full-width
+        width: 672px
+
+    .block-content-information
+      display: flex
+      align-items: center
+      justify-content: space-between
+      margin-bottom: 88px
+      .list-information
+        flex-shrink: 0
+        width: 100%
+        dl
+          &:not(:last-child)
+            margin-bottom: 24px
+        dd
+          -webkit-line-clamp: 3
+      &.is-reverse
+        .image-information
+          order: 1
+          margin-right: 16px
+        .content-left
+          order: 2
+          margin-right: 0
+    .block-information
+      margin-bottom: 104px
+    .image-big
+      margin: 0 -16px 80px
+    .image-information
+      margin-top: 137px
+    .content-left
+      width: 57.032%
+      margin-right: 16px
+      .text-big,
+      .title-sub-detail
+        text-align: left
+      .title-sub-detail
+        margin-left: 0
+        width: 100%
+    .common-big-button
+      &.is-arrow
+        &:after
+          right: 87px
+
+@media print, (min-width: 768.98px) and (max-width: 1125px)
+  .section-detail-introduction
+    .list-staff
+      margin-left: 0
+      margin-right: 0
+
+@media print, (min-width: 768.98px) and (max-width: 1080px)
+  .section-detail-introduction
+    .name-staff
+      width: 100%
+    .content-staff
+      flex-wrap: wrap
+    .item-staff
+      width: 33.33%
+
+@media print, (min-width: 768.98px) and (max-width: 975px)
+  .section-detail-introduction
+    .content-left
+      .title-sub-detail
+        font-size: .2rem
+
++mobile
+  .title-sub-detail
+    font-size: .34rem
+    line-height: calc(60 / 34)
+    border-bottom: solid .03rem $base-color-blue
+    margin-bottom: .64rem
+    padding-bottom: .48rem
+  .text-big
+    font-size: .28rem
+    margin-bottom: .16rem
+  .section-detail-introduction
+    padding: 1.12rem 0 1.6rem
+    .wrapper
+      padding-left: .32rem
+      padding-right: .32rem
+    .list-staff
+      margin-bottom: 1.6rem
+      padding: .16rem 0
+    .link-staff
+      padding: .32rem
+    .item-staff
+      &:not(:last-child)
+        border-bottom: solid 1px #fff
+    .content-detail
+      display: flex
+      align-items: center
+    .image-staff
+      width: 3.3rem
+      flex-shrink: 0
+      margin-right: .32rem
+      img
+        width: 100%
+    .content-staff
+      margin-top: .32rem
+    .name-staff
+      font-size: .28rem
+      margin-bottom: .16rem
+    .content-detail
+      margin-bottom: .32rem
+    .position-staff
+      letter-spacing: .06em
+    .text-staff
+      line-height: calc(44 / 24)
+      -webkit-line-clamp: 3
+    .list-information
+      dt
+        flex-shrink: 0
+        width: .62rem
+        margin-top: .05rem
+        margin-right: .16rem
+      dd
+        line-height: calc(50 / 24)
+        -webkit-line-clamp: 3
+      dl
+        &:not(:last-child)
+          margin-bottom: .8rem
+    .block-information
+      margin-bottom: 1.44rem
+    .image-big
+      margin-bottom: 1.12rem
+      img
+        width: 100%
+    .content-left,
+    .block-content-information
+      margin-bottom: 1.12rem
+    .image-information
+      width: 5.52rem
+      margin-left: auto
+      margin-right: -.32rem
+      img
+        width: 100%
+    .block-content-information
+      &.is-reverse
+        .image-information
+          margin-left: -.32rem
+          margin-right: 0
+    .common-big-button
+      &.is-arrow
+        &:after
+          right: 1.12rem
+
+.section-detail-help
+  .title-sub-detail
+    border-bottom: none
+  .text-interview,
+    font-weight: 700
+  .list-category
+    padding-left: 0
+    list-style-type: none
+    display: flex
+    flex-wrap: wrap
+    align-items: flex-start
+    margin-bottom: 0
+  .common-list-category
+    .item-category
+      text-align: center
+      &:before
+        content: none
+
++desktop
+  .section-detail-help
+    padding: 32px 16px 16px
+    .title-sub-detail
+      padding-bottom: 0
+    .text-interview
+      line-height: calc(30 / 13)
+      margin-bottom: 112px
+    .common-list-category
+      margin: 0 -4px
+      .item-category
+        padding-top: 2px
+        padding-bottom: 2px
+        margin: 0 4px 16px
+        min-width: 116px
+    .common-list-interview
+      margin: 0 -1.51% 32px
+      .item-interview
+        width: 30.335%
+        margin: 0 1.5% 48px
+      .image-interview
+        height: unset
+        padding-bottom: 63.75%
+        width: 100%
+        position: relative
+        img
+          position: absolute
+          top: 0
+          left: 0
+          width: 100%
+      .button-arrow
+        width: 74px
+        height: 74px
+        &:after
+          top: 52%
+          left: 53%
+
+@media print, (min-width: 768.98px) and (max-width: 1036px)
+  .section-detail-help
+    .common-list-interview
+      .item-interview
+        width: 30.33%
+    .item-category
+      span
+        min-width: 110px
+
++mobile
+  .section-detail-help
+    .wrapper
+      padding-left: .32rem
+      padding-right: .32rem
+    .title-sub-detail
+      padding-bottom: 0
+    .common-list-category
+      .item-category
+        min-width: 1.72rem
+        margin-bottom: .32rem
+        font-size: .22rem
+
+.section-client-company
+  background: center / 100% auto no-repeat
+  .introduction-content
+    .wrapper
+      display: flex
+    .image-person
+      z-index: 1
+  .introduction-content,
+  .introduction-content .wrapper,
+  .image-company
+    position: relative
+  .introduction-content:after,
+  .introduction-content .image-person
+    position: absolute
+  .image-company
+    z-index: -1
+  .content-top
+    font-weight: 700
+    .common-text
+      overflow: hidden
+      text-overflow: ellipsis
+      display: -webkit-box
+      -webkit-box-orient: vertical
+  .content-bottom
+    background-color: rgba(0,91,170,.04)
+  .list-work,
+  .list-sub-work,
+  .list-item-right
+    list-style-type: none
+    padding-left: 0
+  .item-work
+    font-weight: 700
+    &.is-flex
+      .text-detail
+        overflow: hidden
+        text-overflow: ellipsis
+        display: -webkit-box
+        -webkit-box-orient: vertical
+  .link-main
+    text-decoration: none
+    display: block
+    position: relative
+    &:hover .common-block-arrow:after
+      border-color: $base-color-blue
+  .title-work
+    position: absolute
+    color: #fff
+  .text-detail
+    color: $base-color-blue
+  .list-sub-work
+    li
+      border: solid 1px rgba(0,91,170,.3)
+      transition: border-color .26s
+      &:hover
+        border-color: $base-color-blue
+    a
+      display: block
+      color: #202020
+      position: relative
+      text-decoration: none
+      &:after
+        position: absolute
+        content: ""
+        top: 50%
+        transform: translateY(-50%)
+        background: url(../img/common/icon_arrow_01.svg) center no-repeat
+  .list-item-right,
+  .list-work
+    .common-block-arrow
+      background-color: #f5f8fc
+  .is-limit
+    overflow: hidden
+    text-overflow: ellipsis
+    display: -webkit-box
+    -webkit-line-clamp: 3
+    -webkit-box-orient: vertical
+  .title-company,
+  .sub-title,
+  .common-title
+    opacity: 0
+    transition: opacity .26s
+    .wf-active &
+      opacity: 1
+
++desktop
+  .section-client-company
+    padding-top: 72px
+    background-image: url(../img/client/client_img_04.png)
+    background-position: top 199px left -15px
+    background-size: 105% auto
+    .introduction-content,
+    .content-top
+      padding: 0 16px
+    .introduction-content
+      margin-bottom: 80px
+      .wrapper
+        justify-content: space-between
+      &:after
+        height: 175px
+        top: 125px
+        left: 51.4%
+        transform: translateX(-50%)
+        width: 108%
+    .common-title
+      margin-bottom: 48px
+    .common-text
+      margin-top: 4px
+    .image-person
+      top: -1px
+      right: calc(50% - 485px)
+    .title-company
+      font-size: .24rem
+      flex-shrink: 0
+      width: 337px
+      margin-top: 48px
+      margin-right: 16px
+    .list-work,
+    .content-how-to
+      max-width: 848px
+      margin: 0 auto
+    .list-work
+      margin-bottom: 16px
+    .content-top,
+    .title-company,
+    .link-main
+      margin-bottom: 24px
+    .content-how-to
+      display: flex
+      align-items: flex-start
+      .sub-title
+        flex-shrink: 0
+        font-size: .28rem
+        width: 332px
+        margin-right: 16px
+        line-height: calc(56 / 28)
+      .common-text
+        -webkit-line-clamp: 3
+    .content-bottom
+      padding: 64px 16px
+    .item-detail
+      display: flex
+      align-items: flex-start
+    .item-work
+      &.is-flex
+        display: flex
+        justify-content: space-between
+        .item-left
+          width: 48.115%
+          flex-shrink: 0
+          margin-right: 32px
+        .title-work
+          font-size: .16rem
+          top: 11px
+        .item-detail
+          flex-wrap: wrap
+        .text-detail
+          -webkit-line-clamp: 2
+          margin-bottom: 8px
+          width: 100%
+    .list-item-right
+      .common-block-arrow
+        width: 64px
+        height: 64px
+      .title-work
+        left: 16px
+      .sub-item-right
+        margin-bottom: 32px
+    .title-work
+      font-size: .2rem
+      top: 23px
+      left: 24px
+      text-shadow: 0 3px 10px rgba(0,0,0,.8)
+    .text-detail
+      line-height: calc(26 / 13)
+      flex-shrink: 0
+      width: 412px
+      margin-right: 32px
+    .list-sub-work
+      width: 100%
+      margin-top: 4px
+      li
+        margin-bottom: 16px
+      a
+        font-size: .14rem
+        padding: 11px 32px 8px
+        min-height: 40px
+        &:after
+          right: 0
+          width: 40px
+          height: 40px
+          background-size: 20px 20px
+
+@media print, (min-width: 768.98px) and (max-width: 1057px)
+  .section-client-company
+    padding-top: 24px
+    background-position: top 260px left -15px
+    .title-company
+      text-align: center
+    .introduction-content .wrapper
+      flex-wrap: wrap
+      justify-content: center
+    .image-person
+      right: calc(50% - 309px)
+      top: 105px
+
+@media print, (min-width: 768.98px) and (max-width: 841px)
+  .section-client-company
+    .item-work
+      &.is-flex
+        .title-work
+          font-size: .13rem
+
++mobile
+  .section-client-company
+    background-image: url(../img/client/sp/client_img_04.png)
+    background-position: top 2.1rem left -1.82rem
+    background-size: 142%
+    .introduction-content
+      .wrapper
+        flex-direction: column-reverse
+        padding-left: 0
+        padding-right: 0
+        overflow: hidden
+    .image-company,
+    .image-person
+      img
+        width: 100%
+    .image-person
+      top: -.01rem
+      right: calc(50% - 3.87rem)
+      width: 7.84rem
+    .introduction-content
+      margin-bottom: .8rem
+    .content-top
+      margin-bottom: 1.12rem
+      .wrapper
+        padding-left: .32rem
+        padding-right: .32rem
+      .sub-title
+        font-size: .38rem
+        line-height: calc(70 / 38)
+      .content-how-to
+        padding: 0 .32rem 0 .48rem
+      .common-tile
+        margin-bottom: .64rem
+      .common-text
+        letter-spacing: .05em
+        -webkit-line-clamp: 4
+    .content-bottom
+      padding: .8rem 0
+    .title-company
+      display: inline-block
+      font-size: .38rem
+      position: relative
+      margin-top: -1rem
+      z-index: 2
+      margin-bottom: 0
+      padding: .24rem 2.56rem .24rem .48rem
+      &:after
+        position: absolute
+        content: ""
+        top: 0
+        left: 0
+        width: 65.5%
+        height: 100%
+        background-color: #fff
+        z-index: -1
+    .title-work
+      top: .24rem
+      left: .3rem
+      font-size: .32rem
+      text-shadow: 0 .03rem .1rem rgba(0,0,0,.8)
+    .link-main
+      margin-bottom: .32rem
+      img
+        width: 100%
+    .text-detail
+      line-height: calc(44 / 24)
+    .item-work
+      &.is-flex
+        .text-detail
+          -webkit-line-clamp: 3
+    .is-limit
+      -webkit-line-clamp: 2
+    .list-sub-work
+      a
+        display: flex
+        align-items: center
+        min-height: .75rem
+        padding: .16rem .48rem
+        &:after
+          right: .33rem
+          width: .4rem
+          height: .4rem
+          background-image: url(../img/common/sp/icon_arrow_01.svg)
+          background-size: .4rem .4rem
+      li
+        border-width: .02rem
+        margin-bottom: .16rem
+    .item-work,
+    .text-detail,
+    .list-item-right li
+      margin-bottom: .64rem
+    .list-item-right
+      margin-top: .64rem
+      .title-work
+        font-size: .26rem
+    .common-button-more
+      width: 100%
+    .list-work
+      margin-bottom: .8rem
+
+.section-common-news
+  .news-category
+    background-color: $base-color-blue
+    border-radius: 0
+  .news-time,
+  .middle-button,
+  .news-link:hover .news-title
+    color: $base-color-blue
+  .news-detail,
+  .news-detail:first-child,
+  .middle-button
+    border-color: rgba(0,91,170,.3)
+  .news-detail
+    &:hover
+      border-color: $base-color-blue
+      border-top-color: rgba(0,91,170,.3)
+  .news-link
+    &:after
+      background-image: url(../img/common/icon_arrow_01.svg)
+  .middle-button
+    border-radius: 0
+    &:hover
+      border-color: $base-color-blue
+
++desktop
+  .section-common-news
+    .section-title
+      text-align: left
+      margin-left: 24px
+      .is-japanese
+        line-height: calc(28 / 16)
+    .common-news-list
+      .news-category
+        padding-top: 3px
+        padding-bottom: 3px
+
+@media print, (min-width: 902px) and (max-width: 1022px)
+  .section-common-news
+    .common-news-list
+      max-width: 600px
+      width: 100%
+
+.section-client-service
+  .list-service
+    list-style-type: none
+    padding-left: 0
+    display: flex
+    flex-wrap: wrap
+  .content-service
+    display: block
+    text-decoration: none
+    &:hover .common-block-arrow:after
+      border-color: $base-color-blue
+  .content-image
+    position: relative
+  .item-service
+    font-weight: 700
+  .text-service
+    overflow: hidden
+    text-overflow: ellipsis
+    display: -webkit-box
+    -webkit-box-orient: vertical
+    color: $base-font-color
+
++desktop
+  .section-client-service
+    padding: 0 16px 112px
+    .common-title
+      margin-bottom: 64px
+    .list-service
+      margin: 0 -16px 64px
+    .item-service
+      width: 30.304%
+      margin: 0 16px 24px
+    .content-service,
+    .image-service
+      position: relative
+    .title-service
+      position: absolute
+      color: #fff
+      bottom: 66px
+      left: 16px
+      font-size: .16rem
+      padding-right: 56px
+      text-shadow: 0 3px 10px rgba(0,0,0,.8)
+    .image-service
+      margin-bottom: 24px
+      padding-bottom: 58.44%
+      img
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+    .text-service
+      line-height: calc(26 / 13)
+      -webkit-line-clamp: 2
+    .common-block-arrow
+      width: 44px
+      height: 44px
+      &:after
+        width: 25px
+        height: 25px
+        top: 60%
+        left: 60%
+        background-size: 15px 15px
+
+@media print, (min-width: 768.98px) and (max-width: 1075px)
+  .section-client-service
+    .list-service
+      justify-content: center
+    .item-service
+      width: 29%
+
++mobile
+  .section-client-service
+    padding-top: .32rem
+    .wrapper
+      padding-left: .32rem
+      padding-right: .32rem
+    .common-title,
+    .item-service
+      margin-bottom: .64rem
+    .list-service
+      justify-content: space-between
+    .item-service
+      width: calc(50% - .16rem)
+    .title-service
+      font-size: .26rem
+      color: $base-color-blue
+      margin-bottom: .16rem
+    .common-block-arrow
+      width: .64rem
+      height: .64rem
+      &:after
+        width: .48rem
+        height: .48rem
+        background-size: .11rem .2rem
+    .image-service
+      margin-bottom: .32rem
+      img
+        width: 100%
+    .text-service
+      -webkit-line-clamp: 3
+      line-height: calc(44 / 24)
+    .list-service
+      margin-bottom: .96rem
+    .common-big-button
+      margin: 0 -.32rem
+      width: 109%
+      padding-left: 1.6rem
+
+.section-client-article
+  .content-article,
+  .common-title
+    opacity: 0
+    transition: opacity .26s
+    .wf-active &
+      opacity: 1
+  .list-article
+    list-style-type: none
+    padding-left: 0
+  .content-image
+    display: block
+    position: relative
+    &:hover .common-block-arrow:after
+      border-color: $base-color-blue
+  .content-image
+    flex-shrink: 0
+  .block-time,
+  .highlight
+    display: flex
+    align-items: center
+  .title-article,
+  .time-article,
+  .wrapper-link a
+    color: $base-color-blue
+  .text-article,
+  .title-article
+    overflow: hidden
+    text-overflow: ellipsis
+    display: -webkit-box
+    -webkit-box-orient: vertical
+  .title-article
+    -webkit-line-clamp: 1
+  .text-article
+    margin-bottom: 0
+    -webkit-line-clamp: 2
+  .highlight,
+  .title-article,
+  .text-article
+    font-weight: 700
+  .highlight
+    justify-content: center
+    background-color: $base-color-blue
+    color: #fff
+  .common-list-pagination li a,
+  .common-list-pagination li span
+    border-color: rgba(0,91,170,.3)
+  .common-list-pagination a,
+  .common-list-pagination .dots,
+  .common-list-pagination span
+    color: $base-color-blue
+  .common-list-pagination a:hover
+    background-color: $base-color-blue
+  .arrow a:hover
+    background-color: #fff
+
++desktop
+  .section-client-article
+    padding: 64px 16px 80px
+    .list-article,
+    .common-title
+      margin-bottom: 64px
+    .content-detail
+      padding: 0 32px
+    .time-article
+      margin-right: 32px
+    .item-article
+      &:not(:last-child)
+        margin-bottom: 40px
+    .content-image
+      width: 320px
+    .block-article
+      display: flex
+    .block-time
+      margin-bottom: 32px
+    .time-article
+      font-size: .14rem
+    .title-article
+      font-size: .16rem
+      margin-bottom: 8px
+    .text-article
+      line-height: calc(24 / 13)
+    .wrapper-link
+      text-align: center
+      padding-right: 144px
+      a
+        font-size: .12rem
+    .highlight
+      min-width: 1.12rem
+      min-height: 24px
+      padding-bottom: 1px
+    .block-pagination
+      text-align: left
+    .next
+      a
+        &:before
+          top: 10px
+    .prev
+      a
+        &:before
+          top: 12px
+
+@media print, (min-width: 768.98px) and (max-width: 900px)
+  .section-client-article
+    .content-image
+      width: 260px
+    .time-article
+      margin-right: 16px
+
++mobile
+  .breadcrumb
+    &.is-margin
+      margin-bottom: 0
+  .section-client-article
+    padding-top: .8rem
+    padding-bottom: 1.12rem
+    .wrapper
+      padding-left: .32rem
+      padding-right: .32rem
+    .common-title
+      margin-bottom: .68rem
+      &.title-square
+        &:before
+          border-radius: .1rem
+    .side-bar,
+    .list-article
+      margin-bottom: .8rem
+    .side-bar
+      padding-left: .8rem
+    .highlight,
+    .wrapper-link a
+      min-width: 1.72rem
+      min-height: .32rem
+      font-size: .22rem
+      padding-bottom: .02rem
+    .block-time,
+    .content-image
+      margin-bottom: .32rem
+    .title-article
+      font-size: .26rem
+      margin-bottom: .16rem
+    .text-article
+      line-height: calc(50 / 24)
+      margin-bottom: .16rem
+    .wrapper-link
+      text-align: right
+      padding-right: .48rem
+    .time-article
+      margin-right: .24rem
+    .item-article
+      &:not(:last-child)
+        margin-bottom: .64rem
+    .image-article
+      img
+        width: 100%
+    .common-list-pagination
+      min-width: 7.04rem
+
+.keyvisual-client-whitepaper
+  text-align: center
+
+.section-client-whitepaper
+  .title-whitepaper
+    opacity: 0
+    transition: opacity .26s
+    .wf-active &
+      opacity: 1
+  .row-code
+    display: flex
+  .row-title
+    display: flex
+    align-items: center
+  .text-required
+    background-color: #fff
+    border: solid 1px $base-color-blue
+    color: $base-color-blue
+    display: flex
+    align-items: center
+    justify-content: center
+  input[type="text"],
+  input[type="email"]
+    border: solid 1px #6996be
+  .wrap-input
+    input
+      width: 100%
+  input[type="checkbox"],
+  input[type="radio"]
+    text-indent: -999px
+    display: none
+  input
+    background-color: #fff
+    +placeholder
+      color: rgba(0,0,0,.3)
+      font-weight: $base-font-weight
+  .wrap-input
+    &.is-radio
+      display: flex
+      flex-wrap: wrap
+  .checkbox-field-text,
+  .radio-field-text
+    position: relative
+    cursor: pointer
+    &:before,
+    &:after
+      content: ""
+      position: absolute
+  .checkbox-field-text
+    display: inline-block
+    font-weight: $base-font-weight
+    &:before
+      border: 1px solid #6996be
+      left: 0
+      background-color: #fff
+    &:after
+      display: none
+      transform: rotate(45deg)
+    .link-privacy
+      color: $base-color-blue
+  .radio-field-text
+    font-weight: $base-font-weight
+    &:before,
+    &:after
+      border-radius: 50%
+    &:before
+      border: 1px solid #6996be
+      left: 0
+      background-color: #fff
+      transform: translateY(-50%)
+    &:after
+      display: none
+      background-color: $base-color-blue
+  .text-zip
+    margin-bottom: 0
+  input[type="radio"]:checked + .radio-field-text:after,
+  input[type="checkbox"]:checked + .checkbox-field-text:after
+    display: block
+  .button-auto
+    background-color: #6996be
+    color: #fff
+    display: flex
+    align-items: center
+    justify-content: center
+  .wrapper-check
+    border-top: solid 1px #b2cde5
+  .wrapper-link
+    button
+      cursor: pointer
+
++desktop
+  .keyvisual-client-whitepaper
+    background-image: url(../img/client/client_whitepaper_bg.jpg)
+    margin-top: -104px
+    .keyvisual-title
+      line-height: calc(40 / 24)
+  .section-client-whitepaper
+    padding: 80px 16px 224px
+    .block-content
+      display: flex
+    .block-left
+      flex-shrink: 0
+      width: 408px
+      margin-right: 32px
+      line-height: calc(30 / 18)
+    .title-whitepaper
+      font-size: .18rem
+      margin-bottom: 24px
+    .image-whitepaper
+      margin-bottom: 32px
+    .text-whitepaper
+      margin-bottom: 24px
+      line-height: calc(24 / 13)
+    .form-whitepaper
+      background-color: #f5f8fc
+      padding: 40px 32px 48px
+      font-weight: 700
+    .row-form
+      margin-bottom: 32px
+      &.is-flex
+        display: flex
+        justify-content: space-between
+    .row-code
+      .input-text
+        width: 244px
+        margin-right: 32px
+    .row-title
+      margin-bottom: 16px
+    .text-required
+      font-size: .1rem
+      width: 45px
+      height: 18px
+      margin-right: 16px
+      padding-bottom: 2px
+      position: relative
+      top: 1px
+    .is-required
+      font-size: .16rem
+    input[type="text"],
+    input[type="email"]
+      border-radius: 10px
+      height: 36px
+    .short-input
+      input
+        width: 244px
+    input
+      padding: 0 16px
+      +placeholder
+        font-size: .14rem
+    .checkbox-field-text
+      padding-left: 32px
+      font-size: .12rem
+      line-height: calc(24 / 12)
+      &:before
+        border-radius: 3px
+        width: 24px
+        height: 24px
+        top: 50%
+        transform: translateY(-50%)
+      &:after
+        border: solid $base-color-blue
+        left: 8px
+        top: 16px
+        width: 8px
+        height: 13px
+        border-width: 0 2px 2px 0
+    .radio-field-text
+      padding-left: 32px
+      font-size: .12rem
+      &:before
+        top: 50%
+        width: 24px
+        height: 24px
+      &:after
+        left: 5px
+        top: 2px
+        width: 14px
+        height: 14px
+    .vertical-item
+      margin-right: 24px
+      width: 153px
+    .text-zip
+      font-size: .16rem
+    .button-auto
+      width: 174px
+      height: 36px
+      font-size: 14px
+    .common-big-button
+      font-size: .14rem
+      width: 320px
+      min-height: 56px
+      margin: 0 auto
+    .wrapper-check
+      margin-bottom: 8px
+      padding-top: 24px
+      label
+        margin-bottom: 16px
+
+  .is-mac
+    .section-client-whitepaper
+      input,
+      .text-required
+        padding-bottom: 1px
+  .is-mac.is-safari
+    .section-client-whitepaper
+      .radio-field-text
+        &:after
+          top: 1px
+
+
+@media print, (min-width: 768.98px) and (max-width: 1050px)
+  .section-client-whitepaper
+    .block-content
+      flex-wrap: wrap
+      justify-content: center
+    .block-right
+      width: 584px
+
++mobile
+  .keyvisual-client-whitepaper
+    background-image: url(../img/client/sp/client_whitepaper_bg.jpg)
+    height: 4.33rem
+    .keyvisual-title
+      line-height: calc(60 / 34)
+      padding-top: 1.44rem
+
+  .section-client-whitepaper
+    padding: .8rem 0 1.6rem
+    .wrapper
+      padding-left: .32rem
+      padding-right: .32rem
+    .title-whitepaper
+      font-size: .28rem
+      line-height: calc(37 / 28)
+      margin-bottom: .48rem
+    .text-whitepaper
+      font-size: .22rem
+      line-height: calc(38 / 22)
+    .image-whitepaper
+      margin-bottom: .48rem
+      img
+        width: 100%
+    .block-left
+      margin-bottom: 1.12rem
+    .block-right
+      padding: 0 .16rem
+    .text-required
+      width: .85rem
+      height: .34rem
+      border-width: .02rem
+      font-size: .18rem
+      margin-right: .24rem
+      padding-bottom: .03rem
+    .is-required
+      font-size: .28rem
+    input
+      border-radius: .2rem
+      height: .96rem
+      padding: 0 .48rem
+      +placeholder
+        font-size: .28rem
+        color: rgba(0,0,0,.2)
+    .row-title
+      margin-bottom: .32rem
+    .row-address
+      input
+        height: 1.29rem
+    .content-row
+      margin-bottom: .48rem
+    .wrap-input
+      &.is-radio
+        padding-left: .32rem
+      .vertical-item
+        margin-right: .16rem
+        width: 3.03rem
+    .radio-field-text
+      padding-left: .64rem
+      &:before
+        top: 50%
+        width: .32rem
+        height: .32rem
+      &:after
+        left: .07rem
+        top: .09rem
+        width: .18rem
+        height: .18rem
+    .row-code
+      justify-content: space-between
+      .input-text
+        width: 3.2rem
+    .button-auto
+      width: calc(50% - .16rem)
+      height: .96rem
+      border-radius: .48rem
+    .wrapper-check
+      border-width: .02rem
+      margin-bottom: .48rem
+      padding-top: .48rem
+      label
+        &:not(:last-child)
+          margin-bottom: .8rem
+    .checkbox-field-text
+      line-height: calc(38 / 24)
+      padding-left: .64rem
+      letter-spacing: .03em
+      &:before
+        border-radius: .06rem
+        width: .32rem
+        height: .32rem
+        top: 0
+      &:after
+        border: solid #fff
+        left: .1rem
+        top: .05rem
+        width: .1rem
+        height: .17rem
+        border-width: 0 .02rem .02rem 0
+    input[type="checkbox"]:checked + .checkbox-field-text:before
+      background-color: #009fe7
+    .common-big-button
+      font-size: .24rem
+      width: 86%
+      justify-content: center
+      padding-right: .96rem
+      min-height: 1.12rem
+      border-radius: .56rem
+
+.section-article-detail
+  font-weight: 700
+  .content-time
+    display: flex
+    align-items: center
+    time
+      font-weight: $base-font-weight
+    .category
+      background-color: $base-color-blue
+      color: #fff
+      align-items: center
+  .content-time .category,
+  .list-social
+    display: flex
+    justify-content: center
+  .text-share
+    text-align: center
+    color: $base-color-blue
+    p
+      font-weight: $base-font-weight
+  .list-menu,
+  .list-social
+    padding-left: 0
+    list-style-type: none
+  .list-social
+    flex-wrap: wrap
+    a
+      display: block
+  .list-menu
+    counter-reset: count
+    li
+      &:before
+        counter-increment: count
+        content: counter(count) "."
+
++desktop
+  .section-article-detail
+    padding: 72px 0 112px
+    .wrapper
+      max-width: 848px
+      margin: 0 auto
+    .title-article-detail
+      margin-bottom: 48px
+      font-size: .24rem
+    .content-time
+      time
+        font-size: .14rem
+        margin-right: 24px
+      .category
+        width: 112px
+        height: 24px
+    .list-menu
+      margin-bottom: 40px
+    .image-article
+      margin-bottom: 32px
+    .block-article
+      padding-top: 48px
+      padding-bottom: 48px
+    .text-menu,
+    .sub-title
+      margin-bottom: 24px
+    .content-article
+      margin-bottom: 64px
+    .list-menu li,
+    .text-share,
+      margin-bottom: 16px
+    .list-menu
+      li
+        font-size: .14rem
+    .sub-title,
+    .text-share p,
+    .text-menu
+      font-size: .18rem
+    .common-block-banner
+      margin: 64px 0 48px
+    .block-social
+      margin-top: 64px
+    .text-share
+      p
+        margin-bottom: 32px
+    .list-social
+      margin: 0 -16px 80px
+      li
+        margin: 0 16px
+    .button-common-line
+      width: 320px
+      margin: 0 auto
+
+@media print, (min-width: 768.98px) and (max-width: 877px)
+  .section-article-detail
+    .wrapper
+      padding-left: 16px
+      padding-right: 16px
+
++mobile
+  .breadcrumb-client-haken
+    margin-bottom: .16rem
+  .section-article-detail
+    padding-top: .8rem
+    padding-bottom: 1.12rem
+    .wrapper
+      padding-left: .32rem
+      padding-right: .32rem
+    .content-article
+      margin-bottom: 1.28rem
+    .title-article-detail
+      font-size: .34rem
+      line-height: calc(60 / 34)
+    .content-time
+      time
+        margin-right: .32rem
+      .category
+        font-size: .22rem
+        width: 1.72rem
+        height: .32rem
+    .image-article
+      img
+        width: 100%
+    .common-text,
+    .list-menu li,
+      margin-bottom: .16rem
+    .text-menu,
+    .title-article-detail
+      margin-bottom: .32rem
+    .list-menu,
+    .sub-title,
+    .text-share,
+    .image-article
+      margin-bottom: .48rem
+    .list-menu
+      li
+        line-height: calc(50 / 24)
+    .sub-title,
+    .text-menu
+      font-size: .28rem
+    .block-article
+      padding-top: .48rem
+      &.is-border
+        padding-bottom: 1.12rem
+    .common-block-banner
+      margin-top: 2.08rem
+      margin-bottom: .48rem
+    .block-social
+      margin-top: 2.24rem
+    .text-share
+      p
+        margin-bottom: 0
+        font-size: .3rem
+    .list-social
+      margin-bottom: .8rem
+      li
+        width: .82rem
+        height: .82rem
+        margin: 0 .24rem
+      img
+        width: 100%
+    .button-common-line
+      width: 5.2rem
+      margin: 0 auto
+      border-color: rgba(0,91,170,.3)
+    .block-top
+      margin-bottom: 2.08rem
+
+.section-service-function
+  .wrapper
+    font-weight: 700
+  .list-service
+    list-style-type: none
+    padding-left: 0
+    display: flex
+    flex-wrap: wrap
+    counter-reset: count
+    .common-text
+      overflow: hidden
+      text-overflow: ellipsis
+      display: -webkit-box
+      -webkit-box-orient: vertical
+      color: #222
+  .link-service
+    display: block
+  .image-service
+    overflow: hidden
+    img
+      border-radius: 50%
+      width: 100%
+      height: 100%
+      object-fit: cover
+  .title-service
+    color: $base-color-blue
+    text-align: center
+    span
+      position: relative
+      display: inline-block
+      &:before,
+      &:after
+        position: absolute
+      &:before
+        font-weight: $base-font-weight
+        counter-increment: count
+        content: "0" counter(count) ""
+        font-family: "Alata", sans-serif
+      &:after
+        content: ""
+        top: 50%
+        transform: translateY(-50%)
+        right: 0
+        background: url(../img/client/client_service_icon_01.svg) center / 100% auto no-repeat
+
++desktop
+  .keyvisual-client-service
+    background-image: url(../img/client/client_service_img_bg.jpg)
+  .section-service-function
+    padding: 104px 16px 0
+    .text-intro
+      max-width: 848px
+      margin: 0 auto 128px
+    .list-service
+      justify-content: space-between
+      margin-bottom: 0
+      .common-text
+        -webkit-line-clamp: 2
+    .image-service
+      width: 152px
+      height: 152px
+      margin: 0 auto 32px
+    .item-service
+      width: 31.25%
+      margin-bottom: 24px
+    .title-service
+      font-size: .16rem
+      margin-bottom: 16px
+      span
+        padding: 0 24px
+        &:before
+          font-size: .18rem
+          top: -1px
+          left: -16px
+        &:after
+          width: 13px
+          height: 10px
+
+@media print, (min-width: 768.98px) and (max-width: 855px)
+  .section-service-function
+    .title-service
+      font-size: .14rem
+
++mobile
+  .keyvisual-client-service
+    background-image: url(../img/client/sp/client_service_img_bg.jpg)
+  .section-service-function
+    padding: .8rem 0 .48rem
+    .text-intro
+      margin-bottom: 1.12rem
+      padding: 0 .8rem
+    .wrapper
+      padding-left: .32rem
+      padding-right: .32rem
+    .list-service
+      justify-content: space-between
+      margin-bottom: 0
+      .common-text
+        -webkit-line-clamp: 3
+        line-height: calc(44 / 24)
+    .item-service
+      width: calc(50% - .16rem)
+      margin-bottom: .32rem
+    .image-service,
+    .title-service
+      margin-bottom: .16rem
+    .image-service
+      width: 2rem
+      height: 2rem
+      margin: 0 auto
+    .title-service
+      font-size: .24rem
+      padding-top: .64rem
+      span
+        padding-right: .16rem
+        &:before
+          font-size: .26rem
+          top: -.36rem
+          left: 50%
+          transform: translateX(-50%)
+        &:after
+          right: -.22rem
+          width: .22rem
+          height: .15rem
+          background-image: url(../img/client/sp/client_service_icon_01.svg)
+
+.section-service-detail
+  .list-service-detail
+    list-style-type: none
+    padding-left: 0
+    counter-reset: count
+    .common-title
+      span
+        position: relative
+        display: block
+        margin-left: auto
+        z-index: 1
+        &:before,
+        &:after
+          position: absolute
+        &:before
+          counter-increment: count
+          content: "0" counter(count) ""
+        &:after
+          content: ""
+          width: 100vw
+          background-color: #fff
+          z-index: -1
+      &:before
+        left: unset
+        z-index: 2
+  .block-top
+    display: flex
+  .item-detail
+    background-color: #fff
+    position: relative
+    font-weight: 700
+    &:nth-child(2n+1)
+      background-color: #f5f8fc
+    &.is-reverse
+      .common-title
+        text-align: left
+        &:before
+          left: 0
+          right: unset
+      .block-content
+        max-width: unset
+      .title-example:after
+        background-color: #fff
+      .item-example
+        background-color: #f5f8fc
+  .block-bottom
+    border: solid 1px $base-color-blue
+    position: relative
+  .title-example:after,
+  .sub-list li:before,
+  .button-to-top
+    position: absolute
+  .title-example
+    position: relative
+    text-align: center
+    color: $base-color-blue
+    margin-bottom: 0
+    z-index: 1
+    max-width: 80%
+    left: 50%
+    transform: translateX(-50%)
+    display: inline-block
+    &:after
+      content: ""
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      background: #f5f8fc
+      z-index: -1
+  .list-example,
+  .sub-list
+    list-style-type: none
+  .item-example
+    background-color: #fff
+    position: relative
+    &:not(:last-child)
+      &:after
+        position: absolute
+        content: ""
+        background: center / 100% auto no-repeat
+  .item-example .common-text,
+  .sub-list
+    margin-bottom: 0
+  .title-list
+    text-align: center
+    color: $base-color-blue
+  .sub-list
+    li
+      position: relative
+      &:before
+        content: ""
+        border-radius: 50%
+        background-color: $base-color-blue
+  .common-button-inquiry
+    border-radius: 0
+    background-color: $base-color-blue
+    &:hover
+      background-color: #036fcc
+  .button-to-top
+    cursor: pointer
+    span
+      display: block
+      background: center / 100% auto no-repeat
+
++desktop
+  .section-service-detail
+    padding-bottom: 112px
+    .common-title
+      max-width: 1046px
+      position: absolute
+      top: 56px
+      right: calc(50% - 549px)
+      &:before
+        width: 56px
+        right: calc(50% + 143px)
+      &:after
+        left: -787px
+        width: calc(100% + 509px)
+        z-index: 2
+      span
+        width: 271px
+        &:before
+          font-size: .28rem
+          left: -53px
+          top: -7px
+        &:after
+          top: -32px
+          left: calc(50% - 254px)
+          min-height: calc(100% + 55px)
+    .list-service-detail
+      margin-bottom: 56px
+    .block-text
+      width: 408px
+      flex-shrink: 0
+      margin-right: 88px
+    .block-image
+      margin-right: -24px
+    .block-top
+      justify-content: flex-end
+      margin-bottom: 96px
+    .list-example
+      display: flex
+      justify-content: space-between
+    .item-detail
+      padding: 80px 0 56px
+      &:first-child
+        padding-left: 16px
+        padding-right: 16px
+        .block-text
+          margin-right: 56px
+          width: 39.845%
+        .block-image
+          width: 54.688%
+          margin-top: 120px
+          margin-right: 0
+          flex-shrink: 0
+        .block-content,
+        .block-main
+          margin: 0 auto
+        .block-content
+          max-width: 1024px
+        .block-main
+          max-width: 1296px
+          padding: 0 16px
+      &:not(:first-child)
+        .block-image
+          margin-top: -24px
+      &.is-reverse
+        .common-title
+          right: calc(50% - 550px)
+          width: 100%
+          &:before
+            left: -17px
+          &:after
+            top: -1px
+            left: -17px
+            height: 1px
+            width: calc(100% + 744px)
+            max-width: unset
+          span
+            padding-left: 48px
+            margin-left: unset
+            width: 350px
+            &:before
+              left: -6px
+            &:after
+              right: calc(50% - 177px)
+              left: unset
+        .block-image
+          margin-left: -24px
+          margin-right: 88px
+        .block-text
+          order: 2
+          margin-right: 0
+        .block-top
+          justify-content: flex-start
+      &:nth-child(2n+1)
+        .common-title
+          span:after
+            right: calc(50% + 171px)
+    .block-image
+      width: calc(50% + 40px)
+      img
+        width: 100%
+    .title-example
+      top: -6px
+      margin-top: -24px
+      padding: 0 24px
+    .sub-title
+      font-size: .18rem
+      line-height: calc(38 / 18)
+      margin-bottom: 16px
+    .list-example
+      padding: 8px 24px
+    .block-bottom
+      max-width: 1024px
+      margin: 0 auto 48px
+    .title-example
+      font-size: .24rem
+    .item-example
+      width: 45.175%
+      padding: 16px 24px
+      &:not(:last-child)
+        &:after
+          background-image: url(../img/client/client_service_icon_02.svg)
+          top: 50%
+          transform: translateY(-50%)
+          right: -80px
+          width: 68px
+          height: 22px
+    .title-list
+      font-size: .24rem
+      margin-bottom: 16px
+    .sub-list
+      padding: 0 8px
+      li
+        line-height: calc(30 / 13)
+        &:before
+          width: 6px
+          height: 6px
+          top: 12px
+          left: -8px
+    .common-button-inquiry
+      min-height: 48px
+    .button-to-top
+      bottom: 50px
+      right: calc(50% - 511px)
+      span
+        background-image: url(../img/client/button_to_top.png)
+        width: 40px
+        height: 59px
+
+@media print, (min-width: 768.98px) and (max-width: 1063px)
+  .section-service-detail
+    .item-detail.is-reverse
+      .block-top
+        margin-bottom: 32px
+      .block-text
+        margin-right: unset
+    .block-text
+      margin-right: 24px
+      padding-left: 24px
+    .item-detail:first-child .block-text
+      margin-bottom: 32px
+      margin-right: 16px
+      width: 45.845%
+      padding-left: 0
+    .item-detail.is-reverse
+      .block-text
+        padding-top: 68px
+        padding-right: 16px
+    .item-detail.is-reverse
+      .block-image
+        margin: 0 auto
+    .common-title
+      right: 0
+
+@media print, (min-width: 768.98px) and (max-width: 977px)
+  .section-service-detail
+    .item-example:not(:last-child):after
+      right: -16%
+      width: 11%
+
++mobile
+  .section-service-detail
+    padding-bottom: .6rem
+    .common-title
+      margin-left: -.38rem
+      &:after,
+      &:before
+        right: calc(50% - .05rem)
+      &:before
+        top: -.01rem
+      &:after
+        top: -.02rem
+        width: 3.22rem
+        z-index: 2
+      span
+        width: 3.7rem
+        &:before
+          left: -.55rem
+          font-size: .3rem
+        &:after
+          top: -.42rem
+          left: calc(50% - 3.19rem)
+          min-height: calc(100% + .73rem)
+    .block-main
+      padding-top: .8rem
+      padding-bottom: 1.86rem
+    .block-top
+      flex-direction: column-reverse
+    .sub-title
+      font-size: .28rem
+      line-height: calc(38 / 28)
+      margin-bottom: .32rem
+    .block-image
+      margin-bottom: .64rem
+      img
+        width: 100%
+    .block-text
+      .common-text
+        line-height: calc(44 / 24)
+    .item-detail
+      &.is-reverse
+        .common-title
+          margin-left: 0
+          &:after
+            width: 100% !important
+            left: 0 !important
+          span
+            width: 88.7%
+            padding-right: 1.28rem
+            &:before
+              left: -.62rem
+            &:after
+              left: unset
+              right: calc(50% - 1.28rem)
+      &:first-child
+        .common-title
+          margin-bottom: .88rem
+          &:after
+            right: calc(50% - .05rem)
+            left: unset
+        .block-main
+          padding-left: .48rem
+          padding-right: .48rem
+      &:not(:first-child)
+        .common-title
+          margin-bottom: -.8rem
+          &:after
+            left: unset
+            width: 3.38rem
+        .block-main
+          padding-left: .32rem
+          padding-right: .32rem
+    .block-top
+      margin-bottom: 1.44rem
+    .block-bottom
+      border-width: .02rem
+      margin-bottom: .48rem
+    .list-example
+      margin-bottom: 0
+      padding: 0 .32rem .32rem
+    .title-example
+      text-align: center
+      font-size: .34rem
+      width: 71%
+      top: -.25rem
+    .title-list
+      font-size: .24rem
+      margin-bottom: .16rem
+    .item-example
+      padding: .32rem .16rem
+      &:not(:last-child)
+        margin-bottom: 1.12rem
+        &:after
+          background-image: url(../img/client/sp/client_service_icon_02.svg)
+          width: .26rem
+          height: .71rem
+          left: 50%
+          transform: translateX(-50%)
+          top: calc(100% + .22rem)
+    .sub-list
+      li
+        line-height: calc(40 / 24)
+        &:before
+          width: .1rem
+          height: .1rem
+          left: -.22rem
+          top: .17rem
+    .common-button-inquiry
+      min-height: .96rem
+      width: 6.08rem
+    .button-to-top
+      bottom: .48rem
+      left: 50%
+      transform: translateX(-50%)
+      span
+        background-image: url(../img/client/sp/button_to_top.png)
+        width: .64rem
+        height: .97rem
+    .list-service-detail
+      margin-bottom: .64rem
+    .common-big-button
+      width: 91.668%
+      min-height: 1.6rem
+      padding-right: .96rem
+      justify-content: center
+      &.is-arrow
+        &:after
+          right: .92rem
+
+.section-client-program
+  font-weight: 700
+  .common-list-category
+    .item-category
+      &.is-hide
+        display: none
+  .list-tabs
+    list-style-type: none
+    padding-left: 0
+    display: flex
+    justify-content: center
+    .tab-link
+      color: $base-color-blue
+      cursor: pointer
+      position: relative
+      &:after
+        position: absolute
+        content: ""
+        left: 50%
+        transform: translateX(-50%)
+        width: 97.71%
+        background-color: $base-color-blue
+        opacity: 0
+        transition: opacity .26s
+      &:hover:after
+        opacity: 1
+      &.current
+        &:after
+          opacity: 1
+  .tab-content
+    background-color: rgba(0,91,170,.1)
+    display: none
+    border-top: solid 1px $base-color-blue
+    position: relative
+    &.current
+      display: block
+    &:before
+      content: ''
+      position: absolute
+      width: 100%
+      bottom: 0
+      left: 0
+      z-index: 0
+      background: #fff
+  .button-show-more
+    display: flex
+    align-items: center
+    justify-content: center
+    color: $base-color-blue
+    background-color: #fff
+    border: solid 1px #b2cde5
+    transition: border-color .26s, background .26s
+    position: absolute
+    left: 50%
+    transform: translateX(-50%)
+    bottom: 0
+    text-decoration: none
+    &:before,
+    &:after
+      position: absolute
+      content: ""
+      background-color: $base-color-blue
+    &:after
+      transition: transform .025s
+      transform: rotate(90deg)
+    &.active-show
+      &:after
+        transform: rotate(0)
+    &:hover
+      border-color: $base-color-blue
+
++desktop
+  .keyvisual-client-program
+    background-image: url(../img/client/client_program_bg.jpg)
+  .section-client-program
+    padding: 72px 0 80px
+    .text-top
+      max-width: 880px
+      margin: 0 auto 96px
+      padding: 0 16px
+    .inner-wrapper
+      min-height: 346px
+    .tab-content
+      min-height: 316px
+      &:before
+        height: 25px
+    .list-tabs
+      margin-bottom: 12px
+      .tab-link
+        margin: 0 16px
+        &:after
+          bottom: -12px
+          height: 6px
+      .tab-content
+        padding: 32px 0
+    .common-list-category
+      max-width: 1043px
+      padding: 32px 0
+      .item-category
+        padding-left: 32px
+        padding-right: 32px
+    .button-show-more
+      width: 319px
+      min-height: 48px
+      margin: 0 auto
+      font-size: .14rem
+      padding: 8px 40px
+      &:after,
+      &:before
+        width: 13px
+        height: 3px
+        top: 21px
+        right: 22px
+        border-radius: 3px
+
++mobile
+  .keyvisual-client-program
+    background-image: url(../img/client/sp/client_program_bg.jpg)
+
+  .section-client-program
+    padding: .64rem 0
+    .text-top
+      padding: 0 .48rem
+      line-height: calc(44 / 24)
+      margin-bottom: .96rem
+    .tab-content
+      &:before
+        height: .49rem
+    .list-tabs
+      margin: 0 -.16rem .29rem
+      .tab-link
+        font-size: .22rem
+        margin: 0 .16rem
+      .current
+        &:after
+          bottom: -.29rem
+          height: .07rem
+    .tabs-content
+      border-top-width: .02rem
+    .common-list-category
+      padding: .48rem .32rem
+      .item-category
+        padding-left: .32rem
+        padding-right: .32rem
+    .button-show-more
+      width: 4.32rem
+      min-height: .96rem
+      margin: -.48rem auto 0
+      padding: .08rem .64rem
+      &:after,
+      &:before
+        width: .23rem
+        height: .04rem
+        right: .37rem
+        border-radius: .03rem
+
+.section-client-cases
+  .common-title
+    &:before
+      border-radius: 0
+
++desktop
+  .section-client-cases
+    padding: 0 16px 72px
+    .common-title
+      margin-bottom: 32px
+    .common-title-arrow
+      margin-bottom: 24px
+    .common-list-category
+      margin: 0 -4px 8px
+      .item-category
+        margin: 0 4px 8px
+        min-height: 24px
+
+@media print, (min-width: 768.98px) and (max-width: 930px)
+  .section-client-cases
+    .common-title-arrow
+      font-size: .14rem
+      padding-right: 24px
+      &:before
+        right: -12px
+
++mobile
+  .section-client-cases
+    padding: .96rem 0 .8rem
+    .common-title
+      margin-bottom: 0
+    .wrapper
+      padding-left: .32rem
+      padding-right: .32rem
+    .common-title-arrow
+      margin-bottom: .32rem
+
+.right-text
+  display: inline-block
+  line-height: .5
+  position: relative
+.section-active-keyvisual
+  background-color: rgba(0,91,170,.56)
+  &,
+  .common-list-category .item-category
+    color: #fff
+  .common-list-category
+    justify-content: center
+    .item-category
+      border-color: #fff
+.keyvisual-title
+  letter-spacing: .08em
+
++desktop
+  .section-active-keyvisual
+    margin-top: -40px
+    padding: 80px 0 24px
+    .common-list-category
+      max-width: 715px
+    .right-text
+      font-size: .39rem
+      top: 13px
+    .common-list-category
+      .item-category
+        padding-top: 2px
+        padding-bottom: 0
+        min-height: 24px
+  .keyvisual-title
+    margin-bottom: 24px
+    line-height: calc(40 / 24)
+
++mobile
+  .section-active-keyvisual
+    margin-top: -1.28rem
+    padding: 1.92rem 0 .48rem
+    .right-text
+      font-size: .55rem
+      top: .18rem
+  .keyvisual-title
+    line-height: calc(40 / 24)
+    margin-bottom: .64rem
+
+.section-active-program,
+.section-active-voices
+  .common-title
+    &::before
+      border-radius: unset
+.program-text
+  font-weight: bold
+.program-anchor,
+.sessions-list
+  padding: 0
+  list-style: none
+.program-anchor
+  a
+    text-decoration: none
+    border: solid 1px #b2cde5
+    text-align: center
+    display: flex
+    align-items: center
+    justify-content: center
+    color: $base-color-blue
+    position: relative
+    transition: border-color .26s
+.sessions-list
+  li
+    background-color: #f5f8fd
+    color: $base-color-blue
+    font-weight: bold
+    border: 1px solid #b2cde5
+.block-registration
+  background-color: #f5f8fd
+  .title-registration
+    font-size: .2rem
+    text-align: center
+    z-index: 0
+    span
+      padding: 0 2.7%
+      background-color: #f5f8fd
+      display: inline-block
+    &::before
+      z-index: -1
+      top: 50%
+      left: 50%
+      transform: translate(-50%)
+      height: 1px
+      background-color: $base-color-blue
+.title-registration,
+.item-title
+  position: relative
+  &::before
+    position: absolute
+    content: ""
+.title-registration,
+.list-registration
+  color: $base-color-blue
+.list-registration
+  list-style-type: none
+  font-weight: bold
+  .item-title
+    &::before
+      background-color: #005baa
+  .detail-primary
+    margin: 0
+  .detail-primary,
+  .detail-secondary
+    font-weight: $base-font-weight
+  .detail-secondary
+    display: inline-block
+
++desktop
+  .section-active-program,
+  .section-active-voices
+    .common-title
+      margin-bottom: 40px
+  .section-active-program
+    padding: 80px 0 40px
+    .right-text
+      font-size: 22px
+      top: 8px
+  .program-text
+    line-height: calc(30 / 13)
+    margin: 0 auto 40px
+    max-width: 848px
+  .program-anchor
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    margin-bottom: 48px
+    li
+      margin: 0 16px 16px
+    .common-button-arrow
+      padding-left: 48px
+      padding-right: 64px
+      font-size: .14rem
+      &::after
+        right: 43px
+  .program-block
+    padding-bottom: 88px
+  .sessions-list
+    margin: 0 -24px
+    text-align: center
+    flex-wrap: wrap
+    font-size: .16rem
+    line-height: calc(28 / 16)
+    &,
+    li
+      display: flex
+      justify-content: center
+    li
+      align-items: center
+      padding: 8px 32px
+      min-height: 136px
+      width: 320px
+      margin: 0 16px 32px
+  .program-session
+    padding-bottom: 48px
+  .block-registration
+    padding: 32px 0
+    border-radius: 10px
+    .title-registration
+      margin-bottom: 24px
+      &::before
+        width: 94%
+    .list-registration
+      padding: 0 64px
+      li
+        &:not(:last-child)
+          margin-bottom: 8px
+  .list-registration
+    margin-bottom: 0
+    font-size: .16rem
+    line-height: calc(28 / 16)
+    .item-title
+      padding-left: 24px
+      &::before
+        top: 13px
+        left: -6px
+        width: 22px
+        height: 4px
+  .program-contents
+    .list-registration
+      columns: 2
+      column-gap: 78px
+      margin-right: 40px
+      padding-left: 5px
+      .item-title
+        max-width: 450px
+        &:not(:last-child)
+          margin-bottom: 24px
+
+@media print, (min-width: 768.98px) and (max-width: 1070px)
+  .section-active-program
+    padding-left: 16px
+    padding-right: 16px
+
+  .section-active-voices
+    .voices-list
+      justify-content: center
+
++mobile
+  .section-active-program
+    padding: .64rem 0 .4rem
+    .right-text
+      font-size: .22rem
+      top: .08rem
+    .common-title
+      margin-bottom: .32rem
+  .program-text
+    line-height: calc(44 / 24)
+    margin-bottom: .48rem
+  .program-anchor
+    margin: 0 .32rem .8rem
+    li
+      &:not(:last-child)
+        margin-bottom: .32rem
+    .common-button-arrow
+      padding: .32rem .64rem
+      &::after
+        right: .3rem
+        width: .22rem
+        height: .17rem
+        background-image: url("../img/client/sp/program_icn_arrow.svg")
+  .program-block
+    padding-bottom: .96rem
+  .sessions-list
+    letter-spacing: 0
+    line-height: calc(44 / 24)
+    margin: 0 -.16rem
+    li
+      padding: .32rem .32rem .64rem
+      &:not(:last-child)
+        margin-bottom: .16rem
+  .program-session
+    padding-bottom: 1.12rem
+  .block-registration
+    margin: 0 -.48rem
+    padding: .48rem .32rem .32rem
+    .title-registration
+      margin-bottom: .48rem
+      &::before
+        width: 100%
+    .list-registration
+      line-height: calc(38 / 24)
+      .item-title
+        &::before
+          top: .16rem
+  .list-registration
+    margin-bottom: 0
+    padding: 0
+    li
+      &:not(:last-child)
+        margin-bottom: .32rem
+    .item-title
+      padding-left: .48rem
+      &::before
+        left: .1rem
+        width: .22rem
+        height: .08rem
+  .program-contents
+    .list-registration
+      line-height: calc(44 / 24)
+      margin-left: -.16rem
+      .item-title
+        &:not(:last-child)
+          margin-bottom: .16rem
+        &::before
+          top: .19rem
+
+.section-active-course
+  background-color: #f5f8fc
+.course-title,
+.course-name
+  font-weight: bold
+  color: $base-color-blue
+.course-name
+  text-align: center
+.course-list,
+.course-detail
+  padding: 0
+  margin: 0
+  list-style: none
+.course-list
+  > li
+    background-color: #fff
+.course-detail
+  li
+    position: relative
+    &::before
+      content: ""
+      border-radius: 50%
+      background-color: $base-font-color
+      position: absolute
+
++desktop
+  .section-active-course
+    padding: 32px 0 24px
+    .wrapper
+      padding: 0 80px
+  .course-title
+    font-size: .2rem
+    margin-bottom: 24px
+  .course-list
+    justify-content: space-between
+    display: flex
+    flex-wrap: wrap
+    > li
+      padding: 24px
+      width: 48%
+      margin-bottom: 8px
+  .course-name
+    margin-bottom: 16px
+    font-size: .18rem
+  .course-detail
+    font-size: .14rem
+    line-height: calc(32 / 14)
+    li
+      padding-left: 8px
+      &::before
+        top: 15px
+        left: 2px
+        width: 3px
+        height: 3px
+
++mobile
+  .section-active-course
+    padding: .64rem 0
+  .course-list
+    > li
+      padding: .24rem
+      &:not(:last-child)
+        margin-bottom: .32rem
+  .course-name
+    margin-bottom: .16rem
+    font-size: $base-font-size-sp
+  .course-detail
+    font-size: .22rem
+    line-height: calc(38 / 22)
+    li
+      padding-left: .16rem
+      &::before
+        top: .2rem
+        left: .07rem
+        width: .03rem
+        height: .03rem
+
+.voices-list
+  padding: 0
+  list-style: none
+  color: $base-color-blue
+  li
+    border: 1px solid #b2cde5
+    position: relative
+    z-index: 0
+    &::before,
+    &::after
+      z-index: -1
+  li::before,
+  li::after,
+  .match-height::before
+    content: ""
+    position: absolute
+    background: center/contain no-repeat
+  .match-height
+    margin-bottom: 0
+.voices-training
+  text-align: center
+  font-weight: bold
+  color: $base-color-blue
+  margin: 0
+
++desktop
+  .section-active-voices
+    padding: 40px 0 72px
+  .voices-list
+    display: flex
+    flex-wrap: wrap
+    margin: 0 -16px 48px
+    line-height: calc(24 / 13)
+    li
+      width: 320px
+      min-height: 154px
+      margin: 24px 16px 16px
+      padding: 16px 24px
+      &::before
+        background-image: url("../img/client/voice_icn_01.jpg")
+        left: -4px
+        top: -4px
+        width: 22px
+        height: 22px
+      &::after
+        background-image: url("../img/client/voice_icn_03.jpg")
+        bottom: -6px
+        right: -5px
+        width: 23px
+        height: 24px
+    .match-height
+      display: flex
+      align-items: center
+      &::before
+        right: 37px
+        bottom: -16px
+        width: 15px
+        height: 17px
+        background-image: url("../img/client/voice_icn_02.jpg")
+  .voices-training
+    line-height: calc(28 / 16)
+    font-size: .16rem
+
+@media print, (min-width: 768.98px) and (max-width: 1070px)
+  .section-active-voices
+    padding-left: 16px
+    padding-right: 16px
+
++mobile
+  .section-active-voices
+    padding: 1.28rem 0 .56rem
+    .wrapper
+      padding-left: .32rem
+      padding-right: .32rem
+    .common-title
+      margin-bottom: .48rem
+  .voices-list
+    line-height: calc(44 / 24)
+    margin-bottom: .96rem
+    li
+      padding: 0 .48rem
+      border-width: .02rem
+      &:not(:last-child)
+        margin-bottom: .48rem
+      &:nth-child(even)
+        &::before
+          right: -.05rem
+          top: -.05rem
+          width: .48rem
+          height: .48rem
+          background-image: url("../img/client/sp/voices_icn_03.jpg")
+        &::after
+          left: -.06rem
+          bottom: -.05rem
+          width: .48rem
+          height: .48rem
+          background-image: url("../img/client/sp/voices_icn_04.jpg")
+        .match-height
+          &::before
+            width: .33rem
+            height: .36rem
+            bottom: -.35rem
+            left: .8rem
+            background-image: url("../img/client/sp/voices_icn_05.jpg")
+      &:nth-child(odd)
+        &::before
+          left: -.06rem
+          top: -.06rem
+          width: .48rem
+          height: .49rem
+          background-image: url("../img/client/sp/voices_icn_01.jpg")
+        &::after
+          right: -.09rem
+          bottom: -.09rem
+          width: .5rem
+          height: .5rem
+          background-image: url("../img/client/sp/voices_icn_02.jpg")
+        .match-height
+          &::before
+            width: .33rem
+            height: .37rem
+            bottom: -.36rem
+            right: .8rem
+            background-image: url("../img/client/sp/voices_icn_06.jpg")
+    .match-height
+      display: flex
+      align-items: center
+  .voices-training
+    line-height: calc(48 / 28)
+    font-size: .28rem
+    padding-bottom: .8rem
+
+.section-active-business
+  background-color: #f5f8fd
+  .business-title,
+  .business-description
+    text-align: center
+  .business-description
+    color: $base-color-blue
+  .business-table
+    display: block
+    th,td
+      border: none
+    ul
+      list-style-type: none
+      padding-left: 0
+    .is-bold
+      margin-bottom: 0
+  .policy-list,
+  .date-list,
+  .is-square,
+  .business-table .is-bold
+    font-weight: 700
+  .policy-list
+    li
+      &:before
+        content: "・"
+  .is-square
+    &:before
+      transform: translateY(-50%)
+  .is-square,
+  .circle-list li
+    position: relative
+    &:before
+      position: absolute
+      content: ""
+      left: 0
+      background-color: $base-font-color
+  .circle-list
+    li
+      &:before
+        border-radius: 50%
+
++desktop
+  .section-active-business
+    font-weight: 700
+    margin-bottom: 24px
+    padding: 48px 0
+    &.is-bottom
+      margin-bottom: 120px
+    .business-title
+      font-size: .24rem
+    .business-description,
+    .business-table
+      max-width: 848px
+      margin: 0 auto
+    .business-description
+      margin-bottom: 24px
+    .business-table
+      padding: 16px 24px
+      background-color: #fff
+      .is-flex
+        display: flex
+      tr
+        &:not(:last-child)
+          border-bottom: solid 1px rgba(0,0,0,.1)
+      th
+        vertical-align: top
+        width: 143px
+      th,td
+        padding: 16px 8px
+      p
+        margin-bottom: 0
+    .text-indent
+      padding-left: 11px
+      text-indent: -14px
+    .business-title
+      line-height: calc(40 / 24)
+      margin-bottom: 16px
+    .business-description
+      font-size: .16rem
+      line-height: calc(28 / 16)
+    .date-list li,
+    .policy-list li,
+    .business-table p,
+    .circle-list li,
+    .business-table th
+      line-height: calc(24 / 13)
+    .date-list
+      margin-right: 24px
+    .training-list,
+    .circle-list
+      margin-bottom: 0
+    .training-list
+      li
+        &:not(:last-child)
+          margin-bottom: 16px
+      .button-small-arrow
+        margin-top: 8px
+    .is-square
+      padding-left: 16px
+      &:before
+        width: 9px
+        height: 9px
+        top: 55%
+    .circle-list
+      li
+        padding-left: 8px
+        &:before
+          width: 4px
+          height: 4px
+          top: 10px
+
++mobile
+  .section-active-business
+    margin-bottom: .16rem
+    padding-top: .32rem
+    &.is-bottom
+      margin-bottom: 1.28rem
+    .business-title,
+    .business-description
+      line-height: calc(44 / 24)
+    .business-description
+      font-size: .22rem
+    .date-list li,
+    .policy-list li,
+    .business-table p,
+    .circle-list li,
+    .business-table th
+      line-height: calc(50 / 24)
+    .business-title,
+    .date-application .button-small-arrow,
+    .business-table,
+    .date-list
+      margin-bottom: .16rem
+    .business-title
+      font-size: .24rem
+    .business-description
+      font-weight: $base-font-weight
+    .business-table,
+    .business-table p,
+    .training-list
+      margin-bottom: 0
+    .business-table
+      tr,th,td
+        display: block
+      th
+        font-size: .28rem
+        text-align: center
+        background-color: #fff
+        margin-bottom: .32rem
+        padding: .08rem
+        min-height: .8rem
+      td
+        padding: 0
+      tr
+        &:not(:last-child)
+          margin-bottom: .32rem
+    .date-list
+      li
+        line-height: calc(50 / 24)
+    .is-square,
+    .circle-list li
+      padding-left: .08rem
+    .is-square
+      padding-left: .24rem
+      top: 50%
+      &:before
+        width: .17rem
+        height: .17rem
+        top: .25rem
+    .training-list
+      li
+        &:not(:last-child)
+          margin-bottom: .32rem
+      .button-small-arrow
+        margin-top: .16rem
+    .circle-list
+      li
+        &:before
+          width: .04rem
+          height: .04rem
+          top: .24rem
+
+.section-active-training
+  .training-title
+    text-align: center
+    color: $base-color-blue
+
++desktop
+  .section-active-training
+    padding-bottom: 24px
+    .training-title
+      font-size: .24rem
+      margin-bottom: 40px
+
++mobile
+  .section-active-training
+    padding: 1.12rem 0 .32rem
+    .wrapper
+      padding-left: .32rem
+      padding-right: .32rem
+    .training-title
+      font-size: .34rem
+      margin-bottom: .24rem
+    .common-list-case
+      .item-case
+        &:last-child
+          border-bottom: none
+
+.section-active-contents
+  .contents-title
+    text-align: center
+    color: $base-color-blue
+  .content-link
+    list-style-type: none
+    padding-left: 0
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    .common-big-button
+      position: relative
+      &:after
+        position: absolute
+        content: ""
+        top: 50%
+        transform: translateY(-50%)
+        right: 15px
+        background: url(../img/client/client_icon_arrow_white.svg) center / 100% auto no-repeat
+
++desktop
+  .section-active-contents
+    padding-bottom: 144px
+    .contents-title
+      font-size: .24rem
+      margin-bottom: 48px
+    .content-link
+      li
+        margin: 0 16px 24px
+      .common-big-button
+        font-size: .14rem
+        width: 320px
+        min-height: 56px
+        padding: 8px 64px
+        &:after
+          width: 9px
+          height: 12px
+          right: 43px

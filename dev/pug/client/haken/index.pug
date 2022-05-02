@@ -1,0 +1,151 @@
+extends ../../_layouts/default
+
+block vars
+  -title        = '旭化成アミダスの人材派遣サービス'
+  -description  = ''
+  -keywords     = ''
+  -pageID       = 'client'
+  -pageSubID    = 'client-haken'
+  -typePage     = 'type-b'
+  -path         = '../..'
+  -imgPC        = path+'/img/'+pageID+'/'
+  -imgSP        = path+'/img/'+pageID+'/sp/'
+
+block container
+  +keyvisual('client-haken','旭化成アミダスの人材派遣サービス')
+    +breadcrumb('旭化成アミダスの人材派遣サービス', [{title: '企業向けTOP',url: '/client/'}])
+  +listMenuClient([
+    {
+      title: '人材派遣サービスTOP',
+      url: '/client/haken/index.html',
+      active: true
+    },
+    {
+      title: '得意とする領域・職種',
+      url: '/client/haken/field.html'
+    },
+    {
+      title: '導入事例インタビュー',
+      url: '/client/haken/interview/index.html'
+    },
+    {
+      title: '派遣チーム×顧客座談会',
+      url: '/client/haken/interview/detail.html'
+    },
+    {
+      title: '記事コンテンツ',
+      url: '/client/haken/article/index.html'
+    }
+  ])
+
+  section.section-haken-dispatch
+    .inner-wrapper
+      .content-left
+        h2.title-dispatch 旭化成アミダスの<br class="md">人材派遣<br class="sm">サービスは<br class="md">◯◯◯◯◯◯◯◯◯◯<br class="md">◯◯◯◯◯◯◯◯です。
+        p.common-text 説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります。
+      figure.image-dispatch
+        img.md(src=imgPC+"client_haken_img_01.jpg" width="656" height="400" loading="lazy" alt="旭化成アミダスの人材派遣サービスは◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯です。")
+        img.sm(src=imgSP+"client_haken_img_01.jpg" width="352" height="210" loading="lazy" alt="旭化成アミダスの人材派遣サービスは◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯◯です。")
+
+  section.section-haken-features
+    .wrapper
+      h2.common-title.title-square
+        span 主な特長
+      ul.list-features
+        -
+          var
+            list = [
+              {
+                number: '02',
+                title: 'さまざまな手間と<br class="md">コストを削減',
+                text: '親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした事がある。なぜそんな無闇をしたと聞く人があるかも知れぬ。別段深い理由でもない。'
+              },
+              {
+                number: '03',
+                title: '生産性を向上し、<br class="md">職場を活性化',
+                text: '親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした事がある。なぜそんな無闇をしたと聞く人があるかも知れぬ。別段深い理由でもない。'
+              },
+              {
+                number: '04',
+                title: '「人材」に関わる<br class="md">すべてをサポート',
+                text: '親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした事がある。なぜそんな無闇をしたと聞く人があるかも知れぬ。別段深い理由でもない。'
+              }
+            ];
+        each item in list
+          li.item-features
+            .content-features
+              figure.image-features
+                img.md(src=imgPC+"client_haken_img_"+item.number+".jpg" width="320" height="230" loading="lazy" alt=item.title.replace(/<[^>]*>/,''))
+                img.sm(src=imgSP+"client_haken_img_"+item.number+".jpg" width="672" height="421" loading="lazy" alt=item.title.replace(/<[^>]*>/,''))
+              .content-bottom
+                h3.title-item!=item.title
+                p.common-text!=item.text
+
+  section.section-haken-content
+    .wrapper
+      h2.common-title.title-square
+        span コンテンツ
+      ul.list-content
+        -
+          var
+            list = [
+              {
+                number: '05',
+                title: '得意とする領域・職種',
+                text: '説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります。'
+              },
+              {
+                number: '06',
+                title: '導入事例インタビュー',
+                text: '説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります。'
+              },
+              {
+                number: '07',
+                title: '派遣チーム × 顧客座談会',
+                text: '説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります。'
+              }
+            ];
+        each item in list
+          li.item-content
+            a.block-content(href="#")
+              .content-image
+                figure.image-content
+                  img.md(src=imgPC+"client_haken_img_"+item.number+".jpg" width="320" height="230" loading="lazy" alt=item.title.replace(/<[^>]*>/,''))
+                  img.sm(src=imgSP+"client_haken_img_"+item.number+".jpg" width="672" height="421" loading="lazy" alt=item.title.replace(/<[^>]*>/,''))
+                .common-block-arrow
+              h3.title-item!=item.title
+              p.common-text!=item.text
+
+  section.section-haken-article
+    .wrapper
+      h2.common-title.title-square
+        span 記事コンテンツ
+      ul.list-article
+        -
+          var
+            list = [
+              {
+                number: '08'
+              },
+              {
+                number: '09'
+              },
+              {
+                number: '10'
+              }
+            ];
+        each item in list
+          li.item-article
+            .block-article
+              a.content-image(href="#")
+                figure.image-article
+                  img.md(src=imgPC+"client_haken_img_"+item.number+".jpg" width="320" height="160" loading="lazy" alt="〇〇〇〇の〇〇〇〇が語る、〇〇〇〇の可能性")
+                  img.sm(src=imgSP+"client_haken_img_"+item.number+".jpg" width="672" height="421" loading="lazy" alt="〇〇〇〇の〇〇〇〇が語る、〇〇〇〇の可能性")
+                .common-block-arrow
+              .content-article
+                time.time(datetime="2020-02-14") 2020.02.14
+                h3.title-article 〇〇〇〇の〇〇〇〇が語る、<br class="sm">〇〇〇〇の可能性
+                .content-detail
+                  p.common-text.limit 説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります。　
+                  a.link-more(href="#") 続きを読む
+      a.common-button-more.font-alata(href="#") View All

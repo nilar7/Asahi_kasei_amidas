@@ -1,0 +1,249 @@
+extends ../_layouts/default
+
+block vars
+  -title        = '仮登録フォーム'
+  -description  = ''
+  -keywords     = ''
+  -pageID       = 'mypage'
+  -pageSubID    = 'mypage-register'
+  -typePage     = 'type-a'
+  -path         = '..'
+  -imgPC        = path+'/img/'+pageID+'/'
+  -imgSP        = path+'/img/'+pageID+'/sp/'
+
+block container
+  +breadcrumb('仮登録フォーム　', [{title: '人材派遣トップ'}])
+  section.section-mypage-register
+    .wrapper
+      h1.common-title
+        span WEB仮登録
+      .block-registration
+        h2.title-registration
+          span WEB仮登録についての事前ご案内
+        ul.list-registration
+          li.item-registration
+            h3.item-title 登録情報について
+            p.item-text WEB仮登録後、1ヶ月以内にご来社のお約束が出来なかった場合は、当社個人情報保護規程に基づき、ご登録いただいた情報を廃棄致します。
+          li.item-registration
+            h3.item-title 登録時のお願い
+            p.item-text 「戻る」ボタンを押すとエラーとなり、入力内容がリセットされますので、「戻る」ボタンは押さないでください。
+      .block-infections
+        h2.title-infections 新型コロナウイルス感染症拡大防止対策について
+        p.text-infections 旭化成アミダスでは、従業員のマスク着用を義務付けております。<br>登録面談時にはお互いマスク着用の上、面談を実施させていただきますのでご了承ください。
+        .block-detail
+          p.text-left お願い
+          .block-right
+            p.text-right 来社面談時には事前にご自宅で体温測定を実施いただき、37.5度以上の場合は当日の面談を控えさせていただきます。また直近2週間以内の渡航歴がございましたら事前に御相談ください。
+            p.text-note ＊旭化成アミダスではWeb面談の実施を推奨しております。
+      form.common-form-register
+        .row-form.is-flex
+          .content-row
+            .row-title
+              span.text-required 必須
+              span.is-required 姓（漢字）
+            .row-fill
+              .wrap-input.short-input
+                input.input-text(type='text' name='firstName' value='' required)
+          .content-row
+            .row-title
+              span.text-required 必須
+              span.is-required 名（漢字）
+            .row-fill
+              .wrap-input.short-input
+                input.input-text(type='text' name='lastName' value='' required)
+        .row-form.is-flex
+          .content-row
+            .row-title
+              span.text-required 必須
+              span.is-required 姓（フリガナ）
+            .row-fill
+              .wrap-input.short-input
+                input.input-text(type='text' name='firstName' value='' required)
+          .content-row
+            .row-title
+              span.text-required 必須
+              span.is-required 名（フリガナ）
+            .row-fill
+              .wrap-input.short-input
+                input.input-text(type='text' name='lastName' value='' required)
+        .row-form
+          .content-row
+            .row-title
+              span.text-required 必須
+              span.is-required 生年月日
+            .form-birthday
+              .row-fill.select-half-width
+                select(required='').select-box
+                  option(value='' selected='' disabled='' hidden='') 西暦
+                  option(value='西暦') 1999
+                  option(value='西暦') 1998
+                  option(value='西暦') 1997
+                  option(value='西暦') 1996
+                  option(value='西暦') 1995
+                  option(value='西暦') 1994
+                  option(value='西暦') 1993
+                  option(value='西暦') 1992
+                  option(value='西暦') 1991
+                  option(value='西暦') 1990
+                  option(value='西暦') 1989
+                  option(value='西暦') 1988
+                  option(value='西暦') 1987
+                  option(value='西暦') 1986
+                  option(value='西暦') 1985
+                  option(value='西暦') 1984
+                  option(value='西暦') 1983
+                  option(value='西暦') 1982
+                  option(value='西暦') 1981
+                  option(value='西暦') 1980
+                  option(value='西暦') 1979
+                  option(value='西暦') 1978
+                  option(value='西暦') 1977
+              .row-fill.select-short-width
+                select(required='').select-box
+                  option(value='' selected='' disabled='' hidden='') 月
+                  option(value='01') 01
+                  option(value='02') 02
+                  option(value='03') 03
+                  option(value='04') 04
+                  option(value='05') 05
+                  option(value='06') 06
+                  option(value='07') 07
+                  option(value='08') 08
+                  option(value='09') 09
+                  option(value='10') 10
+                  option(value='11') 11
+                  option(value='12') 12
+              .row-fill.select-short-width
+                select(required='').select-box
+                  option(value='' selected='' disabled='' hidden='') 日
+                  option(value='01') 01
+                  option(value='02') 02
+                  option(value='03') 03
+                  option(value='04') 04
+                  option(value='05') 05
+                  option(value='06') 06
+                  option(value='07') 07
+                  option(value='08') 08
+                  option(value='09') 09
+                  option(value='10') 10
+                  option(value='11') 11
+                  option(value='12') 12
+                  option(value='13') 13
+                  option(value='14') 14
+                  option(value='15') 15
+                  option(value='16') 16
+                  option(value='17') 17
+                  option(value='18') 18
+                  option(value='19') 19
+                  option(value='20') 20
+                  option(value='21') 21
+                  option(value='22') 22
+                  option(value='23') 23
+                  option(value='24') 24
+                  option(value='25') 25
+                  option(value='26') 26
+                  option(value='27') 27
+                  option(value='28') 28
+                  option(value='29') 29
+                  option(value='30') 30
+                  option(value='31') 31
+        .row-form
+          .content-row
+            .row-title
+              span.text-required 必須
+              span.is-required 性別
+            .row-fill.select-half-width
+              select(required='').select-box
+                option(value='' selected='' disabled='' hidden='') 選択してください
+                option(value='選択してください') 選択してください
+                option(value='選択してください') 選択してください
+        .row-form
+          .content-row
+            .row-title
+              span.text-required 必須
+              span.is-required 電話番号（半角数字）
+            .form-phone
+              .row-fill.select-half-width
+                select(required='').select-box
+                  option(value='' selected='' disabled='' hidden='') 選択してください
+                  option(value='選択してください') 選択してください
+                  option(value='選択してください') 選択してください
+              .row-fill.long-input
+                .wrap-input
+                  input.input-text.js-input-number(type='tel' name='phone' value='' placeholder="例）09012345678")
+          span.text-note ※日中ご連絡の取りやすい番号を入力してください。 <br class="sm">※ハイフンは不要
+        .row-form
+          .content-row
+            .row-title
+              span.text-required 必須
+              span.is-required メールアドレス（半角数字）
+          .form-email
+            .row-fill.select-half-width
+              select(required='').select-box
+                option(value='' selected='' disabled='' hidden='') 携帯メールアドレス
+                option(value='携帯メールアドレス') 携帯メールアドレス
+                option(value='携帯メールアドレス') 携帯メールアドレス
+            .row-fill.long-input
+              .wrap-input
+                input.input-text(type='email' name='email' value='' placeholder="例）haken@om.asahi-kasei.co.jp" required)
+          span.text-note.is-spacing 【メールアドレス入力のご注意・ご案内】<br>迷惑メールの対策としてPCからのメール着信拒否・ドメイン指定受信などを指定されている場合は「@om.asahi-kasei.co.jp」からのメールが受信できるよう、事前に設定をお願い致します。<br>また、全角文字・半角カナ・特殊記号文字(例：&amp; .. # $ ? % 等)が使用されたアドレスへは返信できませんので注意ください。
+        .row-form
+          .content-row.full-input
+            .row-title
+              span.text-required 必須
+              span.is-required メールアドレス（確認用）
+            .row-fill
+              .wrap-input
+                input.input-text(type='email' name='email' value='' placeholder="例）haken@om.asahi-kasei.co.jp" required)
+        .row-form
+          .content-row
+            .row-title
+              span.text-required 必須
+              span.is-required 登録希望拠点
+            .row-fill.select-full-width
+              select(required='').select-box
+                option(value='' selected='' disabled='' hidden='') 選択してください
+                option(value='選択してください') 選択してください
+                option(value='選択してください') 選択してください
+        .row-form
+          .content-row
+            .row-title
+              span.text-required 必須
+              span.is-required 希望職種
+            .row-fill.select-full-width
+              select(required='').select-box
+                option(value='' selected='' disabled='' hidden='') 支店を選択してください
+                option(value='支店を選択してください') 支店を選択してください
+                option(value='支店を選択してください') 支店を選択してください
+        .row-form
+          .content-row
+            .row-title
+              span.text-required 必須
+              span.is-required 当社をお知りになったきっかけ
+            .row-fill.select-full-width
+              select(required='').select-box
+                option(value='' selected='' disabled='' hidden='') きっかけを選択してください
+                option(value='きっかけを選択してください') きっかけを選択してください
+                option(value='きっかけを選択してください') きっかけを選択してください
+        .row-form.block-information
+          .row-title
+            span.title-information 個人情報の取り扱いについて
+            p.text-note.text-information 当社は、JIS Q 15001:2017のA.3.4.2.5（A.3.4.2.4のうち本人から直接書面によって取得する場合の措置）に従い、個人情報を収集・保管いたします。この入力フォームで取得する個人情報の取扱いは下記3項の利用目的のためであり、この目的の範囲を超えて利用することはございません。
+          .form-agreement
+            .privacy-wrapper.js-scrollbar
+              ol.list-privacy
+                li.item-privacy １．組織の名称<br><span>旭化成アミダス株式会社</span>
+                li.item-privacy ２．個人情報に関する管理者、所属及び連絡先<br><span>管理者：個人情報保護管理者<br>役職名：旭化成アミダス株式会社　取締役 企画管理部長<br>連絡先：メールアドレス：amidas-kojinjyohosoudan@om.asahi-kasei.co.jp</span>
+                li.item-privacy ３．個人情報の利用目的<br><span>当社サービスへのお申し込みやお問い合せに伴い入手した個人情報は、お申し込みやお問い合せ等に回答するために利用いたします。</span>
+                li.item-privacy ４．個人情報の第三者提供<br><span>当社は、ご本人の同意なく、ご提供いただいた個人情報を第三者に開示・提供することはいたしません。</span>
+                li.item-privacy ５．個人情報取扱いの委託<br><span>当社は、事業運営上、より良いサービスを提供するために業務の一部を外部に委託しています。業務委託先に対しては、個人情報を預けることがあります。この場合、個人情報を適切に取り扱っていると認められる委託先を選定し、契約等において個人情報の適正管理・機密保持などによりお客様の個人情報の漏洩防止に必要な事項を取決め、適切な管理を実施させます。<br>※委託の事例：教育事業で提供するサービス（研修）で、外部講師に委託する場合など。</span>
+                li.item-privacy ６．個人情報に対する保護対策<br><span>個人情報は、漏洩・紛失・改ざん・不当開示・不正使用または不正アクセス等のないよう、厳重に管理いたします。但し、法律の定めにより、国･地方自治体･裁判所･警察その他、法律や条例などで認められた権限を持つ機関より開示請求があった場合は、許可なく開示する場合があります。</span>
+                li.item-privacy ７．個人情報の開示等の請求<br><span>当社に対し、ご自身の個人情報の開示等（利用目的の通知、開示、内容の訂正・追加・削除、利用の停止または消去、第三者への提供の停止）に関して、当社「個人情報に関するお問い合わせ窓口」に申し出ることができます。その際、当社はご本人を確認させていただいたうえで、合理的な期間内に対応いたします。開示等の申し出の詳細につきましては、下記の「個人情報に関するお問い合わせ窓口」までお問い合わせください。<br>開示に際しては、開示請求に係る手数料1,000円（消費税等込）を徴収致します。なお、開示内容につきましては、ご本人より入手した情報に限らせていただきます。<br>＜個人情報に関するお問い合わせ窓口＞<br>〒101-8480　東京都千代田区神田錦町3丁目22番地 テラススクエア5階<br>旭化成アミダス株式会社　苦情・相談窓口責任者（企画管理部内）<br>メールアドレス：amidas-kojinjyohosoudan@om.asahi-kasei.co.jp</span>
+                li.item-privacy ８．個人情報を提供されることの任意性について<br><span>ご本人が当社に個人情報を提供されるかどうかは、ご本人の任意によるものです。ただし、必要な項目をいただけない場合、各サービス等が適切な状態で提供できない場合があります。</span>
+                li.item-privacy ９．本Webサイトへアクセスしたことを契機として機械的に取得される情報<br><span>当社は、閲覧されたWebサイトのセキュリティ確保・ユーザーサービス向上のため、Cookieにより閲覧された方の情報を取得することがあります。</span>
+          .wrapper-check
+            label
+              input(type='checkbox' name='同意する' checked)
+              span.checkbox-field-text 同意する
+          .wrapper-link
+            button.middle-button.font-alata(type='submit' value='View All' name='confirmation') 送信内容を確認
