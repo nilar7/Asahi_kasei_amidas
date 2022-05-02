@@ -155,12 +155,15 @@
     margin-top: -7px;
   }
   .section-recruit-how .block-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
   .section-recruit-how .image-left {
     border-top-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    flex-shrink: 0;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
     width: 48.438%;
     margin-right: 32px;
   }
@@ -186,6 +189,7 @@
     text-overflow: ellipsis;
     display: -webkit-box;
     -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
     margin-bottom: .48rem;
   }
   .section-recruit-how .image-left img {
@@ -226,6 +230,7 @@
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
+  -webkit-box-orient: vertical;
 }
 
 @media print, (min-width: 769px) {
@@ -236,9 +241,14 @@
     margin-bottom: 40px;
   }
   .section-recruit-environment .list-environment {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .section-recruit-environment .item-environment {
     width: 48.438%;
@@ -324,7 +334,9 @@
   position: absolute;
   content: "";
   background: url(../img/recruit/recruit_icon_arrow_01.svg) no-repeat center/9px 7px;
-  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-transition: border-color .26s;
   transition: border-color .26s;
 }
 
@@ -338,6 +350,7 @@
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
+  -webkit-box-orient: vertical;
 }
 
 @media print, (min-width: 769px) {
@@ -348,9 +361,14 @@
     margin-bottom: 40px;
   }
   .section-recruit-employment .list-employment {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .section-recruit-employment .item-employment {
     width: 31.446%;
@@ -413,7 +431,8 @@
     right: 0;
     bottom: .1rem;
     background-image: url(../img/common/sp/icon_arrow_01.svg);
-    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
     border-width: .02rem;
   }
   .section-recruit-employment .title-employment {
@@ -447,8 +466,11 @@
 .section-recruit-engineer .list-engineer {
   list-style-type: none;
   padding-left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .section-recruit-engineer .list-engineer-detail {
@@ -461,6 +483,7 @@
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
+  -webkit-box-orient: vertical;
 }
 
 .section-recruit-engineer .list-engineer-detail .is-icon {
@@ -488,15 +511,21 @@
 .section-recruit-engineer .list-system {
   padding-left: 0;
   list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .section-recruit-engineer .list-system .common-text {
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
+  -webkit-box-orient: vertical;
   margin-bottom: 0;
 }
 
@@ -508,13 +537,16 @@
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
+  -webkit-box-orient: vertical;
   margin-bottom: 0;
 }
 
 .section-recruit-engineer .common-big-button,
 .section-recruit-engineer .common-button-inquiry {
+  -webkit-transition: opacity .26s;
   transition: opacity .26s;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .section-recruit-engineer .common-big-button:hover,
@@ -532,7 +564,8 @@
     height: 269px;
     top: -31px;
     left: 52.6%;
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
     background-image: url(../img/recruit/recruit_engineer_bg_line.png);
   }
   .keyvisual-recruit-engineer .keyvisual-title {
@@ -635,13 +668,20 @@
     margin-bottom: 80px;
   }
   .section-recruit-engineer .block-information .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
     padding: 48px 72px 64px 88px;
   }
   .section-recruit-engineer .block-information .content-information {
-    flex-shrink: 0;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
     width: 496px;
   }
   .section-recruit-engineer .block-information .content-information {
@@ -693,7 +733,9 @@
     padding: 0 .16rem;
   }
   .section-recruit-engineer .list-engineer {
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin-bottom: 1.44rem;
   }
   .section-recruit-engineer .list-engineer a {
@@ -794,7 +836,9 @@
     width: 6.72rem;
     min-height: 1.32rem;
     border-radius: .64rem;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     padding-left: 0.32rem;
     padding-right: 0.32rem;
   }
