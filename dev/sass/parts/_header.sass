@@ -120,6 +120,9 @@ header
         position: absolute
         content: ""
         background: center / 99% auto no-repeat
+      &:hover
+        color: #FFD140
+        opacity: 1
   .item-sub-menu
     >a,span
       display: block
@@ -132,8 +135,15 @@ header
         top: 50%
         transform: translateY(-50%)
         background: url(../img/common/header_icon_03.svg) center / 100% auto no-repeat
+      &:hover
+        color: #FFD140
+        opacity: 1
     >span
       cursor: pointer
+    >a
+      &:hover
+        &:after
+          background: url(../img/common/header_icon_03_hover.png) center / 100% auto no-repeat
     .icon-plus
       &:after
         background-image: url(../img/common/header_icon_04.svg)
@@ -230,6 +240,9 @@ header
           width: 40px
           height: 40px
           background-image: url(../img/common/header_icon_02.svg)
+        &:hover
+          &:after
+            background-image: url(../img/common/header_icon_02_hover.png)
       &.is-pointer
         pointer-events: none
     .content-sub-menu
