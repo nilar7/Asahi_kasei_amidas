@@ -578,7 +578,6 @@
       border-color: $base-color-blue
   .content-image
     position: relative
-
 +desktop
   .section-haken-content
     padding: 88px 24px 72px
@@ -599,6 +598,41 @@
         top: 0
         left: 0
         width: 100%
+    .image-content
+      -webkit-mask-image: url(../img/client/mask_img.png)
+      mask-image: url(../img/client/mask_img.png)
+      width: 320px
+      height: 188px  
+
+    &.is-special-custom
+    .image-content
+      position: relative
+      &:before,
+        content: ''
+        position: absolute
+        left: 0
+        bottom: 0
+        right: 0
+        top: 0
+        background: rgba(0,159,231,.2)
+        z-index: 2
+        transition: .26s ease
+        opacity: 0
+    .image-content
+        position: relative
+        &:after
+          content: ''
+          position: absolute
+          left: 0
+          bottom: 0
+          right: 0
+          z-index: 1
+          height: 95px
+          background: linear-gradient(0deg, rgba(84,84,84,1) 0%, rgba(0,0,0,0) 100%)
+          opacity: .6
+    .block-content:hover
+      .image-content:before
+        opacity: 1
     .title-item
       font-size: .16rem
       margin-bottom: 16px
@@ -712,6 +746,41 @@
         top: 0
         left: 0
         width: 100%
+    .image-article
+      -webkit-mask-image: url(../img/client/mask_img.png)
+      mask-image: url(../img/client/mask_img.png)
+      width: 320px
+      height: 188px  
+
+    &.is-special-custom
+    .image-article
+      position: relative
+      &:before,
+        content: ''
+        position: absolute
+        left: 0
+        bottom: 0
+        right: 0
+        top: 0
+        background: rgba(0,159,231,.2)
+        z-index: 2
+        transition: .26s ease
+        opacity: 0
+    .image-article
+        position: relative
+        &:after
+          content: ''
+          position: absolute
+          left: 0
+          bottom: 0
+          right: 0
+          z-index: 1
+          height: 95px
+          background: linear-gradient(0deg, rgba(84,84,84,1) 0%, rgba(0,0,0,0) 100%)
+          opacity: .6
+    .content-image:hover
+      .image-article:before
+        opacity: 1
 
 @media print, (min-width: 768.98px) and (max-width: 1037px)
   .section-haken-article
@@ -1642,7 +1711,7 @@
     &:hover .common-block-arrow:after
       border-color: $base-color-blue
   .content-image
-    position: relative
+    position: relative  
   .item-service
     font-weight: 700
   .text-service
@@ -1665,6 +1734,7 @@
     .content-service,
     .image-service
       position: relative
+      
     .title-service
       position: absolute
       color: #fff
@@ -1681,6 +1751,42 @@
         top: 0
         left: 0
         width: 100%
+    .image-service
+      -webkit-mask-image: url(../img/client/mask_img.png)
+      mask-image: url(../img/client/mask_img.png)
+      width: 320px
+      height: 188px  
+
+    &.is-special-custom
+    .image-service
+      position: relative
+      &:before,
+        content: ''
+        position: absolute
+        left: 0
+        bottom: 0
+        right: 0
+        top: 0
+        background: rgba(0,159,231,.2)
+        z-index: 2
+        transition: .26s ease
+        opacity: 0
+    .image-service
+        position: relative
+        &:after
+          content: ''
+          position: absolute
+          left: 0
+          bottom: 0
+          right: 0
+          z-index: 1
+          height: 95px
+          background: linear-gradient(0deg, rgba(84,84,84,1) 0%, rgba(0,0,0,0) 100%)
+          opacity: .6
+    .content-service:hover
+      .image-service:before
+        opacity: 1
+    
     .text-service
       line-height: calc(26 / 13)
       -webkit-line-clamp: 2
@@ -1812,6 +1918,39 @@
         margin-bottom: 40px
     .content-image
       width: 320px
+    .image-article
+      -webkit-mask-image: url(../img/client/mask_img.png)
+      mask-image: url(../img/client/mask_img.png)
+    &.is-special-custom
+    .image-article
+      position: relative
+      &:before,
+        content: ''
+        position: absolute
+        left: 0
+        bottom: 0
+        right: 0
+        top: 0
+        background: rgba(0,159,231,.2)
+        z-index: 2
+        transition: .26s ease
+        opacity: 0
+    .image-article
+        position: relative
+        &:after
+          content: ''
+          position: absolute
+          left: 0
+          bottom: 0
+          right: 0
+          z-index: 1
+          height: 95px
+          background: linear-gradient(0deg, rgba(84,84,84,1) 0%, rgba(0,0,0,0) 100%)
+          opacity: .6
+    .content-image:hover
+      .image-article:before
+        opacity: 1
+
     .block-article
       display: flex
     .block-time

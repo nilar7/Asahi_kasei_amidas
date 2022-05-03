@@ -58,6 +58,39 @@
       margin-bottom: 16px
       width: 100%
       height: 280px
+    .image-interview
+      -webkit-mask-image: url(../img/client/mask_img.png)
+      mask-image: url(../img/client/mask_img.png)
+    &.is-special-custom
+    .image-interview
+      position: relative
+      &:before,
+        content: ''
+        position: absolute
+        left: 0
+        bottom: 0
+        right: 0
+        top: 0
+        background: rgba(0,159,231,.2)
+        z-index: 2
+        transition: .26s ease
+        opacity: 0
+    .image-interview
+        position: relative
+        &:after
+          content: ''
+          position: absolute
+          left: 0
+          bottom: 0
+          right: 0
+          z-index: 1
+          height: 95px
+          background: linear-gradient(0deg, rgba(84,84,84,1) 0%, rgba(0,0,0,0) 100%)
+          opacity: .6
+    .link-interview:hover
+      .image-interview:before
+        opacity: 1
+
     .title-item
       font-size: .18rem
       margin-bottom: 16px
