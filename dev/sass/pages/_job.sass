@@ -1371,13 +1371,32 @@
     .image-job
       position: relative
       width: 100%
-      height: 200px
+      height: 200px  
       img
         width: 100%
         height: 100%
         object-fit: cover
         border-top-left-radius: 10px
         border-top-right-radius: 10px
+    &.is-special-custom
+    .image-job
+      position: relative
+      &:before,
+        content: ''
+        position: absolute
+        left: 0
+        bottom: 0
+        right: 0
+        top: 0
+        background: rgba(0,159,231,.2)
+        z-index: 2
+        transition: .26s ease
+        opacity: 0
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    .item-link:hover
+      .image-job:before
+        opacity: 1
     .list-category
       font-size: 14px
       margin: 0 -4px
