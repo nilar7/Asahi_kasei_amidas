@@ -348,7 +348,6 @@
     .common-news-list
       width: 80%
 
-
 .pick-up-content
   background: rgba($base-color-blue,.6)
   position: relative
@@ -420,9 +419,26 @@
     -webkit-mask-repeat: no-repeat
     mask-repeat: no-repeat
     img
-      height: 100%
       width: 100%
+      height: 100%
       object-fit: cover
+  &.is-special-custom
+    .work-image
+      position: relative
+      &:before,
+        content: ''
+        position: absolute
+        left: 0
+        bottom: 0
+        right: 0
+        top: 0
+        background: rgba(0,159,231,.2)
+        z-index: 2
+        transition: .26s ease
+        opacity: 0
+    .work-link:hover
+      .work-image:before
+        opacity: 1
   .work-block
     position: relative
     overflow: hidden
@@ -453,6 +469,21 @@
     .work-image
       -webkit-mask-image: url(../img/top/mask_work.png)
       mask-image: url(../img/top/mask_work.png)
+      width: 408px
+      height: 280px
+    &.is-special-custom
+      .work-image
+        position: relative
+        &:after
+          content: ''
+          position: absolute
+          left: 0
+          bottom: 0
+          right: 0
+          z-index: 1
+          height: 95px
+          background: linear-gradient(0deg, rgba(84,84,84,1) 0%, rgba(0,0,0,0) 100%)
+          opacity: .6
     .work-block
       border-radius: 10px
       height: 280px
