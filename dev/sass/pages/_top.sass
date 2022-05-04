@@ -187,7 +187,7 @@
           border-color: $base-color-blue
   .banner-image
     width: 100%
-    height: 100%
+    height: 280px
     -webkit-mask-size: 100%
     mask-size: 100%
     -webkit-mask-repeat: no-repeat
@@ -199,6 +199,7 @@
       top: 48%
       transform: translateY(-50%)
       position: absolute
+  
   .banner-content
     position: relative
     .inner-content
@@ -269,6 +270,7 @@
         top: 190px
         right: 0
         position: absolute
+    
     .main-content
       .wrapper
         padding: 0 16px
@@ -285,6 +287,35 @@
     .inner-content
       p
         margin-bottom: 0
+  &.is-special-custom
+    .banner-image
+      position: relative
+      &:before,
+        content: ''
+        position: absolute
+        left: 0
+        bottom: 0
+        right: 0
+        top: 0
+        background: rgba(0,159,231,.2)
+        z-index: 2
+        transition: .26s ease
+        opacity: 0
+    .banner-image
+        position: relative
+        &:after
+          content: ''
+          position: absolute
+          left: 0
+          bottom: 0
+          right: 0
+          z-index: 1
+          height: 95px
+          background: linear-gradient(0deg, rgba(84,84,84,1) 0%, rgba(0,0,0,0) 100%)
+          opacity: .6
+    .link-content:hover
+      .banner-image:before
+        opacity: 1
 
 +mobile
   .section-top-job

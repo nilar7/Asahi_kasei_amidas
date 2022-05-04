@@ -1429,6 +1429,7 @@
   .list-work
     .common-block-arrow
       background-color: #f5f8fc
+       z-index: 9
   .is-limit
     overflow: hidden
     text-overflow: ellipsis
@@ -1485,6 +1486,26 @@
     .title-company,
     .link-main
       margin-bottom: 24px
+    .link-main
+      position: relative
+      &:before,
+        content: ''
+        position: absolute
+        left: 0
+        bottom: 0
+        right: 0
+        top: 0
+        background: rgba(0,159,231,.2)
+        z-index: 2
+        transition: .26s ease
+        opacity: 0
+    .item-bgimage:hover
+      .link-main:before
+        opacity: 1
+      .common-block-arrow
+        background-color: #f5f8fc
+        z-index: 9
+    
     .content-how-to
       display: flex
       align-items: flex-start
