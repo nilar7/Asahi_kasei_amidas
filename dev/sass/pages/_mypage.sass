@@ -296,27 +296,35 @@
       margin-bottom: .32rem
       &:first-child
         width: 100%
-        .item-link
-          min-height: 2.18rem
-    .item-link
-      border-width: .02rem
+        min-height: 1.47rem
+    .item-content
       border-radius: .2rem
-      width: 100%
-      min-height: 2.93rem
-      padding: .32rem 0 .16rem
+      width: calc(50% - .16rem)
+      min-height: 1.79rem
+      padding: .30rem 0 .30rem
+      display: block
+      border: solid 0.02rem #e96100
+    .item-link
+      border: 0
     .text-title
       span
         display: block
     .item-title
       font-size: .28rem
       line-height: calc(38 / 28)
-      margin-bottom: .16rem
+      margin-bottom: .10rem
+      display: flex
+      flex-wrap: wrap
+      align-items: center
+      justify-content: center
     .title-icon
       display: block
-      margin: 0 auto .2rem
       width: .6rem
+      margin-right: 0.20rem
       img
         width: 100%
+    .text-title
+      text-align: left
     .item-text
       margin-bottom: 0
       font-size: .22rem
