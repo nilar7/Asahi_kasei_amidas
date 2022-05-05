@@ -28,7 +28,9 @@ app.init = function () {
   app.matchHeight();
   app.selectBox();
   app.customScrollbar();
+  app.urlcheck();
 };
+
 
 app.customScrollbar = function () {
   if ($('.js-scrollbar').length) {
@@ -37,6 +39,18 @@ app.customScrollbar = function () {
       scrollInertia: 0
     });
   }
+};
+
+app.urlcheck =function(){
+  var url= window.location.href.split('/');
+  var path = url.pop() || url.pop();
+  
+  if(path == "lifestyle.html"){
+   $(".list-story-issue a#lifestyle").addClass('active');
+  }
+  if(path == "interview"){
+    $(".list-story-issue a#interview").addClass('active');
+   }
 };
 
 app.map = function () {

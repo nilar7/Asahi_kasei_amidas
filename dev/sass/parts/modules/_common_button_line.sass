@@ -31,6 +31,15 @@
       &::after
         z-index: 0
         opacity: 0
+  &.is-style-direct.active
+    cursor: default
+    .button-icon
+      &::before
+        z-index: 1
+        opacity: 0
+      &::after
+        z-index: 0
+        opacity: 1
   &.is-style-direct
     border: 1px solid #6996be
     +mobile
@@ -71,6 +80,9 @@
           background-image: url(../img/common/icon_arrow_01.svg)
         &::after
           background-image: url(../img/common/icon_arrow_02.svg)
+    &.is-style-direct.active
+      background-color: rgba(0, 91, 170, 0.5)
+      color: #fff
     &.is-style-more
       padding: 11px 16px 9px
       .button-icon
