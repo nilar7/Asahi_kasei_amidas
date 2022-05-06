@@ -51,6 +51,12 @@ app.urlcheck =function(){
   if(path == "interview"){
     $(".list-story-issue a#interview").addClass('active');
    }
+   if(path == "faq.html"){
+    $(".list-story-issue a#faq").addClass('active');
+   }
+   if(path == "about.html"){
+    $(".list-story-issue a#about").addClass('active');
+   }
 };
 
 app.map = function () {
