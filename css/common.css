@@ -539,6 +539,10 @@ body {
   background-color: #e96100;
 }
 
+.common-news-list .news-category.background-yellow {
+  background-color: #f7bc00;
+}
+
 @media print, (min-width: 769px) {
   .section-common-news {
     padding: 80px 0 120px;
@@ -745,7 +749,7 @@ body {
 }
 
 .common-button-inquiry.background-blue {
-  background-color: #4dbcef;
+  background-color: #009FE7;
 }
 
 @media print, (min-width: 769px) {
@@ -1368,6 +1372,20 @@ body {
   opacity: 0;
 }
 
+.button-common-line.is-style-direct.active {
+  cursor: default;
+}
+
+.button-common-line.is-style-direct.active .button-icon::before {
+  z-index: 1;
+  opacity: 0;
+}
+
+.button-common-line.is-style-direct.active .button-icon::after {
+  z-index: 0;
+  opacity: 1;
+}
+
 .button-common-line.is-style-direct {
   border: 1px solid #6996be;
 }
@@ -1440,6 +1458,10 @@ body {
   }
   .button-common-line.is-style-direct .button-icon::after {
     background-image: url(../img/common/icon_arrow_02.svg);
+  }
+  .button-common-line.is-style-direct.active {
+    background-color: rgba(0, 91, 170, 0.5);
+    color: #fff;
   }
   .button-common-line.is-style-more {
     padding: 11px 16px 9px;
@@ -1726,12 +1748,10 @@ body {
 .list-menu-top .item-list-top a:after {
   position: absolute;
   content: "";
-  bottom: -1px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  bottom: -8px;
+  left: -10px;
   width: 85%;
-  height: 1px;
+  height: 6px;
   background-color: #fff;
   opacity: 0;
   -webkit-transition: opacity .26s;
@@ -1805,9 +1825,7 @@ body {
   position: absolute;
   content: "";
   bottom: -9px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  left: -10px;
   width: 82%;
   height: 6px;
   background-color: #fff;
@@ -1843,10 +1861,10 @@ body {
 }
 
 .list-menu-job .item-list-top {
-  margin-bottom: 8px;
+  margin-bottom: 15px;
 }
 
-.list-menu-job .item-list-top:nth-child(7):after {
+.list-menu-job .item-list-top:last-child:after {
   height: 0;
 }
 
@@ -2229,6 +2247,12 @@ header .title-menu span:after {
   background: center / 99% auto no-repeat;
 }
 
+header .title-menu > a:hover,
+header .title-menu span:hover {
+  color: #FFD140;
+  opacity: 1;
+}
+
 header .item-sub-menu > a, header .item-sub-menu span {
   display: block;
   font-weight: 500;
@@ -2245,8 +2269,17 @@ header .item-sub-menu > a:after, header .item-sub-menu span:after {
   background: url(../img/common/header_icon_03.svg) center/100% auto no-repeat;
 }
 
+header .item-sub-menu > a:hover, header .item-sub-menu span:hover {
+  color: #FFD140;
+  opacity: 1;
+}
+
 header .item-sub-menu > span {
   cursor: pointer;
+}
+
+header .item-sub-menu > a:hover:after {
+  background: url(../img/common/header_icon_03_hover.png) center/100% auto no-repeat;
 }
 
 header .item-sub-menu .icon-plus:after {
@@ -2365,6 +2398,9 @@ header .block-topics .active-menu:after {
     padding-bottom: 32px;
     border-bottom: solid 1px #fff;
   }
+  header .title-menu:hover {
+    border-bottom: solid 1px #FFD140;
+  }
   header .title-menu > a {
     display: block;
   }
@@ -2374,6 +2410,9 @@ header .block-topics .active-menu:after {
     width: 40px;
     height: 40px;
     background-image: url(../img/common/header_icon_02.svg);
+  }
+  header .title-menu > a:hover:after {
+    background-image: url(../img/common/header_icon_02_hover.png);
   }
   header .title-menu.is-pointer {
     pointer-events: none;
@@ -2497,7 +2536,7 @@ header .block-topics .active-menu:after {
     position: absolute;
     content: "";
     top: 5px;
-    right: -5px;
+    left: 5px;
     background: url(../img/common/header_icon_06.png) center/100% auto no-repeat;
     width: 14px;
     height: 17px;
@@ -3196,6 +3235,7 @@ footer .item-inquiry a {
     height: 440px;
     padding-left: 24px;
     padding-right: 24px;
+    margin-bottom: 0;
   }
   footer .footer-different .title-contact {
     margin-bottom: 0;
@@ -3221,6 +3261,9 @@ footer .item-inquiry a {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+  footer .content-menu-client {
+    margin-bottom: 108px;
   }
   footer .button-big a {
     min-height: 96px;

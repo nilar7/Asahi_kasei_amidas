@@ -141,7 +141,7 @@
 }
 
 .section-recruit-how .common-button-inquiry.background-blue:hover {
-  background-color: #71c9f2;
+  background-color: #2ABAFC;
 }
 
 @media print, (min-width: 769px) {
@@ -549,9 +549,12 @@
           box-shadow: none;
 }
 
-.section-recruit-engineer .common-big-button:hover,
+.section-recruit-engineer .common-big-button:hover {
+  background-color: #036FCC;
+}
+
 .section-recruit-engineer .common-button-inquiry:hover {
-  opacity: .8;
+  background-color: #2ABAFC;
 }
 
 @media print, (min-width: 769px) {
@@ -695,7 +698,7 @@
   }
   .section-recruit-engineer .common-big-button {
     border-radius: 100px;
-    background-color: #0691de;
+    background-color: #005BAA;
   }
 }
 

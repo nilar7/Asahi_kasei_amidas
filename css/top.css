@@ -338,13 +338,17 @@
   background: url(../img/common/icon_arrow_01.svg) no-repeat center/20px 20px;
 }
 
+.section-top-job .main-title .link-title:hover {
+  color: #036FCC;
+}
+
 .section-top-job .main-title .link-title:hover:before {
   border-color: #005baa;
 }
 
 .section-top-job .banner-image {
   width: 100%;
-  height: 100%;
+  height: 280px;
   -webkit-mask-size: 100%;
   mask-size: 100%;
   -webkit-mask-repeat: no-repeat;
@@ -468,6 +472,40 @@
   }
   .banner-content .inner-content p {
     margin-bottom: 0;
+  }
+  .is-special-custom .banner-image {
+    position: relative;
+  }
+  .is-special-custom .banner-image:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    background: rgba(0, 159, 231, 0.2);
+    z-index: 2;
+    -webkit-transition: .26s ease;
+    transition: .26s ease;
+    opacity: 0;
+  }
+  .is-special-custom .banner-image {
+    position: relative;
+  }
+  .is-special-custom .banner-image:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    height: 95px;
+    background: -webkit-gradient(linear, left bottom, left top, from(#545454), to(rgba(0, 0, 0, 0)));
+    background: linear-gradient(0deg, #545454 0%, rgba(0, 0, 0, 0) 100%);
+    opacity: .6;
+  }
+  .is-special-custom .link-content:hover .banner-image:before {
+    opacity: 1;
   }
 }
 
@@ -650,10 +688,32 @@
 }
 
 .work-list .work-image img {
-  height: 100%;
   width: 100%;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.work-list.is-special-custom .work-image {
+  position: relative;
+}
+
+.work-list.is-special-custom .work-image:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  background: rgba(0, 159, 231, 0.2);
+  z-index: 2;
+  -webkit-transition: .26s ease;
+  transition: .26s ease;
+  opacity: 0;
+}
+
+.work-list.is-special-custom .work-link:hover .work-image:before {
+  opacity: 1;
 }
 
 .work-list .work-block {
@@ -701,6 +761,23 @@
   .work-list .work-image {
     -webkit-mask-image: url(../img/top/mask_work.png);
     mask-image: url(../img/top/mask_work.png);
+    width: 408px;
+    height: 280px;
+  }
+  .work-list.is-special-custom .work-image {
+    position: relative;
+  }
+  .work-list.is-special-custom .work-image:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    height: 95px;
+    background: -webkit-gradient(linear, left bottom, left top, from(#545454), to(rgba(0, 0, 0, 0)));
+    background: linear-gradient(0deg, #545454 0%, rgba(0, 0, 0, 0) 100%);
+    opacity: .6;
   }
   .work-list .work-block {
     border-radius: 10px;
