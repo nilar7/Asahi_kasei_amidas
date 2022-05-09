@@ -1670,6 +1670,26 @@
     .voice-item
       border-radius: 10px
       padding: 20px 24px 32px
+
+    &.slick-slide
+    .voice-image
+      position: relative
+      &:before,
+        content: ''
+        position: absolute
+        left: 0
+        bottom: 0
+        right: 0
+        top: 0
+        background: rgba(0,159,231,.2)
+        z-index: 2
+        transition: .26s ease
+        opacity: 0
+        border-radius: 10px;
+    .voice-item:hover
+      .voice-image:before
+        opacity: 1
+
     .voice-name
       -webkit-line-clamp: 3
       font-size: .18rem
