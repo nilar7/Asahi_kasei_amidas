@@ -39,15 +39,68 @@
               <nav class="header-navigation">
                 <ul class="list-navigation">
                   <li class="item-navigation"><a href="../">ホーム</a></li>
-                  <li class="item-navigation"><a class="active-menu" href="../job/">お仕事をお探しの方</a></li>
-                  <li class="item-navigation"><a href="#">企業のご担当者の方</a></li>
-                  <li class="item-navigation"><a href="../recruit/">採用情報</a></li>
+                  <li class="item-navigation menu02"><a class="" href="javascript:void(0)">お仕事をお探しの方</a></li>
+                  <li class="item-navigation menu03"><a href="javascript:void(0)">企業のご担当者の方</a></li>
+                  <li class="item-navigation menu04"><a href="javascript:void(0)">採用情報</a></li>
                   <li class="item-navigation"><a href="../company/">企業情報</a></li>
                   <li class="item-navigation"><a href="#">アクセス</a></li>
                 </ul>
               </nav>
             </div>
           </div>
+        </div>
+        <div class="drop_down_menu drop_down_menu02 md">
+          <ul class="drop_down_menu_inner">
+            <li class="drop_down_menu_item current_menu">
+              <a href="../job/">お仕事をお探しの方</a>
+            </li>
+            <li class="drop_down_menu_item">
+              <a href="">旭化成アミダスで出来る<br>仕事の探し方</a>
+              <a href="">人材派遣</a>
+              <a href="">転職支援</a>
+            </li>
+            <li class="drop_down_menu_item">
+              <a href="">製造現場のお仕事</a>
+              <a href="">受付業務のお仕事</a>
+            </li>
+          </ul>
+        </div>
+        <div class="drop_down_menu drop_down_menu03 md">
+          <ul class="drop_down_menu_inner">
+            <li class="drop_down_menu_item current_menu">
+              <a href="">企業のご担当者の方</a>
+            </li>
+            <li class="drop_down_menu_item">
+              <a href="">お知らせ・イベント情報</a>
+              <a href="">旭化成アミダスができること</a>
+              <a href="">旭化成アミダスの人材派遣<br>サービス</a>
+              <a href="">旭化成アミダスの<br>ITエンジニア派遣サービス</a>
+            </li>
+            <li class="drop_down_menu_item">
+              <a href="">旭化成アミダスの<br>人材紹介サービス</a>
+              <a href="">旭化成アミダスの<br>教育研修サービス</a>
+              <a href="">旭化成アミダスの各種<br>アウトソーシングサービス</a>
+              <a href="">旭化成アミダスのISO事業</a>
+            </li>
+          </ul>
+        </div>
+        <div class="drop_down_menu drop_down_menu04 md">
+          <ul class="drop_down_menu_inner">
+            <li class="drop_down_menu_item current_menu">
+              <a href="../recruit/">採用情報</a>
+            </li>
+            <li class="drop_down_menu_item">
+              <a href="">旭化成アミダスとは</a>
+              <a href="">教育研修制度</a>
+              <a href="">福利厚生制度</a>
+              <a href="">採用に関するお問い合わせ</a>
+            </li>
+            <li class="drop_down_menu_item">
+              <a href="">新卒採用（ITエンジニア）</a>
+              <a href="">新卒採用（総合職）</a>
+              <a href="">中途採用（外部）</a>
+            </li>
+          </ul>
         </div>
         <nav class="menu-navigation js-navigation">
           <div class="navigation-block">
@@ -229,7 +282,7 @@
                         </ul>
                       </div>
                     </li>
-                    <li class="item-sub-menu"><a class="trans icon-plus" href="#">新卒採用（総合職）</a></li>
+                    <li class="item-sub-menu"><span class="trans icon-plus js-accordion-heading">新卒採用（総合職）</span></li>
                     <li class="item-sub-menu"><a class="trans" href="#">中途採用（外部）</a></li>
                   </ul>
                   <ul class="sub-menu sm">
@@ -500,5 +553,63 @@
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="../js/scripts.js"></script>
+    <script>
+      $('.menu02').click(function() {
+        if ($('.drop_down_menu02').is(':visible')) {
+            $('.drop_down_menu02').removeClass('show');
+            $('.menu02').removeClass('active');
+            $(document).unbind('click.menu');
+        } else {
+            $(document).bind('click.menu', function(e) {
+                if ($(e.target).attr('id') != 'menu02' && $(e.target).closest('.menu02').length == 0) {
+                    if ($(e.target).closest('.drop_down_menu02').length == 0 && $(e.target).attr('id') != 'drop_down_menu02') {
+                        $('.drop_down_menu02').removeClass('show');
+                        $('.menu02').removeClass('active');
+                    }
+                }
+            });
+            $('.drop_down_menu02').addClass('show');
+            $('.menu02').addClass('active');
+        }
+    });
+
+    $('.menu03').click(function() {
+        if ($('.drop_down_menu03').is(':visible')) {
+            $('.drop_down_menu03').removeClass('show');
+            $('.menu03').removeClass('active');
+            $(document).unbind('click.menu');
+        } else {
+            $(document).bind('click.menu', function(e) {
+                if ($(e.target).attr('id') != 'menu03' && $(e.target).closest('.menu03').length == 0) {
+                    if ($(e.target).closest('.drop_down_menu03').length == 0 && $(e.target).attr('id') != 'drop_down_menu03') {
+                        $('.drop_down_menu03').removeClass('show');
+                        $('.menu03').removeClass('active');
+                    }
+                }
+            });
+            $('.drop_down_menu03').addClass('show');
+            $('.menu03').addClass('active');
+        }
+    });
+
+    $('.menu04').click(function() {
+        if ($('.drop_down_menu04').is(':visible')) {
+            $('.drop_down_menu04').removeClass('show');
+            $('.menu04').removeClass('active');
+            $(document).unbind('click.menu');
+        } else {
+            $(document).bind('click.menu', function(e) {
+                if ($(e.target).attr('id') != 'menu04' && $(e.target).closest('.menu04').length == 0) {
+                    if ($(e.target).closest('.drop_down_menu04').length == 0 && $(e.target).attr('id') != 'drop_down_menu04') {
+                        $('.drop_down_menu04').removeClass('show');
+                        $('.menu04').removeClass('active');
+                    }
+                }
+            });
+            $('.drop_down_menu04').addClass('show');
+            $('.menu04').addClass('active');
+        }
+    });
+    </script>
   </body>
 </html>

@@ -90,6 +90,63 @@ header
       color: $base-color-blue
       &:after
         opacity: 1
+    .item-navigation
+      &.active
+        a
+          color: $base-color-blue
+          &:after
+            opacity: 1
+
+
+  .drop_down_menu
+    display: none
+    background: #005BAA
+    width: 100%;
+    .drop_down_menu_inner
+      width: 890px
+      display: flex
+      flex-wrap: wrap
+      justify-content: space-between
+      margin: 0 auto
+      padding: 33px 0
+      list-style-type: none
+      .drop_down_menu_item
+        width: 33%
+        max-width: 230px
+        a
+          display: block
+          font-size: 14px
+          font-weight: 500
+          color: #FFFFFF
+          text-decoration: none
+          position: relative
+          &:not(:last-child)
+            margin-bottom: 25px
+          &:after
+            content: ''
+            position: absolute
+            background: url(../img/common/header_icon_03.svg) right/100% auto no-repeat
+            width: 9px
+            height: 12px
+            top: 50%
+            transform: translateY(-50%)
+            right: 0
+      .current_menu
+        a
+          font-size: 16px
+          font-weight: 700
+          &:before
+            content: ''
+            position: absolute
+            border-bottom: solid 1px #fff
+            width: 100%
+            bottom: -30px
+          &:after
+            background: url(../img/common/header_icon_02.svg)
+            width: 40px
+            height: 40px
+    &.show
+      display: block
 
   .menu-navigation
     overflow-y: scroll
@@ -310,6 +367,10 @@ header
         background-color: $base-color-blue
         &:hover
           background-color: #036fcc
+      .content-form
+        .input-text
+          border-radius: 0
+          border: 1px solid #005BAA
       .item-search
         a
           border-radius: 0
@@ -345,23 +406,29 @@ header
     .content-form
       display: flex
       align-items: center
+      position: relative
       .input-text
-        height: 25px
+        height: 28px
         border-radius: 30px
-        border: solid 1px $base-font-color
+        background: #FFFFFF
+        border: solid 1px #009FE7
         transition: all .5s
         opacity: 0
         width: 0
         visibility: hidden
         margin-right: 0
         display: none
+        position: relative
+        right: -28px
+      .item-search
+        position: relative
     .show-input
       .input-text
-        margin-right: 16px
         padding: 0 16px
-        width: 200px
+        width: 203px
         opacity: 1
         visibility: visible
+        margin-left: -28px
 
 @media print, (min-width: 768.98px) and (max-width: 1280px)
   header

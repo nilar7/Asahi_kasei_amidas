@@ -270,6 +270,70 @@
       font-size: .14rem
 
 +mobile
+  header
+    .menu-navigation
+      background: #E96100
+      padding: 0.32rem
+      .list-function
+        display: block
+        .item-function
+          background: #F7BC00
+          border-radius: 0.64rem
+          padding: 0.284rem 0.6rem
+          &:not(:last-child)
+            margin-bottom: 0.16rem
+          >a
+            font-size: 0.28rem
+            position: relative
+            &:after
+              content: ''
+              position: absolute
+              background: url(/img/common/sp/header_icon_01.svg) right/100% auto no-repeat
+              width: 0.15rem
+              height: 0.22rem
+              right: 0
+              top: 50%
+              transform: translateY(-50%)
+          >a.is-icon
+            &:before
+              content: ''
+              position: absolute
+              background: url(/img/mypage/sp/header_icon_06_sp.png) left/100% auto no-repeat
+              width: 0.38rem
+              height: 0.45rem
+              left: 1.4rem
+              top: 50%
+              transform: translateY(-50%)
+
+    .item-menu
+      .title-menu
+        >a,span
+          color: #E96100
+          &:hover
+            color: #FFD140
+          &:after
+            background-image: url(../img/common/sp/header_icon_02_mypage.png)
+        &.icon-plus-big
+          >a,span
+            &:after
+              background-image: url(../img/common/sp/header_icon_03_sp.png)
+      &.is-active-icon
+        .icon-plus-big
+          >span
+            color: #E96100
+            &:after
+              background-image: url(../img/common/sp/header_icon_05_sp.png)
+      .item-sub-menu
+        >a
+          color: #E96100
+          &:after
+            background-image: url(../img/mypage/sp/icon_arrow_right_orange.svg)
+          &:hover
+            color: #FFD140
+            &:after
+              background-image: url(../img/common/sp/icon_arrow_right_orange.png)
+
+
   .keyvisual-mypage-top
     background-image: url(../img/mypage/sp/mypage_top_bg.jpg)
     height: 4.76rem
