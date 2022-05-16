@@ -18,6 +18,7 @@
       bottom: 0
       right: 0
       background-color: #fff
+      z-index: 3
       &:after
         position: absolute
         content: ""
@@ -58,9 +59,6 @@
       margin-bottom: 16px
       width: 100%
       height: 280px
-    .image-interview
-      -webkit-mask-image: url(../img/client/mask_img.png)
-      mask-image: url(../img/client/mask_img.png)
     &.is-special-custom
     .image-interview
       position: relative
@@ -85,7 +83,7 @@
           right: 0
           z-index: 1
           height: 95px
-          background: linear-gradient(0deg, rgba(84,84,84,1) 0%, rgba(0,0,0,0) 100%)
+          background: transparent
           opacity: .6
     .link-interview:hover
       .image-interview:before
