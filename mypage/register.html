@@ -310,7 +310,8 @@
                 </div>
               </div>
             </div>
-            <form class="common-form-register">
+            <form class="common-form-register error">
+              <p class="txt_error_confirm">入力項目に誤りがあります。ご確認ください。</p>
               <div class="row-form is-flex">
                 <div class="content-row">
                   <div class="row-title"><span class="text-required">必須</span><span class="is-required">姓（漢字）</span></div>
@@ -319,6 +320,7 @@
                       <input class="input-text" type="text" name="firstName" value="" required>
                     </div>
                   </div>
+                  <p class="txt_error">姓（漢字）を入力してください。</p>
                 </div>
                 <div class="content-row">
                   <div class="row-title"><span class="text-required">必須</span><span class="is-required">名（漢字）</span></div>
@@ -327,6 +329,7 @@
                       <input class="input-text" type="text" name="lastName" value="" required>
                     </div>
                   </div>
+                  <p class="txt_error">名（漢字）を入力してください。</p>
                 </div>
               </div>
               <div class="row-form is-flex">
@@ -337,6 +340,7 @@
                       <input class="input-text" type="text" name="firstName" value="" required>
                     </div>
                   </div>
+                  <p class="txt_error">姓（フリガナ）を入力してください。</p>
                 </div>
                 <div class="content-row">
                   <div class="row-title"><span class="text-required">必須</span><span class="is-required">名（フリガナ）</span></div>
@@ -345,6 +349,7 @@
                       <input class="input-text" type="text" name="lastName" value="" required>
                     </div>
                   </div>
+                  <p class="txt_error">名（フリガナ）を入力してください。</p>
                 </div>
               </div>
               <div class="row-form">
@@ -433,6 +438,7 @@
                       </select>
                     </div>
                   </div>
+                  <p class="txt_error">生年月日を入力してください。</p>
                 </div>
               </div>
               <div class="row-form">
@@ -445,6 +451,7 @@
                       <option value="2">男性</option>
                     </select>
                   </div>
+                  <p class="txt_error">性別を入力してください。</p>
                 </div>
               </div>
               <div class="row-form">
@@ -465,7 +472,9 @@
                       </div>
                     </div>
                   </div>
-                </div><span class="text-note">※日中ご連絡の取りやすい番号を入力してください。 <br class="sm">※ハイフンは不要</span>
+                </div>
+                <span class="text-note">※日中ご連絡の取りやすい番号を入力してください。 <br class="sm">※ハイフンは不要</span>
+                <p class="txt_error">電話番号を入力してください。</p>
               </div>
               <div class="row-form">
                 <div class="content-row">
@@ -484,7 +493,9 @@
                       <input class="input-text" type="email" name="email" value="" placeholder="例）haken@om.asahi-kasei.co.jp" required>
                     </div>
                   </div>
-                </div><span class="text-note is-spacing">【メールアドレス入力のご注意・ご案内】<br>迷惑メールの対策としてPCからのメール着信拒否・ドメイン指定受信などを指定されている場合は「@om.asahi-kasei.co.jp」からのメールが受信できるよう、事前に設定をお願い致します。<br>また、全角文字・半角カナ・特殊記号文字(例：&amp; .. # $ ? % 等)が使用されたアドレスへは返信できませんので注意ください。</span>
+                </div>
+                <span class="text-note is-spacing">【メールアドレス入力のご注意・ご案内】<br>迷惑メールの対策としてPCからのメール着信拒否・ドメイン指定受信などを指定されている場合は「@om.asahi-kasei.co.jp」からのメールが受信できるよう、事前に設定をお願い致します。<br>また、全角文字・半角カナ・特殊記号文字(例：&amp; .. # $ ? % 等)が使用されたアドレスへは返信できませんので注意ください。</span>
+                <p class="txt_error">メールアドレスを入力してください。</p>
               </div>
               <div class="row-form">
                 <div class="content-row full-input">
@@ -494,6 +505,7 @@
                       <input class="input-text" type="email" name="email" value="" placeholder="例）haken@om.asahi-kasei.co.jp" required>
                     </div>
                   </div>
+                  <p class="txt_error">メールアドレス（確認用）を入力してください。</p>
                 </div>
               </div>
               <div class="row-form">
@@ -516,6 +528,7 @@
                       <option value="65">福岡支店</option>
                     </select>
                   </div>
+                  <p class="txt_error">登録希望拠点を入力してください。</p>
                 </div>
               </div>
               <div class="row-form">
@@ -535,6 +548,7 @@
                       <option value="98">その他</option>
                     </select>
                   </div>
+                  <p class="txt_error">希望職種を入力してください。</p>
                 </div>
               </div>
               <div class="row-form">
@@ -577,6 +591,7 @@
                       <option value="999">その他</option>
                     </select>
                   </div>
+                  <p class="txt_error">きっかけを選択してください。</p>
                 </div>
               </div>
               <div class="row-form block-information">
@@ -602,6 +617,7 @@
                   <label>
                     <input type="checkbox" name="同意する" checked><span class="checkbox-field-text">同意する</span>
                   </label>
+                  <p class="txt_error">規約への同意が必要です。</p>
                 </div>
                 <div class="wrapper-link">
                   <button class="middle-button font-alata" type="submit" value="View All" name="confirmation">送信内容を確認</button>
