@@ -48,7 +48,7 @@ app.urlcheck =function(){
   if(path == "lifestyle.html"){
    $(".list-story-issue a#lifestyle").addClass('active');
   }
-  if(path == "interview"){
+  if((path == "interview") ||(path == "index.html") ||(path == "detail.html") ){
     $(".list-story-issue a#interview").addClass('active');
    }
    if(path == "faq.html"){
@@ -56,7 +56,12 @@ app.urlcheck =function(){
    }
    if(path == "about.html"){
     $(".list-story-issue a#about").addClass('active');
+    $(".list-story-issue a#seisanAbout").addClass('active');
    }
+   if((path == "search.html") ||(path == "job-list.html") || (path == "job-detail.html") ){
+    $(".list-story-issue a#jobSearch").addClass('active');
+   }
+
 };
 
 app.map = function () {
