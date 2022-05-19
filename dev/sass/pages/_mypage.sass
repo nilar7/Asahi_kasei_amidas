@@ -271,6 +271,10 @@
 
 +mobile
   header
+    .button-menu
+      span
+        &:nth-child(1)
+          background-color: #E96600
     .menu-navigation
       background: #E96100
       padding: 0.32rem
@@ -307,31 +311,15 @@
 
     .item-menu
       .title-menu
-        >a,span
+        >a
           color: #E96100
           &:hover
             color: #FFD140
           &:after
             background-image: url(../img/common/sp/header_icon_02_mypage.png)
-        &.icon-plus-big
-          >a,span
-            &:after
-              background-image: url(../img/common/sp/header_icon_03_sp.png)
-      &.is-active-icon
-        .icon-plus-big
-          >span
-            color: #E96100
-            &:after
-              background-image: url(../img/common/sp/header_icon_05_sp.png)
-      .item-sub-menu
-        >a
-          color: #E96100
-          &:after
-            background-image: url(../img/mypage/sp/icon_arrow_right_orange.svg)
-          &:hover
-            color: #FFD140
-            &:after
-              background-image: url(../img/common/sp/icon_arrow_right_orange.png)
+          .menu_icon
+            width: 0.45rem
+            margin-right: 0.10rem
 
 
   .keyvisual-mypage-top
