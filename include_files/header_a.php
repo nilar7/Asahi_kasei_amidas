@@ -1,19 +1,25 @@
 <?php
 $url =$_SERVER['PHP_SELF'];
 ?>
-<div class="inner-wrapper header-different">
+<div class="inner-wrapper">
     <div class="header-left">
         <div class="header-logo"><a class="trans logo" href="http://asahi-kasei-amidas.sitetastingmyanmar.com/"><img src="http://asahi-kasei-amidas.sitetastingmyanmar.com/img/common/common_logo.png" width="189" height="57" loading="lazy" alt="旭化成アミダス"></a></div>
         <p class="text-service">総合人材<br class="md">サービスサイト</p>
     </div>
     <div class="header-right md">
         <div class="content-top">
-            <ul class="list-function">
-                <li class="item-list background-blue"><a class="item-link" href="#">資料請求・お問い合わせ</a></li>
+            <ul class="list-function s-top">
+                <li class="item-list background-orange"><a class="item-link" href="http://asahi-kasei-amidas.sitetastingmyanmar.com/mypage/register.html">派遣登録はこちら</a></li>
+                <li class="item-list background-orange"><a class="item-link" href="http://asahi-kasei-amidas.sitetastingmyanmar.com/job/">派遣のお仕事検索</a></li>
+                <li class="item-list background-blue"><a class="item-link" href="http://asahi-kasei-amidas.sitetastingmyanmar.com/mypage/">マイページログイン</a></li>
+            </ul>
+            <ul class="list-function no-top">
+                <li class="item-list background-blue"><a class="item-link" href="http://asahi-kasei-amidas.sitetastingmyanmar.com/mypage/">マイページログイン</a></li>
+                <li class="item-list background-blue"><a class="item-link" href="http://asahi-kasei-amidas.sitetastingmyanmar.com/mypage/register.html">派遣登録はこちら</a></li>
             </ul>
             <form class="form-search">
                 <div class="content-form">
-                    <input class="input-text" type="text" name="search" value="" placeholder="サイト内検索">
+                    <input class="input-text" type="text" name="search" value="">
                     <div class="item-search background-blue"><a href="javascript:;"></a></div>
                 </div>
             </form>
@@ -21,26 +27,68 @@ $url =$_SERVER['PHP_SELF'];
         <div class="content-bottom">
             <nav class="header-navigation">
                 <ul class="list-navigation">
-                    <li class="item-navigation"><a href="http://asahi-kasei-amidas.sitetastingmyanmar.com/">ホーム</a></li>
-                    <li class="item-navigation"><a href="#">お仕事をお探しの方</a></li>
-                    <li class="item-navigation"><a class="<?php echo ($url == '/client/index.html')|| ($url == '/client/news/index.html')|| ($url == '/client/news/detail.html') || ($url == '/client/service.html') ||($url == '/client/haken/index.html') ||($url == '/client/haken/field.html')||($url == '/client/haken/interview/index.html')||($url == '/client/haken/interview/detail.html')||($url == '/client/haken/article/index.html')||($url == '/client/haken/article/detail.html')||($url == '/client/haken/whitepaper.html') || ($url == '/client/program/index.html')|| ($url == '/client/program/active-bsr.html')? 'active-menu':''; ?>" href="http://asahi-kasei-amidas.sitetastingmyanmar.com/client/">企業のご担当者の方</a></li>
-                    <li class="item-navigation"><a href="#">採用情報</a></li>
-                    <li class="item-navigation"><a href="#">企業情報</a></li>
+                    <li class="item-navigation"><a href="http://asahi-kasei-amidas.sitetastingmyanmar.com/" class="<?php echo ($url == '/index.html') ? 'active-menu':''; ?>">ホーム</a></li>
+                    <li class="item-navigation menu02"><a href="javascript:void(0)" class="<?php echo ($url == '/job/index.html') || ($url == '/job/haken/index.html')|| ($url == '/job/jinzai/about.html')|| ($url == '/job/seisan/about.html')|| ($url == '/job/haken/faq.html')|| ($url == '/job/haken/lifestyle.html') || ($url == '/job/haken/interview/index.html') || ($url == '/job/haken/interview/detail.html')? 'active-menu':''; ?>">お仕事をお探しの方</a></li>
+                    <li class="item-navigation menu03"><a href="javascript:void(0)">企業のご担当者の方</a></li>
+                    <li class="item-navigation menu04"><a href="javascript:void(0)" class="<?php echo ($url == '/recruit/index.html')|| ($url == '/recruit/engineer/index.html') ? 'active-menu':''; ?>">採用情報</a></li>
+                    <li class="item-navigation"><a href="http://asahi-kasei-amidas.sitetastingmyanmar.com/company/" class="<?php echo ($url == '/company/index.html') || ($url == '/company/map/index.html') ||  ($url == '/company/map/tokyo.html') ? 'active-menu':''; ?>">企業情報</a></li>
                     <li class="item-navigation"><a href="#">アクセス</a></li>
                 </ul>
             </nav>
         </div>
     </div>
 </div>
-<div class="content-list-menu list-service-menu md">
-    <ul class="list-menu-top">
-        <li class="item-list-top <?php echo ($url == '/client/service.html')? 'active-hover':''; ?>"><a href="http://asahi-kasei-amidas.sitetastingmyanmar.com/client/service.html">旭化成アミダスができること</a></li>
-        <li class="item-list-top <?php echo ($url == '/client/haken/index.html')||($url == '/client/haken/field.html') ||($url == '/client/haken/interview/index.html')||($url == '/client/haken/interview/detail.html')||($url == '/client/haken/article/index.html')||($url == '/client/haken/article/detail.html')||($url == '/client/haken/whitepaper.html')? 'active-hover':''; ?>"><a href="http://asahi-kasei-amidas.sitetastingmyanmar.com/client/haken/">人材派遣</a></li>
-        <li class="item-list-top"><a href="#">ITエンジニア派遣</a></li>
-        <li class="item-list-top"><a href="#">人材紹介</a></li>
-        <li class="item-list-top <?php echo ($url == '/client/program/index.html')? 'active-hover':''; ?>"><a href="#">教育・研修</a></li>
-        <li class="item-list-top"><a href="#">各種アウトソーシング</a></li>
-        <li class="item-list-top <?php echo ($url == '/client/news/index.html')|| ($url == '/client/news/detail.html') ? 'active-hover':''; ?>"><a href="#">お知らせ・イベント情報</a></li>
+<div class="drop_down_menu drop_down_menu02 md">
+    <ul class="drop_down_menu_inner">
+        <li class="drop_down_menu_item current_menu">
+            <a href="http://asahi-kasei-amidas.sitetastingmyanmar.com/job/">お仕事をお探しの方</a>
+        </li>
+        <li class="drop_down_menu_item">
+            <a href="">旭化成アミダスで出来る<br>仕事の探し方</a>
+            <a href="">人材派遣</a>
+            <a href="">転職支援</a>
+        </li>
+        <li class="drop_down_menu_item">
+            <a href="">製造現場のお仕事</a>
+            <a href="">受付業務のお仕事</a>
+        </li>
+    </ul>
+</div>
+<div class="drop_down_menu drop_down_menu03 md">
+    <ul class="drop_down_menu_inner">
+        <li class="drop_down_menu_item current_menu">
+            <a href="">企業のご担当者の方</a>
+        </li>
+        <li class="drop_down_menu_item">
+            <a href="">お知らせ・イベント情報</a>
+            <a href="">旭化成アミダスができること</a>
+            <a href="">旭化成アミダスの人材派遣<br>サービス</a>
+            <a href="">旭化成アミダスの<br>ITエンジニア派遣サービス</a>
+        </li>
+        <li class="drop_down_menu_item">
+            <a href="">旭化成アミダスの<br>人材紹介サービス</a>
+            <a href="">旭化成アミダスの<br>教育研修サービス</a>
+            <a href="">旭化成アミダスの各種<br>アウトソーシングサービス</a>
+            <a href="">旭化成アミダスのISO事業</a>
+        </li>
+    </ul>
+</div>
+<div class="drop_down_menu drop_down_menu04 md">
+    <ul class="drop_down_menu_inner">
+        <li class="drop_down_menu_item current_menu">
+            <a href="http://asahi-kasei-amidas.sitetastingmyanmar.com/recruit/">採用情報</a>
+        </li>
+        <li class="drop_down_menu_item">
+            <a href="">旭化成アミダスとは</a>
+            <a href="">教育研修制度</a>
+            <a href="">福利厚生制度</a>
+            <a href="">採用に関するお問い合わせ</a>
+        </li>
+        <li class="drop_down_menu_item">
+            <a href="">新卒採用（ITエンジニア）</a>
+            <a href="">新卒採用（総合職）</a>
+            <a href="">中途採用（外部）</a>
+        </li>
     </ul>
 </div>
 <nav class="menu-navigation js-navigation">
@@ -223,7 +271,7 @@ $url =$_SERVER['PHP_SELF'];
                                 </ul>
                             </div>
                         </li>
-                        <li class="item-sub-menu"><a class="trans icon-plus" href="#">新卒採用（総合職）</a></li>
+                        <li class="item-sub-menu"><span class="trans icon-plus js-accordion-heading">新卒採用（総合職）</span></li>
                         <li class="item-sub-menu"><a class="trans" href="#">中途採用（外部）</a></li>
                     </ul>
                     <ul class="sub-menu sm">
