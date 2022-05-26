@@ -1,5 +1,16 @@
 @charset "utf-8"
-
+.button-to-top
+    bottom: 66px
+    right: 64px
+    cursor: pointer
+    position: fixed
+    z-index: 9
+    span
+      background-image: url(../img/client/button_to_top.png)
+      background-size: 100% auto
+      width: 40px
+      height: 59px
+      display: block
 footer
   .footer-top
     background: center / cover no-repeat
@@ -396,6 +407,18 @@ footer
       margin-right: 24px
 
 +mobile
+  .button-to-top
+    bottom: 2rem
+    right: 0.32rem
+    cursor: pointer
+    position: fixed
+  .button-to-top
+     span
+        background-image: url(../img/client/sp/button_to_top.png)
+        background-size: 100% auto
+        width: 0.64rem
+        height: 0.96rem
+        display: block
   .footer-main
     padding-bottom: 1.44rem
   footer

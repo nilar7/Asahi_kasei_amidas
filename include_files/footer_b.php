@@ -1,4 +1,4 @@
-
+<div class="button-to-top js-to-top"><span class="trans"></span></div>
         
         <div class="footer-middle md">
           <div class="inner-wrapper">

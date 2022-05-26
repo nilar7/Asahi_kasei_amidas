@@ -1,3 +1,4 @@
+<div class="button-to-top js-to-top"><span class="trans"></span></div>
 <div class="footer-middle md">
   <div class="inner-wrapper">
     <div class="footer-detail"><a class="trans footer-logo" href="#"><img src="http://asahi-kasei-amidas.sitetastingmyanmar.com/img/common/footer_logo.png" width="202" height="167" loading="lazy" alt="旭化成アミダス株式会社"></a>
