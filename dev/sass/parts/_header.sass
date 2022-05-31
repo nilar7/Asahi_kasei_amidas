@@ -401,13 +401,27 @@ header
         font-weight: $base-font-weight
         font-size: .16rem
         min-width: 145px
-        &.is-icon
-          position: relative
+        position: relative
+        display: inline-block
+        margin-right: 25px
+        padding-left: 10px
+        &:after
+          position: absolute
+          content: ""
+          top: 5px
+          left: -10px
+        &.icon01
           &:after
-            position: absolute
-            content: ""
-            top: 5px
-            left: 5px
+            background: url(../img/common/header_web_icon01_.png) center / 100% auto no-repeat
+            width: 14px
+            height: 14px
+        &.icon02
+          &:after
+            background: url(../img/common/header_web_icon02.png) center / 100% auto no-repeat
+            width: 14px
+            height: 16px
+        &.icon03
+          &:after
             background: url(../img/common/header_icon_06.png) center / 100% auto no-repeat
             width: 14px
             height: 17px

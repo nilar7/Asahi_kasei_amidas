@@ -9,9 +9,9 @@ $url =$_SERVER['PHP_SELF'];
     <div class="header-right md">
         <div class="content-top">
             <ul class="list-function function-mypage">
-                <li class="item-function"><a class="trans item-link" href="#">WEBタイムシート</a></li>
-                <li class="item-function"><a class="trans item-link" href="#">WEB給与明細</a></li>
-                <li class="item-function"><a class="trans item-link is-icon" href="#">ログアウト</a></li>
+                <li class="item-function"><a class="trans item-link icon01" href="#">WEBタイムシート</a></li>
+                <li class="item-function"><a class="trans item-link icon02" href="#">WEB給与明細</a></li>
+                <li class="item-function"><a class="trans item-link icon03" href="#">ログアウト</a></li>
             </ul>
         </div>
     </div>
@@ -28,9 +28,9 @@ $url =$_SERVER['PHP_SELF'];
 </div>
 <nav class="menu-navigation js-navigation sm">
     <ul class="list-function function-mypage">
-        <li class="item-function"><a class="trans item-link" href="#">WEBタイムシート</a></li>
-        <li class="item-function"><a class="trans item-link" href="#">WEB給与明細</a></li>
-        <li class="item-function"><a class="trans item-link is-icon" href="#">ログアウト</a></li>
+        <li class="item-function"><a class="trans item-link icon01" href="#">WEBタイムシート</a></li>
+        <li class="item-function"><a class="trans item-link icon02" href="#">WEB給与明細</a></li>
+        <li class="item-function"><a class="trans item-link icon03" href="#">ログアウト</a></li>
     </ul>
     <div class="navigation-block">
         <ul class="header-menu">
