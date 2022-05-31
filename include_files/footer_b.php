@@ -8,7 +8,10 @@
             <nav class="footer-navigation">
               <ul class="list-navigation">
                 
-                <li class="item-navigation"><span class="text-navigation">企業のご担当者の方</span>
+                <li class="item-navigation">
+                  <a href="#" class="link">
+                    <span class="text-navigation">企業のご担当者の方</span>
+                  </a>
                   <ul class="sub-navigation">
                     <li class="item-sub">
                       <a class="trans" href="#">お知らせ・イベント情報</a>
@@ -26,7 +29,10 @@
                     </li>
                   </ul>
                 </li>
-                <li class="item-navigation"><span class="text-navigation">企業情報</span>
+                <li class="item-navigation">
+                  <a href="#" class="link">
+                    <span class="text-navigation">企業情報</span>
+                  </a>
                   <ul class="sub-navigation">
                     <li class="item-sub">
                       <a class="trans" href="#">コーポレートスローガン</a>

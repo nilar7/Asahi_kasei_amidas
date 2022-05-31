@@ -45,7 +45,7 @@ $url =$_SERVER['PHP_SELF'];
 </div>
 <div class="drop_down_menu drop_down_menu02 md">
     <ul class="drop_down_menu_inner">
-        <li class="drop_down_menu_item current_menu">
+        <li class="drop_down_menu_item current_menu nobtn">
             <a href="http://asahi-kasei-amidas.sitetastingmyanmar.com/job/">お仕事をお探しの方</a>
         </li>
         <li class="drop_down_menu_item">
@@ -85,6 +85,7 @@ $url =$_SERVER['PHP_SELF'];
         </li>
         <li class="drop_down_menu_item">
             <a href="">旭化成アミダスとは</a>
+            <a href="">事業の未来座談会</a>
             <a href="">教育研修制度</a>
             <a href="">福利厚生制度</a>
             <a href="">採用に関するお問い合わせ</a>
@@ -92,7 +93,7 @@ $url =$_SERVER['PHP_SELF'];
         <li class="drop_down_menu_item">
             <a href="">新卒採用（ITエンジニア）</a>
             <a href="">新卒採用（総合職）</a>
-            <a href="">中途採用（外部）</a>
+            <a href="">中途採用</a>
         </li>
     </ul>
 </div>
@@ -124,9 +125,9 @@ $url =$_SERVER['PHP_SELF'];
                 <div class="content-sub-menu js-accordion-content">
                     <ul class="sub-menu">
                         <li class="item-sub-menu"><a class="trans" href="http://asahi-kasei-amidas.sitetastingmyanmar.com/job/haken/">旭化成アミダスで出来る<br class="md">仕事の探し方</a></li>
-                        <li class="item-sub-menu sm"><a class="trans" href="#">人材派遣サービス</a></li>
-                        <li class="item-sub-menu sm"><a class="trans" href="#">転職支援サービス</a></li>
-                        <li class="item-sub-menu sm"><a class="trans" href="#">製造職のお仕事</a></li>
+                        <li class="item-sub-menu sm"><a class="trans" href="#">人材派遣</a></li>
+                        <li class="item-sub-menu sm"><a class="trans" href="#">転職支援</a></li>
+                        <li class="item-sub-menu sm"><a class="trans" href="#">製造現場のお仕事</a></li>
                         <li class="item-sub-menu sm"><a class="trans" href="#">受付業務のお仕事</a></li>
                         <li class="item-sub-menu js-accordion md"><span class="trans icon-plus js-accordion-heading">人材派遣</span>
                             <div class="content-last-menu js-accordion-content">
@@ -186,10 +187,10 @@ $url =$_SERVER['PHP_SELF'];
                 </div>
             </li>
             <li class="item-menu js-accordion">
-                <div class="title-menu icon-plus-big js-accordion-heading is-pointer"><span class="trans">企業担当者の方</span></div>
+                <div class="title-menu icon-plus-big js-accordion-heading is-pointer"><span class="trans">企業のご担当者の方</span></div>
                 <div class="content-sub-menu js-accordion-content">
                     <ul class="sub-menu md">
-                        <li class="item-sub-menu"><a class="trans" href="#">お知らせ</a></li>
+                        <li class="item-sub-menu"><a class="trans" href="#">お知らせ・イベント情報</a></li>
                         <li class="item-sub-menu"><a class="trans" href="#">旭化成アミダスができること</a></li>
                         <li class="item-sub-menu"><span class="trans icon-plus js-accordion-heading">旭化成アミダスの人材派遣<br>サービス</span>
                             <div class="content-last-menu js-accordion-content">
@@ -247,13 +248,15 @@ $url =$_SERVER['PHP_SELF'];
                         </li>
                     </ul>
                     <ul class="sub-menu sm">
+                        <li class="item-sub-menu"><a class="trans" href="http://asahi-kasei-amidas.sitetastingmyanmar.com/company/">企業のご担当者の方トップ</a></li>
+                        <li class="item-sub-menu"><a class="trans" href="#">お知らせ・イベント情報</a></li>
                         <li class="item-sub-menu"><a class="trans" href="#">旭化成アミダスが出来ること</a></li>
-                        <li class="item-sub-menu"><a class="trans" href="#">人材派遣サービス</a></li>
-                        <li class="item-sub-menu"><a class="trans" href="#">ITエンジニア派遣サービス</a></li>
-                        <li class="item-sub-menu"><a class="trans" href="#">人材紹介サービス</a></li>
-                        <li class="item-sub-menu"><a class="trans" href="#">教育研修サービス</a></li>
-                        <li class="item-sub-menu"><a class="trans" href="#">各種アウトソーシングサービス</a></li>
-                        <li class="item-sub-menu"><a class="trans" href="#">ISO事業</a></li>
+                        <li class="item-sub-menu"><a class="trans" href="#">旭化成アミダスの人材派遣サービス</a></li>
+                        <li class="item-sub-menu"><a class="trans" href="#">旭化成アミダスのITエンジニア派遣サービス</a></li>
+                        <li class="item-sub-menu"><a class="trans" href="#">旭化成アミダスの人材紹介サービス</a></li>
+                        <li class="item-sub-menu"><a class="trans" href="#">旭化成アミダスの教育研修サービス</a></li>
+                        <li class="item-sub-menu"><a class="trans" href="#">旭化成アミダスの<br>各種アウトソーシングサービス</a></li>
+                        <li class="item-sub-menu"><a class="trans" href="#">旭化成アミダスのISO事業</a></li>
                     </ul>
                 </div>
             </li>
@@ -278,16 +281,25 @@ $url =$_SERVER['PHP_SELF'];
                                 </ul>
                             </div>
                         </li>
-                        <li class="item-sub-menu"><a class="trans icon-plus" href="#">新卒採用（総合職）</a></li>
-                        <li class="item-sub-menu"><a class="trans" href="#">中途採用（外部）</a></li>
+                        <li class="item-sub-menu"><span class="trans icon-plus js-accordion-heading">新卒採用（総合職）</span>
+                            <div class="content-last-menu js-accordion-content">
+                                <ul class="list-last-menu">
+                                    <li class="item-sub-menu"><a class="trans" href="#">採用情報</a></li>
+                                    <li class="item-sub-menu"><a class="trans" href="#">エントリー</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="item-sub-menu"><a class="trans" href="#">中途採用</a></li>
                     </ul>
                     <ul class="sub-menu sm">
+                        <li class="item-sub-menu"><a class="trans" href="http://asahi-kasei-amidas.sitetastingmyanmar.com/recruit/">採用情報トップ</a></li>
                         <li class="item-sub-menu"><a class="trans" href="#">旭化成アミダスとは</a></li>
+                        <li class="item-sub-menu"><a class="trans" href="#">事業の未来座談会</a></li>
                         <li class="item-sub-menu"><a class="trans" href="#">教育研修制度</a></li>
                         <li class="item-sub-menu"><a class="trans" href="#">福利厚生制度</a></li>
                         <li class="item-sub-menu"><a class="trans" href="#">新卒採用（ITエンジニア）</a></li>
-                        <li class="item-sub-menu"><a class="trans" href="#">新卒採用（総合職）</a></li>
                         <li class="item-sub-menu"><a class="trans" href="#">採用に関するお問い合わせ</a></li>
+                        <li class="item-sub-menu"><a class="trans" href="#">新卒採用（総合職）</a></li>
                         <li class="item-sub-menu"><a class="trans" href="#">中途採用</a></li>
                     </ul>
                 </div>
@@ -296,6 +308,7 @@ $url =$_SERVER['PHP_SELF'];
                 <div class="title-menu icon-plus-big js-accordion-heading"><span class="trans">企業情報</span></div>
                 <div class="content-sub-menu js-accordion-content">
                     <ul class="sub-menu">
+                        <li class="item-sub-menu"><a class="trans" href="http://asahi-kasei-amidas.sitetastingmyanmar.com/company/">企業情報トップ</a></li>
                         <li class="item-sub-menu"><a class="trans" href="#">コーポレートスローガン</a></li>
                         <li class="item-sub-menu"><a class="trans" href="#">代表あいさつ</a></li>
                         <li class="item-sub-menu sm"><a class="trans" href="#">事業紹介</a></li>
@@ -312,7 +325,7 @@ $url =$_SERVER['PHP_SELF'];
             </li>
         </ul>
         <ul class="list-notice sm">
-            <li class="item-notice"><a class="trans" href="#">おしらせ</a></li>
+            <li class="item-notice"><a class="trans" href="#">お知らせ</a></li>
             <li class="item-notice"><a class="trans" href="#">お問い合わせ</a></li>
         </ul>
         <form class="form-search sm">
