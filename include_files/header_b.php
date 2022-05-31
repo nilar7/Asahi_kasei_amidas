@@ -164,7 +164,7 @@ $url =$_SERVER['PHP_SELF'];
                             <div class="content-last-menu js-accordion-content">
                                 <ul class="list-last-menu">
                                     <li class="item-sub-menu"><a class="trans" href="#">製造現場のお仕事について</a></li>
-                                    <li class="item-sub-menu"><a class="trans" href="#">配属地域紹介<br>（守山、日向、千葉）</a></li>
+                                    <li class="item-sub-menu"><a class="trans" href="#">配属地域紹介<br>（守山、日向、袖ヶ浦）</a></li>
                                     <li class="item-sub-menu"><a class="trans" href="#">社員インタビュー</a></li>
                                     <li class="item-sub-menu"><a class="trans" href="#">研修制度</a></li>
                                     <li class="item-sub-menu"><a class="trans" href="#">よくあるご質問</a></li>
@@ -175,7 +175,7 @@ $url =$_SERVER['PHP_SELF'];
                         <li class="item-sub-menu md"><span class="trans icon-plus js-accordion-heading">受付業務のお仕事</span>
                             <div class="content-last-menu js-accordion-content">
                                 <ul class="list-last-menu">
-                                    <li class="item-sub-menu"><a class="trans" href="#">アミダスの受付業務について</a></li>
+                                    <li class="item-sub-menu"><a class="trans" href="#">旭化成アミダスの受付業務について</a></li>
                                     <li class="item-sub-menu"><a class="trans" href="#">社員インタビュー</a></li>
                                     <li class="item-sub-menu"><a class="trans" href="#">研修制度</a></li>
                                     <li class="item-sub-menu"><a class="trans" href="#">よくあるご質問</a></li>
