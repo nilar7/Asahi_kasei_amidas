@@ -23,7 +23,7 @@ $url =$_SERVER['PHP_SELF'];
         <li class="item-list-top"><a href="#">キャリアアップ支援制度</a></li>
         <li class="item-list-top"><a href="#">福利厚生</a></li>
         <li class="item-list-top <?php echo ($url == '/mypage/application.html')? 'active-hover':''; ?>"><a href="../mypage/application.html">規定・各種申請書</a></li>
-        <li class="item-list-top"><a href="#">各種お問合せ</a></li>
+        <li class="item-list-top"><a href="#">各種お問い合わせ</a></li>
     </ul>
 </div>
 <nav class="menu-navigation js-navigation sm">
