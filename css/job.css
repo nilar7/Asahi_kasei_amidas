@@ -1,23 +1,29 @@
-.block-common-contact {
+.block-common-contact,
+.section-mypage-condition .block-common-contact .block-content .common-text {
   font-weight: 700;
 }
 
-.block-common-contact .block-content-top {
+.block-common-contact .block-content-top,
+.section-mypage-condition .block-common-contact .block-content .common-text .block-content-top {
   background-color: rgba(196, 227, 255, 0.25);
 }
 
-.block-common-contact .title-contact {
+.block-common-contact .title-contact,
+.section-mypage-condition .block-common-contact .block-content .common-text .title-contact {
   text-align: center;
   color: #005baa;
 }
 
-.block-common-contact .text-right {
+.block-common-contact .text-right,
+.section-mypage-condition .block-common-contact .block-content .common-text .text-right {
   color: #005baa;
   position: relative;
   text-align: center;
 }
 
-.block-common-contact .text-right:before, .block-common-contact .text-right:after {
+.block-common-contact .text-right:before, .block-common-contact .text-right:after,
+.section-mypage-condition .block-common-contact .block-content .common-text .text-right:before,
+.section-mypage-condition .block-common-contact .block-content .common-text .text-right:after {
   position: absolute;
   content: "";
   top: 50%;
@@ -27,19 +33,23 @@
   height: 1px;
 }
 
-.block-common-contact .text-right:before {
+.block-common-contact .text-right:before,
+.section-mypage-condition .block-common-contact .block-content .common-text .text-right:before {
   left: 0;
 }
 
-.block-common-contact .text-right:after {
+.block-common-contact .text-right:after,
+.section-mypage-condition .block-common-contact .block-content .common-text .text-right:after {
   right: 0;
 }
 
-.block-common-contact .text-right span {
+.block-common-contact .text-right span,
+.section-mypage-condition .block-common-contact .block-content .common-text .text-right span {
   display: inline-block;
 }
 
-.block-common-contact .button-contact {
+.block-common-contact .button-contact,
+.section-mypage-condition .block-common-contact .block-content .common-text .button-contact {
   color: #000;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -56,21 +66,25 @@
   text-decoration: none;
 }
 
-.block-common-contact .button-contact:hover {
+.block-common-contact .button-contact:hover,
+.section-mypage-condition .block-common-contact .block-content .common-text .button-contact:hover {
   background-color: #005baa;
   color: #fff;
 }
 
-.block-common-contact .title-bottom {
+.block-common-contact .title-bottom,
+.section-mypage-condition .block-common-contact .block-content .common-text .title-bottom {
   color: #005baa;
 }
 
-.block-common-contact .text-note-detail {
+.block-common-contact .text-note-detail,
+.section-mypage-condition .block-common-contact .block-content .common-text .text-note-detail {
   text-align: center;
   font-weight: 400;
 }
 
-.block-common-contact .list-story-issue {
+.block-common-contact .list-story-issue,
+.section-mypage-condition .block-common-contact .block-content .common-text .list-story-issue {
   list-style-type: none;
   padding-left: 0;
   display: -webkit-box;
@@ -543,6 +557,7 @@
   }
   .section-job-about .common-text {
     margin-bottom: 24px;
+    font-weight: 700;
   }
 }
 
@@ -592,10 +607,6 @@
 }
 
 .list-image-special .common-text {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
   color: #000;
 }
 
@@ -668,7 +679,6 @@
     line-height: calc(28 / 16);
   }
   .list-image-special .common-text {
-    -webkit-line-clamp: 2;
     line-height: calc(26 / 13);
   }
   .list-image-special .special-block {
@@ -3186,8 +3196,27 @@
     border-radius: 10px;
     padding: 20px 24px 32px;
   }
+  .section-job-voice .voice-image {
+    position: relative;
+  }
+  .section-job-voice .voice-image:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    background: rgba(0, 159, 231, 0.2);
+    z-index: 2;
+    -webkit-transition: .26s ease;
+    transition: .26s ease;
+    opacity: 0;
+    border-radius: 10px;
+  }
+  .section-job-voice .voice-item:hover .voice-image:before {
+    opacity: 1;
+  }
   .section-job-voice .voice-name {
-    -webkit-line-clamp: 3;
     font-size: .18rem;
   }
   .section-job-voice .voice-detail {
@@ -3321,7 +3350,6 @@
   }
   .section-job-voice .voice-name {
     font-size: .24rem;
-    -webkit-line-clamp: 2;
   }
   .section-job-voice .voice-detail {
     line-height: calc(50 / 24);
@@ -4391,7 +4419,11 @@
   border-color: rgba(233, 97, 0, 0.3);
 }
 
-.section-index-begin .list-image-special.is-special-custom .special-image:after, .section-index-begin .list-image-special.is-special-custom .special-image:before {
+.section-index-begin .list-image-special.is-special-custom .special-image:after {
+  background: transparent;
+}
+
+.section-index-begin .list-image-special.is-special-custom .special-image:before {
   background: rgba(233, 97, 0, 0.2);
 }
 
@@ -4461,9 +4493,6 @@
   .section-index-begin .block-content-begin .block-content-top::before {
     border-radius: .2rem;
   }
-  .section-index-begin .special-link .common-text {
-    -webkit-line-clamp: 2;
-  }
 }
 
 .section-index-begin .common-title-arrow,
@@ -4476,7 +4505,7 @@
 }
 
 .section-index-staff .list-image-special.is-special-custom .special-image:after {
-  background: rgba(0, 159, 231, 0.2);
+  background: transparent;
 }
 
 @media print, (min-width: 769px) {
@@ -4679,11 +4708,6 @@
 .section-index-middle .point-text {
   margin-bottom: 0;
   font-weight: bold;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 4;
-  -webkit-box-orient: vertical;
 }
 
 .section-index-middle .common-title-arrow {
@@ -4983,7 +5007,6 @@
   }
   .section-index-staff .common-text {
     margin-bottom: 0;
-    -webkit-line-clamp: 2;
   }
   .section-index-staff .special-block::before {
     background-image: url(../img/common/sp/icon_arrow_06.svg);
@@ -5020,7 +5043,11 @@
   border-color: rgba(233, 97, 0, 0.3);
 }
 
-.section-index-recommended .list-image-special.is-special-custom .special-image:after, .section-index-recommended .list-image-special.is-special-custom .special-image:before {
+.section-index-recommended .list-image-special.is-special-custom .special-image:after {
+  background: transparent;
+}
+
+.section-index-recommended .list-image-special.is-special-custom .special-image:before {
   background: rgba(233, 97, 0, 0.2);
 }
 
@@ -5060,7 +5087,6 @@
     letter-spacing: .08em;
   }
   .section-index-recommended .common-text {
-    -webkit-line-clamp: 2;
     margin-bottom: 0;
   }
 }
@@ -5090,6 +5116,9 @@
   .section-index-benefit .introduction-content .inner-content {
     width: 750px;
     margin-bottom: 40px;
+  }
+  .section-index-benefit .introduction-content .button-common-highlight {
+    width: 428px;
   }
 }
 

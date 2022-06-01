@@ -716,6 +716,14 @@
   opacity: 1;
 }
 
+.work-list.is-special-custom .work-01:before {
+  background: rgba(247, 188, 0, 0.2);
+}
+
+.work-list.is-special-custom .work-02:before {
+  background: rgba(233, 97, 0, 0.2);
+}
+
 .work-list .work-block {
   position: relative;
   overflow: hidden;

@@ -23,10 +23,6 @@
 }
 
 .list-image-special .common-text {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
   color: #000;
 }
 
@@ -99,7 +95,6 @@
     line-height: calc(28 / 16);
   }
   .list-image-special .common-text {
-    -webkit-line-clamp: 2;
     line-height: calc(26 / 13);
   }
   .list-image-special .special-block {

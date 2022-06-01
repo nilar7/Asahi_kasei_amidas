@@ -44,7 +44,7 @@ $url =$_SERVER['PHP_SELF'];
             <a href="http://asahi-kasei-amidas.sitetastingmyanmar.com/job/">お仕事をお探しの方</a>
         </li>
         <li class="drop_down_menu_item">
-            <a href="">旭化成アミダスで出来る<br>仕事の探し方</a>
+            <a href="">旭化成アミダスでできる<br>仕事の探し方</a>
             <a href="">人材派遣</a>
             <a href="">転職支援</a>
         </li>
@@ -117,7 +117,7 @@ $url =$_SERVER['PHP_SELF'];
                 <div class="title-menu icon-plus-big js-accordion-heading is-pointer"><span class="trans">お仕事をお探しの方</span></div>
                 <div class="content-sub-menu js-accordion-content">
                     <ul class="sub-menu">
-                        <li class="item-sub-menu"><a class="trans" href="http://asahi-kasei-amidas.sitetastingmyanmar.com/job/haken/">旭化成アミダスで出来る<br class="md">仕事の探し方</a></li>
+                        <li class="item-sub-menu"><a class="trans" href="http://asahi-kasei-amidas.sitetastingmyanmar.com/job/haken/">旭化成アミダスでできる<br class="md">仕事の探し方</a></li>
                         <li class="item-sub-menu sm"><a class="trans" href="#">人材派遣</a></li>
                         <li class="item-sub-menu sm"><a class="trans" href="#">転職支援</a></li>
                         <li class="item-sub-menu sm"><a class="trans" href="#">製造現場のお仕事</a></li>

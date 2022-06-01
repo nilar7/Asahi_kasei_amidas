@@ -2,7 +2,7 @@
 <div class="footer-middle md">
   <div class="inner-wrapper">
     <div class="footer-detail"><a class="trans footer-logo" href="#"><img src="http://asahi-kasei-amidas.sitetastingmyanmar.com/img/common/footer_logo.png" width="202" height="167" loading="lazy" alt="旭化成アミダス株式会社"></a>
-      <address class="address">〒101-8480<br>東京都千代田区神田錦町三丁目<br>22番地 テラススクエア</address>
+      <address class="address">〒101-8480<br>東京都千代田区神田錦町3-22<br>テラススクエア 5F</address>
     </div>
     <nav class="footer-navigation">
       <ul class="list-navigation">
