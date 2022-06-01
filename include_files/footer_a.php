@@ -6,7 +6,7 @@
     </div>
     <nav class="footer-navigation">
       <ul class="list-navigation">
-        <li class="item-navigation"><span class="text-navigation">ホーム</span>
+        <li class="item-navigation"><a href="http://asahi-kasei-amidas.sitetastingmyanmar.com/"><span class="text-navigation">ホーム</span></a>
           <ul class="sub-navigation">
             <li class="item-sub"><a class="trans" href="#">お知らせ</a></li>
             <li class="item-sub"><a class="trans" href="#">お問い合わせ</a></li>

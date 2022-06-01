@@ -180,7 +180,8 @@ $url =$_SERVER['PHP_SELF'];
                 </div>
             </li>
             <li class="item-menu js-accordion">
-                <div class="title-menu icon-plus-big js-accordion-heading"><a class="trans js-accordion-heading" href="http://asahi-kasei-amidas.sitetastingmyanmar.com/client/haken/">企業のご担当者の方</a></div>
+                <div class="title-menu icon-plus-big md"><a class="trans js-accordion-heading" href="http://asahi-kasei-amidas.sitetastingmyanmar.com/client/haken/">企業のご担当者の方</a></div>
+                <div class="title-menu icon-plus-big js-accordion-heading sm"><span class="trans js-accordion-heading">企業のご担当者の方</span></div>
                 <div class="content-sub-menu js-accordion-content">
                     <ul class="sub-menu md">
                         <li class="item-sub-menu"><a class="trans" href="#">お知らせ・イベント情報</a></li>
@@ -254,7 +255,8 @@ $url =$_SERVER['PHP_SELF'];
                 </div>
             </li>
             <li class="item-menu js-accordion">
-                <div class="title-menu icon-plus-big js-accordion-heading"><a class="trans js-accordion-heading" href="http://asahi-kasei-amidas.sitetastingmyanmar.com/recruit/">採用情報</a></div>
+                <div class="title-menu icon-plus-big md"><a class="trans js-accordion-heading" href="http://asahi-kasei-amidas.sitetastingmyanmar.com/recruit/">採用情報</a></div>
+                <div class="title-menu icon-plus-big js-accordion-heading sm"><span class="trans js-accordion-heading">採用情報</span></div>
                 <div class="content-sub-menu js-accordion-content">
                     <ul class="sub-menu md">
                         <li class="item-sub-menu"><a class="trans" href="#">旭化成アミダスとは</a></li>
