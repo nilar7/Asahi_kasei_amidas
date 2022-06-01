@@ -187,7 +187,7 @@ $url =$_SERVER['PHP_SELF'];
                 </div>
             </li>
             <li class="item-menu js-accordion">
-                <div class="title-menu icon-plus-big js-accordion-heading is-pointer"><span class="trans">企業のご担当者の方</span></div>
+                <div class="title-menu icon-plus-big js-accordion-heading"><a class="trans js-accordion-heading" href="http://asahi-kasei-amidas.sitetastingmyanmar.com/client/haken/">企業のご担当者の方</a></div>
                 <div class="content-sub-menu js-accordion-content">
                     <ul class="sub-menu md">
                         <li class="item-sub-menu"><a class="trans" href="#">お知らせ・イベント情報</a></li>
@@ -261,7 +261,7 @@ $url =$_SERVER['PHP_SELF'];
                 </div>
             </li>
             <li class="item-menu js-accordion">
-                <div class="title-menu icon-plus-big js-accordion-heading is-pointer"><span class="trans">採用情報</span></div>
+                <div class="title-menu icon-plus-big js-accordion-heading"><a class="trans js-accordion-heading" href="http://asahi-kasei-amidas.sitetastingmyanmar.com/recruit/">採用情報</a></div>
                 <div class="content-sub-menu js-accordion-content">
                     <ul class="sub-menu md">
                         <li class="item-sub-menu"><a class="trans" href="#">旭化成アミダスとは</a></li>
@@ -297,8 +297,8 @@ $url =$_SERVER['PHP_SELF'];
                         <li class="item-sub-menu"><a class="trans" href="#">事業の未来座談会</a></li>
                         <li class="item-sub-menu"><a class="trans" href="#">教育研修制度</a></li>
                         <li class="item-sub-menu"><a class="trans" href="#">福利厚生制度</a></li>
-                        <li class="item-sub-menu"><a class="trans" href="#">新卒採用（ITエンジニア）</a></li>
                         <li class="item-sub-menu"><a class="trans" href="#">採用に関するお問い合わせ</a></li>
+                        <li class="item-sub-menu"><a class="trans" href="#">新卒採用（ITエンジニア）</a></li>
                         <li class="item-sub-menu"><a class="trans" href="#">新卒採用（総合職）</a></li>
                         <li class="item-sub-menu"><a class="trans" href="#">中途採用</a></li>
                     </ul>
