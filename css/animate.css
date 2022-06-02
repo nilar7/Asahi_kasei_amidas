@@ -1,14 +1,14 @@
 .animate_gorup {
-    position:absolute;
+    position: absolute;
     width: 1325px;
     height: 500px;
     overflow: hidden;
-    top: 75px;
+    top: 150px;
     left: 95px;
     margin: 0 auto;
     opacity: 0;
-    animation: mainAnimate 6s linear infinite;
-    z-index: 999;
+    /*animation: mainAnimate 6s linear infinite;*/
+    z-index: 1;
 }
 
 #right_animate {
@@ -20,13 +20,15 @@
 
 .animate_gorup.two #right_animate {
     top: 12px;
-        right: -36px;
+    right: -36px;
 }
+
 .animate_gorup.one #right_animate {
     top: -39px;
     right: -60px;
 }
-.animate_gorup.three #right_animate{
+
+.animate_gorup.three #right_animate {
     top: 0px;
     right: -42px;
 }
@@ -73,15 +75,14 @@
     left: 350px;
 }
 
-/* .m_animate img {
-    width: 190px;
-} */
 .animate_gorup.one .m_animate img {
     width: 237px;
 }
+
 .animate_gorup.two .m_animate img {
     width: 214px;
 }
+
 .animate_gorup.three .m_animate img {
     width: 220px;
 }
@@ -95,22 +96,23 @@
 
     width: 350px;
     position: absolute;
-    /* top: -63px;
-    left: 0px; */
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     color: #FFF;
 }
-.animate_gorup.two #left_animate{
+
+.animate_gorup.two #left_animate {
     top: -60px;
-        left: 3px;
+    left: 3px;
 }
+
 .animate_gorup.one #left_animate {
     top: -48px;
     left: 0px;
 }
+
 .animate_gorup.three #left_animate {
     top: -62px;
     left: 5px;
@@ -122,22 +124,8 @@
     height: 400px !important;
 }
 
-.l_img {
-    position: absolute;
-    top: 154px;
-    left: 20%;
-}
-
-.r_img {
-    position: absolute;
-    top: 105px;
-    right: 42%;
-}
 
 .character_group {
-    /* width: 880px;
-    height: 590px;
-    margin: 0 auto; */
     opacity: 0;
 }
 
@@ -147,12 +135,15 @@
     position: absolute;
     top: 0;
     left: 140px;
+    z-index: 2;
 }
+
 .section-top-keyvisual .image-text {
     width: 3.75%;
     bottom: 40px;
     left: 160px;
 }
+
 .animate_gorup.one,
 .animate_gorup.two,
 .animate_gorup.three {
@@ -190,44 +181,120 @@
         opacity: 1;
     }
 }
+.section-top-keyvisual .content-scroll {
+    z-index: 3;
+}
+.only_pc{
+    display: block;
+}
+.only_sp{
+    display: none;
+}
 
 
 
-
-
-
-
-
-/* 
-@media screen and (min-width: 1280px) {
-    .l_img {
-
-        left: 220px;
+@media only screen and (max-width: 768.98px) {
+    .only_pc{
+        display: none;
+    }
+    .only_sp{
+        display: block;
     }
 
-    .r_img {
-        right: 600px;
-    }
-} */
-
-@media only screen and (max-width: 768.98px){
-    .character_group{
-        /* position: relative;
-        top: -840px; */
-    }
     .m_img {
-            width: 100%;
-            height: auto;
-            position: absolute;
-            top: 12vw;
-            left: 0;
-            z-index: 99;
-        }
-    .animate_gorup {
-        top: 10vw;
-        left: -5.333vw;
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 12.5vw;
+        left: 0;
+        z-index: 2;
     }
+
+    .animate_gorup {
+        top: 200px;
+        left: -70px;
+
+    }
+
     .animate_gorup.one .m_animate img {
-        width: 18.516vw;
+        width: 118px;
+    }
+
+    .animate_gorup.two .m_animate img {
+        width: 112px;
+    }
+
+    .animate_gorup.three .m_animate img {
+        width: 110px;
+    }
+
+    .animate_gorup.two #left_animate {
+        top: -95px;
+        left: 1px;
+    }
+
+    .animate_gorup.two #right_animate {
+        top: -58px;
+        right: 65px;
+    }
+
+    .animate_gorup.one #left_animate {
+        top: -92px;
+        left: 2px
+    }
+
+    .animate_gorup.one #right_animate {
+        top: -88px;
+        right: 57px;
+    }
+
+    .animate_gorup.three #left_animate {
+        top: -98px;
+        left: 1px;
+    }
+
+    .animate_gorup.three #right_animate {
+        top: -68px;
+        right: 66px;
+    }
+
+    .section-top-keyvisual .image-text {
+        width: 0.64rem;
+        bottom: 0;
+        top: 4rem;
+        left: 8vw;
+        z-index: 3;
+    }
+    .section-top-keyvisual {
+        padding-bottom: 0;
+    }
+    .section-top-keyvisual .text-keyvisual {
+        font-size: .24rem;
+        padding-top: 4vw;
+    }
+
+}
+@media only screen and (max-width: 440px) {
+   
+    .animate_gorup {
+        top: 84px;
+        left: -210px;
+
+    }
+}
+@media only screen and (max-width: 390px) {
+   
+    .animate_gorup {
+        top: 70px;
+        left: -222px;
+
+    }
+}
+@media only screen and (max-width: 375px) {
+
+    .animate_gorup {
+        top: 65px;
+        left: -228px;
+
     }
 }

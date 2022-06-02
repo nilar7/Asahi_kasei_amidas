@@ -29,7 +29,7 @@ var slider_kv = {
         const nextEl = document.getElementsByClassName("swiper-button-next");
         const prevEl = document.getElementsByClassName("swiper-button-prev");
 
-        const tensuifukushijigyokai = new Swiper(".kv .swiper-container", {
+        const slider_kv = new Swiper(".kv .swiper-container", {
             direction: "horizontal",
             slidesPerView: "auto",
             loop: true,
