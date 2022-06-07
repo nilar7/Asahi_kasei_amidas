@@ -971,7 +971,7 @@ body {
     top: 51%;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
-    background: url(../img/client/sp/icon_arrow_right_01.svg) center/100% auto no-repeat;
+    background: none;
     right: 1.76rem;
     width: .6rem;
     height: .6rem;
@@ -1044,7 +1044,7 @@ body {
     right: 42px;
   }
   .button-small-arrow.is-blue {
-    width: 174px;
+    width: 180px;
   }
   .button-small-arrow.is-white {
     width: 189px;
@@ -3437,6 +3437,9 @@ footer .item-inquiry a {
   footer .item-sub > a:not(:last-child) {
     margin-bottom: 15px;
   }
+  footer .item-sub > a:hover {
+    color: #009FE7;
+  }
   footer .copyright {
     background-color: #005baa;
     color: #fff;
@@ -3555,7 +3558,7 @@ footer .item-inquiry a {
 }
 
 .no-nav .footer-different {
-  margin-bottom: 108px;
+  margin-bottom: 0;
 }
 
 @media print, (min-width: 768.98px) and (max-width: 1040px) {

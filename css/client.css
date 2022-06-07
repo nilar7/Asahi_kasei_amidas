@@ -2176,8 +2176,6 @@
     width: 100%;
   }
   .section-haken-content .image-content {
-    -webkit-mask-image: url(../img/client/mask_img.png);
-    mask-image: url(../img/client/mask_img.png);
     width: 320px;
     height: 188px;
   }
@@ -2376,8 +2374,6 @@
     width: 100%;
   }
   .section-haken-article .image-article {
-    -webkit-mask-image: url(../img/client/mask_img.png);
-    mask-image: url(../img/client/mask_img.png);
     width: 320px;
     height: 188px;
   }
@@ -3167,7 +3163,7 @@
     margin: 0 -1.51% 32px;
   }
   .section-detail-help .common-list-interview .item-interview {
-    width: 30.335%;
+    width: 30%;
     margin: 0 1.5% 48px;
   }
   .section-detail-help .common-list-interview .image-interview {
@@ -3194,7 +3190,7 @@
 
 @media print, (min-width: 768.98px) and (max-width: 1036px) {
   .section-detail-help .common-list-interview .item-interview {
-    width: 30.33%;
+    width: 30%;
   }
   .section-detail-help .item-category span {
     min-width: 110px;
@@ -3791,6 +3787,7 @@
     padding-right: 56px;
     margin-bottom: 0;
     text-shadow: 0 3px 10px rgba(0, 0, 0, 0.8);
+    z-index: 2;
   }
   .section-client-service .image-service {
     margin-bottom: 24px;
@@ -3801,12 +3798,6 @@
     top: 0;
     left: 0;
     width: 100%;
-  }
-  .section-client-service .image-service {
-    -webkit-mask-image: url(../img/client/mask_img.png);
-    mask-image: url(../img/client/mask_img.png);
-    width: 320px;
-    height: 188px;
   }
   .section-client-service .image-service {
     position: relative;
