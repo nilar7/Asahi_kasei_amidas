@@ -1,5 +1,9 @@
 @charset "utf-8"
-
+header
+  .button-menu
+      span
+        &:nth-child(1)
+          background-color: #E96600
 .section-mypage-register
   .wrapper
     font-weight: 700
@@ -29,6 +33,82 @@
     font-weight: $base-font-weight
 
 +desktop
+  header
+    .button-menu
+      &.is-active
+        span
+          &:nth-child(1),
+          &:nth-child(3)
+            background-color: #F9C001
+    .mypage-navigation
+      background: #E96100
+      height: 50vh
+      padding-bottom: 0
+      .navigation-block
+        padding: 50px 115px 98px 126px
+      .list-function
+        margin-bottom: 35px
+      .item-function
+        width: 232px
+        &:not(:last-child)
+          margin-right: 37px
+      .item-link
+        font-size: 14px
+        min-width: auto
+        min-height: auto
+        font-weight: 500
+        justify-content: left
+        position: relative
+        &:after
+          position: absolute
+          content: ""
+          top: 50%
+          transform: translateY(-50%)
+          background: url(../img/common/header_icon_03.svg) center / 100% auto no-repeat
+          right: 6px
+          width: 9px
+          height: 12px
+        &:hover
+          color: #FFD140
+          opacity: 1
+          &:after
+            background: url(../img/common/header_icon_03_hover.png) center/100% auto no-repeat
+      .header-menu
+        margin-bottom: 0
+        .item-menu
+          margin-bottom: 0
+          margin-right: 37px
+          &:nth-child(n+4)
+            margin-right: 37px
+          &:last-child,
+          &:nth-child(4n+4)
+            margin-right: 0
+          .title-menu
+            padding-bottom: 0
+            border-bottom: 0
+            a
+              &:after
+                position: absolute
+                content: ""
+                top: 50%
+                transform: translateY(-50%)
+                background: url(../img/common/header_icon_03.svg) center / 100% auto no-repeat
+                right: 6px
+                width: 9px
+                height: 12px
+              &:hover
+                color: #FFD140
+                opacity: 1
+                &:after
+                  background: url(../img/common/header_icon_03_hover.png) center/100% auto no-repeat
+      .top_item
+        display: block
+        width: 100%
+        a
+          width: 232px
+          &:after
+            right: -10px
+
   .section-mypage-register
     padding: 64px 16px 64px
     .common-title
@@ -271,10 +351,6 @@
 
 +mobile
   header
-    .button-menu
-      span
-        &:nth-child(1)
-          background-color: #E96600
     .menu-navigation
       background: #E96100
       padding: 0.32rem
@@ -359,6 +435,8 @@
           font-weight: 700
           color: #E96100
           position: relative
+          border-bottom: 0.02rem solid #E96100
+          padding-bottom: 0.05rem
           &:before
             content: ''
             position: absolute

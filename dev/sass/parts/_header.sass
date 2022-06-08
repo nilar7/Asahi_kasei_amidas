@@ -396,40 +396,49 @@ header
         min-width: 200px
     .inner-mypage
       background-color: #fff5d4
-      padding-right: 88px
+      padding: 26px 88px 32px 40px
       align-items: center
-    .function-mypage
-      margin-top: 8px
-      margin-bottom: 0
-      .item-link
-        color: $base-color-blue
-        font-weight: $base-font-weight
-        font-size: .16rem
-        min-width: 145px
-        position: relative
-        display: inline-block
-        margin-right: 25px
-        padding-left: 10px
-        &:after
-          position: absolute
-          content: ""
-          top: 5px
-          left: -10px
-        &.icon01
-          &:after
-            background: url(../img/common/header_web_icon01_.png) center / 100% auto no-repeat
-            width: 14px
-            height: 14px
-        &.icon02
-          &:after
-            background: url(../img/common/header_web_icon02.png) center / 100% auto no-repeat
-            width: 14px
-            height: 16px
-        &.icon03
-          &:after
-            background: url(../img/common/header_icon_06.png) center / 100% auto no-repeat
-            width: 14px
-            height: 17px
+      .header-right
+        .function-mypage
+          margin: 10px 45px 0 0
+          .item-function
+            display: inline-block
+            width: auto
+            border: 1px solid #005BAA
+            border-radius: 30px
+            padding: 6px 24px 10px 48px
+            position: relative;
+            &:not(:last-child)
+              margin-right: 18px
+            &:after
+              position: absolute
+              content: ""
+              top: 50%
+              transform: translateY(-50%)
+              left: 20px
+            &.item-function01
+              &:after
+                background: url(../img/common/header_web_icon01_.png) center / 100% auto no-repeat
+                width: 14px
+                height: 14px
+            &.item-function02
+              &:after
+                background: url(../img/common/header_web_icon02.png) center / 100% auto no-repeat
+                width: 14px
+                height: 16px
+            &.item-function03
+              &:after
+                background: url(../img/common/header_icon_06.png) center / 100% auto no-repeat
+                width: 14px
+                height: 17px
+          .item-link
+            color: $base-color-blue
+            font-weight: $base-font-weight
+            font-size: .16rem
+            min-width: auto
+            min-height: auto
+            display: inline-block
+        
     .content-top
       display: flex
       justify-content: flex-end
