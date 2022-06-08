@@ -42,9 +42,11 @@ header
             background-color: #F9C001
     .mypage-navigation
       background: #E96100
-      height: 50vh
+      height: 31vh
       padding-bottom: 0
       .navigation-block
+        width: 1280px
+        margin: 0 auto
         padding: 50px 115px 98px 126px
       .list-function
         margin-bottom: 35px
@@ -181,6 +183,13 @@ header
       line-height: calc(32 / 14)
       margin-top: -8px
       margin-bottom: 8px
+
+@media print, (min-width: 1281px)
+  header
+    .mypage-navigation
+      height: 45vh
+      .header-menu
+        justify-content: start
 
 +mobile
   .section-mypage-register
