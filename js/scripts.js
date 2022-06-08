@@ -293,17 +293,17 @@ app.readMore = function () {
           $(item).removeClass('is-show');
           closeCat($(item));
           if (tabs.hasClass('tab-content current is-show')) {
-            self.addClass('active-show');
+            self.addClass('active-show').text('タグを一部閉じる');
           } else {
-            self.removeClass('active-show');
+            self.removeClass('active-show').text('すべてのタグを見る');
           }
         }, 230);
       }
     });
     if (tabs.hasClass('tab-content current is-show')) {
-      $(this).addClass('active-show');
+      $(this).addClass('active-show').text('タグを一部閉じる');
     } else {
-      $(this).removeClass('active-show');
+      $(this).removeClass('active-show').text('すべてのタグを見る');
     }
   });
 
@@ -352,7 +352,7 @@ $(window).on('resize', function () {
   function reRender () {
     $('.is-hide').removeClass('is-hide');
     tabContent.removeClass('is-show');
-    buttonMore.removeClass('active-show');
+    buttonMore.removeClass('active-show').text('すべてのタグを見る');
     tabContent.each(function (index, item) {
       var currentContent = $(item);
       closeCat(currentContent);
