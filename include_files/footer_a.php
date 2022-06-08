@@ -100,7 +100,7 @@
     </a>
     <div class="footer_bottom_nav">
       <ul class="list-guide">
-        <li class="item-guide"><a class="trans" href="#">お問合せ</a></li>
+        <li class="item-guide"><a class="trans" href="#">お問い合わせ</a></li>
         <li class="item-guide"><a class="trans" href="#">ご利用条件</a></li>
         <li class="item-guide"><a class="trans" href="#">個人情報保護方針</a></li>
         <li class="item-guide"><a class="trans" href="#">優良派遣事業者行動方針</a></li>

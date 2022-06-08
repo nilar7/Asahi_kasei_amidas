@@ -224,8 +224,12 @@
   .link-employment
     display: block
     text-decoration: none
-    &:hover .block-image:after
-      border-color: $base-color-blue
+    &:hover 
+      .block-image:after
+        border-color: $base-color-blue
+      .image-employment 
+        &:before
+          opacity: 1
   .block-image
     position: relative
     &:after
@@ -236,6 +240,34 @@
       background: url(../img/recruit/recruit_icon_arrow_01.svg) no-repeat center/9px 7px
       transform: rotate(90deg)
       transition: border-color .26s
+  .image-employment
+    mask-size: 100%
+    mask-repeat: no-repeat
+    width: 317px
+    height: 470px
+    position: relative
+    &:before
+      content: ''
+      position: absolute
+      left: 0
+      bottom: 0
+      right: 0
+      top: 0
+      z-index: 2
+      transition: .26s ease
+      opacity: 0
+  .image-employment01
+    mask-image: url(../img/recruit/recruit_mask01.png)
+    &:before
+      background: rgba(6, 145, 222, 0.2)
+  .image-employment02
+    mask-image: url(../img/recruit/recruit_mask02.png)
+    &:before
+      background: rgba(247, 188, 0, 0.2)
+  .image-employment03
+    mask-image: url(../img/recruit/recruit_mask03.png)
+    &:before
+      background: rgba(233, 97, 0, 0.2)
   .title-employment
     position: absolute
     color: #fff
@@ -290,10 +322,17 @@
       &:not(:last-child)
         margin-bottom: 1.12rem
     .image-employment
+      width: 100%
+      height: auto
       margin-bottom: .16rem
-      margin-left: -.1rem
-      img
-        width: 100%
+    .image-employment01
+      mask-image: url(../img/recruit/sp/recruit_mask01.png)
+    .image-employment02
+      mask-image: url(../img/recruit/sp/recruit_mask02.png)
+    .image-employment03
+      mask-image: url(../img/recruit/sp/recruit_mask03.png)
+    img
+      width: 100%
     .block-image
       &:after
         width: .64rem
