@@ -109,5 +109,18 @@
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="../js/scripts.js"></script>
+    <script src="../js/jQueryAutoHeight.js"></script>
+    <script>
+      var x = window.matchMedia("(min-width: 769px)")
+      myFunction(x) 
+      x.addListener(myFunction)
+      function myFunction(x) {
+        if (x.matches) { 
+          $(document).ready(function() {
+            $(".list-environment .content-environment .common-text").autoHeight({column:2,clear:1});
+          });
+        }
+      }
+    </script>
   </body>
 </html>
