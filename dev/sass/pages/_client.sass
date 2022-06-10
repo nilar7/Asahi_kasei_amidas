@@ -1,17 +1,3 @@
-+desktop
-  .button-to-top
-    bottom: 66px
-    right: 64px
-    cursor: pointer
-    position: fixed
-    z-index: 9
-    span
-      background-image: url(../img/client/button_to_top.png)
-      background-size: 100% auto
-      width: 40px
-      height: 59px
-      display: block
-
 .section-client
   .common-news-list .news-category
     border-radius: 0
@@ -2737,8 +2723,7 @@
     border: solid 1px $base-color-blue
     position: relative
   .title-example:after,
-  .sub-list li:before,
-  .button-to-top
+  .sub-list li:before
     position: absolute
   .title-example
     position: relative
@@ -2787,11 +2772,6 @@
     background-color: $base-color-blue
     &:hover
       background-color: #036fcc
-  .button-to-top
-    cursor: pointer
-    span
-      display: block
-      background: center / 100% auto no-repeat
 
 +desktop
   .section-service-detail
@@ -2933,13 +2913,6 @@
           left: -8px
     .common-button-inquiry
       min-height: 48px
-    .button-to-top
-      bottom: 50px
-      right: calc(50% - 511px)
-      span
-        background-image: url(../img/client/button_to_top.png)
-        width: 40px
-        height: 59px
 
 @media print, (min-width: 768.98px) and (max-width: 1063px)
   .section-service-detail
@@ -2971,19 +2944,6 @@
     .item-example:not(:last-child):after
       right: -16%
       width: 11%
-
-+mobile
-  .button-to-top
-    bottom: 0.50rem
-    right: 0.32rem
-    cursor: pointer
-    position: fixed
-    span
-      background-image: url(../img/client/sp/button_to_top.png)
-      background-size: 100% auto
-      width: .64rem
-      height: .96rem
-      display: block
 
 +mobile
   .section-service-detail
@@ -3095,14 +3055,6 @@
     .common-button-inquiry
       min-height: .96rem
       width: 6.08rem
-    .button-to-top
-      bottom: .48rem
-      left: 50%
-      transform: translateX(-50%)
-      span
-        background-image: url(../img/client/sp/button_to_top.png)
-        width: .64rem
-        height: .97rem
     .list-service-detail
       margin-bottom: .64rem
     .common-big-button
