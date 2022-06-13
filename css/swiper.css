@@ -17,11 +17,11 @@
     font-style: normal
 }
 
-body.contrast-mode--normal {
-    /* font-family: TsukuNewsMinPr6-LB, 'Yu Gothic', "游ゴシック", 'YuGothic', "游ゴシック体", 'Meiryo'; */
+/* body.contrast-mode--normal {
+    font-family: TsukuNewsMinPr6-LB, 'Yu Gothic', "游ゴシック", 'YuGothic', "游ゴシック体", 'Meiryo';
     font-feature-settings: "palt"1;
     letter-spacing: 0.175em
-}
+} */
 
 :root {
     --swiper-theme-color: #007aff
