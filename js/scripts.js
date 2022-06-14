@@ -288,6 +288,7 @@ app.readMore = function () {
             .outerHeight() + $('.js-read-more:visible').height();
         $(this).animate({ height: height2 }, 400);
       } else if ($(item).hasClass('current') && $(item).hasClass('is-show')) {
+        // $('.common-title span').text(Object.keys(listTabs));
         $(this).animate({ height: listTabs[$(this).attr('id')].min }, 300);
         setTimeout(function () {
           $(item).removeClass('is-show');
@@ -332,6 +333,12 @@ $(window).on('resize', function () {
         .find('.common-list-category')
         .outerHeight() != 0
     ) {
+      if($('.js-read-more').hasClass('active-show')) return;
+      // if($(this).attr('id') == 'first-tab'){
+      //   alert($(this)
+      //     .find('.common-list-category')
+      //     .outerHeight() + $('.js-read-more:visible').height())
+      // }
       listTabs[$(this).attr('id')].min =
         $(this)
           .find('.common-list-category')
