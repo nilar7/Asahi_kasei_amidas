@@ -314,8 +314,7 @@ $url =$_SERVER['PHP_SELF'];
                         <li class="item-sub-menu"><a class="trans" href="#">コーポレートスローガン</a></li>
                         <li class="item-sub-menu"><a class="trans" href="#">代表あいさつ</a></li>
                         <li class="item-sub-menu sm"><a class="trans" href="#">事業紹介</a></li>
-                        <li class="item-sub-menu md"><a class="trans" href="#">会社概要／<br>旭化成グループについて</a></li>
-                        <li class="item-sub-menu sm"><a class="trans" href="#">会社概要・旭化成グループについて</a></li>
+                        <li class="item-sub-menu"><a class="trans" href="#">会社概要／<br class="md">旭化成グループについて</a></li>
                         <li class="item-sub-menu"><a class="trans" href="#">沿革</a></li>
                         <li class="item-sub-menu"><a class="trans" href="#">拠点一覧</a></li>
                         <li class="item-sub-menu"><a class="trans" href="#">労働者派遣事業に係る<br>各種情報のお知らせ</a></li>

@@ -1034,12 +1034,6 @@
   .link-staff
     color: #fff
     display: block
-  .list-information dd,
-  .text-staff
-    overflow: hidden
-    text-overflow: ellipsis
-    display: -webkit-box
-    -webkit-box-orient: vertical
   .list-information
     margin: 0 auto
     dl
@@ -1109,7 +1103,6 @@
       font-size: .14rem
     .text-staff
       line-height: calc(24 / 13)
-      -webkit-line-clamp: 4
     .list-information
       dl
         &:not(:last-child)
@@ -1122,7 +1115,6 @@
       dd
         font-size: .14rem
         line-height: calc(32 / 14)
-        -webkit-line-clamp: 2
       &.full-width
         width: 672px
 
@@ -1137,8 +1129,6 @@
         dl
           &:not(:last-child)
             margin-bottom: 24px
-        dd
-          -webkit-line-clamp: 3
       &.is-reverse
         .image-information
           order: 1
@@ -1230,7 +1220,6 @@
       letter-spacing: .06em
     .text-staff
       line-height: calc(44 / 24)
-      -webkit-line-clamp: 3
     .list-information
       dt
         flex-shrink: 0

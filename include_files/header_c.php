@@ -77,4 +77,4 @@ $url =$_SERVER['PHP_SELF'];
         </ul>
     </div>
 </nav>
-<div class="button-menu trans js-button-menu"><span></span><span></span><span></span></div>
+<div class="button-menu trans js-button-menu mypage-button"><span></span><span></span><span></span></div>
