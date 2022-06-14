@@ -1,0 +1,377 @@
+.animate_gorup {
+    position: absolute;
+   /* width: 1325px;*/
+    width: 2000px;
+    height: 500px;
+    overflow: hidden;
+    top: 150px;
+    left: 95px;
+    margin: 0 auto;
+    opacity: 0;
+    /*animation: mainAnimate 6s linear infinite;*/
+    z-index: 1;
+}
+
+#right_animate {
+    position: absolute;
+    top: 0px;
+    right: -14px;
+   /* width: 800px;*/
+    width: 2000px;
+}
+
+.animate_gorup.two #right_animate {
+    /*top: 12px;
+    right: -36px;*/
+    top: -288px;
+    right: -561px;
+}
+
+.animate_gorup.one #right_animate {
+    /*top: -39px;
+    right: -60px;*/
+    top: -338px;
+    right: -586px;
+
+}
+
+.animate_gorup.three #right_animate {
+    /*top: 0px;
+    right: -42px;*/
+   top: -302px;
+    right: -569px;
+
+}
+
+
+
+@keyframes mainAnimate {
+    0% {
+        transform: translateY(-40px);
+
+    }
+
+    50% {
+        transform: translateY(40px);
+
+    }
+
+    100% {
+        transform: translateY(-40px);
+
+    }
+
+}
+
+
+#right_animate h1 {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    font-size: 24px;
+    letter-spacing: 1px;
+    font-weight: 200;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#right_animate canvas {
+    width: 100%;
+}
+
+.m_animate {
+    position: absolute;
+    top: 65px;
+    left: 350px;
+}
+
+.animate_gorup.one .m_animate img {
+    width: 237px;
+}
+
+.animate_gorup.two .m_animate img {
+    width: 214px;
+}
+
+.animate_gorup.three .m_animate img {
+    width: 220px;
+}
+
+.section-top-keyvisual:after {
+    background-image: none;
+}
+
+
+#left_animate {
+
+    width: 350px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #FFF;
+}
+
+.animate_gorup.two #left_animate {
+    top: -60px;
+    left: 3px;
+}
+
+.animate_gorup.one #left_animate {
+    top: -48px;
+    left: 0px;
+}
+
+.animate_gorup.three #left_animate {
+    top: -62px;
+    left: 5px;
+}
+
+
+#left_animate canvas {
+    width: 100%;
+    height: 400px !important;
+}
+
+
+.character_group {
+    opacity: 0;
+}
+
+.m_img {
+    width: 880px;
+    height: 590px;
+    position: absolute;
+    top: 0;
+    left: 140px;
+    z-index: 2;
+}
+
+.section-top-keyvisual .image-text {
+    width: 3.75%;
+    bottom: 40px;
+    left: 160px;
+}
+
+.animate_gorup.one,
+.animate_gorup.two,
+.animate_gorup.three {
+    visibility: hidden;
+}
+
+.animate_gorup.one.active,
+.animate_gorup.two.active,
+.animate_gorup.three.active {
+    visibility: visible;
+    animation: fadeinout 6s linear infinite;
+
+}
+
+
+@-webkit-keyframes fadeinout {
+
+    0%,
+    20% {
+        opacity: 0.5;
+    }
+    30% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+@keyframes fadeinout {
+
+    0%,
+    20% {
+        opacity: 0.5;
+    }
+    30% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+.section-top-keyvisual .content-scroll {
+    z-index: 3;
+}
+
+.only_pc {
+    display: block;
+}
+
+.only_sp {
+    display: none;
+}
+/* .section-top-keyvisual .title-keyvisual{
+    transition: 1s cubic-bezier(.22, .61, .36, 1) 1s;
+    right: 5.5%;
+    right: 30%;
+    opacity: 0;
+} */
+.section-top-keyvisual .title-keyvisual{
+    text-align: center;
+    right: 3%;
+    background: #ffffff;
+    width: 15.8%;
+    padding-bottom: 50px;
+    z-index : 3;
+}
+.section-top-keyvisual .keyvisual-image{
+    width: 100%;
+}
+.section-top-keyvisual .keyvisual-content{
+    margin-right: 3%;
+}
+.section-top-keyvisual .text-keyvisual{
+    z-index: 3;
+}
+.section-top-keyvisual .inner-wrapper:before {
+    width: 100px;
+}
+
+
+@media only screen and (max-width: 768.98px) {
+    .only_pc {
+        display: none;
+    }
+
+    .only_sp {
+        display: block;
+    }
+   
+
+    #right_animate {
+       
+        width: 800px;
+      
+    }
+
+    .m_img {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 21.5vw;
+        left: 0;
+        z-index: 2;
+    }
+
+    .animate_gorup {
+        top: 290px;
+        left: -50px;
+        width: 1325px;
+
+    }
+
+    .animate_gorup.one .m_animate img {
+        width: 118px;
+    }
+
+    .animate_gorup.two .m_animate img {
+        width: 112px;
+    }
+
+    .animate_gorup.three .m_animate img {
+        width: 110px;
+    }
+
+    .animate_gorup.two #left_animate {
+        top: -95px;
+        left: 1px;
+    }
+
+    .animate_gorup.two #right_animate {
+        top: -58px;
+        right: 65px;
+    }
+
+    .animate_gorup.one #left_animate {
+        top: -92px;
+        left: 2px
+    }
+
+    .animate_gorup.one #right_animate {
+        top: -88px;
+        right: 57px;
+    }
+
+    .animate_gorup.three #left_animate {
+        top: -98px;
+        left: 1px;
+    }
+
+    .animate_gorup.three #right_animate {
+        top: -68px;
+        right: 66px;
+    }
+
+    .section-top-keyvisual .image-text {
+        width: 0.64rem;
+        bottom: 0;
+        top: 4.8rem;
+        left: 0.1rem;
+        z-index: 3;
+    }
+
+    .section-top-keyvisual {
+        padding-bottom: 0;
+    }
+
+    .section-top-keyvisual .text-keyvisual {
+        font-size: .24rem;
+        padding-top: 4vw;
+    }
+    .section-top-keyvisual .keyvisual-image {
+        margin-bottom: 0.9rem;
+    }
+    /* .section-top-keyvisual .title-keyvisual {
+            position: relative;
+            padding-bottom: 0.48rem;
+            width: 4.64rem;
+            margin: 0 auto 0.32rem;
+        } */
+         .section-top-keyvisual .title-keyvisual{
+        right: 0;
+    }
+
+}
+
+@media only screen and (max-width: 440px) {
+
+    .animate_gorup {
+        top: 84px;
+        left: -210px;
+
+    }
+}
+
+@media only screen and (max-width: 390px) {
+
+    .animate_gorup {
+        top: 70px;
+        left: -222px;
+
+    }
+}
+
+@media only screen and (max-width: 375px) {
+
+    .animate_gorup {
+        top: 65px;
+        left: -228px;
+
+    }
+}
