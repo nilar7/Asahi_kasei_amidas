@@ -1378,22 +1378,23 @@
         object-fit: cover
         border-top-left-radius: 10px
         border-top-right-radius: 10px
-    &.is-special-custom
-    .image-job
-      position: relative
-      &:before
-        content: ''
-        position: absolute
-        left: 0
-        bottom: 0
-        right: 0
-        top: 0
-        background: rgba(0,159,231,.2)
-        z-index: 2
-        transition: .26s ease
-        opacity: 0
-        border-top-left-radius: 10px
-        border-top-right-radius: 10px
+    .list-job-interview
+      &.is-special-custom
+        .image-job
+          position: relative
+          &:before
+            content: ''
+            position: absolute
+            left: 0
+            bottom: 0
+            right: 0
+            top: 0
+            background: rgba(0,159,231,.2)
+            z-index: 2
+            transition: .26s ease
+            opacity: 0
+            border-top-left-radius: 10px
+            border-top-right-radius: 10px
     .item-link:hover
       .image-job:before
         opacity: 1
@@ -1671,7 +1672,6 @@
       border-radius: 10px
       padding: 20px 24px 32px
 
-    &.slick-slide
     .voice-image
       position: relative
       &:before

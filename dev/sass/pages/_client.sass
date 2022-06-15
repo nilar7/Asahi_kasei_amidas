@@ -605,33 +605,33 @@
     .image-content
       width: 320px
       height: 188px  
-
-    &.is-special-custom
-    .image-content
-      position: relative
-      &:before
-        content: ''
-        position: absolute
-        left: 0
-        bottom: 0
-        right: 0
-        top: 0
-        background: rgba(0,159,231,.2)
-        z-index: 2
-        transition: .26s ease
-        opacity: 0
-    .image-content
-        position: relative
-        &:after
-          content: ''
-          position: absolute
-          left: 0
-          bottom: 0
-          right: 0
-          z-index: 1
-          height: 95px
-          background: linear-gradient(0deg, rgba(84,84,84,1) 0%, rgba(0,0,0,0) 100%)
-          opacity: .6
+    .list-content
+      &.is-special-custom
+        .image-content
+          position: relative
+          &:before
+            content: ''
+            position: absolute
+            left: 0
+            bottom: 0
+            right: 0
+            top: 0
+            background: rgba(0,159,231,.2)
+            z-index: 2
+            transition: .26s ease
+            opacity: 0
+        .image-content
+          position: relative
+          &:after
+            content: ''
+            position: absolute
+            left: 0
+            bottom: 0
+            right: 0
+            z-index: 1
+            height: 95px
+            background: linear-gradient(0deg, rgba(84,84,84,1) 0%, rgba(0,0,0,0) 100%)
+            opacity: .6
     .block-content:hover
       .image-content:before
         opacity: 1
@@ -751,33 +751,33 @@
     .image-article
       width: 320px
       height: 188px  
-
-    &.is-special-custom
-    .image-article
-      position: relative
-      &:before
-        content: ''
-        position: absolute
-        left: 0
-        bottom: 0
-        right: 0
-        top: 0
-        background: rgba(0,159,231,.2)
-        z-index: 2
-        transition: .26s ease
-        opacity: 0
-    .image-article
-        position: relative
-        &:after
-          content: ''
-          position: absolute
-          left: 0
-          bottom: 0
-          right: 0
-          z-index: 1
-          height: 95px
-          background: linear-gradient(0deg, rgba(84,84,84,1) 0%, rgba(0,0,0,0) 100%)
-          opacity: .6
+    .list-article
+      &.is-special-custom
+        .image-article
+          position: relative
+          &:before
+            content: ''
+            position: absolute
+            left: 0
+            bottom: 0
+            right: 0
+            top: 0
+            background: rgba(0,159,231,.2)
+            z-index: 2
+            transition: .26s ease
+            opacity: 0
+        .image-article
+          position: relative
+          &:after
+            content: ''
+            position: absolute
+            left: 0
+            bottom: 0
+            right: 0
+            z-index: 1
+            height: 95px
+            background: linear-gradient(0deg, rgba(84,84,84,1) 0%, rgba(0,0,0,0) 100%)
+            opacity: .6
     .content-image:hover
       .image-article:before
         opacity: 1
@@ -1749,33 +1749,33 @@
         top: 0
         left: 0
         width: 100% 
-
-    &.is-special-custom
-    .image-service
-      position: relative
-      &:before
-        content: ''
-        position: absolute
-        left: 0
-        bottom: 0
-        right: 0
-        top: 0
-        background: rgba(0,159,231,.2)
-        z-index: 2
-        transition: .26s ease
-        opacity: 0
-    .image-service
-        position: relative
-        &:after
-          content: ''
-          position: absolute
-          left: 0
-          bottom: 0
-          right: 0
-          z-index: 1
-          height: 95px
-          background: linear-gradient(0deg, rgba(84,84,84,1) 0%, rgba(0,0,0,0) 100%)
-          opacity: .6
+    .list-service
+      &.is-special-custom
+        .image-service
+          position: relative
+          &:before
+            content: ''
+            position: absolute
+            left: 0
+            bottom: 0
+            right: 0
+            top: 0
+            background: rgba(0,159,231,.2)
+            z-index: 2
+            transition: .26s ease
+            opacity: 0
+        .image-service
+          position: relative
+          &:after
+            content: ''
+            position: absolute
+            left: 0
+            bottom: 0
+            right: 0
+            z-index: 1
+            height: 95px
+            background: linear-gradient(0deg, rgba(84,84,84,1) 0%, rgba(0,0,0,0) 100%)
+            opacity: .6
     .content-service:hover
       .image-service:before
         opacity: 1
@@ -1911,7 +1911,6 @@
         margin-bottom: 40px
     .content-image
       width: 320px
-    &.is-special-custom
     .image-article
       position: relative
       &:before
@@ -1925,7 +1924,7 @@
         z-index: 2
         transition: .26s ease
         opacity: 0
-    .image-article
+      .image-article
         position: relative
         &:after
           content: ''
@@ -2582,21 +2581,22 @@
       width: 152px
       height: 152px
       margin: 0 auto 32px
-    &.is-special-custom
-    .image-service
-      position: relative
-      &:before
-        content: ''
-        position: absolute
-        left: 0
-        bottom: 0
-        right: 0
-        top: 0
-        background: rgba(0,159,231,.2)
-        z-index: 2
-        transition: .26s ease
-        opacity: 0
-        border-radius: 50%
+    .list-service
+      &.is-special-custom
+        .image-service
+          position: relative
+          &:before
+            content: ''
+            position: absolute
+            left: 0
+            bottom: 0
+            right: 0
+            top: 0
+            background: rgba(0,159,231,.2)
+            z-index: 2
+            transition: .26s ease
+            opacity: 0
+            border-radius: 50%
     .link-service:hover
       .image-service:before
         opacity: 1

@@ -290,7 +290,7 @@
     .inner-content
       p
         margin-bottom: 0
-  &.is-special-custom
+  .is-special-custom
     .banner-image
       position: relative
       &:before
@@ -305,17 +305,17 @@
         transition: .26s ease
         opacity: 0
     .banner-image
-        position: relative
-        &:after
-          content: ''
-          position: absolute
-          left: 0
-          bottom: 0
-          right: 0
-          z-index: 1
-          height: 95px
-          background: linear-gradient(0deg, rgba(84,84,84,1) 0%, rgba(0,0,0,0) 100%)
-          opacity: .6
+      position: relative
+      &:after
+        content: ''
+        position: absolute
+        left: 0
+        bottom: 0
+        right: 0
+        z-index: 1
+        height: 95px
+        background: linear-gradient(0deg, rgba(84,84,84,1) 0%, rgba(0,0,0,0) 100%)
+        opacity: .6
     .link-content:hover
       .banner-image:before
         opacity: 1
