@@ -80,9 +80,9 @@ $url =$_SERVER['PHP_SELF'];
         </li>
         <li class="drop_down_menu_item">
             <a href="">旭化成アミダスとは</a>
-            <a href="">事業の未来座談会</a>
             <a href="">教育研修制度</a>
             <a href="">福利厚生制度</a>
+            <a href="">事業の未来座談会</a>
         </li>
         <li class="drop_down_menu_item">
             <a href="">採用に関するお問い合わせ</a>
