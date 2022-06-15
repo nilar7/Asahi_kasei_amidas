@@ -83,9 +83,9 @@ $url =$_SERVER['PHP_SELF'];
             <a href="">事業の未来座談会</a>
             <a href="">教育研修制度</a>
             <a href="">福利厚生制度</a>
-            <a href="">採用に関するお問い合わせ</a>
         </li>
         <li class="drop_down_menu_item">
+            <a href="">採用に関するお問い合わせ</a>
             <a href="">新卒採用（ITエンジニア）</a>
             <a href="">新卒採用（総合職）</a>
             <a href="">中途採用</a>
