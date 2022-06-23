@@ -69,7 +69,10 @@ for (let i of wavetype.rightwave) {
             var gradient = this.ctx.createLinearGradient(0, 0, this.width, 0);
             gradient.addColorStop(0, "rgba(238, 133, 58, 0.75)");
             gradient.addColorStop(0.5, "rgba(49, 177, 235, 0.75)");
-            gradient.addColorStop(1, "rgba(248, 197, 37, 0.2");
+            gradient.addColorStop(0.5, "rgba(49, 177, 235, 0.75)");
+            gradient.addColorStop(0.5, "rgba(49, 177, 235, 0.75)");
+            gradient.addColorStop(0.6, "rgba(248, 197, 37, 0.2");
+            gradient.addColorStop(0.5, "rgba(49, 177, 235, 0.75)");
 
             var index = -1;
             var length = this.waves.length;

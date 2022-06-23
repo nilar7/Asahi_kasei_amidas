@@ -528,7 +528,18 @@ app.textLimit = function() {
         $(this).html(text);
     });
 };
+
 app.sliderKeyvisual = function() {
+    document.addEventListener("visibilitychange", function() {
+        if (document.visibilityState === 'visible') {
+          $(".js-keyvisual-top").slickPlay();
+        } else {
+          $(".js-keyvisual-top").slickPause();
+        }
+    });
+    $(".js-keyvisual-top").init(function() {
+    
+    });
     if ($(".js-keyvisual-top").length) {
         $(".js-keyvisual-top").slick({
             centerMode: true,
@@ -537,10 +548,14 @@ app.sliderKeyvisual = function() {
             infinite: true,
             autoplay: true,
             speed: 4000,
-            // autoplaySpeed: 5000,
+            autoplaySpeed: 5000,
+            autoplay: true,
+            loop: true,
+            waitForAnimate: false,
             arrows: false,
+            pauseOnFocus: false,
             pauseOnHover: false,
-            cssEase: "cubic-bezier(0.83, 0.9, 0.17, 1)",
+            cssEase: "cubic-bezier(0.85, 0, 0.15, 1)",
             responsive: [
                 {
                     breakpoint: 769,
@@ -552,10 +567,52 @@ app.sliderKeyvisual = function() {
         })
         .on({
     beforeChange: function(event, slick, currentSlide, nextSlide) {
-      slick.options.autoplaySpeed = 5000;
-
+      // slick.options.autoplaySpeed = 5000;
       $(".slick-slide", this).eq(currentSlide).addClass("preve-slide");
       $(".slick-slide", this).eq(nextSlide).addClass("slide-animation");
+      setTimeout(() => {
+        // $(".slick-slide", this).eq(currentSlide).addClass("preve-slide");
+        // $(".slick-slide", this).eq(nextSlide).addClass("slide-animation");
+        if (currentSlide == 0) {
+          $('.m_img.two,.animate_gorup.two').addClass('active');
+
+          $('.keyvisual-image.s_two').addClass('zoom');
+           
+        } else {
+          $('.m_img.two,.animate_gorup.two').removeClass('active');
+          setTimeout(() => {
+            $('.keyvisual-image.s_two').removeClass('zoom');
+        }, 4000);
+          
+          
+        }
+        if (currentSlide == 1) {
+          $('.m_img.three,.animate_gorup.three').addClass('active');
+           $('.keyvisual-image.s_three').addClass('zoom');
+          
+        }  else {
+          $('.m_img.three,.animate_gorup.three').removeClass('active');
+          setTimeout(() => {
+            $('.keyvisual-image.s_three').removeClass('zoom');
+        }, 4000);
+           
+          
+           
+        }
+        if (currentSlide == 2) {
+          $('.m_img.one,.animate_gorup.one').addClass('active');
+          $('.keyvisual-image.s_one').addClass('zoom');
+           
+        }  else {
+          $('.m_img.one,.animate_gorup.one').removeClass('active');
+          setTimeout(() => {
+            $('.keyvisual-image.s_one').removeClass('zoom');
+        }, 4000);
+           
+          
+           
+        }
+      }, 2000);
     },
     afterChange: function() {
       $(".preve-slide", this).removeClass("preve-slide slide-animation");
