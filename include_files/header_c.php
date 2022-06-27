@@ -25,7 +25,7 @@ $url =$_SERVER['PHP_SELF'];
         </ul>
         <div class="item-menu top_item">
             <div class="title-menu js-accordion">
-                <a class="trans js-accordion-heading" href="./">マイページTOP</a>
+                <a class="trans js-accordion-heading" href="/mypage/index.html">マイページTOP</a>
             </div>
         </div>
         <ul class="header-menu">

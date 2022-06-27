@@ -10,7 +10,7 @@ $url =$_SERVER['PHP_SELF'];
         <div class="content-top">
             <ul class="list-function s-top">
                 <li class="item-list background-orange"><a class="item-link" href="/mypage/register.html">派遣登録はこちら</a></li>
-                <li class="item-list background-orange"><a class="item-link" href="http://asahi-kasei-amidas.sitetastingmyanmar.com/job/">派遣のお仕事検索</a></li>
+                <li class="item-list background-orange"><a class="item-link" href="/mypage/search.html">派遣のお仕事検索</a></li>
                 <li class="item-list background-blue"><a class="item-link" href="http://asahi-kasei-amidas.sitetastingmyanmar.com/mypage/">マイページログイン</a></li>
             </ul>
             <ul class="list-function no-top">
@@ -129,7 +129,7 @@ $url =$_SERVER['PHP_SELF'];
                                     <li class="item-sub-menu"><a class="trans" href="/mypage/search.html">派遣求人検索</a></li>
                                     <li class="item-sub-menu"><a class="trans" href="/mypage/register.html#">WEB仮登録</a></li>
                                     <li class="item-sub-menu"><a class="trans" href="/mypage/index.html">マイページ</a></li>
-                                    <li class="item-sub-menu"><a class="trans" href="#">ライフスタイル別特集</a></li>
+                                    <li class="item-sub-menu"><a class="trans" href="/job/haken/lifestyle.html">ライフスタイル別特集</a></li>
                                     <li class="item-sub-menu"><a class="trans" href="#">拠点別特集</a></li>
                                     <li class="item-sub-menu"><a class="trans" href="#">業界・職種別特集</a></li>
                                     <li class="item-sub-menu"><a class="trans" href="/job/haken/interview/index.html">スタッフインタビュー</a></li>
@@ -184,7 +184,7 @@ $url =$_SERVER['PHP_SELF'];
                 </div>
             </li>
             <li class="item-menu js-accordion">
-                <div class="title-menu icon-plus-big md"><a class="trans js-accordion-heading" href="/client/haken/">企業のご担当者の方</a></div>
+                <div class="title-menu icon-plus-big md"><a class="trans js-accordion-heading" href="/client/index.html">企業のご担当者の方</a></div>
                 <div class="title-menu icon-plus-big js-accordion-heading sm"><span class="trans js-accordion-heading">企業のご担当者の方</span></div>
                 <div class="content-sub-menu js-accordion-content">
                     <ul class="sub-menu md">
@@ -215,7 +215,7 @@ $url =$_SERVER['PHP_SELF'];
                         <li class="item-sub-menu"><span class="trans icon-plus js-accordion-heading">旭化成アミダスの<br>人材紹介サービス</span>
                             <div class="content-last-menu js-accordion-content">
                                 <ul class="list-last-menu">
-                                    <li class="item-sub-menu"><a class="trans" href="#">教育研修サービストップ</a></li>
+                                    <li class="item-sub-menu"><a class="trans" href="#">人材紹介サービストップ</a></li>
                                     <li class="item-sub-menu"><a class="trans" href="#">得意とする領域・職種</a></li>
                                     <li class="item-sub-menu"><a class="trans" href="#">導入事例インタビュー</a></li>
                                     <li class="item-sub-menu"><a class="trans" href="#">記事コンテンツ</a></li>
@@ -265,7 +265,7 @@ $url =$_SERVER['PHP_SELF'];
                 </div>
             </li>
             <li class="item-menu js-accordion">
-                <div class="title-menu icon-plus-big md"><a class="trans js-accordion-heading" href="/recruit/">採用情報</a></div>
+                <div class="title-menu icon-plus-big md"><a class="trans js-accordion-heading" href="/recruit/index.html">採用情報</a></div>
                 <div class="title-menu icon-plus-big js-accordion-heading sm"><span class="trans js-accordion-heading">採用情報</span></div>
                 <div class="content-sub-menu js-accordion-content">
                     <ul class="sub-menu md">

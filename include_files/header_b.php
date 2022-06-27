@@ -40,12 +40,12 @@ $url =$_SERVER['PHP_SELF'];
         <li class="item-list-top"><a href="#">人材紹介</a></li>
         <li class="item-list-top <?php echo ($url == '/client/program/index.html')? 'active-hover':''; ?>"><a href="#">教育・研修</a></li>
         <li class="item-list-top"><a href="#">各種アウトソーシング</a></li>
-        <li class="item-list-top <?php echo ($url == '/client/news/index.html')|| ($url == '/client/news/detail.html') ? 'active-hover':''; ?>"><a href="#">お知らせ・イベント情報</a></li>
+        <li class="item-list-top <?php echo ($url == '/client/news/index.html')|| ($url == '/client/news/detail.html') ? 'active-hover':''; ?>"><a href="/client/news/index.html">お知らせ・イベント情報</a></li>
     </ul>
 </div>
 <div class="drop_down_menu drop_down_menu02 md">
     <ul class="drop_down_menu_inner">
-        <li class="drop_down_menu_item current_menu nobtn">
+        <li class="drop_down_menu_item current_menu">
             <a href="/job/index.html">お仕事をお探しの方</a>
         </li>
         <li class="drop_down_menu_item">
@@ -121,10 +121,10 @@ $url =$_SERVER['PHP_SELF'];
                 </div>
             </li>
             <li class="item-menu js-accordion">
-                <div class="title-menu icon-plus-big js-accordion-heading is-pointer"><a class="trans js-accordion-heading" href="/job/haken/">お仕事をお探しの方</a></div>
+                <div class="title-menu icon-plus-big js-accordion-heading"><a class="trans js-accordion-heading" href="/job/index.html">お仕事をお探しの方</a></div>
                 <div class="content-sub-menu js-accordion-content">
                     <ul class="sub-menu">
-                        <li class="item-sub-menu"><a class="trans" href="/job/haken/">旭化成アミダスでできる<br class="md">仕事の探し方</a></li>
+                        <li class="item-sub-menu"><a class="trans" href="/job/index.html">旭化成アミダスでできる<br class="md">仕事の探し方</a></li>
                         <li class="item-sub-menu sm"><a class="trans" href="/job/haken/index.htm">人材派遣</a></li>
                         <li class="item-sub-menu sm"><a class="trans" href="#">転職支援</a></li>
                         <li class="item-sub-menu sm"><a class="trans" href="#">製造現場のお仕事</a></li>
@@ -136,7 +136,7 @@ $url =$_SERVER['PHP_SELF'];
                                     <li class="item-sub-menu"><a class="trans" href="/mypage/search.html">派遣求人検索</a></li>
                                     <li class="item-sub-menu"><a class="trans" href="/mypage/register.html">WEB仮登録</a></li>
                                     <li class="item-sub-menu"><a class="trans" href="/mypage/index.html">マイページ</a></li>
-                                    <li class="item-sub-menu"><a class="trans" href="#">ライフスタイル別特集</a></li>
+                                    <li class="item-sub-menu"><a class="trans" href="/job/haken/lifestyle.html">ライフスタイル別特集</a></li>
                                     <li class="item-sub-menu"><a class="trans" href="#">拠点別特集</a></li>
                                     <li class="item-sub-menu"><a class="trans" href="#">業界・職種別特集</a></li>
                                     <li class="item-sub-menu"><a class="trans" href="/job/haken/interview/index.html">スタッフインタビュー</a></li>
@@ -195,8 +195,8 @@ $url =$_SERVER['PHP_SELF'];
                 <div class="title-menu icon-plus-big js-accordion-heading sm"><span class="trans js-accordion-heading">企業のご担当者の方</span></div>
                 <div class="content-sub-menu js-accordion-content">
                     <ul class="sub-menu md">
-                        <li class="item-sub-menu"><a class="trans" href="#">お知らせ・イベント情報</a></li>
-                        <li class="item-sub-menu"><a class="trans" href="#">旭化成アミダスができること</a></li>
+                        <li class="item-sub-menu"><a class="trans" href="/client/news/index.html">お知らせ・イベント情報</a></li>
+                        <li class="item-sub-menu"><a class="trans" href="/client/service.html">旭化成アミダスができること</a></li>
                         <li class="item-sub-menu"><span class="trans icon-plus js-accordion-heading">旭化成アミダスの人材派遣<br>サービス</span>
                             <div class="content-last-menu js-accordion-content">
                                 <ul class="list-last-menu">
@@ -222,7 +222,7 @@ $url =$_SERVER['PHP_SELF'];
                         <li class="item-sub-menu"><span class="trans icon-plus js-accordion-heading">旭化成アミダスの<br>人材紹介サービス</span>
                             <div class="content-last-menu js-accordion-content">
                                 <ul class="list-last-menu">
-                                    <li class="item-sub-menu"><a class="trans" href="#">教育研修サービストップ</a></li>
+                                    <li class="item-sub-menu"><a class="trans" href="#">人材紹介サービストップ</a></li>
                                     <li class="item-sub-menu"><a class="trans" href="#">得意とする領域・職種</a></li>
                                     <li class="item-sub-menu"><a class="trans" href="#">導入事例インタビュー</a></li>
                                     <li class="item-sub-menu"><a class="trans" href="#">記事コンテンツ</a></li>
