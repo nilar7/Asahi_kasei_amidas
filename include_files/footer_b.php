@@ -9,14 +9,14 @@
               <ul class="list-navigation">
                 
                 <li class="item-navigation">
-                  <a href="#" class="link">
+                  <a href="/client/index.html" class="link">
                     <span class="text-navigation">企業のご担当者の方</span>
                   </a>
                   <ul class="sub-navigation">
                     <li class="item-sub">
-                      <a class="trans" href="#">お知らせ・イベント情報</a>
-                      <a class="trans" href="#">旭化成アミダスができること</a>
-                      <a class="trans" href="#">旭化成アミダスの人材派遣サービス</a>
+                      <a class="trans" href="/client/news/index.html">お知らせ・イベント情報</a>
+                      <a class="trans" href="/client/service.html">旭化成アミダスができること</a>
+                      <a class="trans" href="/client/haken/">旭化成アミダスの人材派遣サービス</a>
                     </li>
                     <li class="item-sub">
                       <a class="trans" href="#">旭化成アミダスのITエンジニア<br>派遣サービス</a>
@@ -30,7 +30,7 @@
                   </ul>
                 </li>
                 <li class="item-navigation">
-                  <a href="#" class="link">
+                  <a href="/company/index.html" class="link">
                     <span class="text-navigation">企業情報</span>
                   </a>
                   <ul class="sub-navigation">
@@ -43,7 +43,7 @@
                       <a class="trans" href="#">沿革</a>
                     </li>
                     <li class="item-sub">
-                      <a class="trans" href="#">拠点一覧</a>
+                      <a class="trans" href="/company/map/index.html">拠点一覧</a>
                       <a class="trans" href="#">労働者派遣事業に係る<br>各種情報のお知らせ</a>
                     </li>
                   </ul>

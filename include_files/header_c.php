@@ -51,7 +51,7 @@ $url =$_SERVER['PHP_SELF'];
             </li>
             <li class="item-menu">
                 <div class="title-menu js-accordion">
-                    <a class="trans js-accordion-heading" href="#"><img class="menu_icon sm" src="../img/mypage/sp/mypage_top_img_05.png" alt="規定・各種申請書">規定・各種申請書</a>
+                    <a class="trans js-accordion-heading" href="/mypage/application.html"><img class="menu_icon sm" src="../img/mypage/sp/mypage_top_img_05.png" alt="規定・各種申請書">規定・各種申請書</a>
                 </div>
             </li>
             <li class="item-menu">
