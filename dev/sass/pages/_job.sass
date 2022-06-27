@@ -1088,6 +1088,98 @@
     border-top: 1px solid $base-color-light-blue
     &:last-child
       border-bottom: 1px solid $base-color-light-blue
+  .block-common
+    background-color: #f0f8ff
+  .answer-block
+    padding-bottom: 40px
+    .registration-button
+      color: #000
+      display: block
+      background-color: #fff
+      transition: background-color 0.26s, color 0.26s
+      text-decoration: none
+      width: 496px
+      margin: 0 auto
+      text-align: center
+      &:hover
+        background-color: #005baa
+        color: #fff
+  .answer-register
+    padding: 40px 30px
+    .txt-register
+      margin-bottom: 25px
+    .faq-answer
+      padding: 0
+      &:before
+        content: none
+    .faq-answer-des
+      &:not(:last-child)
+        margin-bottom: 25px
+    .ttl-answer
+      color: #009FE7
+      margin-bottom: 10px
+      .ans-no
+        font-size: 13px
+        padding-right: 20px
+    .txt-answer
+      padding-left: 29px
+  .shor-term-job
+    .faq-answer-des
+      padding-left: 25px
+    .ttl-answer
+      position: relative
+      &:before
+        content: ''
+        position: absolute
+        width: 7px
+        height: 7px
+        background: #009FE7
+        left: -12px
+        border-radius: 50%
+        top: 50%
+        transform: translateY(-50%)
+    .document_list
+      display: flex
+      flex-wrap: wrap
+      margin-bottom: 25px
+      .column01
+        width: 59%
+        max-width: 456px
+        .document_info
+          border-right: 1px solid #009FE7
+      .column02
+        width: 41%
+        max-width: 314px
+      .ttl_document
+        font-size: 13px
+        font-weight: 700
+        color: #FFFFFF
+        text-align: center
+        background: #009FE7
+        border-right: 1px solid #FFFFFF
+        margin-bottom: 0
+        height: 40px
+        max-height: 40px
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+        align-items: center
+      .document_info
+        background: #FFFFFF
+        border-bottom: 1px solid #009FE7
+        height: 96px
+        max-height: 96px
+        display: flex
+        flex-wrap: wrap
+        align-items: center
+        padding-left: 24px
+      .txt_document
+        font-size: 13px
+        font-weight: 400
+        color: #000000
+        margin-bottom: 0
+    .txt_faq_note
+      font-weight: 400
 .faq-answer
   margin: 0
   background-color: #f0f8ff
