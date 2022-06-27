@@ -1104,6 +1104,29 @@
       &:hover
         background-color: #005baa
         color: #fff
+  .mypage_block
+    .faq-answer
+      padding: 40px 64px 15px 64px
+    .faq_mypage_list
+      padding-left: 64px
+      margin-bottom: 45px
+    .txt_faq_mypage
+      font-size: 13px
+      font-weight: 700
+      color: #000000
+      margin-bottom: 15px
+      position: relative
+      padding-left: 12px
+      &:before
+        content: ''
+        position: absolute
+        width: 5px
+        height: 5px
+        background: #009FE7
+        left: 0px
+        border-radius: 50%
+        top: 50%
+        transform: translateY(-50%)
   .answer-register
     padding: 40px 30px
     .txt-register
@@ -1139,13 +1162,18 @@
         top: 50%
         transform: translateY(-50%)
     .document_list
-      display: flex
-      flex-wrap: wrap
       margin-bottom: 25px
+      .document_item
+        display: flex
+        flex-wrap: wrap
+        border: 0
+        &:not(:last-child)
+          .txt_document
+            border-bottom: 1px solid #009FE7
       .column01
         width: 59%
         max-width: 456px
-        .document_info
+        &.txt_document
           border-right: 1px solid #009FE7
       .column02
         width: 41%
@@ -1162,22 +1190,20 @@
         max-height: 40px
         display: flex
         flex-wrap: wrap
+        align-items: center
         justify-content: center
-        align-items: center
-      .document_info
-        background: #FFFFFF
-        border-bottom: 1px solid #009FE7
-        height: 96px
-        max-height: 96px
-        display: flex
-        flex-wrap: wrap
-        align-items: center
-        padding-left: 24px
       .txt_document
         font-size: 13px
         font-weight: 400
         color: #000000
         margin-bottom: 0
+        display: flex
+        flex-wrap: wrap
+        align-items: center
+        height: 96px
+        max-height: 96px
+        background: #FFFFFF
+        padding-left: 24px
     .txt_faq_note
       font-weight: 400
 .faq-answer
@@ -1353,6 +1379,85 @@
         font-size: .34rem
         margin-bottom: .16rem
         line-height: 1.6
+  .faq-list
+    .answer-block
+      padding-bottom: 0.35rem
+      .registration-button
+        width: 4.96rem
+    .mypage_block
+      .faq-answer
+        padding: 0.88rem 0.4rem 0.70rem
+      .faq_mypage_list
+        padding: 0 0.40rem
+        margin-bottom: 1.25rem
+      .txt_faq_mypage
+        font-size: 0.24rem
+        margin-bottom: 0
+        padding-left: 0.25rem
+        line-height: 2
+        &:before
+          width: 0.10rem
+          height: 0.10rem
+          top: 0.25rem
+    .answer-register
+      padding: 0.50rem 0.40rem
+      .txt-register
+        margin-bottom: 0.25rem
+      .faq-answer-des
+        &:not(:last-child)
+          margin-bottom: 0.25rem
+      .ttl-answer
+        margin-bottom: 0.10rem
+        .ans-no
+          font-size: 0.24rem
+          padding-right: 0.20rem
+      .txt-answer
+        padding-left: 0.36rem
+    .shor-term-job
+      padding: 0.50rem 0
+      .txt-register
+        padding: 0 0.40rem
+      .faq-answer-list
+        padding-left: 0.40rem
+      .faq_des01
+        padding-right: 0.40rem
+      .faq-answer-des
+        padding-left: 0.25rem
+      .ttl-answer
+        &:before
+          width: 0.10rem
+          height: 0.10rem
+          left: -0.25rem
+          top: 0.25rem
+      .document_list
+        margin-bottom: 0.70rem
+        overflow-x: scroll
+        overflow-y: visible
+        padding: 0.50rem 0
+        .document_item
+          width: 10rem
+          &:not(:last-child)
+            .txt_document
+              border-bottom: 0.02rem solid #009FE7
+        .column01
+          width: 59%
+          max-width: 5.2rem
+          &.txt_document
+            border-right: 0.02rem solid #009FE7
+        .column02
+          width: 41%
+          max-width: 4.8rem
+        .ttl_document
+          font-size: 0.24rem
+          border-right: 0.02rem solid #FFFFFF
+          height: 0.80rem
+          max-height: 0.80rem
+        .txt_document
+          font-size: 0.24rem
+          height: 2.16rem
+          max-height: 2.16rem
+          padding-left: 0.32rem
+          padding-right: 0.32rem
   .faq-block
     &:not(:last-child)
       margin-bottom: 1.2rem
