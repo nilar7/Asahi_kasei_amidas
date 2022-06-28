@@ -121,7 +121,8 @@ $url =$_SERVER['PHP_SELF'];
                 </div>
             </li>
             <li class="item-menu js-accordion">
-                <div class="title-menu icon-plus-big js-accordion-heading"><a class="trans js-accordion-heading" href="/job/index.html">お仕事をお探しの方</a></div>
+            <div class="title-menu icon-plus-big md"><a class="trans js-accordion-heading" href="/job/index.html">お仕事をお探しの方</a></div>
+                <div class="title-menu icon-plus-big js-accordion-heading sm"><span class="trans js-accordion-heading">お仕事をお探しの方</span></div>
                 <div class="content-sub-menu js-accordion-content">
                     <ul class="sub-menu">
                         <li class="item-sub-menu"><a class="trans" href="/job/index.html">旭化成アミダスでできる<br class="md">仕事の探し方</a></li>
