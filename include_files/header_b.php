@@ -214,7 +214,7 @@ $url =$_SERVER['PHP_SELF'];
                         <li class="item-sub-menu"><span class="trans icon-plus js-accordion-heading">旭化成アミダスの<br>ITエンジニア派遣サービス</span>
                             <div class="content-last-menu js-accordion-content">
                                 <ul class="list-last-menu">
-                                    <li class="item-sub-menu"><a class="trans" href="#">ITエンジニア派遣サービストップ</a></li>
+                                    <li class="item-sub-menu"><a class="trans" href="#">ITエンジニア派遣<br>サービストップ</a></li>
                                     <li class="item-sub-menu"><a class="trans" href="#">得意とする領域・職種</a></li>
                                     <li class="item-sub-menu"><a class="trans" href="#">お問い合わせ</a></li>
                                 </ul>
