@@ -274,11 +274,13 @@ header
     list-style-type: none
     padding-left: 0
   .item-link
-    display: block
     border: solid 1px $base-color-orange
     position: relative
     text-decoration: none
     color: $base-color-orange
+    display: flex
+    flex-wrap: wrap
+    align-content: center
   .common-title,
   .list-content
     opacity: 0
@@ -288,15 +290,15 @@ header
 
 +desktop
   .keyvisual-mypage-top
-    background-image: url(../img/mypage/mypage_top_bg.jpg)
+    background-image: url(../img/mypage/mypage_top_bg.jpg)    
     height: 270px
     .text-login
-      top: 51px
+      top: 20px
       left: calc(50% - 609px)
       font-size: .14rem
       line-height: calc(26 / 14)
     .keyvisual-title
-      padding-top: 40px
+      padding-top: 0
 
   .section-mypage-content
     padding: 72px 16px 0
@@ -342,6 +344,7 @@ header
 
 @media print, (min-width: 768.98px) and (max-width: 1240px)
   .keyvisual-mypage-top
+    margin-top: 20px
     .text-login
       left: 20px
 
@@ -492,6 +495,7 @@ header
       border: solid 0.02rem #e96100
     .item-link
       border: 0
+      display: block
     .text-title
       span
         display: block

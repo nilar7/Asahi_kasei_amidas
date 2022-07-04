@@ -528,6 +528,9 @@
   transition: opacity 0.26s;
   box-shadow: none;
 }
+.section-recruit-engineer .common-big-button {
+  position: relative;
+}
 .section-recruit-engineer .common-big-button:hover {
   background-color: #036FCC;
 }
@@ -800,6 +803,5 @@
     min-height: 1.32rem;
     border-radius: 0.64rem;
     justify-content: center;
-    padding: 0;
   }
 }/*# sourceMappingURL=recruit.css.map */

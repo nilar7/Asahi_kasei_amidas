@@ -576,6 +576,7 @@
     color: $base-color-blue
   .common-text
     color: $base-font-color
+    font-weight: bold
   .block-content
     display: block
     text-decoration: none
@@ -814,6 +815,9 @@
     .common-text
       line-height: calc(44 / 24)
       margin-bottom: .48rem
+    .content-detail
+      .common-text
+        -webkit-line-clamp: 3
     .link-more
       font-size: .22rem
     .list-article
@@ -2463,7 +2467,7 @@
       .post-content p + img + img
         margin-top: 1rem
     .content-article
-      margin-bottom: 1.28rem
+      margin-bottom: .88rem
     .title-article-detail
       font-size: .34rem
       line-height: calc(60 / 34)
@@ -2523,6 +2527,20 @@
       border-radius: 0
     .block-top
       margin-bottom: 2.08rem
+    .post-content
+      h2
+        margin-bottom: .42rem
+      img
+        margin-bottom: .6rem
+      .block-content
+        img
+          margin-bottom: .6rem
+        p:last-child
+          margin-bottom: 0
+      p
+        margin: 0 0 .4rem
+        &:last-child
+          margin-bottom: 0
 
 .section-service-function
   .wrapper
@@ -2577,6 +2595,7 @@
     .text-intro
       max-width: 848px
       margin: 0 auto 128px
+      font-weight: bold
     .list-service
       justify-content: space-between
       margin-bottom: 0
@@ -2632,6 +2651,7 @@
     .text-intro
       margin-bottom: 1.12rem
       padding: 0 .8rem
+      font-weight: bold
     .wrapper
       padding-left: .32rem
       padding-right: .32rem
@@ -3201,6 +3221,8 @@
           height: .07rem
     .tabs-content
       border-top-width: .02rem
+      &current
+        height: auto !important
     .common-list-category
       padding: .48rem .32rem
       .item-category
@@ -3462,8 +3484,8 @@
   .section-active-program
     padding: .64rem 0 .4rem
     .right-text
-      font-size: .22rem
-      top: .08rem
+      font-size: .4rem
+      top: .15rem
     .common-title
       margin-bottom: .32rem
   .program-text
@@ -3488,7 +3510,7 @@
     line-height: calc(44 / 24)
     margin: 0 -.16rem
     li
-      padding: .32rem .32rem .64rem
+      padding: .32rem .32rem
       &:not(:last-child)
         margin-bottom: .16rem
   .program-session
@@ -3813,6 +3835,9 @@
     .business-title
       line-height: calc(40 / 24)
       margin-bottom: 16px
+      .right-text
+        font-size: 1.7em
+        top: 13px
     .business-description
       font-size: .16rem
       line-height: calc(28 / 16)
@@ -3871,6 +3896,9 @@
       margin-bottom: .16rem
     .business-title
       font-size: .24rem
+      .right-text
+        font-size: .35rem
+        top: .1rem
     .business-description
       font-weight: $base-font-weight
     .business-table,
