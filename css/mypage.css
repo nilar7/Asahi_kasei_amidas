@@ -3087,6 +3087,9 @@ header .mypage-button span:nth-child(1) {
     padding: 32px;
     line-height: 1.8461538462;
   }
+  .section-mypage-detail .cell-detail p:not(:last-child) {
+    margin-bottom: 0;
+  }
   .section-mypage-detail .cell-detail span {
     line-height: 1.8461538462;
   }
@@ -3207,6 +3210,11 @@ header .mypage-button span:nth-child(1) {
   .section-mypage-detail .cell-detail {
     padding: 0.16rem 0;
     letter-spacing: 0;
+  }
+  .section-mypage-detail .cell-detail p:not(:last-child) {
+    margin-bottom: 0.1rem;
+    text-indent: -0.1rem;
+    padding-left: 0.1rem;
   }
   .section-mypage-detail .cell-detail span {
     letter-spacing: 0;

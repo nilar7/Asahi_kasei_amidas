@@ -1460,6 +1460,8 @@ header
     .cell-detail
       padding: 32px
       line-height: calc(24 / 13)
+      p:not(:last-child)
+        margin-bottom: 0
       span
         line-height: calc(24 / 13)
     .list-detail
@@ -1559,6 +1561,10 @@ header
     .cell-detail
       padding: .16rem 0
       letter-spacing: 0
+      p:not(:last-child)
+        margin-bottom: .1rem
+        text-indent: -.1rem
+        padding-left: .1rem
       span
         letter-spacing: 0
     .list-detail li,
