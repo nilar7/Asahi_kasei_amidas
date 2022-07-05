@@ -17,7 +17,7 @@
             <span class="text-navigation">お仕事をお探しの方</span>
           </a>
           <ul class="sub-navigation">
-            <li class="item-sub"><a class="trans" href="/job/index.html">旭化成アミダスで出来る<br>仕事の探し方</a></li>
+            <li class="item-sub"><a class="trans" href="/job/index.html">旭化成アミダスでできる<br>仕事の探し方</a></li>
             <li class="item-sub">
               <a class="trans" href="/job/haken/index.html">人材派遣</a>
               <a class="trans" href="#">転職支援</a>
@@ -56,7 +56,6 @@
           <ul class="sub-navigation">
             <li class="item-sub">
               <a class="trans" href="#">旭化成アミダスとは</a>
-              <a class="trans" href="#">事業の未来座談会</a>
             </li>
             <li class="item-sub">
               <a class="trans" href="#">教育研修制度</a>

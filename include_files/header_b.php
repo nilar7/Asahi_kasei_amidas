@@ -87,7 +87,6 @@ $url =$_SERVER['PHP_SELF'];
             <a href="">旭化成アミダスとは</a>
             <a href="">教育研修制度</a>
             <a href="">福利厚生制度</a>
-            <a href="">事業の未来座談会</a>
         </li>
         <li class="drop_down_menu_item">
             <a href="">採用に関するお問い合わせ</a>
@@ -278,7 +277,6 @@ $url =$_SERVER['PHP_SELF'];
                 <div class="content-sub-menu js-accordion-content">
                     <ul class="sub-menu md">
                         <li class="item-sub-menu"><a class="trans" href="#">旭化成アミダスとは</a></li>
-                        <li class="item-sub-menu"><a class="trans" href="#">事業の未来座談会</a></li>
                         <li class="item-sub-menu"><a class="trans" href="#">教育研修制度</a></li>
                         <li class="item-sub-menu"><a class="trans" href="#">福利厚生制度</a></li>
                         <li class="item-sub-menu"><a class="trans" href="#">採用に関するお問い合わせ</a></li>
@@ -286,6 +284,7 @@ $url =$_SERVER['PHP_SELF'];
                             <div class="content-last-menu js-accordion-content">
                                 <ul class="list-last-menu">
                                     <li class="item-sub-menu"><a class="trans" href="#">仕事を知る</a></li>
+                                    <li class="item-sub-menu"><a class="trans" href="#">事業の未来座談会</a></li>
                                     <li class="item-sub-menu"><a class="trans" href="#">社員紹介</a></li>
                                     <li class="item-sub-menu"><a class="trans" href="#">よくあるご質問</a></li>
                                     <li class="item-sub-menu"><a class="trans" href="#">専門研修制度</a></li>

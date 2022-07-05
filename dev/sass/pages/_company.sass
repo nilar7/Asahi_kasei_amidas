@@ -53,6 +53,7 @@
     padding: 0 16px 16px
     &.map-detail
       padding-top: 60px
+      padding-bottom: 0
     .phone
       pointer-events: none
     .title-company-tokyo
@@ -94,7 +95,7 @@
         padding-top: 16px
         padding-bottom: 32px
     .item-service
-      padding: 40px 0
+      padding: 48px 0 32px
     .name-company
       margin-right: 80px
     .text-service
@@ -242,7 +243,7 @@
       &:first-child
         border-top: solid 1px rgba(0,159,231,.3)
       &:hover
-        border-bottom-width: 2px
+        border-bottom-width: 1px
         border-bottom-color: $base-color-light-blue
     .title-list
       color: $base-color-light-blue
@@ -264,6 +265,9 @@
     background-image: url(../img/company/company_map_bg.jpg)
   .section-company-map
     padding: 16px 16px 112px
+    &.map-detail
+      .list-menu-bottom
+        margin-bottom: 24px
     .list-menu-bottom
       margin-bottom: 80px
     .list-address
@@ -304,6 +308,8 @@
     background-image: url(../img/company/sp/company_map_bg.jpg)
   .section-company-map
     padding: .8rem 0 1.28rem
+    &.map-detail
+      padding: .8rem 0 0
     .list-menu-bottom
       margin-bottom: .48rem
     .list-address
