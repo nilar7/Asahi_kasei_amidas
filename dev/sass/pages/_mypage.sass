@@ -290,7 +290,8 @@ header
 
 +desktop
   .keyvisual-mypage-top
-    background-image: url(../img/mypage/mypage_top_bg.jpg)    
+    background: url(../img/mypage/mypage_top_bg.jpg) no-repeat top center
+    background-size: cover   
     height: 270px
     .text-login
       top: 20px
@@ -342,12 +343,18 @@ header
       padding-left: 32px
       line-height: calc(24 / 13)
 
-@media print, (min-width: 768.98px) and (max-width: 1240px)
+@media print,(min-width: 768.98px) and (max-width: 1240px)
+  .mypage-top
+    padding-top: 188px
+  
   .keyvisual-mypage-top
-    margin-top: 20px
+    margin-top: 0
     .text-login
       left: 20px
 
+@media print,(min-width: 1108px) and (max-width: 1240px)
+  .mypage-top
+    padding-top: 123px
 @media print, (min-width: 768.98px) and (max-width: 863px)
   .section-job-registration
     .title-registration
@@ -1621,6 +1628,11 @@ header
         background: url(../img/common/sp/icon_arrow_light_blue.svg) center / 100% auto no-repeat
         width: .15rem
         height: .22rem
+    .block-content-bottom
+      .list-story-issue
+        li
+          &:last-child
+            margin-bottom: .16rem
 
 .section-job-registration
   .title-registration
@@ -2446,6 +2458,11 @@ header
           &:before
             top: .24rem
             background-image: url(../img/common/sp/icon_arrow_blue.svg)
+    .block-content-bottom
+      .list-story-issue
+        li
+          &:last-child
+            margin-bottom: .16rem
 
 .form-mypage-search
   .row-title
@@ -2722,6 +2739,11 @@ header
         padding: 0 .16rem
     .block-common-contact
       padding: 0 .48rem
+    .block-content-bottom
+      .list-story-issue
+        li
+          &:last-child
+            margin-bottom: .16rem
 
   .form-mypage-search
     margin-bottom: 1.12rem

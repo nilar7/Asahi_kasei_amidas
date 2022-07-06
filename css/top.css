@@ -289,7 +289,7 @@
 }
 .section-top-job .base-title {
   font-weight: bold;
-  letter-spacing: -0.08em;
+  letter-spacing: 0.08em;
 }
 .section-top-job .main-content {
   background: rgba(0, 91, 170, 0.04);
@@ -607,9 +607,9 @@
     margin-bottom: 0.64rem;
   }
   .pick-up-content:before {
-    top: -0.67rem;
+    top: -0.3rem;
     width: 1.98rem;
-    height: 1.04rem;
+    height: 0.3rem;
     background-image: url(../img/top/sp/pickup_icon_arrow_01.png);
   }
   .pick-up-content .pick-up-title {
@@ -967,7 +967,22 @@
   .story-top-menu .story-list-issue:not(:last-child) {
     margin-bottom: 0.48rem;
   }
-  .story-top-menu .story-list-issue li:not(:last-child) {
+  .story-top-menu .story-list-issue ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .story-top-menu .story-list-issue ul li {
+    width: 100%;
+    max-width: 5.76rem;
+  }
+  .story-top-menu .story-list-issue ul li:nth-child(even) {
+    order: 1;
+  }
+  .story-top-menu .story-list-issue ul li:not(:last-child) {
+    margin-bottom: 0.16rem;
+  }
+  .story-top-menu .story-list-issue ul li:last-child {
     margin-bottom: 0.16rem;
   }
   .story-top-menu .story-list-staff li:not(:last-child) {
@@ -1617,6 +1632,12 @@
 @media only screen and (max-width: 768.98px) {
   .section-top-about {
     padding-bottom: 1.6rem;
+  }
+  .section-top-about .info-list-staff .button-common-highlight.is-style-orange .button-wrapper {
+    padding: 0.21rem 1.04rem 0.21rem 0.5rem;
+  }
+  .section-top-about .info-list-staff .button-common-highlight.is-style-orange .button-text {
+    text-align: left;
   }
 }
 

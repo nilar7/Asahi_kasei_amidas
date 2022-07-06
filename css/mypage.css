@@ -587,6 +587,10 @@
     width: 0.66rem;
     height: 0.66rem;
   }
+
+  .section-client .common-list-pagination {
+    margin-bottom: 1.4rem;
+  }
 }
 .block-pagination-line .common-list-pagination {
   width: 100%;
@@ -861,6 +865,9 @@
   }
   .block-common-contact .list-story-issue li:not(:last-child) {
     margin-bottom: 0.16rem;
+  }
+  .block-common-contact .list-story-issue li:nth-child(even) {
+    order: 1;
   }
   .block-common-contact .list-story-issue.is-position li:nth-child(even) {
     order: 1;
@@ -1647,7 +1654,8 @@ header .mypage-button span:nth-child(1) {
 
 @media print, (min-width: 769px) {
   .keyvisual-mypage-top {
-    background-image: url(../img/mypage/mypage_top_bg.jpg);
+    background: url(../img/mypage/mypage_top_bg.jpg) no-repeat top center;
+    background-size: cover;
     height: 270px;
   }
   .keyvisual-mypage-top .text-login {
@@ -1714,11 +1722,20 @@ header .mypage-button span:nth-child(1) {
   }
 }
 @media print, (min-width: 768.98px) and (max-width: 1240px) {
+  .mypage-top {
+    padding-top: 188px;
+  }
+
   .keyvisual-mypage-top {
-    margin-top: 20px;
+    margin-top: 0;
   }
   .keyvisual-mypage-top .text-login {
     left: 20px;
+  }
+}
+@media print, (min-width: 1108px) and (max-width: 1240px) {
+  .mypage-top {
+    padding-top: 123px;
   }
 }
 @media print, (min-width: 768.98px) and (max-width: 863px) {
@@ -3285,6 +3302,9 @@ header .mypage-button span:nth-child(1) {
     width: 0.15rem;
     height: 0.22rem;
   }
+  .section-mypage-detail .block-content-bottom .list-story-issue li:last-child {
+    margin-bottom: 0.16rem;
+  }
 }
 .section-job-registration .title-registration {
   text-align: center;
@@ -4301,6 +4321,9 @@ header .mypage-button span:nth-child(1) {
     top: 0.24rem;
     background-image: url(../img/common/sp/icon_arrow_blue.svg);
   }
+  .section-mypage-condition .block-content-bottom .list-story-issue li:last-child {
+    margin-bottom: 0.16rem;
+  }
 }
 .form-mypage-search .row-title .title-big {
   display: inline-block;
@@ -4637,6 +4660,9 @@ header .mypage-button span:nth-child(1) {
   }
   .section-mypage-search .block-common-contact {
     padding: 0 0.48rem;
+  }
+  .section-mypage-search .block-content-bottom .list-story-issue li:last-child {
+    margin-bottom: 0.16rem;
   }
 
   .form-mypage-search {

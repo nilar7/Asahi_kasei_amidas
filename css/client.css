@@ -160,6 +160,10 @@
     width: 0.66rem;
     height: 0.66rem;
   }
+
+  .section-client .common-list-pagination {
+    margin-bottom: 1.4rem;
+  }
 }
 .block-pagination-line .common-list-pagination {
   width: 100%;
@@ -1204,16 +1208,6 @@
   .section-client .common-content-aside .side-bar {
     margin-bottom: 0.8rem;
   }
-  .section-client .common-big-button {
-    width: 91.668%;
-    min-height: 1.6rem;
-    padding-right: 0.96rem;
-    justify-content: center;
-  }
-  .section-client .common-big-button.is-arrow:after {
-    right: 0.92rem;
-    background: none;
-  }
 }
 .section-client-detail .post-time {
   display: flex;
@@ -1347,6 +1341,9 @@
     font-size: 0.22rem;
     padding: 0.01rem 0.05rem 0.03rem;
     min-width: 1.72rem;
+  }
+  .section-client-detail .post-content p {
+    margin-top: 0;
   }
   .section-client-detail .post-title {
     font-size: 0.28rem;
@@ -1790,6 +1787,10 @@
     text-align: center;
     font-size: 0.18rem;
     margin-bottom: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
   }
   .section-haken-features .image-features {
     padding-bottom: 71.875%;
@@ -4043,6 +4044,9 @@
   .section-client-whitepaper .wrapper-check label:not(:last-child) {
     margin-bottom: 0.8rem;
   }
+  .section-client-whitepaper .wrapper-check label.last {
+    margin-bottom: 0;
+  }
   .section-client-whitepaper .checkbox-field-text {
     line-height: 1.5833333333;
     padding-left: 0.64rem;
@@ -4212,7 +4216,7 @@
     padding-right: 0.32rem;
   }
   .section-article-detail .wrapper .post-content p + img + img {
-    margin-top: 1rem;
+    margin-top: 0.3rem;
   }
   .section-article-detail .content-article {
     margin-bottom: 0.88rem;
@@ -4260,14 +4264,13 @@
     padding-bottom: 1.12rem;
   }
   .section-article-detail .common-block-banner {
-    margin-top: 2.08rem;
-    margin-bottom: 0.48rem;
+    margin: 0.6rem 0.48rem;
   }
-  .section-article-detail .common-block-banner.detail-block02 {
-    margin-top: 0.16rem;
+  .section-article-detail .detail-block03 .post-content img {
+    margin-bottom: 0.6rem;
   }
   .section-article-detail .block-social {
-    margin-top: 2.24rem;
+    margin-top: 2rem;
   }
   .section-article-detail .text-share p {
     margin-bottom: 0;
@@ -4293,10 +4296,13 @@
     margin-bottom: 2.08rem;
   }
   .section-article-detail .post-content h2 {
-    margin-bottom: 0.42rem;
+    margin-bottom: 0.3rem;
   }
   .section-article-detail .post-content img {
-    margin-bottom: 0.6rem;
+    margin-bottom: 0;
+  }
+  .section-article-detail .post-content h2 + img {
+    margin-bottom: 0.5rem;
   }
   .section-article-detail .post-content .block-content img {
     margin-bottom: 0.6rem;
@@ -4969,16 +4975,6 @@
   }
   .section-service-detail .list-service-detail {
     margin-bottom: 0.64rem;
-  }
-  .section-service-detail .common-big-button {
-    width: 91.668%;
-    min-height: 1.6rem;
-    padding-right: 0.96rem;
-    justify-content: center;
-  }
-  .section-service-detail .common-big-button.is-arrow:after {
-    right: 0.92rem;
-    background: none;
   }
 }
 .section-client-program {

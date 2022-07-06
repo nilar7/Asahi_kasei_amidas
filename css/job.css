@@ -189,6 +189,9 @@
   .block-common-contact .list-story-issue li:not(:last-child) {
     margin-bottom: 0.16rem;
   }
+  .block-common-contact .list-story-issue li:nth-child(even) {
+    order: 1;
+  }
   .block-common-contact .list-story-issue.is-position li:nth-child(even) {
     order: 1;
   }
@@ -1191,6 +1194,9 @@
   }
   .section-interview-detail .wrapper-link a:after {
     width: 110%;
+  }
+  .section-interview-detail .block-content-bottom .list-story-issue li:last-child {
+    margin-bottom: 0.16rem;
   }
 
   .post-content-haken-interview h2 {
@@ -2451,6 +2457,9 @@
   .section-faq.is-padding {
     padding-top: 0.8rem;
   }
+  .section-faq .block-button .list-story-issue li:last-child {
+    margin-bottom: 0.16rem;
+  }
 
   .faq-title,
 .faq-content::before {
@@ -2860,6 +2869,9 @@
     border-width: 0.02rem;
     margin: 0 0.04rem 0.08rem;
     padding: 0 0.16rem 0.02rem;
+  }
+  .section-job-interview .block-list-story .list-story-issue li:last-child {
+    margin-bottom: 0.16rem;
   }
 }
 .common-basic-title {
@@ -3656,6 +3668,9 @@
   }
   .section-job-work .content-bottom {
     margin-bottom: 0.56rem;
+  }
+  .section-job-work .block-content-bottom .list-story-issue li:last-child {
+    margin-bottom: 0.16rem;
   }
 }
 @media print, (min-width: 769px) {

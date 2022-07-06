@@ -470,7 +470,7 @@ body {
   border-top: 1px solid #009fe7;
 }
 .common-news-list .news-detail:hover {
-  border-bottom-width: 2px;
+  border-bottom-width: 1px;
 }
 .common-news-list .news-link {
   text-decoration: none;
@@ -1538,10 +1538,10 @@ body {
 .list-menu-top .item-list-top a:after {
   position: absolute;
   content: "";
-  bottom: -15px;
+  bottom: -9px;
   left: 50%;
   transform: translateX(-50%);
-  width: 74%;
+  width: 82%;
   height: 6px;
   background-color: #fff;
   opacity: 0;
@@ -2146,7 +2146,8 @@ header .block-topics .active-menu:after {
     height: 100vh;
   }
   header .header-menu .item-menu {
-    width: 232px;
+    width: 22%;
+    max-width: 232px;
     margin-right: 32px;
   }
   header .header-menu .item-menu:nth-child(n+4) {

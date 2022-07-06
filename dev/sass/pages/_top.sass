@@ -723,9 +723,19 @@
       padding: 0 .32rem
       &:not(:last-child)
         margin-bottom: .48rem
-      li
-        &:not(:last-child)
-          margin-bottom: .16rem
+      ul 
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        li
+          width: 100%
+          max-width: 5.76rem
+          &:nth-child(even)
+            order: 1
+          &:not(:last-child)
+            margin-bottom: .16rem
+          &:last-child
+            margin-bottom: .16rem
     .story-list-staff
       li
         &:not(:last-child)

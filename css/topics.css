@@ -300,6 +300,10 @@
     width: 0.66rem;
     height: 0.66rem;
   }
+
+  .section-client .common-list-pagination {
+    margin-bottom: 1.4rem;
+  }
 }
 .block-pagination-line .common-list-pagination {
   width: 100%;
@@ -537,5 +541,8 @@
   }
   .section-topics-detail .wrapper-link {
     width: 3.36rem;
+  }
+  .section-topics-detail .post-content p {
+    margin-top: 0;
   }
 }/*# sourceMappingURL=topics.css.map */
