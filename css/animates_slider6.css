@@ -1,6 +1,6 @@
-
 .animate_gorup {
     position: absolute;
+    /* width: 1325px;*/
     width: 2000px;
     height: 500px;
     overflow: hidden;
@@ -8,6 +8,7 @@
     left: 45px;
     margin: 0 auto;
     opacity: 0;
+    /*animation: mainAnimate 6s linear infinite;*/
     z-index: 3;
 }
 .animate_gorup.two{
@@ -21,21 +22,34 @@
     position: absolute;
     top: 0px;
     right: -14px;
+    /* width: 800px;*/
     width: 2000px;
 }
 
 .animate_gorup.two #right_animate {
+    /*top: 12px;
+right: -36px;*/
+    /*top: -539px;
+right: -564px;*/
     top: -288px;
     right: -561px;
 }
 
 .animate_gorup.one #right_animate {
+    /*top: -39px;
+right: -60px;*/
+    /*top: -589px;
+right: -586px;*/
     top: -350px;
     right: -586px;
 
 }
 
 .animate_gorup.three #right_animate {
+    /*top: 0px;
+right: -42px;*/
+    /*top: -552px;
+right: -570px;*/
     top: -302px;
     right: -569px;
 
@@ -140,7 +154,7 @@ opacity: 0;
     width: 880px;
     height: 590px;
     position: absolute;
-    top: -1px;
+    top: 3px;
     left: 116px;
     z-index: 4;
 }
@@ -158,7 +172,15 @@ opacity: 0;
 .animate_gorup.one,
 .animate_gorup.two,
 .animate_gorup.three {
-    visibility: hidden;
+    /* visibility: hidden; */
+}
+.animate_gorup.one.factive{
+     visibility: visible;
+     -webkit-animation: fadeinout 6s linear;
+    -moz-animation:    fadeinout 6s linear;
+    -o-animation:      fadeinout 6s linear;
+    -ms-transition:    fadeinout 6s linear; 
+    animation:         fadeinout 6s linear;
 }
 
 .animate_gorup.one.active,
@@ -179,21 +201,27 @@ opacity: 0;
 .m_img.three {
     opacity: 0;
 }
-
+.m_img.one.factive{
+    -webkit-animation: moves 15s linear;
+    -moz-animation:    moves 15s linear ;
+    -o-animation:      moves 15s linear;
+    -ms-transition:    moves 15s linear; 
+    animation:         moves 15s linear;
+}
 .m_img.one.active,
 .m_img.two.active,
 .m_img.three.active {
     /* opacity: 1;*/
-     -webkit-animation: runs 8s linear, moves 8s linear;
-    -moz-animation:    runs 8s linear, moves 8s linear ;
-    -o-animation:      runs 8s linear, moves 8s linear;
-    -ms-transition:    runs 8s linear, moves 8s linear; 
-    animation:         runs 8s linear, moves 8s linear;
+     -webkit-animation:  moves 15s linear;
+    -moz-animation:     moves 15s linear ;
+    -o-animation:       moves 15s linear;
+    -ms-transition:     moves 15s linear; 
+    animation:          moves 15s linear;
 }
 
 .mask {
-    -webkit-mask-image: url(../img/top/mask09.png);
-    mask-image: url(../img/top/mask09.png);
+    -webkit-mask-image: url(../img/top/mask02.png);
+    mask-image: url(../img/top/mask02.png);
     -webkit-mask-size: 100% 100%;
     mask-size: 100% 100%;
     -webkit-mask-repeat: no-repeat;
@@ -286,27 +314,27 @@ opacity: 0;
 
 @-webkit-keyframes moves{
      0% {transform: translateX(0px)}
-    100% {transform: translateX(-70px);}
+    100% {transform: translateX(-50px);}
 }
 
 @-moz-keyframes moves{
      0% {transform: translateX(0px)}
-    100% {transform: translateX(-70px);}
+    100% {transform: translateX(-50px);}
 }
 
 @-o-keyframes moves {
      0% {transform: translateX(0px)}
-    100% {transform: translateX(-70px);}
+    100% {transform: translateX(-50px);}
 }
 
 @-ms-keyframes moves {
      0% {transform: translateX(0px)}
-    100% {transform: translateX(-70px);}
+    100% {transform: translateX(-50px);}
 }
 
 @keyframes moves {
     0% {transform: translateX(0px)}
-    100% {transform: translateX(-70px);}
+    100% {transform: translateX(-50px);}
 }
 
 
@@ -326,27 +354,33 @@ opacity: 0;
     text-align: center;
     right: 6.28%;
     background: #ffffff;
-    width: 15.7%;
+    width: 15.5%;
     padding-bottom: 50px;
     z-index: 5;
 }
 
 .section-top-keyvisual .keyvisual-image {
     width: 100%;
-    /*transform: scale(1.15);*/
+    transform: scale(1.15);
 }
 
-/*.section-top-keyvisual .keyvisual-content{
-margin-right: 214px;
-width: 448px;
-}*/
+
 
 .section-top-keyvisual .text-keyvisual.txt_box {
     font-weight: 700;
-    bottom: 11px;
-    z-index: 5;
-    position: absolute;
-    right: 207px;
+    font-size: 17px;
+    position: relative;
+    left: 0;
+    bottom: auto;
+    padding: 0;
+    background: none;
+    text-align: center;
+    right: 0;
+    margin: 32px 32px 0 32px;
+    background-color:none;
+}
+.section-top-job{
+    padding-top: 15px;
 }
 
 .section-top-keyvisual .text-keyvisual {
@@ -356,25 +390,15 @@ width: 448px;
 .section-top-keyvisual .inner-wrapper:before {
     width: 80px;
 }
-.keyvisual-image.s_one,
-.keyvisual-image.s_two,
-.keyvisual-image.s_three{
-     transform: translateX(-40px);
-}
 
 .keyvisual-image.s_one.zoom,
 .keyvisual-image.s_two.zoom,
 .keyvisual-image.s_three.zoom {
-  animation:rightToLeft 9s linear ;
-}
-@keyframes rightToLeft {
-  0% {
-    transform: translateX(0px);
-  }
-  
-  100% {
-    transform: translateX(-40px);
-  }
+    -webkit-animation: zoom_animation 15s linear ;
+    -moz-animation:    zoom_animation 15s linear ;
+    -o-animation:      zoom_animation 15s linear ;
+    -ms-transition:    zoom_animation 15s linear ; 
+    animation:         zoom_animation 15s linear ;
 }
 
 
@@ -401,27 +425,6 @@ width: 448px;
 @keyframes zoom_animation {
     0% {-webkit-transform: scale(1.15);transform: scale(1.15);}
     100% {-webkit-transform: scale(1);transform: scale(1);}
-}
-
-
-
-@media print,
-(min-width: 1280px) {
-
-    .section-top-keyvisual .text-keyvisual.txt_box {
-        font-size: 12px;
-   /* right: 85px;
-    bottom: 40px;*/
-    /*ight: 6.5%;
-    bottom: 6.5%;*/
-
-    position: relative;
-    left: 67%;
-    bottom: -15px;
-    padding: 0;
-    background: none;
-
-    }
 }
 
 
@@ -459,9 +462,6 @@ width: 448px;
     .animate_gorup.three #right_animate {
         right: -968px;
     }
-    
-    
-
 }
 
 
@@ -470,7 +470,7 @@ width: 448px;
     .m_img {
         width: 68.75vw;
         height: 46.094vw;
-        top: -1px;
+        top: 0px;
         left: 9vw;
     }
 
@@ -485,8 +485,8 @@ width: 448px;
 
     .section-top-keyvisual .title-keyvisual {
         padding-top: 3.25vw;
-        width: 16vw;
-        right: 6.2vw;
+        width: 15vw;
+        right: 6.4vw;
 
     }
 
@@ -495,14 +495,11 @@ width: 448px;
     }
 
     .section-top-keyvisual .text-keyvisual.txt_box {
-       font-size: 0.98vw;
-        bottom: 4.5vw;
+        font-size: 1.328vw;
         z-index: 5;
-        position: relative;
-        left: 66.2%;
         padding: 0;
         background: none;
-        margin: 0;
+        margin: 2.500vw 2.5vw 0 2.5vw;
     }
 
     .animate_gorup {
@@ -594,6 +591,9 @@ width: 448px;
 
 
 @media only screen and (max-width: 768.98px) {
+    header{
+        z-index: 9999;
+    }
     .only_pc {
         display: none;
     }
@@ -613,8 +613,8 @@ width: 448px;
         width: 100%;
         height: auto;
         position: absolute;
-        top: 21.5vw;
-        left: 0;
+        top: 14.9%;
+        left: 10vw;
         z-index: 999;
     }
 
@@ -679,9 +679,16 @@ width: 448px;
         padding-bottom: 0;
     }
 
-    .section-top-keyvisual .text-keyvisual {
+    .section-top-keyvisual .text-keyvisual.txt_box {
         font-size: .24rem;
-        padding-top: 4vw;
+        padding-top: 3vw;
+        right: 0;
+        position: relative;
+        text-align: center;
+        margin:0;
+    }
+    .section-top-job {
+        padding-top: 0.5rem;
     }
 
     .section-top-keyvisual .keyvisual-image {
@@ -691,11 +698,8 @@ width: 448px;
 
     .section-top-keyvisual .title-keyvisual {
         right: 0;
-    }
-
-    .section-top-keyvisual .title-keyvisual {
-
         width: 59%;
+        padding-bottom: 8vw;
     }
 
     .mask {
@@ -703,10 +707,6 @@ width: 448px;
         mask-image: none;
 
 
-    }
-
-    .slide-animation {
-        animation: none;
     }
 
     .section-top-keyvisual .keyvisual-image {
@@ -725,8 +725,11 @@ width: 448px;
 
 @media only screen and (max-width: 440px) {
 
-    .animate_gorup {
-        top: 84px;
+    .animate_gorup.one,
+    .animate_gorup.two,
+    .animate_gorup.three
+     {
+        top: 115px;
         left: -210px;
 
     }
@@ -734,7 +737,9 @@ width: 448px;
 
 @media only screen and (max-width: 390px) {
 
-    .animate_gorup {
+    .animate_gorup.one,
+    .animate_gorup.two,
+    .animate_gorup.three {
         top: 70px;
         left: -222px;
 
@@ -743,8 +748,10 @@ width: 448px;
 
 @media only screen and (max-width: 375px) {
 
-    .animate_gorup {
-        top: 65px;
+    .animate_gorup.one,
+    .animate_gorup.two,
+    .animate_gorup.three {
+        top: 80px;
         left: -228px;
 
     }

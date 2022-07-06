@@ -172,7 +172,7 @@ opacity: 0;
 .animate_gorup.one,
 .animate_gorup.two,
 .animate_gorup.three {
-    /* visibility: hidden; */
+    visibility: hidden;
 }
 .animate_gorup.one.factive{
      visibility: visible;
@@ -188,11 +188,23 @@ opacity: 0;
 .animate_gorup.three.active {
     visibility: visible;
     /* visibility: hidden;*/
-    -webkit-animation: fadeinout 8s linear;
+    -webkit-animation: fadeinout 8s linear ;
     -moz-animation:    fadeinout 8s linear;
     -o-animation:      fadeinout 8s linear;
     -ms-transition:    fadeinout 8s linear; 
     animation:         fadeinout 8s linear;
+
+}
+.animate_gorup.one.pactive,
+.animate_gorup.two.pactive,
+.animate_gorup.three.pactive {
+    visibility: visible;
+    /* visibility: hidden;*/
+    -webkit-animation: pauseout 2s linear ;
+    -moz-animation:    pauseout 2s linear;
+    -o-animation:      pauseout 2s linear;
+    -ms-transition:    pauseout 2s linear; 
+    animation:         pauseout 2s linear;
 
 }
 
@@ -200,24 +212,37 @@ opacity: 0;
 .m_img.two,
 .m_img.three {
     opacity: 0;
+   
 }
+
 .m_img.one.factive{
-    -webkit-animation: moves 15s linear;
-    -moz-animation:    moves 15s linear ;
-    -o-animation:      moves 15s linear;
-    -ms-transition:    moves 15s linear; 
-    animation:         moves 15s linear;
+    -webkit-animation: runs 6s linear, moves 8s linear;
+    -moz-animation:    runs 6s linear, moves 8s linear ;
+    -o-animation:      runs 6s linear, moves 8s linear;
+    -ms-transition:    runs 6s linear, moves 8s linear; 
+    animation:         runs 6s linear, moves 8s linear;
 }
 .m_img.one.active,
 .m_img.two.active,
 .m_img.three.active {
     /* opacity: 1;*/
-     -webkit-animation:  moves 15s linear;
-    -moz-animation:     moves 15s linear ;
-    -o-animation:       moves 15s linear;
-    -ms-transition:     moves 15s linear; 
-    animation:          moves 15s linear;
+     -webkit-animation: runs 8s linear, moves 8s linear;
+    -moz-animation:    runs 8s linear, moves 8s linear ;
+    -o-animation:      runs 8s linear, moves 8s linear;
+    -ms-transition:    runs 8s linear, moves 8s linear; 
+    animation:         runs 8s linear, moves 8s linear;
 }
+
+.m_img.one.pactive,
+.m_img.two.pactive,
+.m_img.three.pactive{
+    -webkit-animation: pauserun 3s linear;
+    -moz-animation:    pauserun 3s linear;
+    -o-animation:      pauserun 3s linear;
+    -ms-transition:    pauserun 3s linear; 
+    animation:         pauserun 3s linear;
+}
+
 
 .mask {
     -webkit-mask-image: url(../img/top/mask09.png);
@@ -275,6 +300,13 @@ opacity: 0;
     70% { opacity: 1;}
     100% {opacity: 0;}
 }
+@keyframes pauseout {
+   0% { opacity: 1;}
+    10% {opacity: 1;}
+    20% {opacity: 1;}
+    60% { opacity: 0.5;}
+    100% {opacity: 0;}
+}
 
 
 @-webkit-keyframes runs{
@@ -309,6 +341,11 @@ opacity: 0;
     0% {opacity: 0;}
     10% {opacity: 1;}
     90% {opacity: 1;}
+    100% {opacity: 0;}
+}
+@keyframes pauserun {
+    0% {opacity: 1;}
+    60% {opacity: 0.5;}
     100% {opacity: 0;}
 }
 
@@ -363,11 +400,6 @@ opacity: 0;
     width: 100%;
     transform: scale(1.15);
 }
-
-/*.section-top-keyvisual .keyvisual-content{
-margin-right: 214px;
-width: 448px;
-}*/
 
 .section-top-keyvisual .text-keyvisual.txt_box {
     font-weight: 700;
@@ -510,7 +542,7 @@ width: 448px;
     }
 
     .section-top-keyvisual .text-keyvisual.txt_box {
-       font-size: 0.98vw;
+        font-size: 0.98vw;
         bottom: 4.5vw;
         z-index: 5;
         position: relative;

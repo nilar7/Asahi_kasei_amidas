@@ -530,99 +530,122 @@ app.textLimit = function() {
 };
 
 app.sliderKeyvisual = function() {
-  if ($(".js-keyvisual-top")) {
-    $(".js-keyvisual-top").slick({
-      centerMode: true,
-      centerPadding: "100px",
-      dots: false,
-      infinite: true,
-      autoplay: true,
-      speed: 4000,
-      autoplaySpeed: 5000,
-      autoplay: true,
-      loop: true,
-      waitForAnimate: false,
-      arrows: false,
-      pauseOnFocus: false,
-      pauseOnHover: false,
-      cssEase: "cubic-bezier(0.85, 0, 0.15, 1)",
-      responsive: [
-        {
-          breakpoint: 769,
-          settings: {
-              centerMode: false,
-          },
-        },
-      ],
-    })
-    .init(function() {
-      $('.m_img.one').animate({opacity: 1}, 1000)
-      $('.animate_gorup.one').animate({opacity: 1}, 2000)
-      $('.m_img.one').addClass('active');
-      $('.keyvisual-image.s_one').addClass('zoom');
-    })
-    .on({
-      beforeChange: function(event, slick, currentSlide, nextSlide) {
-        $(".slick-slide", this).eq(currentSlide).addClass("preve-slide");
-        $(".slick-slide", this).eq(nextSlide).addClass("slide-animation");
-        if (nextSlide == 0) {
-          $('.m_img.one').addClass('active');
-          $('.keyvisual-image.s_one').addClass('zoom');
-          setTimeout(() => {
-            $('.m_img.one').animate({opacity: 1}, 3000)
-          }, 1500)
-          setTimeout(() => {
-            $('.animate_gorup.one').animate({opacity: 1}, 3000)
-          }, 2000)
+    let current = null;
+    // let slick = null;
+    document.addEventListener("visibilitychange", function() {
+        if (document.visibilityState === 'visible') {
+           if(current == 0){
+             $('.m_img.one,.animate_gorup.one').removeClass('active');
+             $('.m_img.one,.animate_gorup.one').addClass('pactive');
+             setTimeout(() => {
+                $('.m_img.one,.animate_gorup.one').removeClass('pactive');
+              }, 4000);
+           }
+           if(current == 1){
+              $('.m_img.two,.animate_gorup.two').removeClass('active');
+             $('.m_img.two,.animate_gorup.two').addClass('pactive');
+             setTimeout(() => {
+                $('.m_img.two,.animate_gorup.two').removeClass('pactive');
+              }, 4000);
+           
+           }
+           if(current == 2){
+             $('.m_img.three,.animate_gorup.three').removeClass('active');
+             $('.m_img.three,.animate_gorup.three').addClass('pactive');
+             setTimeout(() => {
+                $('.m_img.three,.animate_gorup.three').removeClass('pactive');
+              }, 4000);
+           }
+           
         } else {
-          setTimeout(() => {
-            $('.m_img.one').removeClass('active');
-            $('.keyvisual-image.s_one').removeClass('zoom');
-          }, 8000);
-          $('.animate_gorup.one').animate({opacity: 0}, 1000)
-          $('.m_img.one').animate({opacity: 0}, 2000)
+            current = $('.js-keyvisual-top').slick('slickCurrentSlide');
+            //  $('.m_img').addClass('paused');
+            // $('.m_img').removeClass('running');
+           
         }
-        if (nextSlide == 1) {
-          $('.m_img.two').addClass('active');
+    });
+    $(".js-keyvisual-top").init(function() {
+    
+    });
+    if ($(".js-keyvisual-top").length) {
+        $(".js-keyvisual-top").slick({
+            centerMode: true,
+            centerPadding: "100px",
+            dots: false,
+            infinite: true,
+            autoplay: true,
+            speed: 4000,
+            autoplaySpeed: 5000,
+            autoplay: true,
+            loop: true,
+            waitForAnimate: false,
+            arrows: false,
+            pauseOnFocus: false,
+            pauseOnHover: false,
+            cssEase: "cubic-bezier(0.85, 0, 0.15, 1)",
+            responsive: [
+                {
+                    breakpoint: 769,
+                    settings: {
+                        centerMode: false,
+                    },
+                },
+            ],
+        })
+        .on({
+    beforeChange: function(event, slick, currentSlide, nextSlide) {
+      $(".slick-slide", this).eq(currentSlide).addClass("preve-slide");
+      $(".slick-slide", this).eq(nextSlide).addClass("slide-animation");
+      setTimeout(() => {
+        if (currentSlide == 0) {
+          $('.m_img.two,.animate_gorup.two').addClass('active');
+          $('.m_img.two,.animate_gorup.two').removeClass('pactive');
           $('.keyvisual-image.s_two').addClass('zoom');
-          setTimeout(() => {
-            $('.m_img.two').animate({opacity: 1}, 3000)
-          }, 1500)
-          setTimeout(() => {
-            $('.animate_gorup.two').animate({opacity: 1}, 3000)
-          }, 2000)
+           
         } else {
+          $('.m_img.two,.animate_gorup.two').removeClass('active');
           setTimeout(() => {
-            $('.m_img.two').removeClass('active');
             $('.keyvisual-image.s_two').removeClass('zoom');
-          }, 8000);
-          $('.animate_gorup.two').animate({opacity: 0}, 1000)
-          $('.m_img.two').animate({opacity: 0}, 2000)
+        }, 4000);
+          
+          
         }
-        if (nextSlide == 2) {
-          $('.m_img.three').addClass('active');
-          $('.keyvisual-image.s_three').addClass('zoom');
+        if (currentSlide == 1) {
+          $('.m_img.three,.animate_gorup.three').addClass('active');
+          $('.m_img.three,.animate_gorup.three').removeClass('pactive');
+           $('.keyvisual-image.s_three').addClass('zoom');
+          
+        }  else {
+          $('.m_img.three,.animate_gorup.three').removeClass('active');
           setTimeout(() => {
-            $('.m_img.three').animate({opacity: 1}, 3000)
-          }, 1500)
-          setTimeout(() => {
-            $('.animate_gorup.three').animate({opacity: 1}, 3000)
-          }, 2000)
-        } else {
-          setTimeout(() => {
-            $('.m_img.three').removeClass('active');
             $('.keyvisual-image.s_three').removeClass('zoom');
-          }, 8000);
-              $('.animate_gorup.three').animate({opacity: 0}, 1000)
-          $('.m_img.three').animate({opacity: 0}, 2000)
+        }, 4000);
+           
+          
+           
         }
-      },
-      afterChange: function() {
-        $(".preve-slide", this).removeClass("preve-slide slide-animation");
-      }
-    })
-  }
-}
+        if (currentSlide == 2) {
+          $('.m_img.one,.animate_gorup.one').addClass('active');
+          $('.m_img.one,.animate_gorup.one').removeClass('pactive');
+          $('.keyvisual-image.s_one').addClass('zoom');
+           
+        }  else {
+          $('.m_img.one,.animate_gorup.one').removeClass('active');
+          setTimeout(() => {
+            $('.keyvisual-image.s_one').removeClass('zoom');
+        }, 4000);
+           
+          
+           
+        }
+      }, 2000);
+    },
+    afterChange: function() {
+      $(".preve-slide", this).removeClass("preve-slide slide-animation");
+    },
+  });
+    }
+};
 $(".js-keyvisual-top").find(".slick-slide").eq(0).addClass("slide-animation");
 
 app.showButton = function() {

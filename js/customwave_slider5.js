@@ -117,6 +117,7 @@ Linewidth();
 
     $(document).ready(function() {
         $('.m_img.one,.animate_gorup.one').removeClass('active');
+        $('.m_img.one,.animate_gorup.one').removeClass('pactive');
         $('.m_img.one,.animate_gorup.one').addClass('factive');
      $('.section-top-keyvisual').animate({'opacity':'1'},500);
      setTimeout(() => {
