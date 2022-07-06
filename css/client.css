@@ -4270,7 +4270,7 @@
     margin-bottom: 0.6rem;
   }
   .section-article-detail .block-social {
-    margin-top: 2rem;
+    margin-top: 1rem;
   }
   .section-article-detail .text-share p {
     margin-bottom: 0;
@@ -4303,6 +4303,9 @@
   }
   .section-article-detail .post-content h2 + img {
     margin-bottom: 0.5rem;
+  }
+  .section-article-detail .post-content .block-content {
+    padding-bottom: 0.55rem;
   }
   .section-article-detail .post-content .block-content img {
     margin-bottom: 0.6rem;
