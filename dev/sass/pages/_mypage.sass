@@ -2136,21 +2136,6 @@ header
         background: url(../img/mypage/mypage_icon_03.svg) center / 100% auto no-repeat
     .button-white
       color: #0691de
-  .title-contact
-    position: relative
-    &:after
-      content: ""
-      position: absolute
-      top: 50%
-      left: 50%
-      transform: translateX(-50%)
-      width: 100%
-      height: 1px
-      background: $base-color-blue
-    span
-      position: relative
-      z-index: 2
-      background: #eff8ff
   .block-content
     .common-text
       font-weight: $base-font-weight
@@ -2304,13 +2289,6 @@ header
           right: 32px
           width: 12px
           height: 12px
-    .title-contact
-      font-size: .16rem
-      max-width: 675px
-      margin: 0 auto 8px
-      padding: 0 48px
-      span
-        padding: 0 32px
     .block-content
       .common-text
         line-height: calc(24 / 13)
@@ -2443,8 +2421,7 @@ header
         width: .32rem
         height: .32rem
         right: 1.36rem
-    .block-common-contact,
-    .title-contact span
+    .block-common-contact
       padding: 0 .16rem
     .title-contact
       span
@@ -2574,37 +2551,15 @@ header
       &:hover
         background-color: #71c9f2
 
-.section-mypage-search
-  .title-contact
-    position: relative
-    &:after
-      content: ""
-      position: absolute
-      top: 50%
-      left: 50%
-      -ms-transform: translateX(-50%)
-      transform: translateX(-50%)
-      width: 100%
-      height: 1px
-      background: #005baa
-    span
-      position: relative
-      z-index: 2
-      background: #eff8ff
-
 +desktop
   .keyvisual-mypage-search
     background-image: url(../img/mypage/mypage_search_bg.jpg)
 
   .section-mypage-search
     padding: 48px 0 112px
-    .title-contact
-      font-size: .16rem
-      max-width: 675px
-      margin: 0 auto 8px
-      padding: 0 48px
-      span
-        padding: 0 32px
+  .contact-free 
+    .block-content
+      align-items: flex-start
 
   .form-mypage-search
     max-width: 912px
@@ -2736,7 +2691,6 @@ header
       padding: 0 .32rem
       span
         display: inline-block
-        padding: 0 .16rem
     .block-common-contact
       padding: 0 .48rem
     .block-content-bottom
