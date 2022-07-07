@@ -15,10 +15,10 @@ $url =$_SERVER['PHP_SELF'];
 </div>
 <div class="content-menu-client">
     <ul class="list-menu-client">
-    <li class="item-client <?php echo ($url == '/client/haken/index.html')? 'active-hover':''; ?>"><a href="../../client/haken/index.html">人材派遣サービストップ</a></li>
-    <li class="item-client <?php echo ($url == '/client/haken/field.html')? 'active-hover':''; ?>"><a href="../../client/haken/field.html">得意とする領域・職種</a></li>
-    <li class="item-client <?php echo ($url == '/client/haken/interview/index.html')|| ($url == '/client/haken/interview/detail.html') ? 'active-hover':''; ?>"><a href="../../client/haken/interview/index.html">導入事例インタビュー</a></li>
+    <li class="item-client <?php echo ($url == '/client/haken/index.html')? 'active-hover':''; ?>"><a href="../../../client/haken/index.html">人材派遣サービストップ</a></li>
+    <li class="item-client <?php echo ($url == '/client/haken/field.html')? 'active-hover':''; ?>"><a href="../../../client/haken/field.html">得意とする領域・職種</a></li>
+    <li class="item-client <?php echo ($url == '/client/haken/interview/index.html')|| ($url == '/client/haken/interview/detail.html') ? 'active-hover':''; ?>"><a href="../../../client/haken/interview/index.html">導入事例インタビュー</a></li>
     <li class="item-client"><a>派遣チーム×顧客座談会</a></li>
-    <li class="item-client <?php echo ($url == '/client/haken/article/index.html')||($url == '/client/haken/article/detail.html')? 'active-hover':''; ?>"><a href="../../client/haken/article/index.html">記事コンテンツ</a></li>
+    <li class="item-client <?php echo ($url == '/client/haken/article/index.html')||($url == '/client/haken/article/detail.html')? 'active-hover':''; ?>"><a href="../../../client/haken/article/index.html">記事コンテンツ</a></li>
     </ul>
 </div>
