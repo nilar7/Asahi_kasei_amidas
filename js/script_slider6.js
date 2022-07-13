@@ -917,4 +917,9 @@ $(window).on("load", function() {
 });
 $(function() {
     app.init();
+    window.addEventListener('resize', () => {
+      if (screen.width >= 1500) {
+        location.reload()
+      }
+    })
 });
