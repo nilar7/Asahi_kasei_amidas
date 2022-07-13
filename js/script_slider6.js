@@ -918,7 +918,7 @@ $(window).on("load", function() {
 $(function() {
     app.init();
     window.addEventListener('resize', () => {
-      if (screen.width >= 1500) {
+      if (screen.width >= 1490 && screen.width <= 1510) {
         location.reload()
       }
     })
