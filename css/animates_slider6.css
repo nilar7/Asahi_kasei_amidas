@@ -428,44 +428,129 @@ opacity: 0;
 }
 
 
+@media only screen and (min-width: 1500px) {
+  .m_img {
+        width: 68.75vw;
+        height: 46.094vw;
+        top: 0px;
+        left: 9vw;
+    }
 
-@media print,
-(min-width: 1500px) {
+    .section-top-keyvisual .keyvisual-wrapper,
+    .section-top-keyvisual .keyvisual-image {
+        height: 46.094vw;
+    }
+
+    .section-top-keyvisual .keyvisual-content {
+        width: 43.984vw;
+    }
+
+    .section-top-keyvisual .title-keyvisual {
+        padding-top: 3.25vw;
+        width: 15vw;
+        right: 6.4vw;
+
+    }
+
+    .section-top-keyvisual .title-keyvisual img {
+        width: 9vw;
+    }
+
+    .section-top-keyvisual .text-keyvisual.txt_box {
+        font-size: 1.328vw;
+        z-index: 5;
+        padding: 0;
+        background: none;
+        margin: 2.500vw 2.5vw 0 2.5vw;
+    }
+
     .animate_gorup {
-        left: -260px;
-    
+        top: 11.719vw;
+        width: 100vw;
+        height: 39.063vw;
+        left: 4vw;
+        margin: 0 auto;
+        opacity: 0;
     }
-    .animate_gorup.two {
-        left: -263px;
+
+    .animate_gorup.one #left_animate {
+        top: -3.8vw;
+        left: 0.7vw;
     }
-    .animate_gorup.three {
-        left: -274px;
+
+    .animate_gorup.two #left_animate {
+        top: -4.8vw;
+        left: 0.7vw;
     }
-    .m_img {
-    left: 205px;
+
+    .animate_gorup.three #left_animate {
+        top: -4.9vw;
+        left: 0.7vw;
     }
-    .m_animate {
-        position: absolute;
-        top: 65px;
-        left: 750px;
-    }
+
     #left_animate {
-        width: 750px;
-   
+        width: 27.344vw;
     }
+
+    #left_animate canvas {
+        width: 26.406vw !important;
+        height: 31.250vw !important;
+    }
+
+    #right_animate {
+        width: 100vw;
+    }
+
+    #right_animate canvas {
+        width: 100vw !important;
+        height: 31.250vw !important;
+    }
+
+    .m_animate {
+        top: 5.078vw;
+        left: 27.344vw;
+    }
+
     .animate_gorup.one #right_animate {
-       right: -960px
+        top: 1vw;
+        right: -40vw;
     }
+
     .animate_gorup.two #right_animate {
-        right: -962px;
+        top: 1vw;
+        right: -44vw;
     }
+
     .animate_gorup.three #right_animate {
-        right: -968px;
+        top: -0.2vw;
+        right: -44.5vw;
+    }
+
+
+    .animate_gorup.one .m_animate img {
+        width: 18.516vw;
+    }
+
+    .animate_gorup.two .m_animate img {
+        width: 16.719vw;
+    }
+
+    .animate_gorup.three .m_animate img {
+        width: 17.188vw;
+    }
+
+    .animate_gorup.one #right_animate {
+        top: -3.1vw;
+        right: -45.781vw;
+    }
+    .section-top-keyvisual .image-text {
+      bottom: 1.172vw;
+      left: 10.547vw;
     }
 }
 
-
 @media print,
+
 (min-width: 769px) and (max-width: 1499px) {
     .m_img {
         width: 68.75vw;
