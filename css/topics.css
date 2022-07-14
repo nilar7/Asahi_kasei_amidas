@@ -240,11 +240,9 @@
     width: 40px;
     height: 40px;
   }
-
   .block-pagination {
     text-align: center;
   }
-
   .is-safari .common-list-pagination .arrow a:before {
     top: 15px;
   }
@@ -300,7 +298,6 @@
     width: 0.66rem;
     height: 0.66rem;
   }
-
   .section-client .common-list-pagination {
     margin-bottom: 1.4rem;
   }
@@ -332,7 +329,6 @@
   .block-pagination-line .next {
     margin-right: 24px;
   }
-
   .is-mac.is-safari .block-pagination-line .common-list-pagination:after,
 .is-firefox .block-pagination-line .common-list-pagination:after {
     top: 20px;
@@ -418,11 +414,9 @@
 .breadcrumb-list.breadcrumb-detail {
     letter-spacing: -0.03em;
   }
-
   .breadcrumb-list.breadcrumb-detail {
     padding-right: 0.18rem;
   }
-
   .section-topics {
     padding-top: 0.48rem;
     padding-bottom: 1.12rem;
@@ -499,7 +493,6 @@
   .section-topics-detail .button-common-line.is-style-direct .button-icon::before {
     background-size: 9px 12px;
   }
-
   .is-mac .section-topics-detail .post-time .highlight {
     padding-top: 3px;
     padding-bottom: 3px;

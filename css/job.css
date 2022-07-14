@@ -463,7 +463,6 @@
     line-height: 1.7272727273;
     padding-top: 0.06rem;
   }
-
   .block-jox.is-reverse {
     display: flex;
     flex-direction: column-reverse;
@@ -1020,7 +1019,6 @@
   .section-interview-detail .wrapper-link a:after {
     width: 111%;
   }
-
   .post-content-haken-interview {
     max-width: 860px;
     margin: 0 auto;
@@ -1075,7 +1073,6 @@
   .breadcrumb .breadcrumb-list {
     letter-spacing: -0.06em;
   }
-
   .section-interview-detail {
     margin-top: -1.28rem;
     padding-bottom: 1.28rem;
@@ -1198,7 +1195,6 @@
   .section-interview-detail .block-content-bottom .list-story-issue li:last-child {
     margin-bottom: 0.16rem;
   }
-
   .post-content-haken-interview h2 {
     font-size: 0.34rem;
     line-height: 1.7647058824;
@@ -1369,12 +1365,10 @@
   .keyvisual-job-jinzai .keyvisual-title {
     text-align: center;
   }
-
   .section-job-jinzai .image-top {
     width: 6.72rem;
     margin: 0 auto;
   }
-
   .section-job-benefits {
     padding: 0.48rem 0 1.6rem;
   }
@@ -1654,7 +1648,6 @@
   .keyvisual-job-top {
     background-image: url(../img/job/job_bg.jpg);
   }
-
   .section-job {
     padding: 72px 0 96px;
   }
@@ -1671,7 +1664,6 @@
     height: 100%;
     background: url(../img/job/job_shape.png) top center/100% auto no-repeat;
   }
-
   .about-row {
     line-height: 2.3076923077;
     max-width: 848px;
@@ -1685,7 +1677,6 @@
   .about-row .about-description {
     max-width: 490px;
   }
-
   .list-finds {
     margin: 0 -16px 120px;
     font-size: 0.14rem;
@@ -1738,7 +1729,6 @@
   .list-finds .is-find-04:after {
     background-image: url(../img/job/arrow_icon_04.svg);
   }
-
   .job-block {
     font-size: 0.13rem;
     line-height: 2.3076923077;
@@ -1788,29 +1778,24 @@
     margin-bottom: 16px;
     text-align: center;
   }
-
   .job-block-02 .default-title .text {
     padding-left: 32px;
     padding-right: 32px;
   }
-
   .job-block-03 .default-title .text {
     padding-left: 24px;
     padding-right: 24px;
   }
-
   .job-block-04 .job-image {
     margin-bottom: 24px;
   }
   .job-block-04 .job-item {
     margin-bottom: 32px;
   }
-
   .list-buttons {
     display: flex;
     flex-wrap: wrap;
   }
-
   .other-row .other-title {
     font-size: 0.18rem;
     padding: 0 24px 0 10px;
@@ -1826,7 +1811,6 @@
     padding: 0 16px;
     margin-top: 8px;
   }
-
   .list-contact {
     display: flex;
     flex-wrap: wrap;
@@ -1875,12 +1859,10 @@
   .job-block .job-text {
     font-size: 0.16rem;
   }
-
   .job-block-03 .default-title .text {
     padding-left: 8px;
     padding-right: 8px;
   }
-
   .list-contact {
     padding-left: 30px;
   }
@@ -1889,7 +1871,6 @@
   .keyvisual-job-top {
     background-image: url(../img/job/sp/job_bg.jpg);
   }
-
   .section-job {
     padding: 0.72rem 0 1.44rem;
   }
@@ -2340,12 +2321,10 @@
   .section-faq .common-title {
     margin-bottom: 40px;
   }
-
   .faq-title,
 .faq-content::before {
     border-radius: 10px;
   }
-
   .faq-question::before, .faq-question::after,
 .faq-title::before,
 .faq-title::after {
@@ -2363,23 +2342,19 @@
     height: 23px;
     width: 3px;
   }
-
   .faq-title {
     padding: 32px 80px 32px 40px;
     font-size: 0.18rem;
     line-height: 1.3333333333;
   }
-
   .faq-inner {
     padding: 88px 80px 88px 64px;
   }
-
   .faq-about {
     margin-bottom: 24px;
     font-size: 0.24rem;
     line-height: 1.375;
   }
-
   .faq-question {
     padding: 32px 88px 32px 0;
   }
@@ -2390,11 +2365,9 @@
     width: 53px;
     display: inline-block;
   }
-
   .faq-block:not(:last-child) {
     margin-bottom: 80px;
   }
-
   .faq-answer {
     font-size: 0.13rem;
     line-height: 2.3076923077;
@@ -2404,11 +2377,9 @@
     top: 41px;
     left: 36px;
   }
-
   .faq-content {
     margin-bottom: 48px;
   }
-
   .faq-registration {
     padding: 48px 176px 32px;
     border-radius: 14px;
@@ -2416,7 +2387,6 @@
   .faq-registration.is-margin {
     margin-bottom: 112px;
   }
-
   .registration-free {
     margin-bottom: 16px;
   }
@@ -2425,7 +2395,6 @@
     padding: 0 56px;
     max-width: 450px;
   }
-
   .registration-button {
     margin-bottom: 16px;
     padding: 24px;
@@ -2433,7 +2402,6 @@
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
     font-size: 0.16rem;
   }
-
   .registration-text {
     font-size: 0.13rem;
   }
@@ -2460,18 +2428,15 @@
   .section-faq .block-button .list-story-issue li:last-child {
     margin-bottom: 0.16rem;
   }
-
   .faq-title,
 .faq-content::before {
     border-radius: 0.22rem;
   }
-
   .faq-question::before, .faq-question::after,
 .faq-title::before,
 .faq-title::after {
     border-radius: 0.05rem;
   }
-
   .faq-title {
     padding: 0.16rem 2.48rem 0.24rem 0.4rem;
     font-size: 0.24rem;
@@ -2487,17 +2452,14 @@
     height: 0.42rem;
     width: 0.03rem;
   }
-
   .faq-inner {
     padding: 0.4rem 0.64rem 0.88rem;
   }
-
   .faq-about {
     margin-bottom: 0.24rem;
     font-size: 0.34rem;
     line-height: 1.9117647059;
   }
-
   .faq-question {
     padding: 0.16rem 0.88rem 0.16rem 0;
     min-height: 1.9rem;
@@ -2521,7 +2483,6 @@
     margin-bottom: 0.16rem;
     line-height: 1.6;
   }
-
   .faq-list .answer-block {
     padding-bottom: 0.35rem;
   }
@@ -2622,17 +2583,14 @@
     padding-left: 0.32rem;
     padding-right: 0.32rem;
   }
-
   .faq-block:not(:last-child) {
     margin-bottom: 1.2rem;
   }
-
   .faq-answer,
 .faq-question span {
     font-size: 0.24rem;
     line-height: 1.8333333333;
   }
-
   .faq-answer {
     padding: 0.88rem 0.4rem 0.16rem;
   }
@@ -2641,11 +2599,9 @@
     left: 0.44rem;
     font-size: 0.34rem;
   }
-
   .faq-content {
     margin-bottom: 0.56rem;
   }
-
   .faq-registration {
     padding: 0.56rem 0.48rem 0.32rem;
     margin: 0 0.16rem;
@@ -2654,7 +2610,6 @@
   .faq-registration.is-margin {
     margin-bottom: 1.12rem;
   }
-
   .registration-free {
     margin-bottom: 0.4rem;
   }
@@ -2662,19 +2617,16 @@
     padding: 0 0.16rem;
     max-width: 5.1rem;
   }
-
   .registration-button {
     margin-bottom: 0.24rem;
     padding: 0.24rem;
     border-radius: 0.5rem;
     box-shadow: 0 0.03rem 0.06rem rgba(0, 0, 0, 0.16);
   }
-
   .registration-text {
     font-size: 0.22rem;
     line-height: 1.7272727273;
   }
-
   .faq-list {
     padding: 0;
   }
@@ -2733,7 +2685,6 @@
   .keyvisual-job-interview {
     background-image: url(../img/job/job_interview_bg.jpg);
   }
-
   .section-job-interview {
     padding: 72px 0 104px;
   }
@@ -2824,7 +2775,6 @@
   .keyvisual-job-interview {
     background-image: url(../img/job/sp/job_interview_bg.jpg);
   }
-
   .section-job-interview {
     padding: 0.68rem 0 1.28rem;
   }
@@ -2924,7 +2874,6 @@
   .common-basic-title > span {
     padding: 0 28px;
   }
-
   .common-default-button {
     min-height: 67px;
     font-size: 0.16rem;
@@ -2932,7 +2881,6 @@
     border-radius: 34px;
     padding: 10px 20px;
   }
-
   .keyvisual-job-lifestyle {
     background-image: url(../img/job/job_lifestyle_bg.jpg);
   }
@@ -2944,7 +2892,6 @@
   .common-basic-title > span {
     padding: 0 0.2rem;
   }
-
   .common-default-button {
     min-height: 0.8rem;
     font-size: 0.24rem;
@@ -2952,7 +2899,6 @@
     border-radius: 0.5rem;
     padding: 0.1rem 0.2rem;
   }
-
   .keyvisual-job-lifestyle {
     background-image: url(../img/job/sp/job_lifestyle_bg.jpg);
   }
@@ -3002,7 +2948,6 @@
     padding-left: 20px;
     padding-right: 20px;
   }
-
   .section-job-voice .common-title,
 .section-job-case .common-title {
     padding-top: 40px;
@@ -3025,7 +2970,6 @@
     padding-left: 0.32rem;
     padding-right: 0.32rem;
   }
-
   .section-job-voice .common-title,
 .section-job-case .common-title {
     padding-top: 0.4rem;
@@ -3228,7 +3172,6 @@
     margin-top: 8px;
     padding-top: 6px;
   }
-
   .voice-choice .common-basic-title {
     margin-bottom: 12px;
   }
@@ -3450,7 +3393,6 @@
   .section-job-case .common-title {
     margin-bottom: 56px;
   }
-
   .list-case > li {
     padding-left: 176px;
   }
@@ -3499,19 +3441,15 @@
     width: 13px;
     height: 12px;
   }
-
   .case-01 .list-link a:after {
     background-image: url(../img/job/arrow_icon_01.svg);
   }
-
   .case-02 .list-link a:after {
     background-image: url(../img/job/arrow_icon_02.svg);
   }
-
   .case-03 .list-link a:after {
     background-image: url(../img/job/arrow_icon_03.svg);
   }
-
   .case-04 .list-link a:after {
     background-image: url(../img/job/arrow_icon_04.svg);
   }
@@ -3526,7 +3464,6 @@
   .section-job-case .common-title {
     margin-bottom: 0.88rem;
   }
-
   .list-case > li {
     padding-top: 2.04rem;
   }
@@ -3575,19 +3512,15 @@
     width: 0.24rem;
     height: 0.24rem;
   }
-
   .case-01 .list-link a:after {
     background-image: url(../img/job/sp/arrow_icon_01.svg);
   }
-
   .case-02 .list-link a:after {
     background-image: url(../img/job/sp/arrow_icon_02.svg);
   }
-
   .case-03 .list-link a:after {
     background-image: url(../img/job/sp/arrow_icon_03.svg);
   }
-
   .case-04 .list-link a:after {
     background-image: url(../img/job/sp/arrow_icon_04.svg);
   }
@@ -3677,7 +3610,6 @@
   .keyvisual-job-seisan {
     background-image: url(../img/job/job_seisan_bg.jpg);
   }
-
   .section-seisan-benefits .common-job-box {
     margin-bottom: 112px;
   }
@@ -3713,7 +3645,6 @@
   .keyvisual-job-seisan .keyvisual-title {
     text-align: center;
   }
-
   .section-seisan-benefits {
     padding-bottom: 0.48rem;
   }
@@ -3863,7 +3794,6 @@
   .keyvisual-job-index {
     background-image: url(../img/job/job_index_bg.jpg);
   }
-
   .introduction-content .inner-content {
     width: 560px;
     margin-left: 88px;
@@ -3876,7 +3806,6 @@
   .introduction-content .common-text {
     margin-bottom: 0;
   }
-
   .section-index-top {
     padding: 64px 0 96px;
   }
@@ -4027,7 +3956,6 @@
 .section-index-staff .wrapper {
     padding: 0 16px;
   }
-
   .section-index-top .row-form {
     width: 20vw;
     margin: 0 0.5vw;
@@ -4073,7 +4001,6 @@
   .keyvisual-job-index {
     background-image: url(../img/job/sp/job_index_bg.jpg);
   }
-
   .introduction-content .inner-content {
     padding-left: 0.3rem;
   }
@@ -4085,7 +4012,6 @@
   .introduction-content .common-text {
     width: 4.32rem;
   }
-
   .section-index-top {
     padding: 0.72rem 0 1.48rem;
   }
@@ -4307,7 +4233,6 @@
   .section-index-begin .common-title-arrow:hover::before {
     border-color: rgb(233, 97, 0);
   }
-
   .block-content-begin .block-content-top::before {
     border-radius: 10px;
   }
@@ -4333,7 +4258,6 @@
     background-size: 0.4rem;
     transform: unset;
   }
-
   .section-index-begin {
     padding-bottom: 1.6rem;
   }
@@ -4392,14 +4316,12 @@
     right: -0.16rem;
     border: 0.02rem solid rgba(233, 97, 0, 0.3);
   }
-
   .section-index-begin .common-title-arrow::before {
     background-image: url(../img/common/sp/icon_arrow_03.svg);
   }
   .section-index-begin .common-title-arrow:hover::before {
     border-color: rgb(233, 97, 0);
   }
-
   .section-index-staff .common-title-arrow::before {
     background-image: url(../img/common/sp/icon_arrow_06.svg);
     transform: rotate(90deg);
@@ -4864,7 +4786,6 @@
     background-position: 4px 2px;
     background-size: 16px 18px;
   }
-
   .to-top-haken {
     right: 35px;
     bottom: 140px;
@@ -4891,7 +4812,6 @@
   .section-index-recommended .common-text {
     margin-bottom: 0;
   }
-
   .to-top-haken {
     right: 0;
     bottom: 2.6rem;
@@ -4944,7 +4864,6 @@
   .introduction-content .inner-content {
     margin-bottom: 1.44rem;
   }
-
   .section-index-benefit {
     padding-bottom: 1.6rem;
   }

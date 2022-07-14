@@ -275,7 +275,6 @@
     left: 0.16rem;
     width: 0.64rem;
   }
-
   .footer-main .button-to-top {
     bottom: 1.5rem;
   }
@@ -434,11 +433,9 @@
     width: 40px;
     height: 40px;
   }
-
   .banner-content .inner-content p {
     margin-bottom: 0;
   }
-
   .is-special-custom .banner-image {
     position: relative;
   }
@@ -738,7 +735,6 @@
     width: 320px;
     line-height: 1.846;
   }
-
   .button-common-highlight:hover {
     padding-right: 0;
   }

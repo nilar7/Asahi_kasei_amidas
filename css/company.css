@@ -353,7 +353,6 @@
     width: 3px;
     height: 3px;
   }
-
   .is-mac.is-safari .section-company-map .button-location {
     padding-top: 1px;
   }
@@ -470,7 +469,6 @@
   .keyvisual-company-top {
     background-image: url(../img/company/company_bg.jpg);
   }
-
   .section-company {
     padding-top: 80px;
     padding-bottom: 56px;
@@ -486,7 +484,6 @@
   .keyvisual-company-top {
     background-image: url(../img/company/sp/company_bg.jpg);
   }
-
   .section-company {
     padding: 0.8rem 0 0.64rem;
   }
@@ -544,7 +541,6 @@
   .keyvisual-company-map {
     background-image: url(../img/company/company_map_bg.jpg);
   }
-
   .section-company-map {
     padding: 16px 16px 112px;
   }
@@ -599,7 +595,6 @@
   .keyvisual-company-map {
     background-image: url(../img/company/sp/company_map_bg.jpg);
   }
-
   .section-company-map {
     padding: 0.8rem 0 1.28rem;
   }

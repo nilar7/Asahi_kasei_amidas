@@ -527,11 +527,9 @@
     width: 40px;
     height: 40px;
   }
-
   .block-pagination {
     text-align: center;
   }
-
   .is-safari .common-list-pagination .arrow a:before {
     top: 15px;
   }
@@ -587,7 +585,6 @@
     width: 0.66rem;
     height: 0.66rem;
   }
-
   .section-client .common-list-pagination {
     margin-bottom: 1.4rem;
   }
@@ -619,7 +616,6 @@
   .block-pagination-line .next {
     margin-right: 24px;
   }
-
   .is-mac.is-safari .block-pagination-line .common-list-pagination:after,
 .is-firefox .block-pagination-line .common-list-pagination:after {
     top: 20px;
@@ -1140,7 +1136,6 @@
     line-height: 1.7272727273;
     padding-top: 0.06rem;
   }
-
   .block-jox.is-reverse {
     display: flex;
     flex-direction: column-reverse;
@@ -1245,7 +1240,6 @@
     font-size: 0.24rem;
     margin: 0.1rem 0 0 0;
   }
-
   .form-whitepaper .txt_error_confirm {
     margin-bottom: 0.45rem;
   }
@@ -1253,11 +1247,9 @@
     margin: 0 0 0 0;
     padding-left: 0.64rem;
   }
-
   .common-form-register .txt_error_confirm {
     margin-bottom: 0.78rem;
   }
-
   .register_content_inner {
     max-width: 100%;
   }
@@ -1292,7 +1284,6 @@
   .register_content_inner .txt_complete {
     margin-bottom: 1.2rem;
   }
-
   .register_complete .txt_register_alert {
     font-size: 0.28rem;
     margin-bottom: 0.28rem;
@@ -1436,7 +1427,6 @@ header .mypage-button span:nth-child(1) {
   header .mypage-navigation .top_item a:after {
     right: -10px;
   }
-
   .section-mypage-register {
     padding: 64px 16px 64px;
   }
@@ -1667,7 +1657,6 @@ header .mypage-button span:nth-child(1) {
   .keyvisual-mypage-top .keyvisual-title {
     padding-top: 0;
   }
-
   .section-mypage-content {
     padding: 72px 16px 0;
   }
@@ -1725,7 +1714,6 @@ header .mypage-button span:nth-child(1) {
   .mypage-top {
     padding-top: 188px;
   }
-
   .keyvisual-mypage-top {
     margin-top: 0;
   }
@@ -1818,7 +1806,6 @@ header .mypage-button span:nth-child(1) {
     width: 0.45rem;
     margin-right: 0.1rem;
   }
-
   .keyvisual-mypage-top {
     background-image: url(../img/mypage/sp/mypage_top_bg.jpg);
     height: 4.76rem;
@@ -1873,11 +1860,9 @@ header .mypage-button span:nth-child(1) {
     width: 0.28rem;
     height: 0.33rem;
   }
-
   .mypage-top {
     padding-top: 0;
   }
-
   .section-mypage-content {
     padding-top: 0.8rem;
   }
@@ -1957,7 +1942,6 @@ header .mypage-button span:nth-child(1) {
   .section-common-news .common-title {
     margin-bottom: 48px;
   }
-
   .is-mac.is-safari .common-news-list .news-category {
     padding-top: 3px;
     padding-bottom: 3px;
@@ -2119,7 +2103,6 @@ header .mypage-button span:nth-child(1) {
   .section-mypage-work .content-title {
     margin-bottom: 40px;
   }
-
   .last-content-work {
     padding-bottom: 192px;
   }
@@ -2178,7 +2161,6 @@ header .mypage-button span:nth-child(1) {
   .section-mypage-work .prev a:before {
     transform: scale(-1);
   }
-
   .last-content-work {
     padding-bottom: 1.6rem;
   }
@@ -2284,7 +2266,6 @@ header .mypage-button span:nth-child(1) {
   .section-common-application {
     padding: 0 16px 80px;
   }
-
   .section-application-web .precautions-list {
     font-size: 0.16rem;
     line-height: 1.75;
@@ -2295,7 +2276,6 @@ header .mypage-button span:nth-child(1) {
     top: -2px;
     margin-right: 3px;
   }
-
   .application-note {
     margin: 0 88px;
     font-size: 0.13rem;
@@ -2307,12 +2287,10 @@ header .mypage-button span:nth-child(1) {
     top: -2px;
     right: 3px;
   }
-
   .application-title,
 .application-note {
     margin-bottom: 40px;
   }
-
   .application-table {
     max-width: 912px;
     margin: 0 auto;
@@ -2357,7 +2335,6 @@ header .mypage-button span:nth-child(1) {
   .section-common-application .wrapper {
     padding: 0 0.32rem;
   }
-
   .application-note {
     line-height: 1.8333333333;
     margin: 0 0.24rem 0.8rem;
@@ -2369,11 +2346,9 @@ header .mypage-button span:nth-child(1) {
     top: -0.05rem;
     right: 0.06rem;
   }
-
   .application-title {
     margin-bottom: 0.4rem;
   }
-
   .application-table {
     line-height: 1.5833333333;
   }
@@ -2613,7 +2588,6 @@ header .mypage-button span:nth-child(1) {
   .section-application-web .flow-name {
     font-size: 0.16rem;
   }
-
   .web-title {
     margin-bottom: 32px;
     font-size: 0.2rem;
@@ -2622,7 +2596,6 @@ header .mypage-button span:nth-child(1) {
     padding: 0 24px;
     max-width: 800px;
   }
-
   .web-anchor {
     display: flex;
     flex-wrap: wrap;
@@ -2655,21 +2628,18 @@ header .mypage-button span:nth-child(1) {
     right: 20px;
     background: url("../img/mypage/web_icn_arrow.svg") center/contain no-repeat;
   }
-
   .web-block:not(:first-child) {
     padding-top: 48px;
   }
   .web-block:first-child {
     padding-top: 40px;
   }
-
   .web-name {
     pointer-events: none;
     color: #e96100;
     margin-bottom: 24px;
     font-size: 0.18rem;
   }
-
   .web-inner {
     letter-spacing: 0;
     background-color: rgba(247, 188, 0, 0.1);
@@ -2723,12 +2693,10 @@ header .mypage-button span:nth-child(1) {
   .web-inner .environment-table {
     margin-bottom: 8px;
   }
-
   .web-benefits {
     padding-left: 5.4%;
     padding-right: 5.4%;
   }
-
   .web-flow li {
     padding: 24px 32px;
   }
@@ -2769,7 +2737,6 @@ header .mypage-button span:nth-child(1) {
     padding-right: 40px;
     font-size: 11px;
   }
-
   .web-inner .table-block th {
     width: 24%;
   }
@@ -2792,7 +2759,6 @@ header .mypage-button span:nth-child(1) {
   .section-application-web .application-title {
     margin-bottom: 0.48rem;
   }
-
   .web-title {
     margin-bottom: 0.32rem;
     font-size: 0.24rem;
@@ -2803,21 +2769,17 @@ header .mypage-button span:nth-child(1) {
     padding: 0 0.32rem;
     width: 5.7rem;
   }
-
   .web-content {
     display: none;
   }
-
   .web-content,
 .benefits-name {
     font-size: 0.24rem;
     line-height: 1.5833333333;
   }
-
   .web-inner {
     padding: 0.48rem 0.32rem;
   }
-
   .web-block {
     margin: 0 -0.32rem;
     background-color: rgba(233, 97, 0, 0.1);
@@ -2887,12 +2849,10 @@ header .mypage-button span:nth-child(1) {
     top: -0.06rem;
     margin-right: 0.06rem;
   }
-
   .web-name,
 .web-inner {
     border-bottom: 0.02rem solid rgba(233, 97, 0, 0.4);
   }
-
   .web-name {
     cursor: pointer;
     background-color: #fff;
@@ -2928,7 +2888,6 @@ header .mypage-button span:nth-child(1) {
   .web-name.is-active::before {
     opacity: 0;
   }
-
   .web-flow li {
     padding: 0.16rem 0.24rem 0.16rem 0.4rem;
     border-radius: 0.1rem;
@@ -3066,7 +3025,6 @@ header .mypage-button span:nth-child(1) {
   .keyvisual-mypage-detail {
     background-image: url(../img/mypage/mypage_detail_bg.jpg);
   }
-
   .section-mypage-detail {
     padding: 80px 16px 68px;
   }
@@ -3184,7 +3142,6 @@ header .mypage-button span:nth-child(1) {
     display: inline;
     line-height: 2;
   }
-
   .section-mypage-detail {
     padding: 0.8rem 0;
   }
@@ -3918,24 +3875,6 @@ header .mypage-button span:nth-child(1) {
 .section-mypage-condition .list-button-change .button-white {
   color: #0691de;
 }
-.section-mypage-condition .title-contact {
-  position: relative;
-}
-.section-mypage-condition .title-contact:after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100%;
-  height: 1px;
-  background: #005baa;
-}
-.section-mypage-condition .title-contact span {
-  position: relative;
-  z-index: 2;
-  background: #eff8ff;
-}
 .section-mypage-condition .block-content .common-text {
   font-weight: 400;
 }
@@ -4130,15 +4069,6 @@ header .mypage-button span:nth-child(1) {
     width: 12px;
     height: 12px;
   }
-  .section-mypage-condition .title-contact {
-    font-size: 0.16rem;
-    max-width: 675px;
-    margin: 0 auto 8px;
-    padding: 0 48px;
-  }
-  .section-mypage-condition .title-contact span {
-    padding: 0 32px;
-  }
   .section-mypage-condition .block-content .common-text {
     line-height: 1.8461538462;
   }
@@ -4306,8 +4236,7 @@ header .mypage-button span:nth-child(1) {
     height: 0.32rem;
     right: 1.36rem;
   }
-  .section-mypage-condition .block-common-contact,
-.section-mypage-condition .title-contact span {
+  .section-mypage-condition .block-common-contact {
     padding: 0 0.16rem;
   }
   .section-mypage-condition .title-contact span {
@@ -4465,43 +4394,16 @@ header .mypage-button span:nth-child(1) {
   background-color: #71c9f2;
 }
 
-.section-mypage-search .title-contact {
-  position: relative;
-}
-.section-mypage-search .title-contact:after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100%;
-  height: 1px;
-  background: #005baa;
-}
-.section-mypage-search .title-contact span {
-  position: relative;
-  z-index: 2;
-  background: #eff8ff;
-}
-
 @media print, (min-width: 769px) {
   .keyvisual-mypage-search {
     background-image: url(../img/mypage/mypage_search_bg.jpg);
   }
-
   .section-mypage-search {
     padding: 48px 0 112px;
   }
-  .section-mypage-search .title-contact {
-    font-size: 0.16rem;
-    max-width: 675px;
-    margin: 0 auto 8px;
-    padding: 0 48px;
+  .contact-free .block-content {
+    align-items: flex-start;
   }
-  .section-mypage-search .title-contact span {
-    padding: 0 32px;
-  }
-
   .form-mypage-search {
     max-width: 912px;
     margin: 0 auto 112px;
@@ -4627,7 +4529,6 @@ header .mypage-button span:nth-child(1) {
     padding-left: 16px;
     padding-right: 16px;
   }
-
   .form-mypage-search .block-time .vertical-item {
     margin-bottom: 16px;
   }
@@ -4643,7 +4544,6 @@ header .mypage-button span:nth-child(1) {
     background-image: url(../img/mypage/sp/mypage_search_bg.jpg);
     height: 4.2rem;
   }
-
   .section-mypage-search {
     padding: 0.16rem 0 1.12rem;
   }
@@ -4656,7 +4556,6 @@ header .mypage-button span:nth-child(1) {
   }
   .section-mypage-search .title-contact span {
     display: inline-block;
-    padding: 0 0.16rem;
   }
   .section-mypage-search .block-common-contact {
     padding: 0 0.48rem;
@@ -4664,7 +4563,6 @@ header .mypage-button span:nth-child(1) {
   .section-mypage-search .block-content-bottom .list-story-issue li:last-child {
     margin-bottom: 0.16rem;
   }
-
   .form-mypage-search {
     margin-bottom: 1.12rem;
   }
