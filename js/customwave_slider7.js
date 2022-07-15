@@ -124,5 +124,59 @@ Linewidth();
         $('.m_img.one,.animate_gorup.one').addClass('active');
         $('.m_img.one,.animate_gorup.one').removeClass('factive');
       }, 8000);
+     // $(".keyvisual-image").animate({transform: "scale(1)"}, 9000, 'linear');
+
+     // $(".keyvisual-image").addClass("slide-animation");
+     // setTimeout(() => {
+     //    $(".keyvisual-image").removeClass("slide-animation");
+     //    // alert(1);
+     //  }, 9000);
+
+    //  $(".js-keyvisual-top").on('beforeChange', function() {
+    //     $(".section-top-keyvisual .animate_gorup,.section-top-keyvisual .m_img").removeClass("active");
+        
+    //     var dataId = $('.slick-current').attr("data-slick-index");    
+    //     if(dataId == 0){
+    //         $(".section-top-keyvisual .animate_gorup.one,.section-top-keyvisual .m_img.one").addClass("active");
+            
+    //     }
+    //     if(dataId == 1){
+    //         $(".section-top-keyvisual .animate_gorup.two,.section-top-keyvisual .m_img.two").addClass("active");
+           
+    //     }
+    //     if(dataId == 2){
+    //         $(".section-top-keyvisual .animate_gorup.three,.section-top-keyvisual .m_img.three").addClass("active");
+            
+    //     }
+    // });
+
+
+    // var images = ["img_02.png", "img_03.png", "img_01.png"],
+    //     index = 0, // starting index
+    //     maxImages = images.length - 1;
+    // var timer = setInterval(function() {
+    //     var currentImage = images[index];
+    //     index = index == maxImages ? 0 : ++index;
+    //     //console.log(currentImage);
+    //     $(".section-top-keyvisual .animate_gorup").removeClass("active");
+    //     $(".section-top-keyvisual .m_img").removeClass("active");
+    //     if (currentImage == "img_02.png") {
+    //         $(".section-top-keyvisual .animate_gorup.two").addClass("active");
+    //         $(".section-top-keyvisual .m_img.two").addClass("active");
+    //     } else if (currentImage == "img_03.png") {
+    //         $(".section-top-keyvisual .animate_gorup.three").addClass("active");
+    //         $(".section-top-keyvisual .m_img.three").addClass("active");
+    //     } else {
+    //         $(".section-top-keyvisual .animate_gorup.one").addClass("active");
+    //         $(".section-top-keyvisual .m_img.one").addClass("active");
+    //     }
+
+    //     // $(".m_img img").fadeOut(900, function() {
+    //     //     $(".m_img img").attr("src", "../img/top/" + currentImage);
+    //     //     $(".m_img img").fadeIn(900);
+    //     // });
+    // }, 7000);
+
+
 
 });

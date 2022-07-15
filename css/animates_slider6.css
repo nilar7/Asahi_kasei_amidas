@@ -22,40 +22,25 @@
     position: absolute;
     top: 0px;
     right: -14px;
-    /* width: 800px;*/
     width: 2000px;
 }
 
 .animate_gorup.two #right_animate {
-    /*top: 12px;
-right: -36px;*/
-    /*top: -539px;
-right: -564px;*/
     top: -288px;
     right: -561px;
 }
 
 .animate_gorup.one #right_animate {
-    /*top: -39px;
-right: -60px;*/
-    /*top: -589px;
-right: -586px;*/
     top: -350px;
     right: -586px;
 
 }
 
 .animate_gorup.three #right_animate {
-    /*top: 0px;
-right: -42px;*/
-    /*top: -552px;
-right: -570px;*/
     top: -302px;
     right: -569px;
 
 }
-
-
 
 @keyframes mainAnimate {
     0% {
@@ -166,7 +151,7 @@ opacity: 0;
 .section-top-keyvisual .image-text {
   width: 3.75%;
   bottom: 15px;
-  left: 135px;
+  left: 158px;
 }
 
 .animate_gorup.one,
@@ -227,7 +212,7 @@ opacity: 0;
     -webkit-mask-repeat: no-repeat;
     mask-repeat: no-repeat;
     overflow: hidden;
-
+    position: relative;
 }
 
 .section-top-keyvisual {
@@ -339,7 +324,7 @@ opacity: 0;
 
 
 .section-top-keyvisual .content-scroll {
-    z-index: 3;
+    z-index: 99;
 }
 
 .only_pc {
@@ -428,129 +413,41 @@ opacity: 0;
 }
 
 
-@media only screen and (min-width: 1500px) {
-  .m_img {
-        width: 68.75vw;
-        height: 46.094vw;
-        top: 0px;
-        left: 9vw;
-    }
 
-    .section-top-keyvisual .keyvisual-wrapper,
-    .section-top-keyvisual .keyvisual-image {
-        height: 46.094vw;
-    }
-
-    .section-top-keyvisual .keyvisual-content {
-        width: 43.984vw;
-    }
-
-    .section-top-keyvisual .title-keyvisual {
-        padding-top: 3.25vw;
-        width: 15vw;
-        right: 6.4vw;
-
-    }
-
-    .section-top-keyvisual .title-keyvisual img {
-        width: 9vw;
-    }
-
-    .section-top-keyvisual .text-keyvisual.txt_box {
-        font-size: 1.328vw;
-        z-index: 5;
-        padding: 0;
-        background: none;
-        margin: 2.500vw 2.5vw 0 2.5vw;
-    }
-
+@media print,(min-width: 1500px) {
     .animate_gorup {
-        top: 11.719vw;
-        width: 100vw;
-        height: 39.063vw;
-        left: 4vw;
-        margin: 0 auto;
-        opacity: 0;
+        left: -260px;    
     }
-
-    .animate_gorup.one #left_animate {
-        top: -3.8vw;
-        left: 0.7vw;
+    .animate_gorup.two {
+        left: -263px;
     }
-
-    .animate_gorup.two #left_animate {
-        top: -4.8vw;
-        left: 0.7vw;
+    .animate_gorup.three {
+        left: -274px;
     }
-
-    .animate_gorup.three #left_animate {
-        top: -4.9vw;
-        left: 0.7vw;
+    .m_img {
+        left: 205px;
     }
-
-    #left_animate {
-        width: 27.344vw;
-    }
-
-    #left_animate canvas {
-        width: 26.406vw !important;
-        height: 31.250vw !important;
-    }
-
-    #right_animate {
-        width: 100vw;
-    }
-
-    #right_animate canvas {
-        width: 100vw !important;
-        height: 31.250vw !important;
-    }
-
     .m_animate {
-        top: 5.078vw;
-        left: 27.344vw;
+        position: absolute;
+        top: 65px;
+        left: 750px;
     }
-
+    #left_animate {
+        width: 750px;   
+    }
     .animate_gorup.one #right_animate {
-        top: 1vw;
-        right: -40vw;
+       right: -960px;
     }
-
     .animate_gorup.two #right_animate {
-        top: 1vw;
-        right: -44vw;
+        right: -962px;
     }
-
     .animate_gorup.three #right_animate {
-        top: -0.2vw;
-        right: -44.5vw;
-    }
-
-
-    .animate_gorup.one .m_animate img {
-        width: 18.516vw;
-    }
-
-    .animate_gorup.two .m_animate img {
-        width: 16.719vw;
-    }
-
-    .animate_gorup.three .m_animate img {
-        width: 17.188vw;
-    }
-
-    .animate_gorup.one #right_animate {
-        top: -3.1vw;
-        right: -45.781vw;
-    }
-    .section-top-keyvisual .image-text {
-      bottom: 1.172vw;
-      left: 10.547vw;
+        right: -968px;
     }
 }
 
-@media print,
 
+@media print,
 (min-width: 769px) and (max-width: 1499px) {
     .m_img {
         width: 68.75vw;
@@ -569,7 +466,7 @@ opacity: 0;
     }
 
     .section-top-keyvisual .title-keyvisual {
-        padding-top: 3.25vw;
+        padding-top: 5.25vw;
         width: 15vw;
         right: 6.4vw;
 
@@ -577,6 +474,7 @@ opacity: 0;
 
     .section-top-keyvisual .title-keyvisual img {
         width: 9vw;
+        max-width: 100px;
     }
 
     .section-top-keyvisual .text-keyvisual.txt_box {
