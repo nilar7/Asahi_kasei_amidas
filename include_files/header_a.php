@@ -19,7 +19,7 @@ $url =$_SERVER['PHP_SELF'];
             </ul>
             <form class="form-search">
                 <div class="content-form">
-                    <input class="input-text" type="text" name="search" value="">
+                    <input class="input-text" type="text" name="search" value="" placeholder="サイト内検索">
                     <div class="item-search background-blue"><a href="javascript:;"></a></div>
                 </div>
             </form>
@@ -333,7 +333,7 @@ $url =$_SERVER['PHP_SELF'];
             <li class="item-notice"><a class="trans" href="#">お問い合わせ</a></li>
         </ul>
         <form class="form-search sm">
-            <input class="input-search" type="search" name="search" placeholder="検索する">
+            <input class="input-search" type="search" name="search" placeholder="サイト内検索">
             <button class="icon-search" type="submit"></button>
         </form>
     </div>

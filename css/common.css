@@ -705,7 +705,13 @@ body {
   .common-button-inquiry span.font-alata {
     padding-left: 0;
   }
+  .common-button-inquiry span.font-alata:hover::after {
+    opacity: 0;
+  }
   .common-button-inquiry span.font-alata::before {
+    background: none;
+  }
+  .common-button-inquiry span.font-alata::after {
     background: none;
   }
   .common-button-inquiry.background-blue {

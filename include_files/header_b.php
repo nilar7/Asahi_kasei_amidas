@@ -340,7 +340,7 @@ $url =$_SERVER['PHP_SELF'];
             <li class="item-notice"><a class="trans" href="#">お問い合わせ</a></li>
         </ul>
         <form class="form-search sm">
-            <input class="input-search" type="search" name="search" placeholder="検索する">
+            <input class="input-search" type="search" name="search" placeholder="サイト内検索">
             <button class="icon-search" type="submit"></button>
         </form>
     </div>

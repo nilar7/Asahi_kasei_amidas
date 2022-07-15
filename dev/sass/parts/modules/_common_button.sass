@@ -67,7 +67,12 @@
         top: -6px
       &.font-alata
         padding-left: 0
+        &:hover
+          &::after
+             opacity: 0
         &::before
+          background: none
+        &::after
           background: none
     &.background-blue
       min-height: 56px
