@@ -1,6 +1,8 @@
 <?php
 $url =$_SERVER['PHP_SELF'];
 ?>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 <div class="inner-wrapper header-different">
     <div class="header-left">
         <div class="header-logo"><a class="trans logo" href="http://asahi-kasei-amidas.sitetastingmyanmar.com/"><img src="http://asahi-kasei-amidas.sitetastingmyanmar.com/img/common/common_logo.png" width="189" height="57" loading="lazy" alt="旭化成アミダス"></a></div>

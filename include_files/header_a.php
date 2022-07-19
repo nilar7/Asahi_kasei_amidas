@@ -20,7 +20,7 @@ $url =$_SERVER['PHP_SELF'];
             <form class="form-search">
                 <div class="content-form">
                     <input class="input-text" type="text" name="search" value="" placeholder="サイト内検索">
-                    <div class="item-search background-blue"><a href="javascript:;"></a></div>
+                    <div class="item-search background-blue"><a href="javascript:void(0);"></a></div>
                 </div>
             </form>
         </div>

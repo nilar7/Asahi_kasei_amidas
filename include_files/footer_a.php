@@ -114,7 +114,8 @@
   </div>
   <small class="copyright font-alata">Copyright <span>&copy;</span> Asahi Kasei Amidas Corporation. All rights reserved.</small>
 </div>
-       
+
+
         
       
    
