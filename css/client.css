@@ -3620,10 +3620,6 @@
     min-width: 7.04rem;
   }
 }
-.keyvisual-client-whitepaper {
-  text-align: center;
-}
-
 .section-client-whitepaper .title-whitepaper {
   opacity: 0;
   transition: opacity 0.26s;
@@ -3742,13 +3738,6 @@
 }
 
 @media print, (min-width: 769px) {
-  .keyvisual-client-whitepaper {
-    background-image: url(../img/client/client_whitepaper_bg.jpg);
-    margin-top: -104px;
-  }
-  .keyvisual-client-whitepaper .keyvisual-title {
-    line-height: 1.6666666667;
-  }
   .section-client-whitepaper {
     padding: 80px 16px 224px;
   }
@@ -3901,11 +3890,7 @@
   }
 }
 @media only screen and (max-width: 768.98px) {
-  .keyvisual-client-whitepaper {
-    background-image: url(../img/client/sp/client_whitepaper_bg.jpg);
-    height: 4.33rem;
-  }
-  .keyvisual-client-whitepaper .keyvisual-title {
+  .keyvisual-title {
     line-height: 1.7647058824;
     padding-top: 1.44rem;
   }
