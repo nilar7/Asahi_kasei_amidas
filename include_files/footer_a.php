@@ -1,12 +1,12 @@
 <div class="button-to-top js-to-top"><span class="trans"></span></div>
 <div class="footer-middle md">
   <div class="inner-wrapper">
-    <div class="footer-detail"><a class="trans footer-logo" href="#"><img src="http://asahi-kasei-amidas.sitetastingmyanmar.com/img/common/footer_logo.png" width="202" height="167" loading="lazy" alt="旭化成アミダス株式会社"></a>
+    <div class="footer-detail"><a class="trans footer-logo" href="#"><img src="/img/common/footer_logo.png" width="202" height="167" loading="lazy" alt="旭化成アミダス株式会社"></a>
       <address class="address">〒101-8480<br>東京都千代田区神田錦町3-22<br>テラススクエア 5F</address>
     </div>
     <nav class="footer-navigation">
       <ul class="list-navigation">
-        <li class="item-navigation"><a href="http://asahi-kasei-amidas.sitetastingmyanmar.com/"><span class="text-navigation">ホーム</span></a>
+        <li class="item-navigation"><a href="/"><span class="text-navigation">ホーム</span></a>
           <ul class="sub-navigation">
             <li class="item-sub"><a class="trans" href="/topics/index.html">お知らせ</a></li>
             <li class="item-sub"><a class="trans" href="#">お問い合わせ</a></li>
@@ -95,10 +95,10 @@
 <div class="footer-bottom">
   <div class="footer-bottom_inner">
     <a href="" class="footer_icon icon01">
-      <img src="http://asahi-kasei-amidas.sitetastingmyanmar.com/img/common/icon_privacy.png" alt="Privacy">
+      <img src="/img/common/icon_privacy.png" alt="Privacy">
     </a>
     <a href="" class="footer_icon icon02">
-      <img src="http://asahi-kasei-amidas.sitetastingmyanmar.com/img/common/icon_yuryohaken.png" alt="Yuryohaken">
+      <img src="/img/common/icon_yuryohaken.png" alt="Yuryohaken">
     </a>
     <div class="footer_bottom_nav">
       <ul class="list-guide">
@@ -108,7 +108,7 @@
         <li class="item-guide"><a class="trans" href="#">優良派遣事業者行動方針</a></li>
       </ul>
       <div class="item-logo"><a class="trans" href="#">
-        <img src="http://asahi-kasei-amidas.sitetastingmyanmar.com/img/common/footer_logo_02.png" loading="lazy" alt="AsahiKASEI"></a>
+        <img src="/img/common/footer_logo_02.png" loading="lazy" alt="AsahiKASEI"></a>
       </div>
     </div>
   </div>

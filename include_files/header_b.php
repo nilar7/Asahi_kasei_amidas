@@ -3,7 +3,7 @@ $url =$_SERVER['PHP_SELF'];
 ?>
 <div class="inner-wrapper header-different">
     <div class="header-left">
-        <div class="header-logo"><a class="trans logo" href="http://asahi-kasei-amidas.sitetastingmyanmar.com/"><img src="http://asahi-kasei-amidas.sitetastingmyanmar.com/img/common/common_logo.png" width="189" height="57" loading="lazy" alt="旭化成アミダス"></a></div>
+        <div class="header-logo"><a class="trans logo" href="/"><img src="/img/common/common_logo.png" width="189" height="57" loading="lazy" alt="旭化成アミダス"></a></div>
         <p class="text-service">総合人材<br class="md">サービスサイト</p>
     </div>
     <div class="header-right md">
@@ -21,9 +21,9 @@ $url =$_SERVER['PHP_SELF'];
         <div class="content-bottom">
             <nav class="header-navigation">
                 <ul class="list-navigation">
-                    <li class="item-navigation"><a href="http://asahi-kasei-amidas.sitetastingmyanmar.com/">ホーム</a></li>
+                    <li class="item-navigation"><a href="/">ホーム</a></li>
                     <li class="item-navigation menu02"><a href="/job/index.html">お仕事をお探しの方</a></li>
-                    <li class="item-navigation menu03"><a class="<?php echo ($url == '/client/index.html')|| ($url == '/client/news/index.html')|| ($url == '/client/news/detail.html') || ($url == '/client/service.html') ||($url == '/client/haken/index.html') ||($url == '/client/haken/field.html')||($url == '/client/haken/interview/index.html')||($url == '/client/haken/interview/detail.html')||($url == '/client/haken/article/index.html')||($url == '/client/haken/article/detail.html')||($url == '/client/haken/whitepaper.html') || ($url == '/client/haken/whitepaper.html') || ($url == '/client/haken/whitepaper-register-confirm.html') || ($url == '/client/haken/whitepaper-register-complete.html') || ($url == '/client/program/index.html') || ($url == '/client/program/active-bsr.html')? 'active-menu':''; ?>" href="http://asahi-kasei-amidas.sitetastingmyanmar.com/client/">企業のご担当者の方</a></li>
+                    <li class="item-navigation menu03"><a class="<?php echo ($url == '/client/index.html')|| ($url == '/client/news/index.html')|| ($url == '/client/news/detail.html') || ($url == '/client/service.html') ||($url == '/client/haken/index.html') ||($url == '/client/haken/field.html')||($url == '/client/haken/interview/index.html')||($url == '/client/haken/interview/detail.html')||($url == '/client/haken/article/index.html')||($url == '/client/haken/article/detail.html')||($url == '/client/haken/whitepaper.html') || ($url == '/client/haken/whitepaper.html') || ($url == '/client/haken/whitepaper-register-confirm.html') || ($url == '/client/haken/whitepaper-register-complete.html') || ($url == '/client/program/index.html') || ($url == '/client/program/active-bsr.html')? 'active-menu':''; ?>" href="/client/">企業のご担当者の方</a></li>
                     <li class="item-navigation menu04"><a href="/recruit/">採用情報</a></li>
                     <li class="item-navigation"><a href="/company/index.html">企業情報</a></li>
                     <li class="item-navigation"><a href="#">アクセス</a></li>
@@ -34,7 +34,7 @@ $url =$_SERVER['PHP_SELF'];
 </div>
 <div class="content-list-menu list-service-menu md">
     <ul class="list-menu-top">
-        <li class="item-list-top <?php echo ($url == '/client/service.html')? 'active-hover':''; ?>"><a href="http://asahi-kasei-amidas.sitetastingmyanmar.com/client/service.html">旭化成アミダスができること</a></li>
+        <li class="item-list-top <?php echo ($url == '/client/service.html')? 'active-hover':''; ?>"><a href="/client/service.html">旭化成アミダスができること</a></li>
         <li class="item-list-top <?php echo ($url == '/client/haken/index.html')||($url == '/client/haken/field.html')||($url == '/client/haken/whitepaper-register-confirm.html')||($url == '/client/haken/whitepaper-register-complete.html') ||($url == '/client/haken/interview/index.html')||($url == '/client/haken/interview/detail.html')||($url == '/client/haken/article/index.html')||($url == '/client/haken/article/detail.html')||($url == '/client/haken/whitepaper.html')? 'active-hover':''; ?>"><a href="/client/haken/">人材派遣</a></li>
         <li class="item-list-top"><a href="#">ITエンジニア派遣</a></li>
         <li class="item-list-top"><a href="#">人材紹介</a></li>
@@ -102,7 +102,7 @@ $url =$_SERVER['PHP_SELF'];
     <div class="navigation-block">
         <ul class="header-menu">
             <li class="item-menu">
-                <div class="title-menu js-accordion"><a class="trans js-accordion-heading" href="http://asahi-kasei-amidas.sitetastingmyanmar.com/">ホーム</a></div>
+                <div class="title-menu js-accordion"><a class="trans js-accordion-heading" href="/">ホーム</a></div>
                 <ul class="sub-menu js-accordion-content md">
                     <li class="item-sub-menu"><a class="trans" href="/topics/index.html">お知らせ</a></li>
                     <li class="item-sub-menu"><a class="trans" href="#">お問い合わせ</a></li>

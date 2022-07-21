@@ -3,7 +3,7 @@ $url =$_SERVER['PHP_SELF'];
 ?>
 <div class="inner-wrapper">
     <div class="header-left">
-        <div class="header-logo"><a class="trans logo" href="http://asahi-kasei-amidas.sitetastingmyanmar.com/"><img src="http://asahi-kasei-amidas.sitetastingmyanmar.com/img/common/common_logo.png" width="189" height="57" loading="lazy" alt="旭化成アミダス"></a></div>
+        <div class="header-logo"><a class="trans logo" href="/"><img src="/img/common/common_logo.png" width="189" height="57" loading="lazy" alt="旭化成アミダス"></a></div>
         <p class="text-service">総合人材<br class="md">サービスサイト</p>
     </div>
     <div class="header-right md">
@@ -11,11 +11,11 @@ $url =$_SERVER['PHP_SELF'];
             <ul class="list-function s-top">
                 <li class="item-list background-orange"><a class="item-link" href="/mypage/register.html">派遣登録はこちら</a></li>
                 <li class="item-list background-orange"><a class="item-link" href="/mypage/search.html">派遣のお仕事検索</a></li>
-                <li class="item-list background-blue"><a class="item-link" href="http://asahi-kasei-amidas.sitetastingmyanmar.com/mypage/">マイページログイン</a></li>
+                <li class="item-list background-blue"><a class="item-link" href="/mypage/">マイページログイン</a></li>
             </ul>
             <ul class="list-function no-top">
-                <li class="item-list background-blue"><a class="item-link" href="http://asahi-kasei-amidas.sitetastingmyanmar.com/mypage/">マイページログイン</a></li>
-                <li class="item-list background-blue"><a class="item-link" href="http://asahi-kasei-amidas.sitetastingmyanmar.com/mypage/register.html">派遣登録はこちら</a></li>
+                <li class="item-list background-blue"><a class="item-link" href="/mypage/">マイページログイン</a></li>
+                <li class="item-list background-blue"><a class="item-link" href="/mypage/register.html">派遣登録はこちら</a></li>
             </ul>
             <form class="form-search">
                 <div class="content-form">
@@ -27,7 +27,7 @@ $url =$_SERVER['PHP_SELF'];
         <div class="content-bottom">
             <nav class="header-navigation">
                 <ul class="list-navigation">
-                    <li class="item-navigation"><a href="http://asahi-kasei-amidas.sitetastingmyanmar.com/" class="<?php echo ($url == '/index.html') ? 'active-menu':''; ?>">ホーム</a></li>
+                    <li class="item-navigation"><a href="/" class="<?php echo ($url == '/index.html') ? 'active-menu':''; ?>">ホーム</a></li>
                     <li class="item-navigation menu02"><a href="javascript:void(0)" class="<?php echo ($url == '/job/index.html') || ($url == '/job/haken/index.html')|| ($url == '/job/jinzai/about.html')|| ($url == '/job/seisan/about.html')|| ($url == '/job/haken/faq.html')|| ($url == '/job/haken/lifestyle.html') || ($url == '/job/haken/interview/index.html') || ($url == '/job/haken/interview/detail.html') || ($url == '/mypage/search.html') || ($url == '/mypage/job-list.html') || ($url == '/mypage/job-detail.html') || ($url == '/mypage/register.html') || ($url == '/mypage/register-confirm.html') || ($url == '/mypage/register-complete.html') ? 'active-menu':''; ?>">お仕事をお探しの方</a></li>
                     <li class="item-navigation menu03"><a href="javascript:void(0)">企業のご担当者の方</a></li>
                     <li class="item-navigation menu04"><a href="javascript:void(0)" class="<?php echo ($url == '/recruit/index.html')|| ($url == '/recruit/engineer/index.html') ? 'active-menu':''; ?>">採用情報</a></li>
@@ -95,7 +95,7 @@ $url =$_SERVER['PHP_SELF'];
     <div class="navigation-block">
         <ul class="header-menu">
             <li class="item-menu">
-                <div class="title-menu js-accordion"><a class="trans js-accordion-heading" href="http://asahi-kasei-amidas.sitetastingmyanmar.com/">ホーム</a></div>
+                <div class="title-menu js-accordion"><a class="trans js-accordion-heading" href="/">ホーム</a></div>
                 <ul class="sub-menu js-accordion-content md">
                     <li class="item-sub-menu"><a class="trans" href="/topics/index.html">お知らせ</a></li>
                     <li class="item-sub-menu"><a class="trans" href="#">お問い合わせ</a></li>
